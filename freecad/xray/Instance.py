@@ -32,6 +32,7 @@ from .xrayUtils import LightUnits
 
 EMITTER_TYPES = ['Parallel', 'Helical', 'Cone']
 
+
 def add_xray_props(obj):
     """This function adds the properties to a ship instance, in case they are
     not already created
@@ -226,7 +227,8 @@ class XRay:
 
     def regen_geom(self, fp):
         light = self.light(fp)
-        return Part.makeCompound([light])
+        screen = self.screen(fp)
+        return Part.makeCompound([light, screen])
 
     def light(self, fp):
         if fp.EmitterType == 'Parallel':
@@ -234,6 +236,7 @@ class XRay:
                 fp.ChamberHeight, fp.ChamberRadius,
                 Vector(-0.5 * fp.ChamberHeight, -0.5 * fp.ChamberRadius, 0))
             l = l.rotate((0, 0, 0), (0, 1, 0), Units.parseQuantity('90 deg'))
+            FreeCAD.ActiveDocument.recompute()
         elif fp.EmitterType == 'Helical':
             angle = math.atan((fp.ChamberRadius / fp.ChamberDistance).Value)
             s = Part.makeCylinder(
@@ -286,6 +289,16 @@ class XRay:
         l = l.translate((-0.5 * fp.ChamberDistance, 0, 0))
 
         return l
+
+    def screen(self, fp):
+        s = Part.makePlane(
+            fp.ChamberHeight, fp.ChamberRadius,
+            Vector(-0.5 * fp.ChamberHeight, -0.5 * fp.ChamberRadius, 0))
+        s = s.rotate((0, 0, 0), (0, 1, 0), -Units.parseQuantity('90 deg'))
+        s = s.translate((0.5 * fp.ChamberDistance, 0, 0))
+        FreeCAD.ActiveDocument.recompute()
+
+        return s
 
 
 class ViewProviderXRay:
