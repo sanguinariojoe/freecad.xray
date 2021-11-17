@@ -1,6 +1,9 @@
 <RCC>
     <qresource>
         <file>icons/XRay_Workbench.svg</file>
+        <file>icons/XRay_Object.svg</file>
+        <file>icons/XRay_ObjectAdd.svg</file>
         <file>ui/TaskPanel_xrayCreate.ui</file>
+        <file>ui/TaskPanel_xrayAddObject.ui</file>
     </qresource>
 </RCC>

@@ -175,11 +175,11 @@ def add_xray_props(obj):
 class XRay:
     def __init__(self, obj, min_energy, max_energy, spectrum, samples,
                  emitter_type, radius, height, distance, res_x, res_y):
-        """ Transform a generic object to a ship instance.
+        """Create a X-Ray machine instance.
 
         Keyword arguments:
         obj -- Part::FeaturePython created object which should be transformed
-        in a ship instance.
+        in a X-Ray machine instance.
         min_energy -- Minimum considered energy in the spectrum
         max_energy -- Maximum considered energy in the spectrum
         spectrum -- Renormalize light intensity spectrum

@@ -37,7 +37,7 @@ class XRayWorkbench(Gui.Workbench):
     def Initialize(self):
         from PySide import QtCore, QtGui
 
-        cmdlist = ["XRay_Create"]
+        cmdlist = ["XRay_Create", "XRay_AddObject"]
 
         self.appendToolbar(
             str(QtCore.QT_TRANSLATE_NOOP("XRay", "XRay")),

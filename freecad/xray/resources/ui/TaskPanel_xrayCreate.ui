@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Create Ship</string>
+   <string>Create X-Ray machine</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
    <item row="0" column="0">
@@ -277,7 +277,7 @@
       <item row="3" column="0">
        <widget class="QGroupBox" name="freq_n_group">
         <property name="toolTip">
-         <string>The number of samples to take fro the spectrum. Each 3 samples requires rendering a whole new image for each projection. Thus the larger the number of samples, the longer would it take to compute. Increasing the number of samples would be very beneficial in the presence of metals.</string>
+         <string>The number of samples to take fro the spectrum. The number of images per projection to be rendered is equal to the number of samples divided by 3. Thus the larger the number of samples, the longer would it take to compute. Increasing the number of samples would be very beneficial in the presence of metals.</string>
         </property>
         <property name="flat">
          <bool>true</bool>
@@ -325,21 +325,11 @@
          <item>
           <widget class="QComboBox" name="projection">
            <property name="toolTip">
-            <string>There are 3 main types of emitters: Parallel beams, which is well suited for radiographies or old-school CTs. Helical fan, widely used for medical ct. And Cone beam, used for fast/low-radiation scans</string>
+            <string>For the time being just Parallel beams (radiographies and old-school CTs) is implemented</string>
            </property>
            <item>
             <property name="text">
              <string>Parallel beams</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Helical fan</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Cone beam</string>
             </property>
            </item>
           </widget>
