@@ -2,7 +2,7 @@
 
 # Resource object code
 #
-# Created: ons nov. 17 18:40:39 2021
+# Created: tors nov. 18 10:02:56 2021
 #      by: The Resource Compiler for PySide2 (Qt v5.15.2)
 #
 # WARNING! All changes made in this file will be lost!
@@ -10,6 +10,1259 @@
 from PySide2 import QtCore
 
 qt_resource_data = b"\
+\x00\x008\xfe\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<ui versio\
+n=\x224.0\x22>\x0a <class\
+>TaskPanel</clas\
+s>\x0a <widget clas\
+s=\x22QWidget\x22 name\
+=\x22TaskPanel\x22>\x0a  \
+<property name=\x22\
+geometry\x22>\x0a   <r\
+ect>\x0a    <x>0</x\
+>\x0a    <y>0</y>\x0a \
+   <width>558</w\
+idth>\x0a    <heigh\
+t>640</height>\x0a \
+  </rect>\x0a  </pr\
+operty>\x0a  <prope\
+rty name=\x22sizePo\
+licy\x22>\x0a   <sizep\
+olicy hsizetype=\
+\x22Preferred\x22 vsiz\
+etype=\x22Expanding\
+\x22>\x0a    <horstret\
+ch>0</horstretch\
+>\x0a    <verstretc\
+h>0</verstretch>\
+\x0a   </sizepolicy\
+>\x0a  </property>\x0a\
+  <property name\
+=\x22minimumSize\x22>\x0a\
+   <size>\x0a    <w\
+idth>250</width>\
+\x0a    <height>640\
+</height>\x0a   </s\
+ize>\x0a  </propert\
+y>\x0a  <property n\
+ame=\x22windowTitle\
+\x22>\x0a   <string>Cr\
+eate X-Ray machi\
+ne</string>\x0a  </\
+property>\x0a  <lay\
+out class=\x22QGrid\
+Layout\x22 name=\x22gr\
+idLayout_3\x22>\x0a   \
+<item row=\x220\x22 co\
+lumn=\x220\x22>\x0a    <w\
+idget class=\x22QGr\
+oupBox\x22 name=\x22em\
+itter_group\x22>\x0a  \
+   <property nam\
+e=\x22toolTip\x22>\x0a   \
+   <string>The X\
+-Ray emitter opt\
+ions, including \
+the power spectr\
+um (which is ren\
+ormalized, so do\
+ not worry about\
+ the units) and \
+the bulb size.</\
+string>\x0a     </p\
+roperty>\x0a     <p\
+roperty name=\x22ti\
+tle\x22>\x0a      <str\
+ing>XRay emitter\
+</string>\x0a     <\
+/property>\x0a     \
+<layout class=\x22Q\
+GridLayout\x22 name\
+=\x22gridLayout_2\x22>\
+\x0a      <item row\
+=\x220\x22 column=\x220\x22>\
+\x0a       <widget \
+class=\x22QGroupBox\
+\x22 name=\x22freqs_gr\
+oup\x22>\x0a        <p\
+roperty name=\x22fl\
+at\x22>\x0a         <b\
+ool>true</bool>\x0a\
+        </proper\
+ty>\x0a        <lay\
+out class=\x22QHBox\
+Layout\x22 name=\x22ho\
+rizontalLayout\x22>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QLineE\
+dit\x22 name=\x22min_f\
+req\x22>\x0a          \
+ <property name=\
+\x22text\x22>\x0a        \
+    <string notr\
+=\x22true\x22>1 keV</s\
+tring>\x0a         \
+  </property>\x0a  \
+         <proper\
+ty name=\x22unit\x22 s\
+tdset=\x220\x22>\x0a     \
+       <string n\
+otr=\x22true\x22>eV</s\
+tring>\x0a         \
+  </property>\x0a  \
+         <proper\
+ty name=\x22quantit\
+y\x22 stdset=\x220\x22>\x0a \
+           <doub\
+le>1.00000000000\
+0000</double>\x0a  \
+         </prope\
+rty>\x0a          <\
+/widget>\x0a       \
+  </item>\x0a      \
+   <item>\x0a      \
+    <widget clas\
+s=\x22QLabel\x22 name=\
+\x22sep_freq\x22>\x0a    \
+       <property\
+ name=\x22text\x22>\x0a  \
+          <strin\
+g notr=\x22true\x22>-<\
+/string>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QL\
+ineEdit\x22 name=\x22m\
+ax_freq\x22>\x0a      \
+     <property n\
+ame=\x22text\x22>\x0a    \
+        <string \
+notr=\x22true\x22>10 k\
+eV</string>\x0a    \
+       </propert\
+y>\x0a           <p\
+roperty name=\x22un\
+it\x22 stdset=\x220\x22>\x0a\
+            <str\
+ing notr=\x22true\x22>\
+eV</string>\x0a    \
+       </propert\
+y>\x0a           <p\
+roperty name=\x22qu\
+antity\x22 stdset=\x22\
+0\x22>\x0a            \
+<double>1.000000\
+000000000</doubl\
+e>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+       </layout>\
+\x0a       </widget\
+>\x0a      </item>\x0a\
+      <item row=\
+\x222\x22 column=\x220\x22>\x0a\
+       <widget c\
+lass=\x22QGroupBox\x22\
+ name=\x22preset_gr\
+oup\x22>\x0a        <p\
+roperty name=\x22fl\
+at\x22>\x0a         <b\
+ool>true</bool>\x0a\
+        </proper\
+ty>\x0a        <lay\
+out class=\x22QHBox\
+Layout\x22 name=\x22ho\
+rizontalLayout_2\
+\x22>\x0a         <ite\
+m>\x0a          <wi\
+dget class=\x22QLab\
+el\x22 name=\x22preset\
+_label\x22>\x0a       \
+    <property na\
+me=\x22text\x22>\x0a     \
+       <string>L\
+oad preset</stri\
+ng>\x0a           <\
+/property>\x0a     \
+     </widget>\x0a \
+        </item>\x0a\
+         <item>\x0a\
+          <widge\
+t class=\x22QComboB\
+ox\x22 name=\x22preset\
+\x22>\x0a           <p\
+roperty name=\x22cu\
+rrentIndex\x22>\x0a   \
+         <number\
+>0</number>\x0a    \
+       </propert\
+y>\x0a           <i\
+tem>\x0a           \
+ <property name=\
+\x22text\x22>\x0a        \
+     <string>Med\
+ical shoft X-Ray\
+s</string>\x0a     \
+       </propert\
+y>\x0a           </\
+item>\x0a          \
+ <item>\x0a        \
+    <property na\
+me=\x22text\x22>\x0a     \
+        <string>\
+Crystallography<\
+/string>\x0a       \
+     </property>\
+\x0a           </it\
+em>\x0a           <\
+item>\x0a          \
+  <property name\
+=\x22text\x22>\x0a       \
+      <string>Me\
+dical hard X-Ray\
+s</string>\x0a     \
+       </propert\
+y>\x0a           </\
+item>\x0a          \
+ <item>\x0a        \
+    <property na\
+me=\x22text\x22>\x0a     \
+        <string>\
+Airport security\
+</string>\x0a      \
+      </property\
+>\x0a           </i\
+tem>\x0a           \
+<item>\x0a         \
+   <property nam\
+e=\x22text\x22>\x0a      \
+       <string>M\
+etallography</st\
+ring>\x0a          \
+  </property>\x0a  \
+         </item>\
+\x0a          </wid\
+get>\x0a         </\
+item>\x0a        </\
+layout>\x0a       <\
+/widget>\x0a      <\
+/item>\x0a      <it\
+em row=\x221\x22 colum\
+n=\x220\x22>\x0a       <w\
+idget class=\x22QGr\
+oupBox\x22 name=\x22sp\
+ectrum_group\x22>\x0a \
+       <property\
+ name=\x22flat\x22>\x0a  \
+       <bool>tru\
+e</bool>\x0a       \
+ </property>\x0a   \
+     <layout cla\
+ss=\x22QHBoxLayout\x22\
+ name=\x22power_gro\
+up\x22>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QS\
+lider\x22 name=\x22spe\
+ctrum_01\x22>\x0a     \
+      <property \
+name=\x22orientatio\
+n\x22>\x0a            \
+<enum>Qt::Vertic\
+al</enum>\x0a      \
+     </property>\
+\x0a          </wid\
+get>\x0a         </\
+item>\x0a         <\
+item>\x0a          \
+<widget class=\x22Q\
+Slider\x22 name=\x22sp\
+ectrum_02\x22>\x0a    \
+       <property\
+ name=\x22orientati\
+on\x22>\x0a           \
+ <enum>Qt::Verti\
+cal</enum>\x0a     \
+      </property\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a         \
+<item>\x0a         \
+ <widget class=\x22\
+QSlider\x22 name=\x22s\
+pectrum_03\x22>\x0a   \
+        <propert\
+y name=\x22orientat\
+ion\x22>\x0a          \
+  <enum>Qt::Vert\
+ical</enum>\x0a    \
+       </propert\
+y>\x0a          </w\
+idget>\x0a         \
+</item>\x0a        \
+ <item>\x0a        \
+  <widget class=\
+\x22QSlider\x22 name=\x22\
+spectrum_04\x22>\x0a  \
+         <proper\
+ty name=\x22orienta\
+tion\x22>\x0a         \
+   <enum>Qt::Ver\
+tical</enum>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+  <item>\x0a       \
+   <widget class\
+=\x22QSlider\x22 name=\
+\x22spectrum_05\x22>\x0a \
+          <prope\
+rty name=\x22orient\
+ation\x22>\x0a        \
+    <enum>Qt::Ve\
+rtical</enum>\x0a  \
+         </prope\
+rty>\x0a          <\
+/widget>\x0a       \
+  </item>\x0a      \
+   <item>\x0a      \
+    <widget clas\
+s=\x22QSlider\x22 name\
+=\x22spectrum_06\x22>\x0a\
+           <prop\
+erty name=\x22orien\
+tation\x22>\x0a       \
+     <enum>Qt::V\
+ertical</enum>\x0a \
+          </prop\
+erty>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+    <item>\x0a     \
+     <widget cla\
+ss=\x22QSlider\x22 nam\
+e=\x22spectrum_07\x22>\
+\x0a           <pro\
+perty name=\x22orie\
+ntation\x22>\x0a      \
+      <enum>Qt::\
+Vertical</enum>\x0a\
+           </pro\
+perty>\x0a         \
+ </widget>\x0a     \
+    </item>\x0a    \
+     <item>\x0a    \
+      <widget cl\
+ass=\x22QSlider\x22 na\
+me=\x22spectrum_08\x22\
+>\x0a           <pr\
+operty name=\x22ori\
+entation\x22>\x0a     \
+       <enum>Qt:\
+:Vertical</enum>\
+\x0a           </pr\
+operty>\x0a        \
+  </widget>\x0a    \
+     </item>\x0a   \
+      <item>\x0a   \
+       <widget c\
+lass=\x22QSlider\x22 n\
+ame=\x22spectrum_09\
+\x22>\x0a           <p\
+roperty name=\x22or\
+ientation\x22>\x0a    \
+        <enum>Qt\
+::Vertical</enum\
+>\x0a           </p\
+roperty>\x0a       \
+   </widget>\x0a   \
+      </item>\x0a  \
+       <item>\x0a  \
+        <widget \
+class=\x22QSlider\x22 \
+name=\x22spectrum_1\
+0\x22>\x0a           <\
+property name=\x22o\
+rientation\x22>\x0a   \
+         <enum>Q\
+t::Vertical</enu\
+m>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+        <item>\x0a \
+         <widget\
+ class=\x22QSlider\x22\
+ name=\x22spectrum_\
+11\x22>\x0a           \
+<property name=\x22\
+orientation\x22>\x0a  \
+          <enum>\
+Qt::Vertical</en\
+um>\x0a           <\
+/property>\x0a     \
+     </widget>\x0a \
+        </item>\x0a\
+         <item>\x0a\
+          <widge\
+t class=\x22QSlider\
+\x22 name=\x22spectrum\
+_12\x22>\x0a          \
+ <property name=\
+\x22orientation\x22>\x0a \
+           <enum\
+>Qt::Vertical</e\
+num>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QSlide\
+r\x22 name=\x22spectru\
+m_13\x22>\x0a         \
+  <property name\
+=\x22orientation\x22>\x0a\
+            <enu\
+m>Qt::Vertical</\
+enum>\x0a          \
+ </property>\x0a   \
+       </widget>\
+\x0a         </item\
+>\x0a         <item\
+>\x0a          <wid\
+get class=\x22QSlid\
+er\x22 name=\x22spectr\
+um_14\x22>\x0a        \
+   <property nam\
+e=\x22orientation\x22>\
+\x0a            <en\
+um>Qt::Vertical<\
+/enum>\x0a         \
+  </property>\x0a  \
+        </widget\
+>\x0a         </ite\
+m>\x0a         <ite\
+m>\x0a          <wi\
+dget class=\x22QSli\
+der\x22 name=\x22spect\
+rum_15\x22>\x0a       \
+    <property na\
+me=\x22orientation\x22\
+>\x0a            <e\
+num>Qt::Vertical\
+</enum>\x0a        \
+   </property>\x0a \
+         </widge\
+t>\x0a         </it\
+em>\x0a         <it\
+em>\x0a          <w\
+idget class=\x22QSl\
+ider\x22 name=\x22spec\
+trum_16\x22>\x0a      \
+     <property n\
+ame=\x22orientation\
+\x22>\x0a            <\
+enum>Qt::Vertica\
+l</enum>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QS\
+lider\x22 name=\x22spe\
+ctrum_17\x22>\x0a     \
+      <property \
+name=\x22orientatio\
+n\x22>\x0a            \
+<enum>Qt::Vertic\
+al</enum>\x0a      \
+     </property>\
+\x0a          </wid\
+get>\x0a         </\
+item>\x0a         <\
+item>\x0a          \
+<widget class=\x22Q\
+Slider\x22 name=\x22sp\
+ectrum_18\x22>\x0a    \
+       <property\
+ name=\x22orientati\
+on\x22>\x0a           \
+ <enum>Qt::Verti\
+cal</enum>\x0a     \
+      </property\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a         \
+<item>\x0a         \
+ <widget class=\x22\
+QSlider\x22 name=\x22s\
+pectrum_19\x22>\x0a   \
+        <propert\
+y name=\x22orientat\
+ion\x22>\x0a          \
+  <enum>Qt::Vert\
+ical</enum>\x0a    \
+       </propert\
+y>\x0a          </w\
+idget>\x0a         \
+</item>\x0a        \
+ <item>\x0a        \
+  <widget class=\
+\x22QSlider\x22 name=\x22\
+spectrum_20\x22>\x0a  \
+         <proper\
+ty name=\x22orienta\
+tion\x22>\x0a         \
+   <enum>Qt::Ver\
+tical</enum>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+ </layout>\x0a     \
+  </widget>\x0a    \
+  </item>\x0a      \
+<item row=\x223\x22 co\
+lumn=\x220\x22>\x0a      \
+ <widget class=\x22\
+QGroupBox\x22 name=\
+\x22freq_n_group\x22>\x0a\
+        <propert\
+y name=\x22toolTip\x22\
+>\x0a         <stri\
+ng>The number of\
+ samples to take\
+ fro the spectru\
+m. The number of\
+ images per proj\
+ection to be ren\
+dered is equal t\
+o the number of \
+samples divided \
+by 3. Thus the l\
+arger the number\
+ of samples, the\
+ longer would it\
+ take to compute\
+. Increasing the\
+ number of sampl\
+es would be very\
+ beneficial in t\
+he presence of m\
+etals.</string>\x0a\
+        </proper\
+ty>\x0a        <pro\
+perty name=\x22flat\
+\x22>\x0a         <boo\
+l>true</bool>\x0a  \
+      </property\
+>\x0a        <layou\
+t class=\x22QHBoxLa\
+yout\x22 name=\x22hori\
+zontalLayout_3\x22>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QLabel\
+\x22 name=\x22freqs_n_\
+label\x22>\x0a        \
+   <property nam\
+e=\x22text\x22>\x0a      \
+      <string>Nu\
+mber of freq. sa\
+mples</string>\x0a \
+          </prop\
+erty>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+    <item>\x0a     \
+     <widget cla\
+ss=\x22QSpinBox\x22 na\
+me=\x22freqs_n\x22>\x0a  \
+         <proper\
+ty name=\x22minimum\
+\x22>\x0a            <\
+number>3</number\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22maximum\x22>\x0a  \
+          <numbe\
+r>21</number>\x0a  \
+         </prope\
+rty>\x0a           \
+<property name=\x22\
+singleStep\x22>\x0a   \
+         <number\
+>3</number>\x0a    \
+       </propert\
+y>\x0a           <p\
+roperty name=\x22va\
+lue\x22>\x0a          \
+  <number>3</num\
+ber>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a        </layou\
+t>\x0a       </widg\
+et>\x0a      </item\
+>\x0a      <item ro\
+w=\x224\x22 column=\x220\x22\
+>\x0a       <widget\
+ class=\x22QGroupBo\
+x\x22 name=\x22project\
+ion_type_group\x22>\
+\x0a        <proper\
+ty name=\x22flat\x22>\x0a\
+         <bool>t\
+rue</bool>\x0a     \
+   </property>\x0a \
+       <layout c\
+lass=\x22QHBoxLayou\
+t\x22 name=\x22horizon\
+talLayout_4\x22>\x0a  \
+       <item>\x0a  \
+        <widget \
+class=\x22QLabel\x22 n\
+ame=\x22projection_\
+label\x22>\x0a        \
+   <property nam\
+e=\x22text\x22>\x0a      \
+      <string>Em\
+itter type</stri\
+ng>\x0a           <\
+/property>\x0a     \
+     </widget>\x0a \
+        </item>\x0a\
+         <item>\x0a\
+          <widge\
+t class=\x22QComboB\
+ox\x22 name=\x22projec\
+tion\x22>\x0a         \
+  <property name\
+=\x22toolTip\x22>\x0a    \
+        <string>\
+For the time bei\
+ng just Parallel\
+ beams (radiogra\
+phies and old-sc\
+hool CTs) is imp\
+lemented</string\
+>\x0a           </p\
+roperty>\x0a       \
+    <item>\x0a     \
+       <property\
+ name=\x22text\x22>\x0a  \
+           <stri\
+ng>Parallel beam\
+s</string>\x0a     \
+       </propert\
+y>\x0a           </\
+item>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+   </layout>\x0a   \
+    </widget>\x0a  \
+    </item>\x0a    \
+ </layout>\x0a    <\
+/widget>\x0a   </it\
+em>\x0a   <item row\
+=\x221\x22 column=\x220\x22>\
+\x0a    <widget cla\
+ss=\x22QGroupBox\x22 n\
+ame=\x22chamber_gro\
+up\x22>\x0a     <prope\
+rty name=\x22toolTi\
+p\x22>\x0a      <strin\
+g>The scanning c\
+hamber dimension\
+s. At first glan\
+ce just the obje\
+cts fitting insi\
+de will be corre\
+ctly scanned. Ho\
+wever, in some c\
+ases it should b\
+e accepted that \
+the scanning bod\
+y is larger than\
+ the area covere\
+d by the X-Rays,\
+ that would be t\
+he case in synch\
+rotron-based rad\
+iation.</string>\
+\x0a     </property\
+>\x0a     <layout c\
+lass=\x22QGridLayou\
+t\x22 name=\x22gridLay\
+out\x22>\x0a      <ite\
+m row=\x220\x22 column\
+=\x220\x22>\x0a       <wi\
+dget class=\x22QLab\
+el\x22 name=\x22radius\
+_label\x22>\x0a       \
+ <property name=\
+\x22text\x22>\x0a        \
+ <string>radius<\
+/string>\x0a       \
+ </property>\x0a   \
+    </widget>\x0a  \
+    </item>\x0a    \
+  <item row=\x221\x22 \
+column=\x220\x22>\x0a    \
+   <widget class\
+=\x22QLabel\x22 name=\x22\
+height_label\x22>\x0a \
+       <property\
+ name=\x22text\x22>\x0a  \
+       <string>h\
+eight</string>\x0a \
+       </propert\
+y>\x0a       </widg\
+et>\x0a      </item\
+>\x0a      <item ro\
+w=\x220\x22 column=\x222\x22\
+>\x0a       <widget\
+ class=\x22QLineEdi\
+t\x22 name=\x22radius\x22\
+>\x0a        <prope\
+rty name=\x22text\x22>\
+\x0a         <strin\
+g notr=\x22true\x22>1 \
+m</string>\x0a     \
+   </property>\x0a \
+       <property\
+ name=\x22unit\x22 std\
+set=\x220\x22>\x0a       \
+  <string notr=\x22\
+true\x22>m</string>\
+\x0a        </prope\
+rty>\x0a        <pr\
+operty name=\x22qua\
+ntity\x22 stdset=\x220\
+\x22>\x0a         <dou\
+ble>1.0000000000\
+00000</double>\x0a \
+       </propert\
+y>\x0a       </widg\
+et>\x0a      </item\
+>\x0a      <item ro\
+w=\x221\x22 column=\x222\x22\
+>\x0a       <widget\
+ class=\x22QLineEdi\
+t\x22 name=\x22height\x22\
+>\x0a        <prope\
+rty name=\x22text\x22>\
+\x0a         <strin\
+g notr=\x22true\x22>1 \
+m</string>\x0a     \
+   </property>\x0a \
+       <property\
+ name=\x22unit\x22 std\
+set=\x220\x22>\x0a       \
+  <string notr=\x22\
+true\x22>m</string>\
+\x0a        </prope\
+rty>\x0a        <pr\
+operty name=\x22qua\
+ntity\x22 stdset=\x220\
+\x22>\x0a         <dou\
+ble>1.0000000000\
+00000</double>\x0a \
+       </propert\
+y>\x0a       </widg\
+et>\x0a      </item\
+>\x0a      <item ro\
+w=\x222\x22 column=\x220\x22\
+>\x0a       <widget\
+ class=\x22QLabel\x22 \
+name=\x22distance_l\
+abel\x22>\x0a        <\
+property name=\x22t\
+ext\x22>\x0a         <\
+string>distance<\
+/string>\x0a       \
+ </property>\x0a   \
+    </widget>\x0a  \
+    </item>\x0a    \
+  <item row=\x222\x22 \
+column=\x222\x22>\x0a    \
+   <widget class\
+=\x22QLineEdit\x22 nam\
+e=\x22distance\x22>\x0a  \
+      <property \
+name=\x22text\x22>\x0a   \
+      <string no\
+tr=\x22true\x22>10 m</\
+string>\x0a        \
+</property>\x0a    \
+    <property na\
+me=\x22unit\x22 stdset\
+=\x220\x22>\x0a         <\
+string notr=\x22tru\
+e\x22>m</string>\x0a  \
+      </property\
+>\x0a        <prope\
+rty name=\x22quanti\
+ty\x22 stdset=\x220\x22>\x0a\
+         <double\
+>10.000000000000\
+000</double>\x0a   \
+     </property>\
+\x0a       </widget\
+>\x0a      </item>\x0a\
+     </layout>\x0a \
+   </widget>\x0a   \
+</item>\x0a   <item\
+ row=\x222\x22 column=\
+\x220\x22>\x0a    <widget\
+ class=\x22QGroupBo\
+x\x22 name=\x22sensor_\
+group\x22>\x0a     <pr\
+operty name=\x22tit\
+le\x22>\x0a      <stri\
+ng>Sensor</strin\
+g>\x0a     </proper\
+ty>\x0a     <layout\
+ class=\x22QGridLay\
+out\x22 name=\x22gridL\
+ayout_4\x22>\x0a      \
+<item row=\x220\x22 co\
+lumn=\x220\x22>\x0a      \
+ <widget class=\x22\
+QGroupBox\x22 name=\
+\x22resolution_grou\
+p\x22>\x0a        <pro\
+perty name=\x22flat\
+\x22>\x0a         <boo\
+l>true</bool>\x0a  \
+      </property\
+>\x0a        <layou\
+t class=\x22QHBoxLa\
+yout\x22 name=\x22hori\
+zontalLayout_5\x22>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QLabel\
+\x22 name=\x22resoluti\
+on_label\x22>\x0a     \
+      <property \
+name=\x22text\x22>\x0a   \
+         <string\
+>Resolution</str\
+ing>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QSpinB\
+ox\x22 name=\x22resolu\
+tion_x\x22>\x0a       \
+    <property na\
+me=\x22minimum\x22>\x0a  \
+          <numbe\
+r>16</number>\x0a  \
+         </prope\
+rty>\x0a           \
+<property name=\x22\
+maximum\x22>\x0a      \
+      <number>32\
+768</number>\x0a   \
+        </proper\
+ty>\x0a           <\
+property name=\x22v\
+alue\x22>\x0a         \
+   <number>1024<\
+/number>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QS\
+pinBox\x22 name=\x22re\
+solution_y\x22>\x0a   \
+        <propert\
+y name=\x22minimum\x22\
+>\x0a            <n\
+umber>16</number\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22maximum\x22>\x0a  \
+          <numbe\
+r>32768</number>\
+\x0a           </pr\
+operty>\x0a        \
+   <property nam\
+e=\x22value\x22>\x0a     \
+       <number>1\
+024</number>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+ </layout>\x0a     \
+  </widget>\x0a    \
+  </item>\x0a     <\
+/layout>\x0a    </w\
+idget>\x0a   </item\
+>\x0a  </layout>\x0a <\
+/widget>\x0a <resou\
+rces/>\x0a <connect\
+ions/>\x0a</ui>\x0a\
+\x00\x00\x15\x0d\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<ui versio\
+n=\x224.0\x22>\x0a <class\
+>TaskPanel</clas\
+s>\x0a <widget clas\
+s=\x22QWidget\x22 name\
+=\x22TaskPanel\x22>\x0a  \
+<property name=\x22\
+geometry\x22>\x0a   <r\
+ect>\x0a    <x>0</x\
+>\x0a    <y>0</y>\x0a \
+   <width>380</w\
+idth>\x0a    <heigh\
+t>500</height>\x0a \
+  </rect>\x0a  </pr\
+operty>\x0a  <prope\
+rty name=\x22sizePo\
+licy\x22>\x0a   <sizep\
+olicy hsizetype=\
+\x22Preferred\x22 vsiz\
+etype=\x22Expanding\
+\x22>\x0a    <horstret\
+ch>0</horstretch\
+>\x0a    <verstretc\
+h>0</verstretch>\
+\x0a   </sizepolicy\
+>\x0a  </property>\x0a\
+  <property name\
+=\x22minimumSize\x22>\x0a\
+   <size>\x0a    <w\
+idth>380</width>\
+\x0a    <height>500\
+</height>\x0a   </s\
+ize>\x0a  </propert\
+y>\x0a  <property n\
+ame=\x22windowTitle\
+\x22>\x0a   <string>Ad\
+d object</string\
+>\x0a  </property>\x0a\
+  <layout class=\
+\x22QGridLayout\x22 na\
+me=\x22gridLayout_3\
+\x22>\x0a   <item row=\
+\x221\x22 column=\x220\x22>\x0a\
+    <widget clas\
+s=\x22QGroupBox\x22 na\
+me=\x22props_group\x22\
+>\x0a     <property\
+ name=\x22toolTip\x22>\
+\x0a      <string>T\
+he object physic\
+al properties</s\
+tring>\x0a     </pr\
+operty>\x0a     <pr\
+operty name=\x22tit\
+le\x22>\x0a      <stri\
+ng>Physical prop\
+erties</string>\x0a\
+     </property>\
+\x0a     <layout cl\
+ass=\x22QGridLayout\
+\x22 name=\x22gridLayo\
+ut_2\x22>\x0a      <it\
+em row=\x220\x22 colum\
+n=\x220\x22>\x0a       <w\
+idget class=\x22QGr\
+oupBox\x22 name=\x22hu\
+_group\x22>\x0a       \
+ <property name=\
+\x22flat\x22>\x0a        \
+ <bool>true</boo\
+l>\x0a        </pro\
+perty>\x0a        <\
+layout class=\x22QH\
+BoxLayout\x22 name=\
+\x22horizontalLayou\
+t\x22>\x0a         <it\
+em>\x0a          <w\
+idget class=\x22QTa\
+bleWidget\x22 name=\
+\x22attenuations\x22>\x0a\
+           <prop\
+erty name=\x22rowCo\
+unt\x22>\x0a          \
+  <number>0</num\
+ber>\x0a           \
+</property>\x0a    \
+       <property\
+ name=\x22columnCou\
+nt\x22>\x0a           \
+ <number>2</numb\
+er>\x0a           <\
+/property>\x0a     \
+      <attribute\
+ name=\x22horizonta\
+lHeaderCascading\
+SectionResizes\x22>\
+\x0a            <bo\
+ol>false</bool>\x0a\
+           </att\
+ribute>\x0a        \
+   <attribute na\
+me=\x22horizontalHe\
+aderStretchLastS\
+ection\x22>\x0a       \
+     <bool>true<\
+/bool>\x0a         \
+  </attribute>\x0a \
+          <colum\
+n>\x0a            <\
+property name=\x22t\
+ext\x22>\x0a          \
+   <string>Energ\
+y</string>\x0a     \
+       </propert\
+y>\x0a           </\
+column>\x0a        \
+   <column>\x0a    \
+        <propert\
+y name=\x22text\x22>\x0a \
+            <str\
+ing>Mass attenut\
+ion</string>\x0a   \
+         </prope\
+rty>\x0a           \
+</column>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+        <item>\x0a \
+         <widget\
+ class=\x22QGroupBo\
+x\x22 name=\x22table_e\
+dit_group\x22>\x0a    \
+       <property\
+ name=\x22flat\x22>\x0a  \
+          <bool>\
+true</bool>\x0a    \
+       </propert\
+y>\x0a           <l\
+ayout class=\x22QVB\
+oxLayout\x22 name=\x22\
+verticalLayout\x22>\
+\x0a            <it\
+em>\x0a            \
+ <widget class=\x22\
+QPushButton\x22 nam\
+e=\x22add_row\x22>\x0a   \
+           <prop\
+erty name=\x22maxim\
+umSize\x22>\x0a       \
+        <size>\x0a \
+               <\
+width>32</width>\
+\x0a               \
+ <height>32</hei\
+ght>\x0a           \
+    </size>\x0a    \
+          </prop\
+erty>\x0a          \
+    <property na\
+me=\x22text\x22>\x0a     \
+          <strin\
+g notr=\x22true\x22>+<\
+/string>\x0a       \
+       </propert\
+y>\x0a             \
+</widget>\x0a      \
+      </item>\x0a  \
+          <item>\
+\x0a             <w\
+idget class=\x22QPu\
+shButton\x22 name=\x22\
+del_row\x22>\x0a      \
+        <propert\
+y name=\x22maximumS\
+ize\x22>\x0a          \
+     <size>\x0a    \
+            <wid\
+th>32</width>\x0a  \
+              <h\
+eight>32</height\
+>\x0a              \
+ </size>\x0a       \
+       </propert\
+y>\x0a             \
+ <property name=\
+\x22text\x22>\x0a        \
+       <string n\
+otr=\x22true\x22>-</st\
+ring>\x0a          \
+    </property>\x0a\
+             </w\
+idget>\x0a         \
+   </item>\x0a     \
+      </layout>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a        </l\
+ayout>\x0a       </\
+widget>\x0a      </\
+item>\x0a      <ite\
+m row=\x222\x22 column\
+=\x220\x22>\x0a       <wi\
+dget class=\x22QGro\
+upBox\x22 name=\x22pre\
+set_group\x22>\x0a    \
+    <property na\
+me=\x22flat\x22>\x0a     \
+    <bool>true</\
+bool>\x0a        </\
+property>\x0a      \
+  <layout class=\
+\x22QHBoxLayout\x22 na\
+me=\x22horizontalLa\
+yout_2\x22>\x0a       \
+  <item>\x0a       \
+   <widget class\
+=\x22QLabel\x22 name=\x22\
+preset_label\x22>\x0a \
+          <prope\
+rty name=\x22text\x22>\
+\x0a            <st\
+ring>Load preset\
+</string>\x0a      \
+     </property>\
+\x0a          </wid\
+get>\x0a         </\
+item>\x0a         <\
+item>\x0a          \
+<widget class=\x22Q\
+ComboBox\x22 name=\x22\
+preset\x22>\x0a       \
+    <property na\
+me=\x22currentIndex\
+\x22>\x0a            <\
+number>-1</numbe\
+r>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+       </layout>\
+\x0a       </widget\
+>\x0a      </item>\x0a\
+      <item row=\
+\x221\x22 column=\x220\x22>\x0a\
+       <widget c\
+lass=\x22QGroupBox\x22\
+ name=\x22dens_grou\
+p\x22>\x0a        <pro\
+perty name=\x22flat\
+\x22>\x0a         <boo\
+l>true</bool>\x0a  \
+      </property\
+>\x0a        <layou\
+t class=\x22QHBoxLa\
+yout\x22 name=\x22dens\
+_group_kk\x22>\x0a    \
+     <item>\x0a    \
+      <widget cl\
+ass=\x22QLabel\x22 nam\
+e=\x22dens_label\x22>\x0a\
+           <prop\
+erty name=\x22text\x22\
+>\x0a            <s\
+tring>Density</s\
+tring>\x0a         \
+  </property>\x0a  \
+        </widget\
+>\x0a         </ite\
+m>\x0a         <ite\
+m>\x0a          <wi\
+dget class=\x22QLin\
+eEdit\x22 name=\x22den\
+s\x22>\x0a           <\
+property name=\x22t\
+ext\x22>\x0a          \
+  <string notr=\x22\
+true\x22>968 kg/m^3\
+</string>\x0a      \
+     </property>\
+\x0a           <pro\
+perty name=\x22unit\
+\x22 stdset=\x220\x22>\x0a  \
+          <strin\
+g notr=\x22true\x22>kg\
+/m^3</string>\x0a  \
+         </prope\
+rty>\x0a           \
+<property name=\x22\
+quantity\x22 stdset\
+=\x220\x22>\x0a          \
+  <double>968.00\
+0000000000000</d\
+ouble>\x0a         \
+  </property>\x0a  \
+        </widget\
+>\x0a         </ite\
+m>\x0a        </lay\
+out>\x0a       </wi\
+dget>\x0a      </it\
+em>\x0a     </layou\
+t>\x0a    </widget>\
+\x0a   </item>\x0a   <\
+item row=\x220\x22 col\
+umn=\x220\x22>\x0a    <wi\
+dget class=\x22QGro\
+upBox\x22 name=\x22xra\
+y_group\x22>\x0a     <\
+layout class=\x22QG\
+ridLayout\x22 name=\
+\x22xray_group_kk\x22>\
+\x0a      <item row\
+=\x220\x22 column=\x221\x22>\
+\x0a       <widget \
+class=\x22QComboBox\
+\x22 name=\x22xray\x22/>\x0a\
+      </item>\x0a  \
+    <item row=\x220\
+\x22 column=\x220\x22>\x0a  \
+     <widget cla\
+ss=\x22QLabel\x22 name\
+=\x22xray_label\x22>\x0a \
+       <property\
+ name=\x22text\x22>\x0a  \
+       <string>X\
+-Ray machine</st\
+ring>\x0a        </\
+property>\x0a      \
+ </widget>\x0a     \
+ </item>\x0a     </\
+layout>\x0a    </wi\
+dget>\x0a   </item>\
+\x0a  </layout>\x0a </\
+widget>\x0a <resour\
+ces/>\x0a <connecti\
+ons/>\x0a</ui>\x0a\
 \x00\x00\x8a\xb1\
 <\
 ?xml version=\x221.\
@@ -5131,1241 +6384,27 @@ di:nodetypes=\x22ss\
 ssss\x22 />\x0a      <\
 /g>\x0a    </g>\x0a  <\
 /g>\x0a</svg>\x0a\
-\x00\x008\xfe\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22UTF\
--8\x22?>\x0a<ui versio\
-n=\x224.0\x22>\x0a <class\
->TaskPanel</clas\
-s>\x0a <widget clas\
-s=\x22QWidget\x22 name\
-=\x22TaskPanel\x22>\x0a  \
-<property name=\x22\
-geometry\x22>\x0a   <r\
-ect>\x0a    <x>0</x\
->\x0a    <y>0</y>\x0a \
-   <width>558</w\
-idth>\x0a    <heigh\
-t>640</height>\x0a \
-  </rect>\x0a  </pr\
-operty>\x0a  <prope\
-rty name=\x22sizePo\
-licy\x22>\x0a   <sizep\
-olicy hsizetype=\
-\x22Preferred\x22 vsiz\
-etype=\x22Expanding\
-\x22>\x0a    <horstret\
-ch>0</horstretch\
->\x0a    <verstretc\
-h>0</verstretch>\
-\x0a   </sizepolicy\
->\x0a  </property>\x0a\
-  <property name\
-=\x22minimumSize\x22>\x0a\
-   <size>\x0a    <w\
-idth>250</width>\
-\x0a    <height>640\
-</height>\x0a   </s\
-ize>\x0a  </propert\
-y>\x0a  <property n\
-ame=\x22windowTitle\
-\x22>\x0a   <string>Cr\
-eate X-Ray machi\
-ne</string>\x0a  </\
-property>\x0a  <lay\
-out class=\x22QGrid\
-Layout\x22 name=\x22gr\
-idLayout_3\x22>\x0a   \
-<item row=\x220\x22 co\
-lumn=\x220\x22>\x0a    <w\
-idget class=\x22QGr\
-oupBox\x22 name=\x22em\
-itter_group\x22>\x0a  \
-   <property nam\
-e=\x22toolTip\x22>\x0a   \
-   <string>The X\
--Ray emitter opt\
-ions, including \
-the power spectr\
-um (which is ren\
-ormalized, so do\
- not worry about\
- the units) and \
-the bulb size.</\
-string>\x0a     </p\
-roperty>\x0a     <p\
-roperty name=\x22ti\
-tle\x22>\x0a      <str\
-ing>XRay emitter\
-</string>\x0a     <\
-/property>\x0a     \
-<layout class=\x22Q\
-GridLayout\x22 name\
-=\x22gridLayout_2\x22>\
-\x0a      <item row\
-=\x220\x22 column=\x220\x22>\
-\x0a       <widget \
-class=\x22QGroupBox\
-\x22 name=\x22freqs_gr\
-oup\x22>\x0a        <p\
-roperty name=\x22fl\
-at\x22>\x0a         <b\
-ool>true</bool>\x0a\
-        </proper\
-ty>\x0a        <lay\
-out class=\x22QHBox\
-Layout\x22 name=\x22ho\
-rizontalLayout\x22>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QLineE\
-dit\x22 name=\x22min_f\
-req\x22>\x0a          \
- <property name=\
-\x22text\x22>\x0a        \
-    <string notr\
-=\x22true\x22>1 keV</s\
-tring>\x0a         \
-  </property>\x0a  \
-         <proper\
-ty name=\x22unit\x22 s\
-tdset=\x220\x22>\x0a     \
-       <string n\
-otr=\x22true\x22>eV</s\
-tring>\x0a         \
-  </property>\x0a  \
-         <proper\
-ty name=\x22quantit\
-y\x22 stdset=\x220\x22>\x0a \
-           <doub\
-le>1.00000000000\
-0000</double>\x0a  \
-         </prope\
-rty>\x0a          <\
-/widget>\x0a       \
-  </item>\x0a      \
-   <item>\x0a      \
-    <widget clas\
-s=\x22QLabel\x22 name=\
-\x22sep_freq\x22>\x0a    \
-       <property\
- name=\x22text\x22>\x0a  \
-          <strin\
-g notr=\x22true\x22>-<\
-/string>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem>\x0a          <\
-widget class=\x22QL\
-ineEdit\x22 name=\x22m\
-ax_freq\x22>\x0a      \
-     <property n\
-ame=\x22text\x22>\x0a    \
-        <string \
-notr=\x22true\x22>10 k\
-eV</string>\x0a    \
-       </propert\
-y>\x0a           <p\
-roperty name=\x22un\
-it\x22 stdset=\x220\x22>\x0a\
-            <str\
-ing notr=\x22true\x22>\
-eV</string>\x0a    \
-       </propert\
-y>\x0a           <p\
-roperty name=\x22qu\
-antity\x22 stdset=\x22\
-0\x22>\x0a            \
-<double>1.000000\
-000000000</doubl\
-e>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-       </layout>\
-\x0a       </widget\
->\x0a      </item>\x0a\
-      <item row=\
-\x222\x22 column=\x220\x22>\x0a\
-       <widget c\
-lass=\x22QGroupBox\x22\
- name=\x22preset_gr\
-oup\x22>\x0a        <p\
-roperty name=\x22fl\
-at\x22>\x0a         <b\
-ool>true</bool>\x0a\
-        </proper\
-ty>\x0a        <lay\
-out class=\x22QHBox\
-Layout\x22 name=\x22ho\
-rizontalLayout_2\
-\x22>\x0a         <ite\
-m>\x0a          <wi\
-dget class=\x22QLab\
-el\x22 name=\x22preset\
-_label\x22>\x0a       \
-    <property na\
-me=\x22text\x22>\x0a     \
-       <string>L\
-oad preset</stri\
-ng>\x0a           <\
-/property>\x0a     \
-     </widget>\x0a \
-        </item>\x0a\
-         <item>\x0a\
-          <widge\
-t class=\x22QComboB\
-ox\x22 name=\x22preset\
-\x22>\x0a           <p\
-roperty name=\x22cu\
-rrentIndex\x22>\x0a   \
-         <number\
->0</number>\x0a    \
-       </propert\
-y>\x0a           <i\
-tem>\x0a           \
- <property name=\
-\x22text\x22>\x0a        \
-     <string>Med\
-ical shoft X-Ray\
-s</string>\x0a     \
-       </propert\
-y>\x0a           </\
-item>\x0a          \
- <item>\x0a        \
-    <property na\
-me=\x22text\x22>\x0a     \
-        <string>\
-Crystallography<\
-/string>\x0a       \
-     </property>\
-\x0a           </it\
-em>\x0a           <\
-item>\x0a          \
-  <property name\
-=\x22text\x22>\x0a       \
-      <string>Me\
-dical hard X-Ray\
-s</string>\x0a     \
-       </propert\
-y>\x0a           </\
-item>\x0a          \
- <item>\x0a        \
-    <property na\
-me=\x22text\x22>\x0a     \
-        <string>\
-Airport security\
-</string>\x0a      \
-      </property\
->\x0a           </i\
-tem>\x0a           \
-<item>\x0a         \
-   <property nam\
-e=\x22text\x22>\x0a      \
-       <string>M\
-etallography</st\
-ring>\x0a          \
-  </property>\x0a  \
-         </item>\
-\x0a          </wid\
-get>\x0a         </\
-item>\x0a        </\
-layout>\x0a       <\
-/widget>\x0a      <\
-/item>\x0a      <it\
-em row=\x221\x22 colum\
-n=\x220\x22>\x0a       <w\
-idget class=\x22QGr\
-oupBox\x22 name=\x22sp\
-ectrum_group\x22>\x0a \
-       <property\
- name=\x22flat\x22>\x0a  \
-       <bool>tru\
-e</bool>\x0a       \
- </property>\x0a   \
-     <layout cla\
-ss=\x22QHBoxLayout\x22\
- name=\x22power_gro\
-up\x22>\x0a         <i\
-tem>\x0a          <\
-widget class=\x22QS\
-lider\x22 name=\x22spe\
-ctrum_01\x22>\x0a     \
-      <property \
-name=\x22orientatio\
-n\x22>\x0a            \
-<enum>Qt::Vertic\
-al</enum>\x0a      \
-     </property>\
-\x0a          </wid\
-get>\x0a         </\
-item>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-Slider\x22 name=\x22sp\
-ectrum_02\x22>\x0a    \
-       <property\
- name=\x22orientati\
-on\x22>\x0a           \
- <enum>Qt::Verti\
-cal</enum>\x0a     \
-      </property\
->\x0a          </wi\
-dget>\x0a         <\
-/item>\x0a         \
-<item>\x0a         \
- <widget class=\x22\
-QSlider\x22 name=\x22s\
-pectrum_03\x22>\x0a   \
-        <propert\
-y name=\x22orientat\
-ion\x22>\x0a          \
-  <enum>Qt::Vert\
-ical</enum>\x0a    \
-       </propert\
-y>\x0a          </w\
-idget>\x0a         \
-</item>\x0a        \
- <item>\x0a        \
-  <widget class=\
-\x22QSlider\x22 name=\x22\
-spectrum_04\x22>\x0a  \
-         <proper\
-ty name=\x22orienta\
-tion\x22>\x0a         \
-   <enum>Qt::Ver\
-tical</enum>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
-  <item>\x0a       \
-   <widget class\
-=\x22QSlider\x22 name=\
-\x22spectrum_05\x22>\x0a \
-          <prope\
-rty name=\x22orient\
-ation\x22>\x0a        \
-    <enum>Qt::Ve\
-rtical</enum>\x0a  \
-         </prope\
-rty>\x0a          <\
-/widget>\x0a       \
-  </item>\x0a      \
-   <item>\x0a      \
-    <widget clas\
-s=\x22QSlider\x22 name\
-=\x22spectrum_06\x22>\x0a\
-           <prop\
-erty name=\x22orien\
-tation\x22>\x0a       \
-     <enum>Qt::V\
-ertical</enum>\x0a \
-          </prop\
-erty>\x0a          \
-</widget>\x0a      \
-   </item>\x0a     \
-    <item>\x0a     \
-     <widget cla\
-ss=\x22QSlider\x22 nam\
-e=\x22spectrum_07\x22>\
-\x0a           <pro\
-perty name=\x22orie\
-ntation\x22>\x0a      \
-      <enum>Qt::\
-Vertical</enum>\x0a\
-           </pro\
-perty>\x0a         \
- </widget>\x0a     \
-    </item>\x0a    \
-     <item>\x0a    \
-      <widget cl\
-ass=\x22QSlider\x22 na\
-me=\x22spectrum_08\x22\
->\x0a           <pr\
-operty name=\x22ori\
-entation\x22>\x0a     \
-       <enum>Qt:\
-:Vertical</enum>\
-\x0a           </pr\
-operty>\x0a        \
-  </widget>\x0a    \
-     </item>\x0a   \
-      <item>\x0a   \
-       <widget c\
-lass=\x22QSlider\x22 n\
-ame=\x22spectrum_09\
-\x22>\x0a           <p\
-roperty name=\x22or\
-ientation\x22>\x0a    \
-        <enum>Qt\
-::Vertical</enum\
->\x0a           </p\
-roperty>\x0a       \
-   </widget>\x0a   \
-      </item>\x0a  \
-       <item>\x0a  \
-        <widget \
-class=\x22QSlider\x22 \
-name=\x22spectrum_1\
-0\x22>\x0a           <\
-property name=\x22o\
-rientation\x22>\x0a   \
-         <enum>Q\
-t::Vertical</enu\
-m>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-        <item>\x0a \
-         <widget\
- class=\x22QSlider\x22\
- name=\x22spectrum_\
-11\x22>\x0a           \
-<property name=\x22\
-orientation\x22>\x0a  \
-          <enum>\
-Qt::Vertical</en\
-um>\x0a           <\
-/property>\x0a     \
-     </widget>\x0a \
-        </item>\x0a\
-         <item>\x0a\
-          <widge\
-t class=\x22QSlider\
-\x22 name=\x22spectrum\
-_12\x22>\x0a          \
- <property name=\
-\x22orientation\x22>\x0a \
-           <enum\
->Qt::Vertical</e\
-num>\x0a           \
-</property>\x0a    \
-      </widget>\x0a\
-         </item>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QSlide\
-r\x22 name=\x22spectru\
-m_13\x22>\x0a         \
-  <property name\
-=\x22orientation\x22>\x0a\
-            <enu\
-m>Qt::Vertical</\
-enum>\x0a          \
- </property>\x0a   \
-       </widget>\
-\x0a         </item\
->\x0a         <item\
->\x0a          <wid\
-get class=\x22QSlid\
-er\x22 name=\x22spectr\
-um_14\x22>\x0a        \
-   <property nam\
-e=\x22orientation\x22>\
-\x0a            <en\
-um>Qt::Vertical<\
-/enum>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a         <ite\
-m>\x0a          <wi\
-dget class=\x22QSli\
-der\x22 name=\x22spect\
-rum_15\x22>\x0a       \
-    <property na\
-me=\x22orientation\x22\
->\x0a            <e\
-num>Qt::Vertical\
-</enum>\x0a        \
-   </property>\x0a \
-         </widge\
-t>\x0a         </it\
-em>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QSl\
-ider\x22 name=\x22spec\
-trum_16\x22>\x0a      \
-     <property n\
-ame=\x22orientation\
-\x22>\x0a            <\
-enum>Qt::Vertica\
-l</enum>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem>\x0a          <\
-widget class=\x22QS\
-lider\x22 name=\x22spe\
-ctrum_17\x22>\x0a     \
-      <property \
-name=\x22orientatio\
-n\x22>\x0a            \
-<enum>Qt::Vertic\
-al</enum>\x0a      \
-     </property>\
-\x0a          </wid\
-get>\x0a         </\
-item>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-Slider\x22 name=\x22sp\
-ectrum_18\x22>\x0a    \
-       <property\
- name=\x22orientati\
-on\x22>\x0a           \
- <enum>Qt::Verti\
-cal</enum>\x0a     \
-      </property\
->\x0a          </wi\
-dget>\x0a         <\
-/item>\x0a         \
-<item>\x0a         \
- <widget class=\x22\
-QSlider\x22 name=\x22s\
-pectrum_19\x22>\x0a   \
-        <propert\
-y name=\x22orientat\
-ion\x22>\x0a          \
-  <enum>Qt::Vert\
-ical</enum>\x0a    \
-       </propert\
-y>\x0a          </w\
-idget>\x0a         \
-</item>\x0a        \
- <item>\x0a        \
-  <widget class=\
-\x22QSlider\x22 name=\x22\
-spectrum_20\x22>\x0a  \
-         <proper\
-ty name=\x22orienta\
-tion\x22>\x0a         \
-   <enum>Qt::Ver\
-tical</enum>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
- </layout>\x0a     \
-  </widget>\x0a    \
-  </item>\x0a      \
-<item row=\x223\x22 co\
-lumn=\x220\x22>\x0a      \
- <widget class=\x22\
-QGroupBox\x22 name=\
-\x22freq_n_group\x22>\x0a\
-        <propert\
-y name=\x22toolTip\x22\
->\x0a         <stri\
-ng>The number of\
- samples to take\
- fro the spectru\
-m. The number of\
- images per proj\
-ection to be ren\
-dered is equal t\
-o the number of \
-samples divided \
-by 3. Thus the l\
-arger the number\
- of samples, the\
- longer would it\
- take to compute\
-. Increasing the\
- number of sampl\
-es would be very\
- beneficial in t\
-he presence of m\
-etals.</string>\x0a\
-        </proper\
-ty>\x0a        <pro\
-perty name=\x22flat\
-\x22>\x0a         <boo\
-l>true</bool>\x0a  \
-      </property\
->\x0a        <layou\
-t class=\x22QHBoxLa\
-yout\x22 name=\x22hori\
-zontalLayout_3\x22>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QLabel\
-\x22 name=\x22freqs_n_\
-label\x22>\x0a        \
-   <property nam\
-e=\x22text\x22>\x0a      \
-      <string>Nu\
-mber of freq. sa\
-mples</string>\x0a \
-          </prop\
-erty>\x0a          \
-</widget>\x0a      \
-   </item>\x0a     \
-    <item>\x0a     \
-     <widget cla\
-ss=\x22QSpinBox\x22 na\
-me=\x22freqs_n\x22>\x0a  \
-         <proper\
-ty name=\x22minimum\
-\x22>\x0a            <\
-number>3</number\
->\x0a           </p\
-roperty>\x0a       \
-    <property na\
-me=\x22maximum\x22>\x0a  \
-          <numbe\
-r>21</number>\x0a  \
-         </prope\
-rty>\x0a           \
-<property name=\x22\
-singleStep\x22>\x0a   \
-         <number\
->3</number>\x0a    \
-       </propert\
-y>\x0a           <p\
-roperty name=\x22va\
-lue\x22>\x0a          \
-  <number>3</num\
-ber>\x0a           \
-</property>\x0a    \
-      </widget>\x0a\
-         </item>\
-\x0a        </layou\
-t>\x0a       </widg\
-et>\x0a      </item\
->\x0a      <item ro\
-w=\x224\x22 column=\x220\x22\
->\x0a       <widget\
- class=\x22QGroupBo\
-x\x22 name=\x22project\
-ion_type_group\x22>\
-\x0a        <proper\
-ty name=\x22flat\x22>\x0a\
-         <bool>t\
-rue</bool>\x0a     \
-   </property>\x0a \
-       <layout c\
-lass=\x22QHBoxLayou\
-t\x22 name=\x22horizon\
-talLayout_4\x22>\x0a  \
-       <item>\x0a  \
-        <widget \
-class=\x22QLabel\x22 n\
-ame=\x22projection_\
-label\x22>\x0a        \
-   <property nam\
-e=\x22text\x22>\x0a      \
-      <string>Em\
-itter type</stri\
-ng>\x0a           <\
-/property>\x0a     \
-     </widget>\x0a \
-        </item>\x0a\
-         <item>\x0a\
-          <widge\
-t class=\x22QComboB\
-ox\x22 name=\x22projec\
-tion\x22>\x0a         \
-  <property name\
-=\x22toolTip\x22>\x0a    \
-        <string>\
-For the time bei\
-ng just Parallel\
- beams (radiogra\
-phies and old-sc\
-hool CTs) is imp\
-lemented</string\
->\x0a           </p\
-roperty>\x0a       \
-    <item>\x0a     \
-       <property\
- name=\x22text\x22>\x0a  \
-           <stri\
-ng>Parallel beam\
-s</string>\x0a     \
-       </propert\
-y>\x0a           </\
-item>\x0a          \
-</widget>\x0a      \
-   </item>\x0a     \
-   </layout>\x0a   \
-    </widget>\x0a  \
-    </item>\x0a    \
- </layout>\x0a    <\
-/widget>\x0a   </it\
-em>\x0a   <item row\
-=\x221\x22 column=\x220\x22>\
-\x0a    <widget cla\
-ss=\x22QGroupBox\x22 n\
-ame=\x22chamber_gro\
-up\x22>\x0a     <prope\
-rty name=\x22toolTi\
-p\x22>\x0a      <strin\
-g>The scanning c\
-hamber dimension\
-s. At first glan\
-ce just the obje\
-cts fitting insi\
-de will be corre\
-ctly scanned. Ho\
-wever, in some c\
-ases it should b\
-e accepted that \
-the scanning bod\
-y is larger than\
- the area covere\
-d by the X-Rays,\
- that would be t\
-he case in synch\
-rotron-based rad\
-iation.</string>\
-\x0a     </property\
->\x0a     <layout c\
-lass=\x22QGridLayou\
-t\x22 name=\x22gridLay\
-out\x22>\x0a      <ite\
-m row=\x220\x22 column\
-=\x220\x22>\x0a       <wi\
-dget class=\x22QLab\
-el\x22 name=\x22radius\
-_label\x22>\x0a       \
- <property name=\
-\x22text\x22>\x0a        \
- <string>radius<\
-/string>\x0a       \
- </property>\x0a   \
-    </widget>\x0a  \
-    </item>\x0a    \
-  <item row=\x221\x22 \
-column=\x220\x22>\x0a    \
-   <widget class\
-=\x22QLabel\x22 name=\x22\
-height_label\x22>\x0a \
-       <property\
- name=\x22text\x22>\x0a  \
-       <string>h\
-eight</string>\x0a \
-       </propert\
-y>\x0a       </widg\
-et>\x0a      </item\
->\x0a      <item ro\
-w=\x220\x22 column=\x222\x22\
->\x0a       <widget\
- class=\x22QLineEdi\
-t\x22 name=\x22radius\x22\
->\x0a        <prope\
-rty name=\x22text\x22>\
-\x0a         <strin\
-g notr=\x22true\x22>1 \
-m</string>\x0a     \
-   </property>\x0a \
-       <property\
- name=\x22unit\x22 std\
-set=\x220\x22>\x0a       \
-  <string notr=\x22\
-true\x22>m</string>\
-\x0a        </prope\
-rty>\x0a        <pr\
-operty name=\x22qua\
-ntity\x22 stdset=\x220\
-\x22>\x0a         <dou\
-ble>1.0000000000\
-00000</double>\x0a \
-       </propert\
-y>\x0a       </widg\
-et>\x0a      </item\
->\x0a      <item ro\
-w=\x221\x22 column=\x222\x22\
->\x0a       <widget\
- class=\x22QLineEdi\
-t\x22 name=\x22height\x22\
->\x0a        <prope\
-rty name=\x22text\x22>\
-\x0a         <strin\
-g notr=\x22true\x22>1 \
-m</string>\x0a     \
-   </property>\x0a \
-       <property\
- name=\x22unit\x22 std\
-set=\x220\x22>\x0a       \
-  <string notr=\x22\
-true\x22>m</string>\
-\x0a        </prope\
-rty>\x0a        <pr\
-operty name=\x22qua\
-ntity\x22 stdset=\x220\
-\x22>\x0a         <dou\
-ble>1.0000000000\
-00000</double>\x0a \
-       </propert\
-y>\x0a       </widg\
-et>\x0a      </item\
->\x0a      <item ro\
-w=\x222\x22 column=\x220\x22\
->\x0a       <widget\
- class=\x22QLabel\x22 \
-name=\x22distance_l\
-abel\x22>\x0a        <\
-property name=\x22t\
-ext\x22>\x0a         <\
-string>distance<\
-/string>\x0a       \
- </property>\x0a   \
-    </widget>\x0a  \
-    </item>\x0a    \
-  <item row=\x222\x22 \
-column=\x222\x22>\x0a    \
-   <widget class\
-=\x22QLineEdit\x22 nam\
-e=\x22distance\x22>\x0a  \
-      <property \
-name=\x22text\x22>\x0a   \
-      <string no\
-tr=\x22true\x22>10 m</\
-string>\x0a        \
-</property>\x0a    \
-    <property na\
-me=\x22unit\x22 stdset\
-=\x220\x22>\x0a         <\
-string notr=\x22tru\
-e\x22>m</string>\x0a  \
-      </property\
->\x0a        <prope\
-rty name=\x22quanti\
-ty\x22 stdset=\x220\x22>\x0a\
-         <double\
->10.000000000000\
-000</double>\x0a   \
-     </property>\
-\x0a       </widget\
->\x0a      </item>\x0a\
-     </layout>\x0a \
-   </widget>\x0a   \
-</item>\x0a   <item\
- row=\x222\x22 column=\
-\x220\x22>\x0a    <widget\
- class=\x22QGroupBo\
-x\x22 name=\x22sensor_\
-group\x22>\x0a     <pr\
-operty name=\x22tit\
-le\x22>\x0a      <stri\
-ng>Sensor</strin\
-g>\x0a     </proper\
-ty>\x0a     <layout\
- class=\x22QGridLay\
-out\x22 name=\x22gridL\
-ayout_4\x22>\x0a      \
-<item row=\x220\x22 co\
-lumn=\x220\x22>\x0a      \
- <widget class=\x22\
-QGroupBox\x22 name=\
-\x22resolution_grou\
-p\x22>\x0a        <pro\
-perty name=\x22flat\
-\x22>\x0a         <boo\
-l>true</bool>\x0a  \
-      </property\
->\x0a        <layou\
-t class=\x22QHBoxLa\
-yout\x22 name=\x22hori\
-zontalLayout_5\x22>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QLabel\
-\x22 name=\x22resoluti\
-on_label\x22>\x0a     \
-      <property \
-name=\x22text\x22>\x0a   \
-         <string\
->Resolution</str\
-ing>\x0a           \
-</property>\x0a    \
-      </widget>\x0a\
-         </item>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QSpinB\
-ox\x22 name=\x22resolu\
-tion_x\x22>\x0a       \
-    <property na\
-me=\x22minimum\x22>\x0a  \
-          <numbe\
-r>16</number>\x0a  \
-         </prope\
-rty>\x0a           \
-<property name=\x22\
-maximum\x22>\x0a      \
-      <number>32\
-768</number>\x0a   \
-        </proper\
-ty>\x0a           <\
-property name=\x22v\
-alue\x22>\x0a         \
-   <number>1024<\
-/number>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem>\x0a          <\
-widget class=\x22QS\
-pinBox\x22 name=\x22re\
-solution_y\x22>\x0a   \
-        <propert\
-y name=\x22minimum\x22\
->\x0a            <n\
-umber>16</number\
->\x0a           </p\
-roperty>\x0a       \
-    <property na\
-me=\x22maximum\x22>\x0a  \
-          <numbe\
-r>32768</number>\
-\x0a           </pr\
-operty>\x0a        \
-   <property nam\
-e=\x22value\x22>\x0a     \
-       <number>1\
-024</number>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
- </layout>\x0a     \
-  </widget>\x0a    \
-  </item>\x0a     <\
-/layout>\x0a    </w\
-idget>\x0a   </item\
->\x0a  </layout>\x0a <\
-/widget>\x0a <resou\
-rces/>\x0a <connect\
-ions/>\x0a</ui>\x0a\
-\x00\x00\x138\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22UTF\
--8\x22?>\x0a<ui versio\
-n=\x224.0\x22>\x0a <class\
->TaskPanel</clas\
-s>\x0a <widget clas\
-s=\x22QWidget\x22 name\
-=\x22TaskPanel\x22>\x0a  \
-<property name=\x22\
-geometry\x22>\x0a   <r\
-ect>\x0a    <x>0</x\
->\x0a    <y>0</y>\x0a \
-   <width>558</w\
-idth>\x0a    <heigh\
-t>493</height>\x0a \
-  </rect>\x0a  </pr\
-operty>\x0a  <prope\
-rty name=\x22sizePo\
-licy\x22>\x0a   <sizep\
-olicy hsizetype=\
-\x22Preferred\x22 vsiz\
-etype=\x22Expanding\
-\x22>\x0a    <horstret\
-ch>0</horstretch\
->\x0a    <verstretc\
-h>0</verstretch>\
-\x0a   </sizepolicy\
->\x0a  </property>\x0a\
-  <property name\
-=\x22minimumSize\x22>\x0a\
-   <size>\x0a    <w\
-idth>250</width>\
-\x0a    <height>250\
-</height>\x0a   </s\
-ize>\x0a  </propert\
-y>\x0a  <property n\
-ame=\x22windowTitle\
-\x22>\x0a   <string>Ad\
-d object</string\
->\x0a  </property>\x0a\
-  <layout class=\
-\x22QGridLayout\x22 na\
-me=\x22gridLayout_3\
-\x22>\x0a   <item row=\
-\x220\x22 column=\x220\x22>\x0a\
-    <widget clas\
-s=\x22QGroupBox\x22 na\
-me=\x22props_group\x22\
->\x0a     <property\
- name=\x22toolTip\x22>\
-\x0a      <string>T\
-he object physic\
-al properties</s\
-tring>\x0a     </pr\
-operty>\x0a     <pr\
-operty name=\x22tit\
-le\x22>\x0a      <stri\
-ng>Physical prop\
-erties</string>\x0a\
-     </property>\
-\x0a     <layout cl\
-ass=\x22QGridLayout\
-\x22 name=\x22gridLayo\
-ut_2\x22>\x0a      <it\
-em row=\x220\x22 colum\
-n=\x220\x22>\x0a       <w\
-idget class=\x22QGr\
-oupBox\x22 name=\x22hu\
-_group\x22>\x0a       \
- <property name=\
-\x22flat\x22>\x0a        \
- <bool>true</boo\
-l>\x0a        </pro\
-perty>\x0a        <\
-layout class=\x22QH\
-BoxLayout\x22 name=\
-\x22horizontalLayou\
-t\x22>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QTa\
-bleWidget\x22 name=\
-\x22attenuations\x22>\x0a\
-           <prop\
-erty name=\x22rowCo\
-unt\x22>\x0a          \
-  <number>0</num\
-ber>\x0a           \
-</property>\x0a    \
-       <property\
- name=\x22columnCou\
-nt\x22>\x0a           \
- <number>2</numb\
-er>\x0a           <\
-/property>\x0a     \
-      <attribute\
- name=\x22horizonta\
-lHeaderCascading\
-SectionResizes\x22>\
-\x0a            <bo\
-ol>false</bool>\x0a\
-           </att\
-ribute>\x0a        \
-   <attribute na\
-me=\x22horizontalHe\
-aderStretchLastS\
-ection\x22>\x0a       \
-     <bool>true<\
-/bool>\x0a         \
-  </attribute>\x0a \
-          <colum\
-n>\x0a            <\
-property name=\x22t\
-ext\x22>\x0a          \
-   <string>Energ\
-y</string>\x0a     \
-       </propert\
-y>\x0a           </\
-column>\x0a        \
-   <column>\x0a    \
-        <propert\
-y name=\x22text\x22>\x0a \
-            <str\
-ing>Mass attenut\
-ion</string>\x0a   \
-         </prope\
-rty>\x0a           \
-</column>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-        <item>\x0a \
-         <widget\
- class=\x22QGroupBo\
-x\x22 name=\x22table_e\
-dit_group\x22>\x0a    \
-       <property\
- name=\x22flat\x22>\x0a  \
-          <bool>\
-true</bool>\x0a    \
-       </propert\
-y>\x0a           <l\
-ayout class=\x22QVB\
-oxLayout\x22 name=\x22\
-verticalLayout\x22>\
-\x0a            <it\
-em>\x0a            \
- <widget class=\x22\
-QPushButton\x22 nam\
-e=\x22add_row\x22>\x0a   \
-           <prop\
-erty name=\x22maxim\
-umSize\x22>\x0a       \
-        <size>\x0a \
-               <\
-width>32</width>\
-\x0a               \
- <height>32</hei\
-ght>\x0a           \
-    </size>\x0a    \
-          </prop\
-erty>\x0a          \
-    <property na\
-me=\x22text\x22>\x0a     \
-          <strin\
-g notr=\x22true\x22>+<\
-/string>\x0a       \
-       </propert\
-y>\x0a             \
-</widget>\x0a      \
-      </item>\x0a  \
-          <item>\
-\x0a             <w\
-idget class=\x22QPu\
-shButton\x22 name=\x22\
-del_row\x22>\x0a      \
-        <propert\
-y name=\x22maximumS\
-ize\x22>\x0a          \
-     <size>\x0a    \
-            <wid\
-th>32</width>\x0a  \
-              <h\
-eight>32</height\
->\x0a              \
- </size>\x0a       \
-       </propert\
-y>\x0a             \
- <property name=\
-\x22text\x22>\x0a        \
-       <string n\
-otr=\x22true\x22>-</st\
-ring>\x0a          \
-    </property>\x0a\
-             </w\
-idget>\x0a         \
-   </item>\x0a     \
-      </layout>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a        </l\
-ayout>\x0a       </\
-widget>\x0a      </\
-item>\x0a      <ite\
-m row=\x222\x22 column\
-=\x220\x22>\x0a       <wi\
-dget class=\x22QGro\
-upBox\x22 name=\x22pre\
-set_group\x22>\x0a    \
-    <property na\
-me=\x22flat\x22>\x0a     \
-    <bool>true</\
-bool>\x0a        </\
-property>\x0a      \
-  <layout class=\
-\x22QHBoxLayout\x22 na\
-me=\x22horizontalLa\
-yout_2\x22>\x0a       \
-  <item>\x0a       \
-   <widget class\
-=\x22QLabel\x22 name=\x22\
-preset_label\x22>\x0a \
-          <prope\
-rty name=\x22text\x22>\
-\x0a            <st\
-ring>Load preset\
-</string>\x0a      \
-     </property>\
-\x0a          </wid\
-get>\x0a         </\
-item>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-ComboBox\x22 name=\x22\
-preset\x22>\x0a       \
-    <property na\
-me=\x22currentIndex\
-\x22>\x0a            <\
-number>-1</numbe\
-r>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-       </layout>\
-\x0a       </widget\
->\x0a      </item>\x0a\
-      <item row=\
-\x221\x22 column=\x220\x22>\x0a\
-       <widget c\
-lass=\x22QGroupBox\x22\
- name=\x22dens_grou\
-p\x22>\x0a        <pro\
-perty name=\x22flat\
-\x22>\x0a         <boo\
-l>true</bool>\x0a  \
-      </property\
->\x0a        <layou\
-t class=\x22QHBoxLa\
-yout\x22 name=\x22dens\
-_group_kk\x22>\x0a    \
-     <item>\x0a    \
-      <widget cl\
-ass=\x22QLabel\x22 nam\
-e=\x22dens_label\x22>\x0a\
-           <prop\
-erty name=\x22text\x22\
->\x0a            <s\
-tring>Density</s\
-tring>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a         <ite\
-m>\x0a          <wi\
-dget class=\x22QLin\
-eEdit\x22 name=\x22den\
-s\x22>\x0a           <\
-property name=\x22t\
-ext\x22>\x0a          \
-  <string notr=\x22\
-true\x22>968 kg/m^3\
-</string>\x0a      \
-     </property>\
-\x0a           <pro\
-perty name=\x22unit\
-\x22 stdset=\x220\x22>\x0a  \
-          <strin\
-g notr=\x22true\x22>kg\
-/m^3</string>\x0a  \
-         </prope\
-rty>\x0a           \
-<property name=\x22\
-quantity\x22 stdset\
-=\x220\x22>\x0a          \
-  <double>968.00\
-0000000000000</d\
-ouble>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a        </lay\
-out>\x0a       </wi\
-dget>\x0a      </it\
-em>\x0a     </layou\
-t>\x0a    </widget>\
-\x0a   </item>\x0a  </\
-layout>\x0a </widge\
-t>\x0a <resources/>\
-\x0a <connections/>\
-\x0a</ui>\x0a\
 "
 
 qt_resource_name = b"\
-\x00\x02\
-\x00\x00\x07\xb9\
-\x00u\
-\x00i\
 \x00\x05\
 \x00o\xa6S\
 \x00i\
 \x00c\x00o\x00n\x00s\
+\x00\x02\
+\x00\x00\x07\xb9\
+\x00u\
+\x00i\
+\x00\x17\
+\x0f\x5c\xa99\
+\x00T\
+\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00C\x00r\x00e\
+\x00a\x00t\x00e\x00.\x00u\x00i\
+\x00\x1a\
+\x0f\xd7\xc4Y\
+\x00T\
+\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00A\x00d\x00d\
+\x00O\x00b\x00j\x00e\x00c\x00t\x00.\x00u\x00i\
 \x00\x12\
 \x0b\xe4\x12\xe7\
 \x00X\
@@ -6380,27 +6419,17 @@ qt_resource_name = b"\
 \x0aN\x9e\xe7\
 \x00X\
 \x00R\x00a\x00y\x00_\x00O\x00b\x00j\x00e\x00c\x00t\x00.\x00s\x00v\x00g\
-\x00\x17\
-\x0f\x5c\xa99\
-\x00T\
-\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00C\x00r\x00e\
-\x00a\x00t\x00e\x00.\x00u\x00i\
-\x00\x1a\
-\x0f\xd7\xc4Y\
-\x00T\
-\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00A\x00d\x00d\
-\x00O\x00b\x00j\x00e\x00c\x00t\x00.\x00u\x00i\
 "
 
 qt_resource_struct = b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x01\
-\x00\x00\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x06\
-\x00\x00\x00\x0a\x00\x02\x00\x00\x00\x03\x00\x00\x00\x03\
-\x00\x00\x00D\x00\x00\x00\x00\x00\x01\x00\x00\x8a\xb5\
-\x00\x00\x00n\x00\x00\x00\x00\x00\x01\x00\x00\xb8\x13\
+\x00\x00\x00\x10\x00\x02\x00\x00\x00\x02\x00\x00\x00\x06\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x03\
+\x00\x00\x00\xb2\x00\x00\x00\x00\x00\x01\x00\x00\xd8\xc8\
+\x00\x00\x00\xdc\x00\x00\x00\x00\x00\x01\x00\x01\x06&\
+\x00\x00\x00\x88\x00\x00\x00\x00\x00\x01\x00\x00N\x13\
 \x00\x00\x00\x1a\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
-\x00\x00\x00\x92\x00\x00\x00\x00\x00\x01\x00\x01?\xa3\
-\x00\x00\x00\xc6\x00\x00\x00\x00\x00\x01\x00\x01x\xa5\
+\x00\x00\x00N\x00\x00\x00\x00\x00\x01\x00\x009\x02\
 "
 
 def qInitResources():

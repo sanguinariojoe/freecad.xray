@@ -60,8 +60,30 @@ def add_xray_obj_props(obj):
             "XRay",
             "The object",
             None)
-        obj.addProperty("App::App::PropertyLink",
+        obj.addProperty("App::PropertyLink",
                         "Source",
+                        "XRay",
+                        tooltip)
+    try:
+        obj.getPropertyByName('AttenuationFreqs')
+    except AttributeError:
+        tooltip = QtGui.QApplication.translate(
+            "XRay",
+            "List of frequencies of the attenuation values (THz)",
+            None)
+        obj.addProperty("App::PropertyFloatList",
+                        "AttenuationFreqs",
+                        "XRay",
+                        tooltip)
+    try:
+        obj.getPropertyByName('AttenuationValues')
+    except AttributeError:
+        tooltip = QtGui.QApplication.translate(
+            "XRay",
+            "List of attenuation values (m^-1)",
+            None)
+        obj.addProperty("App::PropertyFloatList",
+                        "AttenuationValues",
                         "XRay",
                         tooltip)
 
@@ -69,17 +91,24 @@ def add_xray_obj_props(obj):
 
 
 class XRayObj:
-    def __init__(self, obj, source):
+    def __init__(self, obj, source, dens, freqs, attenuations):
         """Create an object to be considered in the scan
 
         Keyword arguments:
         obj -- Part::FeaturePython created object which should be transformed
                in a scanned object instance.
         source -- The object to be linked
+        dens -- The material density
+        freqs -- The frequencies associated to the attenuation values
+        attenuations -- The attenuation values
         """
         add_xray_obj_props(obj)
         obj.Source = source
-        obj.Shape = None
+        obj.AttenuationFreqs = [
+            LightUnits.to_frequency(f).getValueAs('THz').Value for f in freqs]
+        obj.AttenuationValues = [
+            (dens * v).getValueAs('m^-1').Value for v in attenuations]
+        # obj.Shape = None
         obj.Proxy = self
 
     def onChanged(self, fp, prop):

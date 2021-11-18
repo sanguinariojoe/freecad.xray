@@ -20,59 +20,57 @@
 #*                                                                         *
 #***************************************************************************
 
-import PySide
-from PySide import QtCore, QtGui
-import FreeCAD
-import FreeCADGui
-import os
-from . import XRay_rc
-from .xrayUtils import Selection
-
-FreeCADGui.addLanguagePath(":/XRay/translations")
-FreeCADGui.addIconPath(":/XRay/icons")
+import FreeCAD as App
+import FreeCADGui as Gui
+from FreeCAD import Units
+import sys
 
 
-class Create:
-    def IsActive(self):
-        return True
-
-    def Activated(self):
-        from . import xrayCreate
-        xrayCreate.load()
-
-    def GetResources(self):
-        MenuText = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_Create',
-            'Create a new X-Ray machine')
-        ToolTip = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_Create',
-            'Create a new X-Ray simulator, composed by the lamp, the lens ' +\
-            '(if required) and the sensor')
-        return {'Pixmap': 'XRay_Workbench',
-                'MenuText': MenuText,
-                'ToolTip': ToolTip}
+def __get_shape_solids(obj):
+    try:
+        return obj.Solids
+    except AttributeError:
+        try:
+            return __get_shape_solids(obj.Shape)
+        except AttributeError:
+            return []
+    return []
 
 
-class AddObject:
-    def IsActive(self):
-        objs = FreeCAD.ActiveDocument.Objects
-        return bool(Selection.get_solids()) and bool(Selection.get_xrays(objs))
+def get_solids(objs=None):
+    """Returns the selected solids
 
-    def Activated(self):
-        from . import xrayAddObject
-        xrayAddObject.load()
+    Keyword arguments:
+    objs -- List of objects to filter. None for Gui.Selection.getSelection()
 
-    def GetResources(self):
-        MenuText = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_AddObject',
-            'Add an object to the scan')
-        ToolTip = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_AddObject',
-            'Add an object to the scan, setting its physical properties')
-        return {'Pixmap': 'XRay_ObjectAdd',
-                'MenuText': MenuText,
-                'ToolTip': ToolTip}
+    Returns:
+    The list of objects with solids
+    """
+    if objs is None:
+        objs = Gui.Selection.getSelection()
+    filtered = []
+    for obj in objs:
+        if (__get_shape_solids(obj)):
+            filtered.append(obj)
+    return filtered
 
 
-FreeCADGui.addCommand('XRay_Create', Create())
-FreeCADGui.addCommand('XRay_AddObject', AddObject())
+def get_xrays(objs=None):
+    """Returns the selected X-Ray machines
+
+    Keyword arguments:
+    objs -- List of objects to filter. None for Gui.Selection.getSelection()
+
+    Returns:
+    The list of X-Ray machiness
+    """
+    if objs is None:
+        objs = Gui.Selection.getSelection()
+    filtered = []
+    for obj in objs:
+        try:
+            if obj.IsXRay:
+                filtered.append(obj)
+        except AttributeError:
+            continue
+    return filtered

@@ -168,6 +168,17 @@ def add_xray_props(obj):
                         "SensorResolutionY",
                         "XRay",
                         tooltip)
+    try:
+        obj.getPropertyByName('ScanObjects')
+    except AttributeError:
+        tooltip = QtGui.QApplication.translate(
+            "XRay",
+            "List of objects to scan",
+            None)
+        obj.addProperty("App::PropertyLinkList",
+                        "ScanObjects",
+                        "XRay",
+                        tooltip)
 
     return obj
 
@@ -375,8 +386,26 @@ class ViewProviderXRay:
         return None
 
     def claimChildren(self):
-        objs = []
-        return objs
+        # Locate the owner object
+        doc_objs = FreeCAD.ActiveDocument.Objects
+        obj = None
+        for doc_obj in doc_objs:
+            try:
+                v_provider = doc_obj.ViewObject.Proxy
+                if v_provider == self:
+                    obj = doc_obj
+            except:
+                continue
+        if obj is None:
+            FreeCAD.Console.PrintError("Orphan view provider found...\n")
+            FreeCAD.Console.PrintError(self)
+            FreeCAD.Console.PrintError('\n')
+            return []
+
+        # Check everything is all right
+        add_xray_props(obj)
+
+        return obj.ScanObjects
 
     def getIcon(self):
         """Returns the icon for this kind of objects."""

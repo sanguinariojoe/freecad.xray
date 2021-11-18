@@ -26,7 +26,7 @@ import sys
 import math
 import FreeCAD as App
 from FreeCAD import Units
-from .. import Instance
+from .. import ObjectInstance
 
 
 __ELEMENTS = []
@@ -81,3 +81,17 @@ def load_preset(i):
             mu = Units.parseQuantity('{} cm^2/g'.format(fields[1]))
             data.append([e, mu])
     return dens, data
+
+
+def createXRayObject(parent, source, dens, freqs, attenuations):
+    obj = App.ActiveDocument.addObject("Part::FeaturePython", "XRay")
+    xray = ObjectInstance.XRayObj(obj, source, dens, freqs, attenuations)
+    ObjectInstance.ViewProviderXRayObj(obj.ViewObject)
+    App.ActiveDocument.recompute()
+
+    # Add it to the XRay machine
+    objs = parent.ScanObjects[:]
+    objs.append(obj)
+    parent.ScanObjects = objs
+
+    return obj
