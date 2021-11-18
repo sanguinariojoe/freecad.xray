@@ -55,6 +55,27 @@ def get_solids(objs=None):
     return filtered
 
 
+def get_meshes(objs=None):
+    """Returns the selected meshess
+
+    Keyword arguments:
+    objs -- List of objects to filter. None for Gui.Selection.getSelection()
+
+    Returns:
+    The list of objects with solids
+    """
+    if objs is None:
+        objs = Gui.Selection.getSelection()
+    filtered = []
+    for obj in objs:
+        try:
+            if obj.Module == 'Mesh' and obj.Mesh:
+                filtered.append(obj)
+        except AttributeError:
+            continue
+    return filtered
+
+
 def get_xrays(objs=None):
     """Returns the selected X-Ray machines
 

@@ -126,7 +126,7 @@ class TaskPanel:
         return form.findChild(class_id, name)
 
     def initValues(self):
-        self.sources = Selection.get_solids()
+        self.sources = Selection.get_solids() + Selection.get_meshes()
         self.xrays = Selection.get_xrays(App.ActiveDocument.Objects)
         if not self.xrays:
             # This situation isalready covered in ../XRayGui.py

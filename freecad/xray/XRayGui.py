@@ -56,7 +56,8 @@ class Create:
 class AddObject:
     def IsActive(self):
         objs = FreeCAD.ActiveDocument.Objects
-        return bool(Selection.get_solids()) and bool(Selection.get_xrays(objs))
+        selected = Selection.get_solids() + Selection.get_meshes()
+        return bool(Selection.get_xrays(objs)) and bool(selected)
 
     def Activated(self):
         from . import xrayAddObject
