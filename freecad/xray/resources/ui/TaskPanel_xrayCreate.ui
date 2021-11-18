@@ -363,7 +363,7 @@
       <item row="0" column="2">
        <widget class="QLineEdit" name="radius">
         <property name="text">
-         <string notr="true">1 m</string>
+         <string notr="true">50 mm</string>
         </property>
         <property name="unit" stdset="0">
          <string notr="true">m</string>
@@ -376,7 +376,7 @@
       <item row="1" column="2">
        <widget class="QLineEdit" name="height">
         <property name="text">
-         <string notr="true">1 m</string>
+         <string notr="true">50 mm</string>
         </property>
         <property name="unit" stdset="0">
          <string notr="true">m</string>
@@ -396,7 +396,7 @@
       <item row="2" column="2">
        <widget class="QLineEdit" name="distance">
         <property name="text">
-         <string notr="true">10 m</string>
+         <string notr="true">50 cm</string>
         </property>
         <property name="unit" stdset="0">
          <string notr="true">m</string>
