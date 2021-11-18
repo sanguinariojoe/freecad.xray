@@ -104,6 +104,7 @@ class TaskPanel:
             [v.value() / 100 for v in self.form.spectrum],
             self.form.freqs_n.value(),
             self.form.projection.currentIndex(),
+            Units.parseQuantity(self.form.collimation.text()),
             Units.parseQuantity(self.form.radius.text()),
             Units.parseQuantity(self.form.height.text()),
             Units.parseQuantity(self.form.distance.text()),
@@ -156,6 +157,7 @@ class TaskPanel:
         self.form.preset = self.widget(QtGui.QComboBox, "preset")
         self.form.freqs_n = self.widget(QtGui.QSpinBox, "freqs_n")
         self.form.projection = self.widget(QtGui.QComboBox, "projection")
+        self.form.collimation = self.widget(QtGui.QLineEdit, "collimation")
 
         self.form.radius = self.widget(QtGui.QLineEdit, "radius")
         self.form.height = self.widget(QtGui.QLineEdit, "height")

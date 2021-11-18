@@ -77,10 +77,11 @@ def ligth_preset(i, n=20):
 
 
 def createSimulator(min_energy, max_energy, spectrum, samples, emitter_type,
-                    radius, height, distance, res_x, res_y):
+                    collimation, radius, height, distance, res_x, res_y):
     obj = App.ActiveDocument.addObject("Part::FeaturePython", "XRay")
     xray = Instance.XRay(obj, min_energy, max_energy, spectrum, samples,
-                         emitter_type, radius, height, distance, res_x, res_y)
+                         emitter_type, collimation, radius, height, distance,
+                         res_x, res_y)
     Instance.ViewProviderXRay(obj.ViewObject)
     App.ActiveDocument.recompute()
     return obj

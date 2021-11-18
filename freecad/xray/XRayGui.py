@@ -42,10 +42,10 @@ class Create:
 
     def GetResources(self):
         MenuText = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_Create',
-            'Create a new X-Ray machine')
+            'XRay',
+            'New X-Ray machine')
         ToolTip = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_Create',
+            'XRay',
             'Create a new X-Ray simulator, composed by the lamp, the lens ' +\
             '(if required) and the sensor')
         return {'Pixmap': 'XRay_Workbench',
@@ -65,15 +65,36 @@ class AddObject:
 
     def GetResources(self):
         MenuText = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_AddObject',
-            'Add an object to the scan')
+            'XRay',
+            'Add object')
         ToolTip = QtCore.QT_TRANSLATE_NOOP(
-            'XRay_AddObject',
+            'XRay',
             'Add an object to the scan, setting its physical properties')
         return {'Pixmap': 'XRay_ObjectAdd',
                 'MenuText': MenuText,
                 'ToolTip': ToolTip}
 
 
+class Radiography:
+    def IsActive(self):
+        return len(Selection.get_xrays()) == 1
+
+    def Activated(self):
+        from . import xrayRadiography
+        xrayRadiography.load()
+
+    def GetResources(self):
+        MenuText = QtCore.QT_TRANSLATE_NOOP(
+            'XRay',
+            'Radiography')
+        ToolTip = QtCore.QT_TRANSLATE_NOOP(
+            'XRay',
+            'Carry out a radiography')
+        return {'Pixmap': 'XRay_Object',
+                'MenuText': MenuText,
+                'ToolTip': ToolTip}
+
+
 FreeCADGui.addCommand('XRay_Create', Create())
 FreeCADGui.addCommand('XRay_AddObject', AddObject())
+FreeCADGui.addCommand('XRay_Radiography', Radiography())

@@ -5,5 +5,6 @@
         <file>icons/XRay_ObjectAdd.svg</file>
         <file>ui/TaskPanel_xrayCreate.ui</file>
         <file>ui/TaskPanel_xrayAddObject.ui</file>
+        <file>ui/TaskPanel_xrayRadiography.ui</file>
     </qresource>
 </RCC>

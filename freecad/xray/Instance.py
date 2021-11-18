@@ -111,6 +111,17 @@ def add_xray_props(obj):
                         "EmitterType",
                         "XRay",
                         tooltip).EmitterType = EMITTER_TYPES[0]
+    try:
+        obj.getPropertyByName('EmitterCollimation')
+    except AttributeError:
+        tooltip = QtGui.QApplication.translate(
+            "XRay",
+            "X-Rays spread angle",
+            None)
+        obj.addProperty("App::PropertyAngle",
+                        "EmitterCollimation",
+                        "XRay",
+                        tooltip).EmitterCollimation = Units.parseQuantity('1 deg')
 
     try:
         obj.getPropertyByName('ChamberRadius')
@@ -185,7 +196,8 @@ def add_xray_props(obj):
 
 class XRay:
     def __init__(self, obj, min_energy, max_energy, spectrum, samples,
-                 emitter_type, radius, height, distance, res_x, res_y):
+                 emitter_type, collimation, radius, height, distance,
+                 res_x, res_y):
         """Create a X-Ray machine instance.
 
         Keyword arguments:
@@ -196,6 +208,7 @@ class XRay:
         spectrum -- Renormalize light intensity spectrum
         samples -- Number of samples to take between min_energy and max_energy
         emitter_type -- 0 for parallel beam, 1 for hellical fan, 2 for cone beam
+        collimation -- The spread angle of the X-Rays
         radius -- Radius of the scanning chamber
         height -- Height of the scanning chamber
         distance -- Distance between the light emitter and the detector
@@ -208,6 +221,7 @@ class XRay:
         obj.EmitterSpectrum = spectrum
         obj.EmitterSamples = samples
         obj.EmitterType = EMITTER_TYPES[emitter_type]
+        obj.EmitterCollimation = collimation
         obj.ChamberRadius = radius
         obj.ChamberHeight = height
         obj.ChamberDistance = distance
@@ -241,20 +255,28 @@ class XRay:
         screen = self.screen(fp)
         return Part.makeCompound([light, screen])
 
+    def __min_dims(self, fp, grow_factor=2.0):
+        l = fp.ChamberRadius
+        h = fp.ChamberHeight
+        spread = math.tan(fp.EmitterCollimation.getValueAs('rad').Value)
+        d = fp.ChamberDistance * spread
+        return grow_factor * (l + d), grow_factor * (h + d)
+
     def light(self, fp):
+        radius, height = self.__min_dims(fp)
         if fp.EmitterType == 'Parallel':
             l = Part.makePlane(
-                fp.ChamberHeight, fp.ChamberRadius,
-                Vector(-0.5 * fp.ChamberHeight, -0.5 * fp.ChamberRadius, 0))
+                height, radius,
+                Vector(-0.5 * height, -0.5 * radius, 0))
             l = l.rotate((0, 0, 0), (0, 1, 0), Units.parseQuantity('90 deg'))
             FreeCAD.ActiveDocument.recompute()
         elif fp.EmitterType == 'Helical':
-            angle = math.atan((fp.ChamberRadius / fp.ChamberDistance).Value)
+            angle = math.atan((radius / fp.ChamberDistance).Value)
             s = Part.makeCylinder(
-                0.01 * fp.ChamberDistance, fp.ChamberHeight,
+                0.01 * fp.ChamberDistance, height,
                 Vector(0, 0, 0), Vector(0, 0, 1),
                 angle * Units.Radian)
-            s = s.translate((0, 0, -0.5 * fp.ChamberHeight))
+            s = s.translate((0, 0, -0.5 * height))
             # We just want the cylindrical face
             for f in s.Faces:
                 if f.Surface.TypeId == 'Part::GeomCylinder':
@@ -262,7 +284,7 @@ class XRay:
                     break
         elif fp.EmitterType == 'Cone':
             radius = math.sqrt(
-                fp.ChamberRadius.Value**2 + fp.ChamberHeight.Value**2)
+                radius.Value**2 + height.Value**2)
             angle = math.atan(radius / fp.ChamberDistance.Value)
             s = Part.makeSphere(
                 0.01 * fp.ChamberDistance,
@@ -302,9 +324,10 @@ class XRay:
         return l
 
     def screen(self, fp):
+        radius, height = self.__min_dims(fp)
         s = Part.makePlane(
-            fp.ChamberHeight, fp.ChamberRadius,
-            Vector(-0.5 * fp.ChamberHeight, -0.5 * fp.ChamberRadius, 0))
+            height, radius,
+            Vector(-0.5 * height, -0.5 * radius, 0))
         s = s.rotate((0, 0, 0), (0, 1, 0), -Units.parseQuantity('90 deg'))
         s = s.translate((0.5 * fp.ChamberDistance, 0, 0))
         FreeCAD.ActiveDocument.recompute()

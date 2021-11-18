@@ -35,48 +35,6 @@
       <string>XRay emitter</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <widget class="QGroupBox" name="freqs_group">
-        <property name="flat">
-         <bool>true</bool>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout">
-         <item>
-          <widget class="QLineEdit" name="min_freq">
-           <property name="text">
-            <string notr="true">1 keV</string>
-           </property>
-           <property name="unit" stdset="0">
-            <string notr="true">eV</string>
-           </property>
-           <property name="quantity" stdset="0">
-            <double>1.000000000000000</double>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="sep_freq">
-           <property name="text">
-            <string notr="true">-</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="max_freq">
-           <property name="text">
-            <string notr="true">10 keV</string>
-           </property>
-           <property name="unit" stdset="0">
-            <string notr="true">eV</string>
-           </property>
-           <property name="quantity" stdset="0">
-            <double>1.000000000000000</double>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
       <item row="2" column="0">
        <widget class="QGroupBox" name="preset_group">
         <property name="flat">
@@ -274,6 +232,76 @@
         </layout>
        </widget>
       </item>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="freqs_group">
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="min_freq">
+           <property name="text">
+            <string notr="true">1 keV</string>
+           </property>
+           <property name="unit" stdset="0">
+            <string notr="true">eV</string>
+           </property>
+           <property name="quantity" stdset="0">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="sep_freq">
+           <property name="text">
+            <string notr="true">-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="max_freq">
+           <property name="text">
+            <string notr="true">10 keV</string>
+           </property>
+           <property name="unit" stdset="0">
+            <string notr="true">eV</string>
+           </property>
+           <property name="quantity" stdset="0">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QGroupBox" name="projection_type_group">
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="projection_label">
+           <property name="text">
+            <string>Emitter type</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="projection">
+           <property name="toolTip">
+            <string>For the time being just Parallel beams (radiographies and old-school CTs) is implemented</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Parallel beams</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
       <item row="3" column="0">
        <widget class="QGroupBox" name="freq_n_group">
         <property name="toolTip">
@@ -309,29 +337,51 @@
         </layout>
        </widget>
       </item>
-      <item row="4" column="0">
-       <widget class="QGroupBox" name="projection_type_group">
+      <item row="5" column="0">
+       <widget class="QGroupBox" name="collimation_group">
+        <property name="toolTip">
+         <string>How efficient is the collimator. The worst is the collimator the more blurry images are produced</string>
+        </property>
         <property name="flat">
          <bool>true</bool>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <layout class="QHBoxLayout" name="collimation_group_kk">
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>6</number>
+         </property>
+         <property name="rightMargin">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>6</number>
+         </property>
          <item>
-          <widget class="QLabel" name="projection_label">
+          <widget class="QLabel" name="collimation_label">
            <property name="text">
-            <string>Emitter type</string>
+            <string>Collimation</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QComboBox" name="projection">
-           <property name="toolTip">
-            <string>For the time being just Parallel beams (radiographies and old-school CTs) is implemented</string>
+          <widget class="QLineEdit" name="collimation">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
            </property>
-           <item>
-            <property name="text">
-             <string>Parallel beams</string>
-            </property>
-           </item>
+           <property name="text">
+            <string notr="true">0.5 deg</string>
+           </property>
+           <property name="unit" stdset="0">
+            <string notr="true">deg</string>
+           </property>
+           <property name="quantity" stdset="0">
+            <double>0.500000000000000</double>
+           </property>
           </widget>
          </item>
         </layout>
