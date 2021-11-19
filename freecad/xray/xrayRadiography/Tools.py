@@ -24,13 +24,16 @@
 import os
 import sys
 import tempfile
+from PIL import Image
 import FreeCAD as App
 from FreeCAD import Units, Vector, Mesh
 import Part
+from ..xrayUtils import LuxCore
 
 
 LIGHT_PLY = "light.ply"
 SCREEN_PLY = "screen.ply"
+SPECIFIC_POWER = 30000000
 
 
 def luxcore_templates_folder():
@@ -56,6 +59,7 @@ def __shape2ply(shape, fname):
     # scale it to meters
     factor = __freecad2meters(1.0)
     shape = shape.scale(factor)
+    area = shape.Area
     Part.show(shape)
     App.ActiveDocument.recompute()
     obj = App.ActiveDocument.Objects[-1]
@@ -71,6 +75,7 @@ def __shape2ply(shape, fname):
     ply = header_dst.encode('utf8') + ply[l:]
     with open(fname, 'wb') as f:
         f.write(ply)
+    return area
 
 
 def radiography(xray, angle, max_error):
@@ -81,7 +86,7 @@ def radiography(xray, angle, max_error):
     # Setup the light and the screen meshes
     light = xray.Proxy.light(xray)
     light = light.rotate((0, 0, 0), (0, 0, 1), angle)
-    __shape2ply(light, os.path.join(tmppath, LIGHT_PLY))
+    light_area = __shape2ply(light, os.path.join(tmppath, LIGHT_PLY))
     cam_dist = 0.01 * xray.ChamberDistance
     screen = xray.Proxy.screen(xray)
     screen = screen.translate((cam_dist, 0, 0))
@@ -96,7 +101,7 @@ def radiography(xray, angle, max_error):
     cam_w = 0.5 * xray.ChamberRadius.getValueAs('mm').Value
     cam_h = 0.5 * xray.ChamberHeight.getValueAs('mm').Value
 
-    # Setup the templates
+    # Setup the templates for the background/empty image
     max_error = min(max(max_error.Value, 0), 1)
     replaces = {
         "@WIDTH_OUTPUT@": "{}".format(xray.SensorResolutionX),
@@ -119,13 +124,38 @@ def radiography(xray, angle, max_error):
                                                 0.5 * cam_w,
                                                 -0.5 * cam_h,
                                                 0.5 * cam_h),
+        "@POWER@" : "{}".format(
+            SPECIFIC_POWER / light_area),
         "@COLLIMATION@" : "{}".format(
             xray.EmitterCollimation.getValueAs('deg').Value),
         "@AREA_LIGHT_PLY@" : LIGHT_PLY,
         "@SCREEN_PLY@" : SCREEN_PLY,
     }
     scn = __make_template("scene.scn", replaces)
+    with open(os.path.join(tmppath, "scene.scn"), 'w') as f:
+        f.write(scn)
+
+    # We are ready for the background simulation!
+    yield tmppath, LuxCore.run_sim(tmppath, scn="scene.scn")
+
+
+
+    # Now we should add a scene per tuple of sampled frequencies (in groups of
+    # 3)
+    """
+    n_samples = xray.EmitterSamples
+    if n_samples % 3:
+        n_samples = 3 * (n_samples // 3 + 1)
+    n = n_samples // 3
+
     # Add objects here
     # xray.ScanObjects...
     with open(os.path.join(tmppath, "scene.scn"), 'w') as f:
         f.write(scn)
+    """
+
+    
+def get_imgs(folder, session=None):
+    if session is None:
+        return LuxCore.get_imgs(folder)
+    return LuxCore.get_imgs(folder, session)

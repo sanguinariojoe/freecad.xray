@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>380</width>
-    <height>250</height>
+    <height>319</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -57,7 +57,7 @@
             <string/>
            </property>
            <property name="text">
-            <string notr="true">0 deg</string>
+            <string notr="true">0.5 deg</string>
            </property>
            <property name="unit" stdset="0">
             <string notr="true">deg</string>
@@ -89,13 +89,13 @@
          <item>
           <widget class="QLineEdit" name="max_error">
            <property name="text">
-            <string notr="true">0.1</string>
+            <string notr="true">0.01</string>
            </property>
            <property name="unit" stdset="0">
             <string notr="true"/>
            </property>
            <property name="quantity" stdset="0">
-            <double>1.000000000000000</double>
+            <double>0.010000000000000</double>
            </property>
           </widget>
          </item>
@@ -110,7 +110,48 @@
      <property name="title">
       <string>Results</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout"/>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QProgressBar" name="pbar">
+        <property name="value">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="run">
+        <property name="text">
+         <string>Start</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QGroupBox" name="image_group">
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="image_label">
+           <property name="text">
+            <string>Show Image</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="image">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
   </layout>
