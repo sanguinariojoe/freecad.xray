@@ -89,13 +89,13 @@
          <item>
           <widget class="QLineEdit" name="max_error">
            <property name="text">
-            <string notr="true">0.01</string>
+            <string notr="true">0.05</string>
            </property>
            <property name="unit" stdset="0">
             <string notr="true"/>
            </property>
            <property name="quantity" stdset="0">
-            <double>0.010000000000000</double>
+            <double>0.050000000000000</double>
            </property>
           </widget>
          </item>

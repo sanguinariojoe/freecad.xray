@@ -24,16 +24,18 @@
 import os
 import sys
 import tempfile
+import numpy as np
 from PIL import Image
 import FreeCAD as App
 from FreeCAD import Units, Vector, Mesh
 import Part
-from ..xrayUtils import LuxCore
+from ..xrayUtils import LuxCore, LightUnits
 
 
 LIGHT_PLY = "light.ply"
 SCREEN_PLY = "screen.ply"
-SPECIFIC_POWER = 30000000
+SPECIFIC_POWER = 10
+SCALE = 'mm'
 
 
 def luxcore_templates_folder():
@@ -51,7 +53,7 @@ def __make_template(fname, replaces):
 
 
 def __freecad2meters(value):
-    return App.Units.Quantity(value, App.Units.Length).getValueAs('mm').Value
+    return App.Units.Quantity(value, App.Units.Length).getValueAs(SCALE).Value
 
 
 def __shape2ply(shape, fname):
@@ -78,6 +80,28 @@ def __shape2ply(shape, fname):
     return area
 
 
+def __average_mu(obj, min_e, max_e, num=25):
+    min_e = LightUnits.to_energy(min_e)
+    max_e = LightUnits.to_energy(max_e)
+    e = []
+    for freq in obj.AttenuationFreqs:
+        e.append(
+            LightUnits.to_energy(Units.parseQuantity('{} THz'.format(freq))))
+    mu = []
+    for att in obj.AttenuationValues:
+        mu.append(
+            Units.parseQuantity('{} m^-1'.format(att)))
+    # Convert everything to floats
+    min_x = min_e.getValueAs('keV').Value
+    max_x = max_e.getValueAs('keV').Value
+    x = np.linspace(min_x, max_x, num=num)
+    xp = [ee.getValueAs('keV').Value for ee in e]
+    yp = [att.getValueAs(SCALE + '^-1').Value / 1000 for att in mu]
+    # Interpolate and integrate
+    y = np.interp(x, xp, yp)
+    return np.trapz(y, x=x) / (max_x - min_x)
+
+
 def radiography(xray, angle, max_error):
     # Create a temporal folder
     tmppath = tempfile.mkdtemp()
@@ -98,8 +122,8 @@ def radiography(xray, angle, max_error):
     cam_target = cam_pos + Vector(cam_dist, 0, 0)
     cam_pos = Part.Vertex(cam_pos).rotate((0, 0, 0), (0, 0, 1), angle)
     cam_target = Part.Vertex(cam_target).rotate((0, 0, 0), (0, 0, 1), angle)
-    cam_w = 0.5 * xray.ChamberRadius.getValueAs('mm').Value
-    cam_h = 0.5 * xray.ChamberHeight.getValueAs('mm').Value
+    cam_w = 0.5 * xray.ChamberRadius.getValueAs(SCALE).Value
+    cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
 
     # Setup the templates for the background/empty image
     max_error = min(max(max_error.Value, 0), 1)
@@ -112,8 +136,8 @@ def radiography(xray, angle, max_error):
         f.write(__make_template("render.cfg", replaces))
 
     replaces = {
-        "@CAM_NEAR@": "{}".format(0.75 * cam_dist.getValueAs('mm').Value),
-        "@CAM_FAR@": "{}".format(1.5 * cam_dist.getValueAs('mm').Value),
+        "@CAM_NEAR@": "{}".format(0.75 * cam_dist.getValueAs(SCALE).Value),
+        "@CAM_FAR@": "{}".format(1.5 * cam_dist.getValueAs(SCALE).Value),
         "@CAM_POS@": "{} {} {}".format(__freecad2meters(cam_pos.X),
                                        __freecad2meters(cam_pos.Y),
                                        __freecad2meters(cam_pos.Z)),
@@ -125,7 +149,7 @@ def radiography(xray, angle, max_error):
                                                 -0.5 * cam_h,
                                                 0.5 * cam_h),
         "@POWER@" : "{}".format(
-            SPECIFIC_POWER / light_area),
+            SPECIFIC_POWER * light_area),
         "@COLLIMATION@" : "{}".format(
             xray.EmitterCollimation.getValueAs('deg').Value),
         "@AREA_LIGHT_PLY@" : LIGHT_PLY,
@@ -138,21 +162,48 @@ def radiography(xray, angle, max_error):
     # We are ready for the background simulation!
     yield tmppath, LuxCore.run_sim(tmppath, scn="scene.scn")
 
-
-
     # Now we should add a scene per tuple of sampled frequencies (in groups of
-    # 3)
-    """
+    # 3). We can start exporting the objects
+    objs = xray.ScanObjects
+    for i, obj in enumerate(objs):
+        # BUG: We should check if it is a mesh
+        __shape2ply(obj.Source.Shape.copy(), "mesh.{:05d}.ply".format(i))
+
+    # And now we can traverse the groups of samples
     n_samples = xray.EmitterSamples
     if n_samples % 3:
         n_samples = 3 * (n_samples // 3 + 1)
-    n = n_samples // 3
+    e0 = LightUnits.to_energy(xray.EmitterMinFreq)
+    e1 = LightUnits.to_energy(xray.EmitterMaxFreq)
+    de = (e1 - e0) / (n_samples + 1)
+    n_samples //= 3
+    scn_org = scn
+    for i in range(n_samples):
+        scn = scn_org
+        for j, obj in enumerate(objs):
+            # Compute the absortions
+            mu = []
+            for k in range(3):
+                kk = i * 3 + k
+                e_min = e0 + kk * de
+                e_max = e0 + (kk + 1) * de
+                mu.append(__average_mu(obj, e_min, e_max))
+            replaces = {
+                "@VOL_ID@": "{}".format(1000000 + j),
+                "@MAT_ID@": "{}".format(2000000 + j),
+                "@OBJ_ID@": "{}".format(3000000 + j),
+                "@ATTENUATION@": "{} {} {}".format(mu[0],
+                                                   mu[1],
+                                                   mu[2]),
+                "@OBJ_PLY@": "mesh.{:05d}.ply".format(j),
+            }
+            scn = scn + __make_template("object.scn", replaces)
+        scn_name = "sample.{}.scn".format(i)
+        with open(os.path.join(tmppath, scn_name), 'w') as f:
+            f.write(scn)
 
-    # Add objects here
-    # xray.ScanObjects...
-    with open(os.path.join(tmppath, "scene.scn"), 'w') as f:
-        f.write(scn)
-    """
+        # We are ready for the background simulation!
+        yield tmppath, LuxCore.run_sim(tmppath, scn=scn_name)
 
     
 def get_imgs(folder, session=None):

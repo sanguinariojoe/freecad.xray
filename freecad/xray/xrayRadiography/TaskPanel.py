@@ -122,7 +122,7 @@ class TaskPanel:
         # Get the number of images/LuxCore sessions, and give them titles
         n = self.xray.EmitterSamples
         if n % 3:
-            n = 3 * (n_samples // 3 + 1)
+            n = 3 * (n // 3 + 1)
         self.titles = ["Background"]
         e0 = LightUnits.to_energy(self.xray.EmitterMinFreq)
         e1 = LightUnits.to_energy(self.xray.EmitterMaxFreq)
@@ -172,7 +172,6 @@ class TaskPanel:
                         if last_conv < 0:
                             current_image += 1
                             self.images.append(img)
-                            print(self.titles, current_image)
                             self.form.image.addItem(self.titles[current_image])
                             self.form.image.setCurrentIndex(current_image)
                         else:
@@ -185,7 +184,11 @@ class TaskPanel:
             if(not self.luxcore):
                 break
 
-        # Produce the finalradiography image
+        # Save the plot before stopping
+        self.onStop()
+
+        # Produce the final radiography
+        
         return True
 
     def onStop(self):
@@ -195,7 +198,6 @@ class TaskPanel:
             "XRay", "Start", None))
         self.luxcore.Stop()
         self.luxcore = None
-        self.plot = None
 
     def update_plot(self):
         if not self.plot or not self.images:
