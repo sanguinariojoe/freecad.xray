@@ -119,11 +119,10 @@ class TaskPanel:
             "XRay", "Stop", None))
         self.form.pbar.setValue(0)
 
-        # Get the number of images/LuxCore sessions
+        # Get the number of images/LuxCore sessions, and give them titles
         n = self.xray.EmitterSamples
         if n % 3:
             n = 3 * (n_samples // 3 + 1)
-        n //= 3
         self.titles = ["Background"]
         e0 = LightUnits.to_energy(self.xray.EmitterMinFreq)
         e1 = LightUnits.to_energy(self.xray.EmitterMaxFreq)
@@ -131,6 +130,7 @@ class TaskPanel:
         for i in range(n):
             e = e0 + (i + 0.5) * de
             self.titles.append(e.UserString)
+        n //= 3
         n += 1  # The background image
 
         # Make FreeCAD responsive
