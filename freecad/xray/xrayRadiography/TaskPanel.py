@@ -111,6 +111,7 @@ class TaskPanel:
         self.xray = xrays[0]
         return False
 
+
     def onStart(self):
         if self.luxcore:
             self.onStop()
@@ -183,12 +184,28 @@ class TaskPanel:
                     time.sleep(1.0)
             if(not self.luxcore):
                 break
+            imgs = Tools.get_imgs(tmp_folder, session)
+            session.Stop()
+            if i == 0:
+                # For the background image we just need one channels
+                imgs = [imgs[0]]
+            for j, img in enumerate(imgs):
+                self.images[j - len(imgs)] = img
+            if self.form.image.currentIndex() == current_image:
+                self.update_plot()
+
+        if self.luxcore:
+            self.titles.append('Radiography')
+            self.form.image.addItem(self.titles[current_image])
+            self.form.image.setCurrentIndex(current_image)
+            # Produce the final radiography
+            img = Tools.assemble_radiography(self.xray, self.images)
+            self.images.append(img)
+            self.update_plot()
 
         # Save the plot before stopping
         self.onStop()
 
-        # Produce the final radiography
-        
         return True
 
     def onStop(self):

@@ -34,8 +34,8 @@ from ..xrayUtils import LuxCore, LightUnits
 
 LIGHT_PLY = "light.ply"
 SCREEN_PLY = "screen.ply"
-SPECIFIC_POWER = 10
-SCALE = 'mm'
+SPECIFIC_POWER = 100000
+SCALE = 'm'
 
 
 def luxcore_templates_folder():
@@ -96,7 +96,7 @@ def __average_mu(obj, min_e, max_e, num=25):
     max_x = max_e.getValueAs('keV').Value
     x = np.linspace(min_x, max_x, num=num)
     xp = [ee.getValueAs('keV').Value for ee in e]
-    yp = [att.getValueAs(SCALE + '^-1').Value / 1000 for att in mu]
+    yp = [att.getValueAs(SCALE + '^-1').Value for att in mu]
     # Interpolate and integrate
     y = np.interp(x, xp, yp)
     return np.trapz(y, x=x) / (max_x - min_x)
@@ -111,7 +111,7 @@ def radiography(xray, angle, max_error):
     light = xray.Proxy.light(xray)
     light = light.rotate((0, 0, 0), (0, 0, 1), angle)
     light_area = __shape2ply(light, os.path.join(tmppath, LIGHT_PLY))
-    cam_dist = 0.01 * xray.ChamberDistance
+    cam_dist = 0.1 * xray.ChamberDistance
     screen = xray.Proxy.screen(xray)
     screen = screen.translate((cam_dist, 0, 0))
     screen = screen.rotate((0, 0, 0), (0, 0, 1), angle)
@@ -122,11 +122,14 @@ def radiography(xray, angle, max_error):
     cam_target = cam_pos + Vector(cam_dist, 0, 0)
     cam_pos = Part.Vertex(cam_pos).rotate((0, 0, 0), (0, 0, 1), angle)
     cam_target = Part.Vertex(cam_target).rotate((0, 0, 0), (0, 0, 1), angle)
+    cam_near = 0.001 * Units.parseQuantity('1 {}'.format(SCALE))
+    if cam_near > 0.5 * cam_dist:
+        cam_near = 0.5 * cam_dist
     cam_w = 0.5 * xray.ChamberRadius.getValueAs(SCALE).Value
     cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
 
     # Setup the templates for the background/empty image
-    max_error = min(max(max_error.Value, 0), 1)
+    max_error = max(max_error.Value, 0)
     replaces = {
         "@WIDTH_OUTPUT@": "{}".format(xray.SensorResolutionX),
         "@HEIGHT_OUTPUT@": "{}".format(xray.SensorResolutionY),
@@ -136,8 +139,7 @@ def radiography(xray, angle, max_error):
         f.write(__make_template("render.cfg", replaces))
 
     replaces = {
-        "@CAM_NEAR@": "{}".format(0.75 * cam_dist.getValueAs(SCALE).Value),
-        "@CAM_FAR@": "{}".format(1.5 * cam_dist.getValueAs(SCALE).Value),
+        "@CAM_NEAR@": "{}".format(cam_near.getValueAs(SCALE).Value),
         "@CAM_POS@": "{} {} {}".format(__freecad2meters(cam_pos.X),
                                        __freecad2meters(cam_pos.Y),
                                        __freecad2meters(cam_pos.Z)),
@@ -210,3 +212,39 @@ def get_imgs(folder, session=None):
     if session is None:
         return LuxCore.get_imgs(folder)
     return LuxCore.get_imgs(folder, session)
+
+
+def __discretize_spectrum(xray):
+    n = xray.EmitterSamples
+    if n % 3:
+        n = 3 * (n // 3 + 1)
+
+    # 25 points per spectrum chunck
+    n_per_sample = 25
+    x = np.linspace(0.0, 1.0, num = n * n_per_sample)
+    xp = np.linspace(0.0, 1.0, num=len(xray.EmitterSpectrum))
+    yp = xray.EmitterSpectrum[:]
+    y = np.interp(x, xp, yp)
+
+    weights = []
+    # Average the spectrum by pieces
+    for i in range(n):
+        i0 = i * n_per_sample
+        i1 = (i + 1) * n_per_sample
+        weights.append(
+            np.trapz(y[i0:i1], x=x[i0:i1]) / (x[i1 - 1] - x[i0]))
+
+    return weights
+
+
+def assemble_radiography(xray, images):
+    imgs = [img / images[0] for img in images[1:]]
+    weights = __discretize_spectrum(xray)
+
+    W = 0
+    res = np.zeros(images[0].shape, dtype=images[0].dtype)
+    for w, img in zip(weights, imgs):
+        W += w
+        res = res + img
+
+    return res / W
