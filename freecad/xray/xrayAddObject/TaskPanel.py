@@ -148,7 +148,8 @@ class TaskPanel:
     def onPreset(self, i):
         dens, data = Tools.load_preset(i)
         self.form.dens.setText(dens.UserString)
-        self.form.attenuations.clearContents()
+        while self.form.attenuations.rowCount() > 0:
+            self.form.attenuations.removeRow(0)
         for i, (e, mu) in enumerate(data):
             self.form.attenuations.insertRow(i)
             item = QtGui.QTableWidgetItem()
