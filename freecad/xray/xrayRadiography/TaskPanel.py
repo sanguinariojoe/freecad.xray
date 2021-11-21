@@ -97,6 +97,10 @@ class TaskPanel:
             self.form.image,
             QtCore.SIGNAL("currentIndexChanged(int)"),
             self.onImage)
+        QtCore.QObject.connect(
+            self.form.cmap,
+            QtCore.SIGNAL("currentIndexChanged(int)"),
+            self.onImage)
         self.form.crange.valueChanged.connect(self.onCrange)
 
     def getMainWindow(self):
@@ -159,6 +163,7 @@ class TaskPanel:
         a = Units.parseQuantity(self.form.angle.text())
         e = Units.parseQuantity(self.form.max_error.text())
         self.images = []
+        self.form.image.clear()
         self.plot = PlotAux.Plot(self.xray)
         current_image = -1
         for i, radiography in enumerate(Tools.radiography(self.xray, a, e)):
@@ -211,10 +216,10 @@ class TaskPanel:
         if self.luxcore:
             self.titles.append('Radiography')
             self.form.image.addItem(self.titles[-1])
-            self.form.image.setCurrentIndex(current_image)
             # Produce the final radiography
             img = Tools.assemble_radiography(self.xray, self.images)
             self.images.append(img)
+            self.form.image.setCurrentIndex(len(self.images) - 1)
             self.update_plot()
 
         # Save the plot before stopping
@@ -240,8 +245,9 @@ class TaskPanel:
         if not self.plot or not self.images:
             return
         img = self.images[self.form.image.currentIndex()]
+        cmap = self.form.cmap.currentIndex()
         vmin, vmax = self.form.crange.value()
-        self.plot.update(img, vmin=vmin/1000, vmax=vmax/1000)
+        self.plot.update(img, cmap_index=cmap, vmin=vmin/1000, vmax=vmax/1000)
 
 
 def createTask():

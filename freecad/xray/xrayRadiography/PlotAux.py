@@ -24,6 +24,24 @@ import FreeCAD
 import numpy as np
 
 
+AIRPORT_COLORS = {'red':   ((0.0, 1.0, 1.0),
+                            (0.5, 0.0, 0.0),
+                            (1.0, 1.0, 1.0)),
+                  'green': ((0.0, 1.0, 1.0),
+                            (0.5, 0.0, 0.0),
+                            (1.0, 0.5, 0.5)),
+                  'blue':  ((0.0, 1.0, 1.0),
+                            (0.5, 0.5, 0.5),
+                            (1.0, 0.0, 0.0))}
+try:
+    from matplotlib.colors import LinearSegmentedColormap
+    airport_cmap = LinearSegmentedColormap(
+        'airport', segmentdata=AIRPORT_COLORS, N=256)
+except ImportError:
+    airport_cmap = 'PuRd'
+CMAPS = ['gray', 'binary', airport_cmap]
+
+
 class Plot(object):
     def __init__(self, xray):
         self.plt = None
@@ -41,12 +59,19 @@ class Plot(object):
         self.aspect = (xray.ChamberHeight / xray.ChamberRadius).Value
         self.plt = Plot.figure("Radiography")
         self.plt.update()
+        self.cbar = None
 
-    def update(self, img, cmap='gray', vmin=0.0, vmax=1.0):
+    def update(self, img, cmap_index=0, vmin=0.0, vmax=1.0):
+        if not self.plt:
+            return
         self.plt.axes.clear()
+        if self.cbar is not None:
+            self.cbar.remove()
         cmin, cmax = np.min(img), np.max(img)
         vmin = cmin + vmin * (cmax - cmin)
         vmax = cmin + vmax * (cmax - cmin)
-        self.plt.axes.imshow(img, cmap=cmap, vmin=vmin, vmax=vmax,
-                             aspect=self.aspect)
+        plt_img = self.plt.axes.imshow(
+            img, cmap=CMAPS[cmap_index], vmin=vmin, vmax=vmax,
+            aspect=self.aspect, origin='lower')
+        self.cbar = self.plt.fig.colorbar(plt_img)
         self.plt.update()
