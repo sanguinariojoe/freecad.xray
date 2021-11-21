@@ -26,6 +26,7 @@ import FreeCADGui as Gui
 from FreeCAD import Units
 import Part
 from PySide import QtGui, QtCore
+from qtrangeslider import QRangeSlider
 from . import Tools, PlotAux
 from .. import XRay_rc
 from ..xrayUtils import Selection, LightUnits
@@ -77,6 +78,14 @@ class TaskPanel:
         self.form.run = self.widget(QtGui.QPushButton, "run")
         self.form.pbar = self.widget(QtGui.QProgressBar, "pbar")
         self.form.image = self.widget(QtGui.QComboBox, "image")
+        self.form.cmap = self.widget(QtGui.QComboBox, "cmap")
+        self.form.image_group = self.widget(QtGui.QGroupBox, "image_group")
+        self.form.crange = QRangeSlider(QtCore.Qt.Horizontal,
+                                        self.form.image_group)
+        self.form.crange.setMaximum(1000)
+        self.form.crange.setValue((0, 1000))
+        self.form.image_group.layout().addWidget(
+            self.form.crange, 4, 1)
 
         if self.initValues():
             return True
@@ -84,6 +93,11 @@ class TaskPanel:
             self.form.run,
             QtCore.SIGNAL("pressed()"),
             self.onStart)
+        QtCore.QObject.connect(
+            self.form.image,
+            QtCore.SIGNAL("currentIndexChanged(int)"),
+            self.onImage)
+        self.form.crange.valueChanged.connect(self.onCrange)
 
     def getMainWindow(self):
         toplevel = QtGui.QApplication.topLevelWidgets()
@@ -196,7 +210,7 @@ class TaskPanel:
 
         if self.luxcore:
             self.titles.append('Radiography')
-            self.form.image.addItem(self.titles[current_image])
+            self.form.image.addItem(self.titles[-1])
             self.form.image.setCurrentIndex(current_image)
             # Produce the final radiography
             img = Tools.assemble_radiography(self.xray, self.images)
@@ -216,11 +230,18 @@ class TaskPanel:
         self.luxcore.Stop()
         self.luxcore = None
 
+    def onImage(self, i):
+        self.update_plot()
+
+    def onCrange(self, values):
+        self.update_plot()
+
     def update_plot(self):
         if not self.plot or not self.images:
             return
         img = self.images[self.form.image.currentIndex()]
-        self.plot.update(img)
+        vmin, vmax = self.form.crange.value()
+        self.plot.update(img, vmin=vmin/1000, vmax=vmax/1000)
 
 
 def createTask():

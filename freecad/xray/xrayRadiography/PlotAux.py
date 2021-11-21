@@ -44,6 +44,9 @@ class Plot(object):
 
     def update(self, img, cmap='gray', vmin=0.0, vmax=1.0):
         self.plt.axes.clear()
+        cmin, cmax = np.min(img), np.max(img)
+        vmin = cmin + vmin * (cmax - cmin)
+        vmax = cmin + vmax * (cmax - cmin)
         self.plt.axes.imshow(img, cmap=cmap, vmin=vmin, vmax=vmax,
                              aspect=self.aspect)
         self.plt.update()

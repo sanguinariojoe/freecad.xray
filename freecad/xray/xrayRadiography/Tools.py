@@ -36,6 +36,7 @@ LIGHT_PLY = "light.ply"
 SCREEN_PLY = "screen.ply"
 SPECIFIC_POWER = 100000
 SCALE = 'm'
+MIN_INTENSITY_RATIO = 1E-6
 
 
 def luxcore_templates_folder():
@@ -129,7 +130,8 @@ def radiography(xray, angle, max_error):
     cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
 
     # Setup the templates for the background/empty image
-    max_error = max(max_error.Value, 0)
+    power = SPECIFIC_POWER * light_area
+    max_error = max(max_error.Value, 0) * power
     replaces = {
         "@WIDTH_OUTPUT@": "{}".format(xray.SensorResolutionX),
         "@HEIGHT_OUTPUT@": "{}".format(xray.SensorResolutionY),
@@ -150,8 +152,7 @@ def radiography(xray, angle, max_error):
                                                 0.5 * cam_w,
                                                 -0.5 * cam_h,
                                                 0.5 * cam_h),
-        "@POWER@" : "{}".format(
-            SPECIFIC_POWER * light_area),
+        "@POWER@" : "{}".format(power),
         "@COLLIMATION@" : "{}".format(
             xray.EmitterCollimation.getValueAs('deg').Value),
         "@AREA_LIGHT_PLY@" : LIGHT_PLY,
@@ -245,6 +246,8 @@ def assemble_radiography(xray, images):
     res = np.zeros(images[0].shape, dtype=images[0].dtype)
     for w, img in zip(weights, imgs):
         W += w
-        res = res + img
+        res = res + img * w
+    res = res / W
 
-    return res / W
+    res[res < MIN_INTENSITY_RATIO] = MIN_INTENSITY_RATIO
+    return -np.log(res)
