@@ -52,7 +52,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="angle">
+          <widget class="Gui::InputField" name="angle">
            <property name="toolTip">
             <string/>
            </property>
@@ -189,6 +189,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Gui::InputField</class>
+   <extends>QLineEdit</extends>
+   <header>Gui/InputField.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

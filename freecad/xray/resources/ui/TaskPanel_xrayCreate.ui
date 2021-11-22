@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>558</width>
-    <height>640</height>
+    <height>800</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -19,7 +19,7 @@
   <property name="minimumSize">
    <size>
     <width>250</width>
-    <height>640</height>
+    <height>800</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -239,7 +239,7 @@
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
-          <widget class="QLineEdit" name="min_freq">
+          <widget class="Gui::InputField" name="min_freq">
            <property name="text">
             <string notr="true">1 keV</string>
            </property>
@@ -259,7 +259,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="max_freq">
+          <widget class="Gui::InputField" name="max_freq">
            <property name="text">
             <string notr="true">10 keV</string>
            </property>
@@ -366,7 +366,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="collimation">
+          <widget class="Gui::InputField" name="collimation">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -411,7 +411,7 @@
        </widget>
       </item>
       <item row="0" column="2">
-       <widget class="QLineEdit" name="radius">
+       <widget class="Gui::InputField" name="radius">
         <property name="text">
          <string notr="true">50 mm</string>
         </property>
@@ -424,7 +424,7 @@
        </widget>
       </item>
       <item row="1" column="2">
-       <widget class="QLineEdit" name="height">
+       <widget class="Gui::InputField" name="height">
         <property name="text">
          <string notr="true">50 mm</string>
         </property>
@@ -444,7 +444,7 @@
        </widget>
       </item>
       <item row="2" column="2">
-       <widget class="QLineEdit" name="distance">
+       <widget class="Gui::InputField" name="distance">
         <property name="text">
          <string notr="true">50 cm</string>
         </property>
@@ -512,6 +512,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Gui::InputField</class>
+   <extends>QLineEdit</extends>
+   <header>Gui/InputField.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

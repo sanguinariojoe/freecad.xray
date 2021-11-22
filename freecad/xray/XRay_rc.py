@@ -2,7 +2,7 @@
 
 # Resource object code
 #
-# Created: mån nov. 22 08:56:07 2021
+# Created: mån nov. 22 09:45:09 2021
 #      by: The Resource Compiler for PySide2 (Qt v5.15.2)
 #
 # WARNING! All changes made in this file will be lost!
@@ -10,1730 +10,2228 @@
 from PySide2 import QtCore
 
 qt_resource_data = b"\
-\x00\x00?\xaa\
+\x00\x00\x8a\xb1\
 <\
 ?xml version=\x221.\
 0\x22 encoding=\x22UTF\
--8\x22?>\x0a<ui versio\
-n=\x224.0\x22>\x0a <class\
->TaskPanel</clas\
-s>\x0a <widget clas\
-s=\x22QWidget\x22 name\
-=\x22TaskPanel\x22>\x0a  \
-<property name=\x22\
-geometry\x22>\x0a   <r\
-ect>\x0a    <x>0</x\
->\x0a    <y>0</y>\x0a \
-   <width>558</w\
-idth>\x0a    <heigh\
-t>640</height>\x0a \
-  </rect>\x0a  </pr\
-operty>\x0a  <prope\
-rty name=\x22sizePo\
-licy\x22>\x0a   <sizep\
-olicy hsizetype=\
-\x22Preferred\x22 vsiz\
-etype=\x22Expanding\
-\x22>\x0a    <horstret\
-ch>0</horstretch\
->\x0a    <verstretc\
-h>0</verstretch>\
-\x0a   </sizepolicy\
->\x0a  </property>\x0a\
-  <property name\
-=\x22minimumSize\x22>\x0a\
-   <size>\x0a    <w\
-idth>250</width>\
-\x0a    <height>640\
-</height>\x0a   </s\
-ize>\x0a  </propert\
-y>\x0a  <property n\
-ame=\x22windowTitle\
-\x22>\x0a   <string>Cr\
-eate X-Ray machi\
-ne</string>\x0a  </\
-property>\x0a  <lay\
-out class=\x22QGrid\
-Layout\x22 name=\x22gr\
-idLayout_3\x22>\x0a   \
-<item row=\x220\x22 co\
-lumn=\x220\x22>\x0a    <w\
-idget class=\x22QGr\
-oupBox\x22 name=\x22em\
-itter_group\x22>\x0a  \
-   <property nam\
-e=\x22toolTip\x22>\x0a   \
-   <string>The X\
--Ray emitter opt\
-ions, including \
-the power spectr\
-um (which is ren\
-ormalized, so do\
- not worry about\
- the units) and \
-the bulb size.</\
-string>\x0a     </p\
-roperty>\x0a     <p\
-roperty name=\x22ti\
-tle\x22>\x0a      <str\
-ing>XRay emitter\
-</string>\x0a     <\
-/property>\x0a     \
-<layout class=\x22Q\
-GridLayout\x22 name\
-=\x22gridLayout_2\x22>\
-\x0a      <item row\
-=\x222\x22 column=\x220\x22>\
-\x0a       <widget \
-class=\x22QGroupBox\
-\x22 name=\x22preset_g\
-roup\x22>\x0a        <\
-property name=\x22f\
-lat\x22>\x0a         <\
-bool>true</bool>\
-\x0a        </prope\
-rty>\x0a        <la\
-yout class=\x22QHBo\
-xLayout\x22 name=\x22h\
-orizontalLayout_\
-2\x22>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QLa\
-bel\x22 name=\x22prese\
-t_label\x22>\x0a      \
-     <property n\
-ame=\x22text\x22>\x0a    \
-        <string>\
-Load preset</str\
-ing>\x0a           \
-</property>\x0a    \
-      </widget>\x0a\
-         </item>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QCombo\
-Box\x22 name=\x22prese\
-t\x22>\x0a           <\
-property name=\x22c\
-urrentIndex\x22>\x0a  \
-          <numbe\
-r>0</number>\x0a   \
-        </proper\
-ty>\x0a           <\
-item>\x0a          \
-  <property name\
-=\x22text\x22>\x0a       \
-      <string>Me\
-dical shoft X-Ra\
-ys</string>\x0a    \
-        </proper\
-ty>\x0a           <\
-/item>\x0a         \
-  <item>\x0a       \
-     <property n\
-ame=\x22text\x22>\x0a    \
-         <string\
->Crystallography\
-</string>\x0a      \
-      </property\
->\x0a           </i\
-tem>\x0a           \
-<item>\x0a         \
-   <property nam\
-e=\x22text\x22>\x0a      \
-       <string>M\
-edical hard X-Ra\
-ys</string>\x0a    \
-        </proper\
-ty>\x0a           <\
-/item>\x0a         \
-  <item>\x0a       \
-     <property n\
-ame=\x22text\x22>\x0a    \
-         <string\
->Airport securit\
-y</string>\x0a     \
-       </propert\
-y>\x0a           </\
-item>\x0a          \
- <item>\x0a        \
-    <property na\
-me=\x22text\x22>\x0a     \
-        <string>\
-Metallography</s\
-tring>\x0a         \
-   </property>\x0a \
-          </item\
->\x0a          </wi\
-dget>\x0a         <\
-/item>\x0a        <\
-/layout>\x0a       \
-</widget>\x0a      \
-</item>\x0a      <i\
-tem row=\x221\x22 colu\
-mn=\x220\x22>\x0a       <\
-widget class=\x22QG\
-roupBox\x22 name=\x22s\
-pectrum_group\x22>\x0a\
-        <propert\
-y name=\x22flat\x22>\x0a \
-        <bool>tr\
-ue</bool>\x0a      \
-  </property>\x0a  \
-      <layout cl\
-ass=\x22QHBoxLayout\
-\x22 name=\x22power_gr\
-oup\x22>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-Slider\x22 name=\x22sp\
-ectrum_01\x22>\x0a    \
-       <property\
- name=\x22orientati\
-on\x22>\x0a           \
- <enum>Qt::Verti\
-cal</enum>\x0a     \
-      </property\
->\x0a          </wi\
-dget>\x0a         <\
-/item>\x0a         \
-<item>\x0a         \
- <widget class=\x22\
-QSlider\x22 name=\x22s\
-pectrum_02\x22>\x0a   \
-        <propert\
-y name=\x22orientat\
-ion\x22>\x0a          \
-  <enum>Qt::Vert\
-ical</enum>\x0a    \
-       </propert\
-y>\x0a          </w\
-idget>\x0a         \
-</item>\x0a        \
- <item>\x0a        \
-  <widget class=\
-\x22QSlider\x22 name=\x22\
-spectrum_03\x22>\x0a  \
-         <proper\
-ty name=\x22orienta\
-tion\x22>\x0a         \
-   <enum>Qt::Ver\
-tical</enum>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
-  <item>\x0a       \
-   <widget class\
-=\x22QSlider\x22 name=\
-\x22spectrum_04\x22>\x0a \
-          <prope\
-rty name=\x22orient\
-ation\x22>\x0a        \
-    <enum>Qt::Ve\
-rtical</enum>\x0a  \
-         </prope\
-rty>\x0a          <\
-/widget>\x0a       \
-  </item>\x0a      \
-   <item>\x0a      \
-    <widget clas\
-s=\x22QSlider\x22 name\
-=\x22spectrum_05\x22>\x0a\
-           <prop\
-erty name=\x22orien\
-tation\x22>\x0a       \
-     <enum>Qt::V\
-ertical</enum>\x0a \
-          </prop\
-erty>\x0a          \
-</widget>\x0a      \
-   </item>\x0a     \
-    <item>\x0a     \
-     <widget cla\
-ss=\x22QSlider\x22 nam\
-e=\x22spectrum_06\x22>\
-\x0a           <pro\
-perty name=\x22orie\
-ntation\x22>\x0a      \
-      <enum>Qt::\
-Vertical</enum>\x0a\
-           </pro\
-perty>\x0a         \
- </widget>\x0a     \
-    </item>\x0a    \
-     <item>\x0a    \
-      <widget cl\
-ass=\x22QSlider\x22 na\
-me=\x22spectrum_07\x22\
->\x0a           <pr\
-operty name=\x22ori\
-entation\x22>\x0a     \
-       <enum>Qt:\
-:Vertical</enum>\
-\x0a           </pr\
-operty>\x0a        \
-  </widget>\x0a    \
-     </item>\x0a   \
-      <item>\x0a   \
-       <widget c\
-lass=\x22QSlider\x22 n\
-ame=\x22spectrum_08\
-\x22>\x0a           <p\
-roperty name=\x22or\
-ientation\x22>\x0a    \
-        <enum>Qt\
-::Vertical</enum\
->\x0a           </p\
-roperty>\x0a       \
-   </widget>\x0a   \
-      </item>\x0a  \
-       <item>\x0a  \
-        <widget \
-class=\x22QSlider\x22 \
-name=\x22spectrum_0\
-9\x22>\x0a           <\
-property name=\x22o\
-rientation\x22>\x0a   \
-         <enum>Q\
-t::Vertical</enu\
-m>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-        <item>\x0a \
-         <widget\
- class=\x22QSlider\x22\
- name=\x22spectrum_\
-10\x22>\x0a           \
-<property name=\x22\
-orientation\x22>\x0a  \
-          <enum>\
-Qt::Vertical</en\
-um>\x0a           <\
-/property>\x0a     \
-     </widget>\x0a \
-        </item>\x0a\
-         <item>\x0a\
-          <widge\
-t class=\x22QSlider\
-\x22 name=\x22spectrum\
-_11\x22>\x0a          \
- <property name=\
-\x22orientation\x22>\x0a \
-           <enum\
->Qt::Vertical</e\
-num>\x0a           \
-</property>\x0a    \
-      </widget>\x0a\
-         </item>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QSlide\
-r\x22 name=\x22spectru\
-m_12\x22>\x0a         \
-  <property name\
-=\x22orientation\x22>\x0a\
-            <enu\
-m>Qt::Vertical</\
-enum>\x0a          \
- </property>\x0a   \
-       </widget>\
-\x0a         </item\
->\x0a         <item\
->\x0a          <wid\
-get class=\x22QSlid\
-er\x22 name=\x22spectr\
-um_13\x22>\x0a        \
-   <property nam\
-e=\x22orientation\x22>\
-\x0a            <en\
-um>Qt::Vertical<\
-/enum>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a         <ite\
-m>\x0a          <wi\
-dget class=\x22QSli\
-der\x22 name=\x22spect\
-rum_14\x22>\x0a       \
-    <property na\
-me=\x22orientation\x22\
->\x0a            <e\
-num>Qt::Vertical\
-</enum>\x0a        \
-   </property>\x0a \
-         </widge\
-t>\x0a         </it\
-em>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QSl\
-ider\x22 name=\x22spec\
-trum_15\x22>\x0a      \
-     <property n\
-ame=\x22orientation\
-\x22>\x0a            <\
-enum>Qt::Vertica\
-l</enum>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem>\x0a          <\
-widget class=\x22QS\
-lider\x22 name=\x22spe\
-ctrum_16\x22>\x0a     \
-      <property \
-name=\x22orientatio\
-n\x22>\x0a            \
-<enum>Qt::Vertic\
-al</enum>\x0a      \
-     </property>\
-\x0a          </wid\
-get>\x0a         </\
-item>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-Slider\x22 name=\x22sp\
-ectrum_17\x22>\x0a    \
-       <property\
- name=\x22orientati\
-on\x22>\x0a           \
- <enum>Qt::Verti\
-cal</enum>\x0a     \
-      </property\
->\x0a          </wi\
-dget>\x0a         <\
-/item>\x0a         \
-<item>\x0a         \
- <widget class=\x22\
-QSlider\x22 name=\x22s\
-pectrum_18\x22>\x0a   \
-        <propert\
-y name=\x22orientat\
-ion\x22>\x0a          \
-  <enum>Qt::Vert\
-ical</enum>\x0a    \
-       </propert\
-y>\x0a          </w\
-idget>\x0a         \
-</item>\x0a        \
- <item>\x0a        \
-  <widget class=\
-\x22QSlider\x22 name=\x22\
-spectrum_19\x22>\x0a  \
-         <proper\
-ty name=\x22orienta\
-tion\x22>\x0a         \
-   <enum>Qt::Ver\
-tical</enum>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
-  <item>\x0a       \
-   <widget class\
-=\x22QSlider\x22 name=\
-\x22spectrum_20\x22>\x0a \
-          <prope\
-rty name=\x22orient\
-ation\x22>\x0a        \
-    <enum>Qt::Ve\
-rtical</enum>\x0a  \
-         </prope\
-rty>\x0a          <\
-/widget>\x0a       \
-  </item>\x0a      \
-  </layout>\x0a    \
-   </widget>\x0a   \
-   </item>\x0a     \
- <item row=\x220\x22 c\
-olumn=\x220\x22>\x0a     \
-  <widget class=\
-\x22QGroupBox\x22 name\
-=\x22freqs_group\x22>\x0a\
-        <propert\
-y name=\x22flat\x22>\x0a \
-        <bool>tr\
-ue</bool>\x0a      \
-  </property>\x0a  \
-      <layout cl\
-ass=\x22QHBoxLayout\
-\x22 name=\x22horizont\
-alLayout\x22>\x0a     \
-    <item>\x0a     \
-     <widget cla\
-ss=\x22QLineEdit\x22 n\
-ame=\x22min_freq\x22>\x0a\
-           <prop\
-erty name=\x22text\x22\
->\x0a            <s\
-tring notr=\x22true\
-\x22>1 keV</string>\
-\x0a           </pr\
-operty>\x0a        \
-   <property nam\
-e=\x22unit\x22 stdset=\
-\x220\x22>\x0a           \
- <string notr=\x22t\
-rue\x22>eV</string>\
-\x0a           </pr\
-operty>\x0a        \
-   <property nam\
-e=\x22quantity\x22 std\
-set=\x220\x22>\x0a       \
-     <double>1.0\
-00000000000000</\
-double>\x0a        \
-   </property>\x0a \
-         </widge\
-t>\x0a         </it\
-em>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QLa\
-bel\x22 name=\x22sep_f\
-req\x22>\x0a          \
- <property name=\
-\x22text\x22>\x0a        \
-    <string notr\
-=\x22true\x22>-</strin\
-g>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-        <item>\x0a \
-         <widget\
- class=\x22QLineEdi\
-t\x22 name=\x22max_fre\
-q\x22>\x0a           <\
-property name=\x22t\
-ext\x22>\x0a          \
-  <string notr=\x22\
-true\x22>10 keV</st\
-ring>\x0a          \
- </property>\x0a   \
-        <propert\
-y name=\x22unit\x22 st\
-dset=\x220\x22>\x0a      \
-      <string no\
-tr=\x22true\x22>eV</st\
-ring>\x0a          \
- </property>\x0a   \
-        <propert\
-y name=\x22quantity\
-\x22 stdset=\x220\x22>\x0a  \
-          <doubl\
-e>1.000000000000\
-000</double>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
- </layout>\x0a     \
-  </widget>\x0a    \
-  </item>\x0a      \
-<item row=\x224\x22 co\
-lumn=\x220\x22>\x0a      \
- <widget class=\x22\
-QGroupBox\x22 name=\
-\x22projection_type\
-_group\x22>\x0a       \
- <property name=\
-\x22flat\x22>\x0a        \
- <bool>true</boo\
-l>\x0a        </pro\
-perty>\x0a        <\
-layout class=\x22QH\
-BoxLayout\x22 name=\
-\x22horizontalLayou\
-t_4\x22>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-Label\x22 name=\x22pro\
-jection_label\x22>\x0a\
-           <prop\
-erty name=\x22text\x22\
->\x0a            <s\
-tring>Emitter ty\
-pe</string>\x0a    \
-       </propert\
-y>\x0a          </w\
-idget>\x0a         \
-</item>\x0a        \
- <item>\x0a        \
-  <widget class=\
-\x22QComboBox\x22 name\
-=\x22projection\x22>\x0a \
-          <prope\
-rty name=\x22toolTi\
-p\x22>\x0a            \
-<string>For the \
-time being just \
-Parallel beams (\
-radiographies an\
-d old-school CTs\
-) is implemented\
-</string>\x0a      \
-     </property>\
-\x0a           <ite\
-m>\x0a            <\
-property name=\x22t\
-ext\x22>\x0a          \
-   <string>Paral\
-lel beams</strin\
-g>\x0a            <\
-/property>\x0a     \
-      </item>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a        </lay\
-out>\x0a       </wi\
-dget>\x0a      </it\
-em>\x0a      <item \
-row=\x223\x22 column=\x22\
-0\x22>\x0a       <widg\
-et class=\x22QGroup\
-Box\x22 name=\x22freq_\
-n_group\x22>\x0a      \
-  <property name\
-=\x22toolTip\x22>\x0a    \
-     <string>The\
- number of sampl\
-es to take fro t\
-he spectrum. The\
- number of image\
-s per projection\
- to be rendered \
-is equal to the \
-number of sample\
-s divided by 3. \
-Thus the larger \
-the number of sa\
-mples, the longe\
-r would it take \
-to compute. Incr\
-easing the numbe\
-r of samples wou\
-ld be very benef\
-icial in the pre\
-sence of metals.\
-</string>\x0a      \
-  </property>\x0a  \
-      <property \
-name=\x22flat\x22>\x0a   \
-      <bool>true\
-</bool>\x0a        \
-</property>\x0a    \
-    <layout clas\
-s=\x22QHBoxLayout\x22 \
-name=\x22horizontal\
-Layout_3\x22>\x0a     \
-    <item>\x0a     \
-     <widget cla\
-ss=\x22QLabel\x22 name\
-=\x22freqs_n_label\x22\
->\x0a           <pr\
-operty name=\x22tex\
-t\x22>\x0a            \
-<string>Number o\
-f freq. samples<\
-/string>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem>\x0a          <\
-widget class=\x22QS\
-pinBox\x22 name=\x22fr\
-eqs_n\x22>\x0a        \
-   <property nam\
-e=\x22minimum\x22>\x0a   \
-         <number\
->3</number>\x0a    \
-       </propert\
-y>\x0a           <p\
-roperty name=\x22ma\
-ximum\x22>\x0a        \
-    <number>21</\
-number>\x0a        \
-   </property>\x0a \
-          <prope\
-rty name=\x22single\
-Step\x22>\x0a         \
-   <number>3</nu\
-mber>\x0a          \
- </property>\x0a   \
-        <propert\
-y name=\x22value\x22>\x0a\
-            <num\
-ber>3</number>\x0a \
-          </prop\
-erty>\x0a          \
-</widget>\x0a      \
-   </item>\x0a     \
-   </layout>\x0a   \
-    </widget>\x0a  \
-    </item>\x0a    \
-  <item row=\x225\x22 \
-column=\x220\x22>\x0a    \
-   <widget class\
-=\x22QGroupBox\x22 nam\
-e=\x22collimation_g\
-roup\x22>\x0a        <\
-property name=\x22t\
-oolTip\x22>\x0a       \
-  <string>How ef\
-ficient is the c\
-ollimator. The w\
-orst is the coll\
-imator the more \
-blurry images ar\
-e produced</stri\
-ng>\x0a        </pr\
-operty>\x0a        \
-<property name=\x22\
-flat\x22>\x0a         \
-<bool>true</bool\
->\x0a        </prop\
-erty>\x0a        <l\
-ayout class=\x22QHB\
-oxLayout\x22 name=\x22\
-collimation_grou\
-p_kk\x22>\x0a         \
-<property name=\x22\
-leftMargin\x22>\x0a   \
-       <number>6\
-</number>\x0a      \
-   </property>\x0a \
-        <propert\
-y name=\x22topMargi\
-n\x22>\x0a          <n\
-umber>6</number>\
-\x0a         </prop\
-erty>\x0a         <\
-property name=\x22r\
-ightMargin\x22>\x0a   \
-       <number>6\
-</number>\x0a      \
-   </property>\x0a \
-        <propert\
-y name=\x22bottomMa\
-rgin\x22>\x0a         \
- <number>6</numb\
-er>\x0a         </p\
-roperty>\x0a       \
-  <item>\x0a       \
-   <widget class\
-=\x22QLabel\x22 name=\x22\
-collimation_labe\
-l\x22>\x0a           <\
-property name=\x22t\
-ext\x22>\x0a          \
-  <string>Collim\
-ation</string>\x0a \
-          </prop\
-erty>\x0a          \
-</widget>\x0a      \
-   </item>\x0a     \
-    <item>\x0a     \
-     <widget cla\
-ss=\x22QLineEdit\x22 n\
-ame=\x22collimation\
-\x22>\x0a           <p\
-roperty name=\x22si\
-zePolicy\x22>\x0a     \
-       <sizepoli\
-cy hsizetype=\x22Mi\
-nimum\x22 vsizetype\
-=\x22Fixed\x22>\x0a      \
-       <horstret\
-ch>0</horstretch\
->\x0a             <\
-verstretch>0</ve\
-rstretch>\x0a      \
-      </sizepoli\
-cy>\x0a           <\
-/property>\x0a     \
-      <property \
-name=\x22text\x22>\x0a   \
-         <string\
- notr=\x22true\x22>0.5\
- deg</string>\x0a  \
-         </prope\
-rty>\x0a           \
-<property name=\x22\
-unit\x22 stdset=\x220\x22\
->\x0a            <s\
-tring notr=\x22true\
-\x22>deg</string>\x0a \
-          </prop\
-erty>\x0a          \
- <property name=\
-\x22quantity\x22 stdse\
-t=\x220\x22>\x0a         \
-   <double>0.500\
-000000000000</do\
-uble>\x0a          \
- </property>\x0a   \
-       </widget>\
-\x0a         </item\
->\x0a        </layo\
-ut>\x0a       </wid\
-get>\x0a      </ite\
-m>\x0a     </layout\
->\x0a    </widget>\x0a\
-   </item>\x0a   <i\
-tem row=\x221\x22 colu\
-mn=\x220\x22>\x0a    <wid\
-get class=\x22QGrou\
-pBox\x22 name=\x22cham\
-ber_group\x22>\x0a    \
- <property name=\
-\x22toolTip\x22>\x0a     \
- <string>The sca\
-nning chamber di\
-mensions. At fir\
-st glance just t\
-he objects fitti\
-ng inside will b\
-e correctly scan\
-ned. However, in\
- some cases it s\
-hould be accepte\
-d that the scann\
-ing body is larg\
-er than the area\
- covered by the \
-X-Rays, that wou\
-ld be the case i\
-n synchrotron-ba\
-sed radiation.</\
-string>\x0a     </p\
-roperty>\x0a     <l\
-ayout class=\x22QGr\
-idLayout\x22 name=\x22\
-gridLayout\x22>\x0a   \
-   <item row=\x220\x22\
- column=\x220\x22>\x0a   \
-    <widget clas\
-s=\x22QLabel\x22 name=\
-\x22radius_label\x22>\x0a\
-        <propert\
-y name=\x22text\x22>\x0a \
-        <string>\
-radius</string>\x0a\
-        </proper\
-ty>\x0a       </wid\
-get>\x0a      </ite\
-m>\x0a      <item r\
-ow=\x221\x22 column=\x220\
-\x22>\x0a       <widge\
-t class=\x22QLabel\x22\
- name=\x22height_la\
-bel\x22>\x0a        <p\
-roperty name=\x22te\
-xt\x22>\x0a         <s\
-tring>height</st\
-ring>\x0a        </\
-property>\x0a      \
- </widget>\x0a     \
- </item>\x0a      <\
-item row=\x220\x22 col\
-umn=\x222\x22>\x0a       \
-<widget class=\x22Q\
-LineEdit\x22 name=\x22\
-radius\x22>\x0a       \
- <property name=\
-\x22text\x22>\x0a        \
- <string notr=\x22t\
-rue\x22>50 mm</stri\
-ng>\x0a        </pr\
-operty>\x0a        \
-<property name=\x22\
-unit\x22 stdset=\x220\x22\
->\x0a         <stri\
-ng notr=\x22true\x22>m\
-</string>\x0a      \
-  </property>\x0a  \
-      <property \
-name=\x22quantity\x22 \
-stdset=\x220\x22>\x0a    \
-     <double>1.0\
-00000000000000</\
-double>\x0a        \
-</property>\x0a    \
-   </widget>\x0a   \
-   </item>\x0a     \
- <item row=\x221\x22 c\
-olumn=\x222\x22>\x0a     \
-  <widget class=\
-\x22QLineEdit\x22 name\
-=\x22height\x22>\x0a     \
-   <property nam\
-e=\x22text\x22>\x0a      \
-   <string notr=\
-\x22true\x22>50 mm</st\
-ring>\x0a        </\
-property>\x0a      \
-  <property name\
-=\x22unit\x22 stdset=\x22\
-0\x22>\x0a         <st\
-ring notr=\x22true\x22\
->m</string>\x0a    \
-    </property>\x0a\
-        <propert\
-y name=\x22quantity\
-\x22 stdset=\x220\x22>\x0a  \
-       <double>1\
-.000000000000000\
-</double>\x0a      \
-  </property>\x0a  \
-     </widget>\x0a \
-     </item>\x0a   \
-   <item row=\x222\x22\
- column=\x220\x22>\x0a   \
-    <widget clas\
-s=\x22QLabel\x22 name=\
-\x22distance_label\x22\
->\x0a        <prope\
-rty name=\x22text\x22>\
-\x0a         <strin\
-g>distance</stri\
-ng>\x0a        </pr\
-operty>\x0a       <\
-/widget>\x0a      <\
-/item>\x0a      <it\
-em row=\x222\x22 colum\
-n=\x222\x22>\x0a       <w\
-idget class=\x22QLi\
-neEdit\x22 name=\x22di\
-stance\x22>\x0a       \
- <property name=\
-\x22text\x22>\x0a        \
- <string notr=\x22t\
-rue\x22>50 cm</stri\
-ng>\x0a        </pr\
-operty>\x0a        \
-<property name=\x22\
-unit\x22 stdset=\x220\x22\
->\x0a         <stri\
-ng notr=\x22true\x22>m\
-</string>\x0a      \
-  </property>\x0a  \
-      <property \
-name=\x22quantity\x22 \
-stdset=\x220\x22>\x0a    \
-     <double>10.\
-000000000000000<\
-/double>\x0a       \
- </property>\x0a   \
-    </widget>\x0a  \
-    </item>\x0a    \
- </layout>\x0a    <\
-/widget>\x0a   </it\
-em>\x0a   <item row\
-=\x222\x22 column=\x220\x22>\
-\x0a    <widget cla\
-ss=\x22QGroupBox\x22 n\
-ame=\x22sensor_grou\
-p\x22>\x0a     <proper\
-ty name=\x22title\x22>\
-\x0a      <string>S\
-ensor</string>\x0a \
-    </property>\x0a\
-     <layout cla\
-ss=\x22QGridLayout\x22\
- name=\x22gridLayou\
-t_4\x22>\x0a      <ite\
-m row=\x220\x22 column\
-=\x220\x22>\x0a       <wi\
-dget class=\x22QGro\
-upBox\x22 name=\x22res\
-olution_group\x22>\x0a\
-        <propert\
-y name=\x22flat\x22>\x0a \
-        <bool>tr\
-ue</bool>\x0a      \
-  </property>\x0a  \
-      <layout cl\
-ass=\x22QHBoxLayout\
-\x22 name=\x22horizont\
-alLayout_5\x22>\x0a   \
-      <item>\x0a   \
-       <widget c\
-lass=\x22QLabel\x22 na\
-me=\x22resolution_l\
-abel\x22>\x0a         \
-  <property name\
-=\x22text\x22>\x0a       \
-     <string>Res\
-olution</string>\
-\x0a           </pr\
-operty>\x0a        \
-  </widget>\x0a    \
-     </item>\x0a   \
-      <item>\x0a   \
-       <widget c\
-lass=\x22QSpinBox\x22 \
-name=\x22resolution\
-_x\x22>\x0a           \
-<property name=\x22\
-minimum\x22>\x0a      \
-      <number>16\
-</number>\x0a      \
-     </property>\
-\x0a           <pro\
-perty name=\x22maxi\
-mum\x22>\x0a          \
-  <number>32768<\
-/number>\x0a       \
-    </property>\x0a\
-           <prop\
-erty name=\x22value\
-\x22>\x0a            <\
-number>1024</num\
-ber>\x0a           \
-</property>\x0a    \
-      </widget>\x0a\
-         </item>\
-\x0a         <item>\
-\x0a          <widg\
-et class=\x22QSpinB\
-ox\x22 name=\x22resolu\
-tion_y\x22>\x0a       \
-    <property na\
-me=\x22minimum\x22>\x0a  \
-          <numbe\
-r>16</number>\x0a  \
-         </prope\
-rty>\x0a           \
-<property name=\x22\
-maximum\x22>\x0a      \
-      <number>32\
-768</number>\x0a   \
-        </proper\
-ty>\x0a           <\
-property name=\x22v\
-alue\x22>\x0a         \
-   <number>1024<\
-/number>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a        </l\
-ayout>\x0a       </\
-widget>\x0a      </\
-item>\x0a     </lay\
-out>\x0a    </widge\
-t>\x0a   </item>\x0a  \
-</layout>\x0a </wid\
-get>\x0a <resources\
-/>\x0a <connections\
-/>\x0a</ui>\x0a\
-\x00\x00\x15\x0d\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22UTF\
--8\x22?>\x0a<ui versio\
-n=\x224.0\x22>\x0a <class\
->TaskPanel</clas\
-s>\x0a <widget clas\
-s=\x22QWidget\x22 name\
-=\x22TaskPanel\x22>\x0a  \
-<property name=\x22\
-geometry\x22>\x0a   <r\
-ect>\x0a    <x>0</x\
->\x0a    <y>0</y>\x0a \
-   <width>380</w\
-idth>\x0a    <heigh\
-t>500</height>\x0a \
-  </rect>\x0a  </pr\
-operty>\x0a  <prope\
-rty name=\x22sizePo\
-licy\x22>\x0a   <sizep\
-olicy hsizetype=\
-\x22Preferred\x22 vsiz\
-etype=\x22Expanding\
-\x22>\x0a    <horstret\
-ch>0</horstretch\
->\x0a    <verstretc\
-h>0</verstretch>\
-\x0a   </sizepolicy\
->\x0a  </property>\x0a\
-  <property name\
-=\x22minimumSize\x22>\x0a\
-   <size>\x0a    <w\
-idth>380</width>\
-\x0a    <height>500\
-</height>\x0a   </s\
-ize>\x0a  </propert\
-y>\x0a  <property n\
-ame=\x22windowTitle\
-\x22>\x0a   <string>Ad\
-d object</string\
->\x0a  </property>\x0a\
-  <layout class=\
-\x22QGridLayout\x22 na\
-me=\x22gridLayout_3\
-\x22>\x0a   <item row=\
-\x221\x22 column=\x220\x22>\x0a\
-    <widget clas\
-s=\x22QGroupBox\x22 na\
-me=\x22props_group\x22\
->\x0a     <property\
- name=\x22toolTip\x22>\
-\x0a      <string>T\
-he object physic\
-al properties</s\
-tring>\x0a     </pr\
-operty>\x0a     <pr\
-operty name=\x22tit\
-le\x22>\x0a      <stri\
-ng>Physical prop\
-erties</string>\x0a\
-     </property>\
-\x0a     <layout cl\
-ass=\x22QGridLayout\
-\x22 name=\x22gridLayo\
-ut_2\x22>\x0a      <it\
-em row=\x220\x22 colum\
-n=\x220\x22>\x0a       <w\
-idget class=\x22QGr\
-oupBox\x22 name=\x22hu\
-_group\x22>\x0a       \
- <property name=\
-\x22flat\x22>\x0a        \
- <bool>true</boo\
-l>\x0a        </pro\
-perty>\x0a        <\
-layout class=\x22QH\
-BoxLayout\x22 name=\
-\x22horizontalLayou\
-t\x22>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QTa\
-bleWidget\x22 name=\
-\x22attenuations\x22>\x0a\
-           <prop\
-erty name=\x22rowCo\
-unt\x22>\x0a          \
-  <number>0</num\
-ber>\x0a           \
-</property>\x0a    \
-       <property\
- name=\x22columnCou\
-nt\x22>\x0a           \
- <number>2</numb\
-er>\x0a           <\
-/property>\x0a     \
-      <attribute\
- name=\x22horizonta\
-lHeaderCascading\
-SectionResizes\x22>\
-\x0a            <bo\
-ol>false</bool>\x0a\
-           </att\
-ribute>\x0a        \
-   <attribute na\
-me=\x22horizontalHe\
-aderStretchLastS\
-ection\x22>\x0a       \
-     <bool>true<\
-/bool>\x0a         \
-  </attribute>\x0a \
-          <colum\
-n>\x0a            <\
-property name=\x22t\
-ext\x22>\x0a          \
-   <string>Energ\
-y</string>\x0a     \
-       </propert\
-y>\x0a           </\
-column>\x0a        \
-   <column>\x0a    \
-        <propert\
-y name=\x22text\x22>\x0a \
-            <str\
-ing>Mass attenut\
-ion</string>\x0a   \
-         </prope\
-rty>\x0a           \
-</column>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-        <item>\x0a \
-         <widget\
- class=\x22QGroupBo\
-x\x22 name=\x22table_e\
-dit_group\x22>\x0a    \
-       <property\
- name=\x22flat\x22>\x0a  \
-          <bool>\
-true</bool>\x0a    \
-       </propert\
-y>\x0a           <l\
-ayout class=\x22QVB\
-oxLayout\x22 name=\x22\
-verticalLayout\x22>\
-\x0a            <it\
-em>\x0a            \
- <widget class=\x22\
-QPushButton\x22 nam\
-e=\x22add_row\x22>\x0a   \
-           <prop\
-erty name=\x22maxim\
-umSize\x22>\x0a       \
-        <size>\x0a \
-               <\
-width>32</width>\
-\x0a               \
- <height>32</hei\
-ght>\x0a           \
-    </size>\x0a    \
-          </prop\
-erty>\x0a          \
-    <property na\
-me=\x22text\x22>\x0a     \
-          <strin\
-g notr=\x22true\x22>+<\
-/string>\x0a       \
-       </propert\
-y>\x0a             \
-</widget>\x0a      \
-      </item>\x0a  \
-          <item>\
-\x0a             <w\
-idget class=\x22QPu\
-shButton\x22 name=\x22\
-del_row\x22>\x0a      \
-        <propert\
-y name=\x22maximumS\
-ize\x22>\x0a          \
-     <size>\x0a    \
-            <wid\
-th>32</width>\x0a  \
-              <h\
-eight>32</height\
->\x0a              \
- </size>\x0a       \
-       </propert\
-y>\x0a             \
- <property name=\
-\x22text\x22>\x0a        \
-       <string n\
-otr=\x22true\x22>-</st\
-ring>\x0a          \
-    </property>\x0a\
-             </w\
-idget>\x0a         \
-   </item>\x0a     \
-      </layout>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a        </l\
-ayout>\x0a       </\
-widget>\x0a      </\
-item>\x0a      <ite\
-m row=\x222\x22 column\
-=\x220\x22>\x0a       <wi\
-dget class=\x22QGro\
-upBox\x22 name=\x22pre\
-set_group\x22>\x0a    \
-    <property na\
-me=\x22flat\x22>\x0a     \
-    <bool>true</\
-bool>\x0a        </\
-property>\x0a      \
-  <layout class=\
-\x22QHBoxLayout\x22 na\
-me=\x22horizontalLa\
-yout_2\x22>\x0a       \
-  <item>\x0a       \
-   <widget class\
-=\x22QLabel\x22 name=\x22\
-preset_label\x22>\x0a \
-          <prope\
-rty name=\x22text\x22>\
-\x0a            <st\
-ring>Load preset\
-</string>\x0a      \
-     </property>\
-\x0a          </wid\
-get>\x0a         </\
-item>\x0a         <\
-item>\x0a          \
-<widget class=\x22Q\
-ComboBox\x22 name=\x22\
-preset\x22>\x0a       \
-    <property na\
-me=\x22currentIndex\
-\x22>\x0a            <\
-number>-1</numbe\
-r>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-       </layout>\
-\x0a       </widget\
->\x0a      </item>\x0a\
-      <item row=\
-\x221\x22 column=\x220\x22>\x0a\
-       <widget c\
-lass=\x22QGroupBox\x22\
- name=\x22dens_grou\
-p\x22>\x0a        <pro\
-perty name=\x22flat\
-\x22>\x0a         <boo\
-l>true</bool>\x0a  \
-      </property\
->\x0a        <layou\
-t class=\x22QHBoxLa\
-yout\x22 name=\x22dens\
-_group_kk\x22>\x0a    \
-     <item>\x0a    \
-      <widget cl\
-ass=\x22QLabel\x22 nam\
-e=\x22dens_label\x22>\x0a\
-           <prop\
-erty name=\x22text\x22\
->\x0a            <s\
-tring>Density</s\
-tring>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a         <ite\
-m>\x0a          <wi\
-dget class=\x22QLin\
-eEdit\x22 name=\x22den\
-s\x22>\x0a           <\
-property name=\x22t\
-ext\x22>\x0a          \
-  <string notr=\x22\
-true\x22>968 kg/m^3\
-</string>\x0a      \
-     </property>\
-\x0a           <pro\
-perty name=\x22unit\
-\x22 stdset=\x220\x22>\x0a  \
-          <strin\
-g notr=\x22true\x22>kg\
-/m^3</string>\x0a  \
-         </prope\
-rty>\x0a           \
-<property name=\x22\
-quantity\x22 stdset\
-=\x220\x22>\x0a          \
-  <double>968.00\
-0000000000000</d\
-ouble>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a        </lay\
-out>\x0a       </wi\
-dget>\x0a      </it\
-em>\x0a     </layou\
-t>\x0a    </widget>\
-\x0a   </item>\x0a   <\
-item row=\x220\x22 col\
-umn=\x220\x22>\x0a    <wi\
-dget class=\x22QGro\
-upBox\x22 name=\x22xra\
-y_group\x22>\x0a     <\
-layout class=\x22QG\
-ridLayout\x22 name=\
-\x22xray_group_kk\x22>\
-\x0a      <item row\
-=\x220\x22 column=\x221\x22>\
-\x0a       <widget \
-class=\x22QComboBox\
-\x22 name=\x22xray\x22/>\x0a\
-      </item>\x0a  \
-    <item row=\x220\
-\x22 column=\x220\x22>\x0a  \
-     <widget cla\
-ss=\x22QLabel\x22 name\
-=\x22xray_label\x22>\x0a \
-       <property\
- name=\x22text\x22>\x0a  \
-       <string>X\
--Ray machine</st\
-ring>\x0a        </\
-property>\x0a      \
- </widget>\x0a     \
- </item>\x0a     </\
-layout>\x0a    </wi\
-dget>\x0a   </item>\
-\x0a  </layout>\x0a </\
-widget>\x0a <resour\
-ces/>\x0a <connecti\
-ons/>\x0a</ui>\x0a\
-\x00\x00\x16\x9a\
-<\
-?xml version=\x221.\
-0\x22 encoding=\x22UTF\
--8\x22?>\x0a<ui versio\
-n=\x224.0\x22>\x0a <class\
->TaskPanel</clas\
-s>\x0a <widget clas\
-s=\x22QWidget\x22 name\
-=\x22TaskPanel\x22>\x0a  \
-<property name=\x22\
-geometry\x22>\x0a   <r\
-ect>\x0a    <x>0</x\
->\x0a    <y>0</y>\x0a \
-   <width>380</w\
-idth>\x0a    <heigh\
-t>382</height>\x0a \
-  </rect>\x0a  </pr\
-operty>\x0a  <prope\
-rty name=\x22sizePo\
-licy\x22>\x0a   <sizep\
-olicy hsizetype=\
-\x22Preferred\x22 vsiz\
-etype=\x22Expanding\
-\x22>\x0a    <horstret\
-ch>0</horstretch\
->\x0a    <verstretc\
-h>0</verstretch>\
-\x0a   </sizepolicy\
->\x0a  </property>\x0a\
-  <property name\
-=\x22minimumSize\x22>\x0a\
-   <size>\x0a    <w\
-idth>250</width>\
-\x0a    <height>250\
-</height>\x0a   </s\
-ize>\x0a  </propert\
-y>\x0a  <property n\
-ame=\x22windowTitle\
-\x22>\x0a   <string>Ad\
-d object</string\
->\x0a  </property>\x0a\
-  <layout class=\
-\x22QGridLayout\x22 na\
-me=\x22gridLayout_3\
-\x22>\x0a   <item row=\
-\x220\x22 column=\x220\x22>\x0a\
-    <widget clas\
-s=\x22QGroupBox\x22 na\
-me=\x22props_group\x22\
->\x0a     <property\
- name=\x22toolTip\x22>\
-\x0a      <string>T\
-he radiography p\
-roperties</strin\
-g>\x0a     </proper\
-ty>\x0a     <proper\
-ty name=\x22title\x22>\
-\x0a      <string>R\
-adiography param\
-eters</string>\x0a \
-    </property>\x0a\
-     <layout cla\
-ss=\x22QGridLayout\x22\
- name=\x22gridLayou\
-t_2\x22>\x0a      <ite\
-m row=\x220\x22 column\
-=\x220\x22>\x0a       <wi\
-dget class=\x22QGro\
-upBox\x22 name=\x22ang\
-le_group\x22>\x0a     \
-   <property nam\
-e=\x22toolTip\x22>\x0a   \
-      <string>Th\
-e machine rotati\
-on around (0, 0,\
- 1) axis</string\
->\x0a        </prop\
-erty>\x0a        <p\
-roperty name=\x22fl\
-at\x22>\x0a         <b\
-ool>true</bool>\x0a\
-        </proper\
-ty>\x0a        <lay\
-out class=\x22QHBox\
-Layout\x22 name=\x22de\
-ns_group_kk\x22>\x0a  \
-       <item>\x0a  \
-        <widget \
-class=\x22QLabel\x22 n\
-ame=\x22angle_label\
-\x22>\x0a           <p\
-roperty name=\x22te\
-xt\x22>\x0a           \
- <string>Project\
-ion angle</strin\
-g>\x0a           </\
-property>\x0a      \
-    </widget>\x0a  \
-       </item>\x0a \
-        <item>\x0a \
-         <widget\
- class=\x22QLineEdi\
-t\x22 name=\x22angle\x22>\
-\x0a           <pro\
-perty name=\x22tool\
-Tip\x22>\x0a          \
-  <string/>\x0a    \
-       </propert\
-y>\x0a           <p\
-roperty name=\x22te\
-xt\x22>\x0a           \
- <string notr=\x22t\
-rue\x22>0.0 deg</st\
-ring>\x0a          \
- </property>\x0a   \
-        <propert\
-y name=\x22unit\x22 st\
-dset=\x220\x22>\x0a      \
-      <string no\
-tr=\x22true\x22>deg</s\
-tring>\x0a         \
-  </property>\x0a  \
-         <proper\
-ty name=\x22quantit\
-y\x22 stdset=\x220\x22>\x0a \
-           <doub\
-le>0.00000000000\
-0000</double>\x0a  \
-         </prope\
-rty>\x0a          <\
-/widget>\x0a       \
-  </item>\x0a      \
-  </layout>\x0a    \
-   </widget>\x0a   \
-   </item>\x0a     \
- <item row=\x221\x22 c\
-olumn=\x220\x22>\x0a     \
-  <widget class=\
-\x22QGroupBox\x22 name\
-=\x22halt_group\x22>\x0a \
-       <property\
- name=\x22toolTip\x22>\
-\x0a         <strin\
-g>The maximum ad\
-misible error. T\
-he smaller this \
-value the longer\
- will it take to\
- finish</string>\
-\x0a        </prope\
-rty>\x0a        <pr\
-operty name=\x22fla\
-t\x22>\x0a         <bo\
-ol>true</bool>\x0a \
-       </propert\
-y>\x0a        <layo\
-ut class=\x22QHBoxL\
-ayout\x22 name=\x22hor\
-izontalLayout_2\x22\
->\x0a         <item\
->\x0a          <wid\
-get class=\x22QLabe\
-l\x22 name=\x22max_err\
-or_label\x22>\x0a     \
-      <property \
-name=\x22text\x22>\x0a   \
-         <string\
->Maximum error</\
-string>\x0a        \
-   </property>\x0a \
-         </widge\
-t>\x0a         </it\
-em>\x0a         <it\
-em>\x0a          <w\
-idget class=\x22QLi\
-neEdit\x22 name=\x22ma\
-x_error\x22>\x0a      \
-     <property n\
-ame=\x22text\x22>\x0a    \
-        <string \
-notr=\x22true\x22>0.05\
-</string>\x0a      \
-     </property>\
-\x0a           <pro\
-perty name=\x22unit\
-\x22 stdset=\x220\x22>\x0a  \
-          <strin\
-g notr=\x22true\x22/>\x0a\
-           </pro\
-perty>\x0a         \
-  <property name\
-=\x22quantity\x22 stds\
-et=\x220\x22>\x0a        \
-    <double>0.05\
-0000000000000</d\
-ouble>\x0a         \
-  </property>\x0a  \
-        </widget\
->\x0a         </ite\
-m>\x0a        </lay\
-out>\x0a       </wi\
-dget>\x0a      </it\
-em>\x0a     </layou\
-t>\x0a    </widget>\
-\x0a   </item>\x0a   <\
-item row=\x221\x22 col\
-umn=\x220\x22>\x0a    <wi\
-dget class=\x22QGro\
-upBox\x22 name=\x22res\
-ults_group\x22>\x0a   \
-  <property name\
-=\x22title\x22>\x0a      \
-<string>Results<\
-/string>\x0a     </\
-property>\x0a     <\
-layout class=\x22QG\
-ridLayout\x22 name=\
-\x22gridLayout\x22>\x0a  \
-    <item row=\x220\
-\x22 column=\x220\x22>\x0a  \
-     <widget cla\
-ss=\x22QPushButton\x22\
- name=\x22run\x22>\x0a   \
-     <property n\
-ame=\x22text\x22>\x0a    \
-     <string>Sta\
-rt</string>\x0a    \
-    </property>\x0a\
-       </widget>\
-\x0a      </item>\x0a \
-     <item row=\x22\
-2\x22 column=\x220\x22>\x0a \
-      <widget cl\
-ass=\x22QGroupBox\x22 \
-name=\x22image_grou\
-p\x22>\x0a        <pro\
-perty name=\x22flat\
-\x22>\x0a         <boo\
-l>true</bool>\x0a  \
-      </property\
->\x0a        <layou\
-t class=\x22QGridLa\
-yout\x22 name=\x22grid\
-Layout_4\x22>\x0a     \
-    <item row=\x223\
-\x22 column=\x221\x22>\x0a  \
-        <widget \
-class=\x22QComboBox\
-\x22 name=\x22cmap\x22>\x0a \
-          <item>\
-\x0a            <pr\
-operty name=\x22tex\
-t\x22>\x0a            \
- <string>Radiogr\
-aphy</string>\x0a  \
-          </prop\
-erty>\x0a          \
- </item>\x0a       \
-    <item>\x0a     \
-       <property\
- name=\x22text\x22>\x0a  \
-           <stri\
-ng>Radiography n\
-egative</string>\
-\x0a            </p\
-roperty>\x0a       \
-    </item>\x0a    \
-       <item>\x0a  \
-          <prope\
-rty name=\x22text\x22>\
-\x0a             <s\
-tring>Airport</s\
-tring>\x0a         \
-   </property>\x0a \
-          </item\
->\x0a          </wi\
-dget>\x0a         <\
-/item>\x0a         \
-<item row=\x222\x22 co\
-lumn=\x220\x22>\x0a      \
-    <widget clas\
-s=\x22QLabel\x22 name=\
-\x22image_label\x22>\x0a \
-          <prope\
-rty name=\x22text\x22>\
-\x0a            <st\
-ring>Show Image<\
-/string>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem row=\x222\x22 colu\
-mn=\x221\x22>\x0a        \
-  <widget class=\
-\x22QComboBox\x22 name\
-=\x22image\x22>\x0a      \
-     <property n\
-ame=\x22sizePolicy\x22\
->\x0a            <s\
-izepolicy hsizet\
-ype=\x22Expanding\x22 \
-vsizetype=\x22Fixed\
-\x22>\x0a             \
-<horstretch>0</h\
-orstretch>\x0a     \
-        <verstre\
-tch>0</verstretc\
-h>\x0a            <\
-/sizepolicy>\x0a   \
-        </proper\
-ty>\x0a          </\
-widget>\x0a        \
- </item>\x0a       \
-  <item row=\x223\x22 \
-column=\x220\x22>\x0a    \
-      <widget cl\
-ass=\x22QLabel\x22 nam\
-e=\x22cmap_label\x22>\x0a\
-           <prop\
-erty name=\x22text\x22\
->\x0a            <s\
-tring>Color map<\
-/string>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a         <i\
-tem row=\x224\x22 colu\
-mn=\x220\x22>\x0a        \
-  <widget class=\
-\x22QLabel\x22 name=\x22c\
-range_label\x22>\x0a  \
-         <proper\
-ty name=\x22text\x22>\x0a\
-            <str\
-ing>Color range<\
-/string>\x0a       \
-    </property>\x0a\
-          </widg\
-et>\x0a         </i\
-tem>\x0a        </l\
-ayout>\x0a       </\
-widget>\x0a      </\
-item>\x0a      <ite\
-m row=\x221\x22 column\
-=\x220\x22>\x0a       <wi\
-dget class=\x22QPro\
-gressBar\x22 name=\x22\
-pbar\x22>\x0a        <\
-property name=\x22v\
-alue\x22>\x0a         \
-<number>0</numbe\
-r>\x0a        </pro\
-perty>\x0a       </\
-widget>\x0a      </\
-item>\x0a     </lay\
-out>\x0a    </widge\
-t>\x0a   </item>\x0a  \
-</layout>\x0a </wid\
-get>\x0a <resources\
-/>\x0a <connections\
-/>\x0a</ui>\x0a\
+-8\x22 standalone=\x22\
+no\x22?>\x0a<!-- Creat\
+ed with Inkscape\
+ (http://www.ink\
+scape.org/) -->\x0a\
+\x0a<svg\x0a   width=\x22\
+64px\x22\x0a   height=\
+\x2264px\x22\x0a   id=\x22sv\
+g2985\x22\x0a   versio\
+n=\x221.1\x22\x0a   inksc\
+ape:version=\x221.1\
+.1 (3bf5ae0d25, \
+2021-09-20)\x22\x0a   \
+sodipodi:docname\
+=\x22XRay_ObjectAdd\
+.svg\x22\x0a   xmlns:i\
+nkscape=\x22http://\
+www.inkscape.org\
+/namespaces/inks\
+cape\x22\x0a   xmlns:s\
+odipodi=\x22http://\
+sodipodi.sourcef\
+orge.net/DTD/sod\
+ipodi-0.dtd\x22\x0a   \
+xmlns:xlink=\x22htt\
+p://www.w3.org/1\
+999/xlink\x22\x0a   xm\
+lns=\x22http://www.\
+w3.org/2000/svg\x22\
+\x0a   xmlns:svg=\x22h\
+ttp://www.w3.org\
+/2000/svg\x22\x0a   xm\
+lns:rdf=\x22http://\
+www.w3.org/1999/\
+02/22-rdf-syntax\
+-ns#\x22\x0a   xmlns:c\
+c=\x22http://creati\
+vecommons.org/ns\
+#\x22\x0a   xmlns:dc=\x22\
+http://purl.org/\
+dc/elements/1.1/\
+\x22>\x0a  <title\x0a    \
+ id=\x22title2079\x22>\
+XRay_ObjectAdd</\
+title>\x0a  <defs\x0a \
+    id=\x22defs2987\
+\x22>\x0a    <linearGr\
+adient\x0a       in\
+kscape:collect=\x22\
+always\x22\x0a       i\
+d=\x22linearGradien\
+t6443\x22>\x0a      <s\
+top\x0a         sty\
+le=\x22stop-color:#\
+454545;stop-opac\
+ity:1\x22\x0a         \
+offset=\x220\x22\x0a     \
+    id=\x22stop6439\
+\x22 />\x0a      <stop\
+\x0a         style=\
+\x22stop-color:#d9d\
+9d9;stop-opacity\
+:1\x22\x0a         off\
+set=\x221\x22\x0a        \
+ id=\x22stop6441\x22 /\
+>\x0a    </linearGr\
+adient>\x0a    <mar\
+ker\x0a       style\
+=\x22overflow:visib\
+le\x22\x0a       id=\x22D\
+otS\x22\x0a       refX\
+=\x220.0\x22\x0a       re\
+fY=\x220.0\x22\x0a       \
+orient=\x22auto\x22\x0a  \
+     inkscape:st\
+ockid=\x22DotS\x22\x0a   \
+    inkscape:iss\
+tock=\x22true\x22>\x0a   \
+   <path\x0a       \
+  transform=\x22sca\
+le(0.2) translat\
+e(7.4, 1)\x22\x0a     \
+    style=\x22fill-\
+rule:evenodd;fil\
+l:context-stroke\
+;stroke:context-\
+stroke;stroke-wi\
+dth:1.0pt\x22\x0a     \
+    d=\x22M -2.5,-1\
+.0 C -2.5,1.7600\
+000 -4.7400000,4\
+.0 -7.5,4.0 C -1\
+0.260000,4.0 -12\
+.5,1.7600000 -12\
+.5,-1.0 C -12.5,\
+-3.7600000 -10.2\
+60000,-6.0 -7.5,\
+-6.0 C -4.740000\
+0,-6.0 -2.5,-3.7\
+600000 -2.5,-1.0\
+ z \x22\x0a         id\
+=\x22path1782\x22 />\x0a \
+   </marker>\x0a   \
+ <marker\x0a       \
+style=\x22overflow:\
+visible\x22\x0a       \
+id=\x22DotL\x22\x0a      \
+ refX=\x220.0\x22\x0a    \
+   refY=\x220.0\x22\x0a  \
+     orient=\x22aut\
+o\x22\x0a       inksca\
+pe:stockid=\x22DotL\
+\x22\x0a       inkscap\
+e:isstock=\x22true\x22\
+>\x0a      <path\x0a  \
+       transform\
+=\x22scale(0.8) tra\
+nslate(7.4, 1)\x22\x0a\
+         style=\x22\
+fill-rule:evenod\
+d;fill:context-s\
+troke;stroke:con\
+text-stroke;stro\
+ke-width:1.0pt\x22\x0a\
+         d=\x22M -2\
+.5,-1.0 C -2.5,1\
+.7600000 -4.7400\
+000,4.0 -7.5,4.0\
+ C -10.260000,4.\
+0 -12.5,1.760000\
+0 -12.5,-1.0 C -\
+12.5,-3.7600000 \
+-10.260000,-6.0 \
+-7.5,-6.0 C -4.7\
+400000,-6.0 -2.5\
+,-3.7600000 -2.5\
+,-1.0 z \x22\x0a      \
+   id=\x22path1776\x22\
+ />\x0a    </marker\
+>\x0a    <linearGra\
+dient\x0a       id=\
+\x22linearGradient3\
+981\x22>\x0a      <sto\
+p\x0a         id=\x22s\
+top3983\x22\x0a       \
+  offset=\x220\x22\x0a   \
+      style=\x22sto\
+p-color:#d3d7cf;\
+stop-opacity:1\x22 \
+/>\x0a      <stop\x0a \
+        id=\x22stop\
+3985\x22\x0a         o\
+ffset=\x221\x22\x0a      \
+   style=\x22stop-c\
+olor:#888a85;sto\
+p-opacity:1\x22 />\x0a\
+    </linearGrad\
+ient>\x0a    <linea\
+rGradient\x0a      \
+ id=\x22linearGradi\
+ent3975\x22>\x0a      \
+<stop\x0a         i\
+d=\x22stop3977\x22\x0a   \
+      offset=\x220\x22\
+\x0a         style=\
+\x22stop-color:#d3d\
+7cf;stop-opacity\
+:1\x22 />\x0a      <st\
+op\x0a         id=\x22\
+stop3979\x22\x0a      \
+   offset=\x221\x22\x0a  \
+       style=\x22st\
+op-color:#888a85\
+;stop-opacity:1\x22\
+ />\x0a    </linear\
+Gradient>\x0a    <l\
+inearGradient\x0a  \
+     id=\x22linearG\
+radient3932\x22>\x0a  \
+    <stop\x0a      \
+   id=\x22stop3934\x22\
+\x0a         offset\
+=\x220\x22\x0a         st\
+yle=\x22stop-color:\
+#d3d7cf;stop-opa\
+city:1\x22 />\x0a     \
+ <stop\x0a         \
+id=\x22stop3936\x22\x0a  \
+       offset=\x221\
+\x22\x0a         style\
+=\x22stop-color:#88\
+8a85;stop-opacit\
+y:1\x22 />\x0a    </li\
+nearGradient>\x0a  \
+  <linearGradien\
+t\x0a       id=\x22lin\
+earGradient3924\x22\
+>\x0a      <stop\x0a  \
+       id=\x22stop3\
+926\x22\x0a         of\
+fset=\x220\x22\x0a       \
+  style=\x22stop-co\
+lor:#d3d7cf;stop\
+-opacity:1\x22 />\x0a \
+     <stop\x0a     \
+    id=\x22stop3928\
+\x22\x0a         offse\
+t=\x221\x22\x0a         s\
+tyle=\x22stop-color\
+:#555753;stop-op\
+acity:1\x22 />\x0a    \
+</linearGradient\
+>\x0a    <linearGra\
+dient\x0a       id=\
+\x22linearGradient3\
+859\x22>\x0a      <sto\
+p\x0a         id=\x22s\
+top3861\x22\x0a       \
+  offset=\x220\x22\x0a   \
+      style=\x22sto\
+p-color:#a40000;\
+stop-opacity:1\x22 \
+/>\x0a      <stop\x0a \
+        id=\x22stop\
+3863\x22\x0a         o\
+ffset=\x221\x22\x0a      \
+   style=\x22stop-c\
+olor:#960000;sto\
+p-opacity:1;\x22 />\
+\x0a    </linearGra\
+dient>\x0a    <line\
+arGradient\x0a     \
+  id=\x22linearGrad\
+ient3851\x22>\x0a     \
+ <stop\x0a         \
+id=\x22stop3853\x22\x0a  \
+       offset=\x220\
+\x22\x0a         style\
+=\x22stop-color:#ef\
+2929;stop-opacit\
+y:1\x22 />\x0a      <s\
+top\x0a         id=\
+\x22stop3855\x22\x0a     \
+    offset=\x221\x22\x0a \
+        style=\x22s\
+top-color:#a4000\
+0;stop-opacity:1\
+\x22 />\x0a    </linea\
+rGradient>\x0a    <\
+marker\x0a       in\
+kscape:stockid=\x22\
+Arrow1Send\x22\x0a    \
+   orient=\x22auto\x22\
+\x0a       refY=\x220.\
+0\x22\x0a       refX=\x22\
+0.0\x22\x0a       id=\x22\
+Arrow1Send\x22\x0a    \
+   style=\x22overfl\
+ow:visible;\x22>\x0a  \
+    <path\x0a      \
+   id=\x22path4031\x22\
+\x0a         d=\x22M 0\
+.0,0.0 L 5.0,-5.\
+0 L -12.5,0.0 L \
+5.0,5.0 L 0.0,0.\
+0 z \x22\x0a         s\
+tyle=\x22fill-rule:\
+evenodd;stroke:#\
+000000;stroke-wi\
+dth:1.0pt;\x22\x0a    \
+     transform=\x22\
+scale(0.2) rotat\
+e(180) translate\
+(6,0)\x22 />\x0a    </\
+marker>\x0a    <mar\
+ker\x0a       inksc\
+ape:stockid=\x22Arr\
+ow2Send\x22\x0a       \
+orient=\x22auto\x22\x0a  \
+     refY=\x220.0\x22\x0a\
+       refX=\x220.0\
+\x22\x0a       id=\x22Arr\
+ow2Send\x22\x0a       \
+style=\x22overflow:\
+visible;\x22>\x0a     \
+ <path\x0a         \
+id=\x22path4049\x22\x0a  \
+       style=\x22fi\
+ll-rule:evenodd;\
+stroke-width:0.6\
+2500000;stroke-l\
+inejoin:round;\x22\x0a\
+         d=\x22M 8.\
+7185878,4.033735\
+2 L -2.2072895,0\
+.016013256 L 8.7\
+185884,-4.001707\
+8 C 6.9730900,-1\
+.6296469 6.98314\
+76,1.6157441 8.7\
+185878,4.0337352\
+ z \x22\x0a         tr\
+ansform=\x22scale(0\
+.3) rotate(180) \
+translate(-2.3,0\
+)\x22 />\x0a    </mark\
+er>\x0a    <marker\x0a\
+       inkscape:\
+stockid=\x22Arrow2S\
+start\x22\x0a       or\
+ient=\x22auto\x22\x0a    \
+   refY=\x220.0\x22\x0a  \
+     refX=\x220.0\x22\x0a\
+       id=\x22Arrow\
+2Sstart\x22\x0a       \
+style=\x22overflow:\
+visible\x22>\x0a      \
+<path\x0a         i\
+d=\x22path4046\x22\x0a   \
+      style=\x22fil\
+l-rule:evenodd;s\
+troke-width:0.62\
+500000;stroke-li\
+nejoin:round\x22\x0a  \
+       d=\x22M 8.71\
+85878,4.0337352 \
+L -2.2072895,0.0\
+16013256 L 8.718\
+5884,-4.0017078 \
+C 6.9730900,-1.6\
+296469 6.9831476\
+,1.6157441 8.718\
+5878,4.0337352 z\
+ \x22\x0a         tran\
+sform=\x22scale(0.3\
+) translate(-2.3\
+,0)\x22 />\x0a    </ma\
+rker>\x0a    <marke\
+r\x0a       inkscap\
+e:stockid=\x22Arrow\
+2Mstart\x22\x0a       \
+orient=\x22auto\x22\x0a  \
+     refY=\x220.0\x22\x0a\
+       refX=\x220.0\
+\x22\x0a       id=\x22Arr\
+ow2Mstart\x22\x0a     \
+  style=\x22overflo\
+w:visible\x22>\x0a    \
+  <path\x0a        \
+ id=\x22path4040\x22\x0a \
+        style=\x22f\
+ill-rule:evenodd\
+;stroke-width:0.\
+62500000;stroke-\
+linejoin:round\x22\x0a\
+         d=\x22M 8.\
+7185878,4.033735\
+2 L -2.2072895,0\
+.016013256 L 8.7\
+185884,-4.001707\
+8 C 6.9730900,-1\
+.6296469 6.98314\
+76,1.6157441 8.7\
+185878,4.0337352\
+ z \x22\x0a         tr\
+ansform=\x22scale(0\
+.6) translate(0,\
+0)\x22 />\x0a    </mar\
+ker>\x0a    <linear\
+Gradient\x0a       \
+id=\x22linearGradie\
+nt3900\x22>\x0a      <\
+stop\x0a         st\
+yle=\x22stop-color:\
+#ffffff;stop-opa\
+city:1;\x22\x0a       \
+  offset=\x220\x22\x0a   \
+      id=\x22stop39\
+02\x22 />\x0a      <st\
+op\x0a         styl\
+e=\x22stop-color:#a\
+0a0a0;stop-opaci\
+ty:1;\x22\x0a         \
+offset=\x221\x22\x0a     \
+    id=\x22stop3904\
+\x22 />\x0a    </linea\
+rGradient>\x0a    <\
+linearGradient\x0a \
+      id=\x22linear\
+Gradient3882\x22>\x0a \
+     <stop\x0a     \
+    style=\x22stop-\
+color:#ffffff;st\
+op-opacity:1;\x22\x0a \
+        offset=\x22\
+0\x22\x0a         id=\x22\
+stop3884\x22 />\x0a   \
+   <stop\x0a       \
+  style=\x22stop-co\
+lor:#960000;stop\
+-opacity:1;\x22\x0a   \
+      offset=\x221\x22\
+\x0a         id=\x22st\
+op3886\x22 />\x0a    <\
+/linearGradient>\
+\x0a    <linearGrad\
+ient\x0a       id=\x22\
+linearGradient38\
+60\x22>\x0a      <stop\
+\x0a         style=\
+\x22stop-color:#1e7\
+6e3;stop-opacity\
+:1;\x22\x0a         of\
+fset=\x220\x22\x0a       \
+  id=\x22stop3862\x22 \
+/>\x0a      <stop\x0a \
+        style=\x22s\
+top-color:#fffff\
+f;stop-opacity:1\
+;\x22\x0a         offs\
+et=\x221\x22\x0a         \
+id=\x22stop3864\x22 />\
+\x0a    </linearGra\
+dient>\x0a    <line\
+arGradient\x0a     \
+  inkscape:colle\
+ct=\x22always\x22\x0a    \
+   xlink:href=\x22#\
+linearGradient38\
+60-6\x22\x0a       id=\
+\x22linearGradient3\
+866-5\x22\x0a       x1\
+=\x2231.125395\x22\x0a   \
+    y1=\x2261.41076\
+3\x22\x0a       x2=\x2230\
+.113636\x22\x0a       \
+y2=\x2212.160761\x22\x0a \
+      gradientUn\
+its=\x22userSpaceOn\
+Use\x22 />\x0a    <lin\
+earGradient\x0a    \
+   id=\x22linearGra\
+dient3860-6\x22>\x0a  \
+    <stop\x0a      \
+   style=\x22stop-c\
+olor:#5a9ff5;sto\
+p-opacity:1;\x22\x0a  \
+       offset=\x220\
+\x22\x0a         id=\x22s\
+top3862-4\x22 />\x0a  \
+    <stop\x0a      \
+   style=\x22stop-c\
+olor:#ffffff;sto\
+p-opacity:1;\x22\x0a  \
+       offset=\x221\
+\x22\x0a         id=\x22s\
+top3864-4\x22 />\x0a  \
+  </linearGradie\
+nt>\x0a    <radialG\
+radient\x0a       i\
+nkscape:collect=\
+\x22always\x22\x0a       \
+xlink:href=\x22#lin\
+earGradient3882-\
+7\x22\x0a       id=\x22ra\
+dialGradient3946\
+-6\x22\x0a       cx=\x221\
+6.274988\x22\x0a      \
+ cy=\x2223.718588\x22\x0a\
+       fx=\x2216.27\
+4988\x22\x0a       fy=\
+\x2223.718588\x22\x0a    \
+   r=\x223.6819806\x22\
+\x0a       gradient\
+Transform=\x22matri\
+x(1.1622967,-0.4\
+2417542,0.712411\
+25,1.9521011,-19\
+.727075,-16.4982\
+15)\x22\x0a       grad\
+ientUnits=\x22userS\
+paceOnUse\x22 />\x0a  \
+  <linearGradien\
+t\x0a       id=\x22lin\
+earGradient3882-\
+7\x22>\x0a      <stop\x0a\
+         style=\x22\
+stop-color:#ffff\
+ff;stop-opacity:\
+1;\x22\x0a         off\
+set=\x220\x22\x0a        \
+ id=\x22stop3884-5\x22\
+ />\x0a      <stop\x0a\
+         style=\x22\
+stop-color:#9600\
+00;stop-opacity:\
+1;\x22\x0a         off\
+set=\x221\x22\x0a        \
+ id=\x22stop3886-3\x22\
+ />\x0a    </linear\
+Gradient>\x0a    <r\
+adialGradient\x0a  \
+     inkscape:co\
+llect=\x22always\x22\x0a \
+      xlink:href\
+=\x22#linearGradien\
+t3900\x22\x0a       id\
+=\x22radialGradient\
+3911\x22\x0a       gra\
+dientUnits=\x22user\
+SpaceOnUse\x22\x0a    \
+   gradientTrans\
+form=\x22matrix(1.1\
+875159,0.3000256\
+1,-0.66139805,2.\
+6178455,13.65626\
+5,-48.87061)\x22\x0a  \
+     cx=\x2217.9150\
+45\x22\x0a       cy=\x222\
+4.185383\x22\x0a      \
+ fx=\x2217.915045\x22\x0a\
+       fy=\x2224.18\
+5383\x22\x0a       r=\x22\
+2.4997866\x22 />\x0a  \
+  <radialGradien\
+t\x0a       inkscap\
+e:collect=\x22alway\
+s\x22\x0a       xlink:\
+href=\x22#linearGra\
+dient3900-2\x22\x0a   \
+    id=\x22radialGr\
+adient3911-6\x22\x0a  \
+     gradientUni\
+ts=\x22userSpaceOnU\
+se\x22\x0a       gradi\
+entTransform=\x22ma\
+trix(1.1875159,0\
+.30002561,-0.661\
+39805,2.6178455,\
+13.656265,-48.87\
+061)\x22\x0a       cx=\
+\x2217.915045\x22\x0a    \
+   cy=\x2224.185383\
+\x22\x0a       fx=\x2217.\
+915045\x22\x0a       f\
+y=\x2224.185383\x22\x0a  \
+     r=\x222.499786\
+6\x22 />\x0a    <linea\
+rGradient\x0a      \
+ id=\x22linearGradi\
+ent3900-2\x22>\x0a    \
+  <stop\x0a        \
+ style=\x22stop-col\
+or:#ffffff;stop-\
+opacity:1;\x22\x0a    \
+     offset=\x220\x22\x0a\
+         id=\x22sto\
+p3902-9\x22 />\x0a    \
+  <stop\x0a        \
+ style=\x22stop-col\
+or:#a0a0a0;stop-\
+opacity:1;\x22\x0a    \
+     offset=\x221\x22\x0a\
+         id=\x22sto\
+p3904-1\x22 />\x0a    \
+</linearGradient\
+>\x0a    <linearGra\
+dient\x0a       ink\
+scape:collect=\x22a\
+lways\x22\x0a       xl\
+ink:href=\x22#linea\
+rGradient6443\x22\x0a \
+      id=\x22linear\
+Gradient6445\x22\x0a  \
+     x1=\x2251.2648\
+58\x22\x0a       y1=\x224\
+7.461964\x22\x0a      \
+ x2=\x2214.743206\x22\x0a\
+       y2=\x2210.94\
+031\x22\x0a       grad\
+ientUnits=\x22userS\
+paceOnUse\x22 />\x0a  \
+</defs>\x0a  <sodip\
+odi:namedview\x0a  \
+   id=\x22base\x22\x0a   \
+  pagecolor=\x22#ff\
+ffff\x22\x0a     borde\
+rcolor=\x22#666666\x22\
+\x0a     borderopac\
+ity=\x221.0\x22\x0a     i\
+nkscape:pageopac\
+ity=\x220.0\x22\x0a     i\
+nkscape:pageshad\
+ow=\x222\x22\x0a     inks\
+cape:zoom=\x228\x22\x0a  \
+   inkscape:cx=\x22\
+41.0625\x22\x0a     in\
+kscape:cy=\x2235.87\
+5\x22\x0a     inkscape\
+:current-layer=\x22\
+g3977\x22\x0a     show\
+grid=\x22true\x22\x0a    \
+ inkscape:docume\
+nt-units=\x22px\x22\x0a  \
+   inkscape:grid\
+-bbox=\x22true\x22\x0a   \
+  inkscape:windo\
+w-width=\x221920\x22\x0a \
+    inkscape:win\
+dow-height=\x221006\
+\x22\x0a     inkscape:\
+window-x=\x220\x22\x0a   \
+  inkscape:windo\
+w-y=\x220\x22\x0a     ink\
+scape:window-max\
+imized=\x221\x22\x0a     \
+inkscape:snap-gl\
+obal=\x22true\x22\x0a    \
+ inkscape:pagech\
+eckerboard=\x220\x22>\x0a\
+    <inkscape:gr\
+id\x0a       type=\x22\
+xygrid\x22\x0a       i\
+d=\x22grid3025\x22\x0a   \
+    empspacing=\x22\
+2\x22\x0a       visibl\
+e=\x22true\x22\x0a       \
+enabled=\x22true\x22\x0a \
+      snapvisibl\
+egridlinesonly=\x22\
+true\x22 />\x0a  </sod\
+ipodi:namedview>\
+\x0a  <metadata\x0a   \
+  id=\x22metadata29\
+90\x22>\x0a    <rdf:RD\
+F>\x0a      <cc:Wor\
+k\x0a         rdf:a\
+bout=\x22\x22>\x0a       \
+ <dc:format>imag\
+e/svg+xml</dc:fo\
+rmat>\x0a        <d\
+c:type\x0a         \
+  rdf:resource=\x22\
+http://purl.org/\
+dc/dcmitype/Stil\
+lImage\x22 />\x0a     \
+   <dc:creator>\x0a\
+          <cc:Ag\
+ent>\x0a           \
+ <dc:title>[sang\
+uinarojoe] Cerco\
+s-Pita J.L.</dc:\
+title>\x0a         \
+ </cc:Agent>\x0a   \
+     </dc:creato\
+r>\x0a        <dc:d\
+ate>2021-11-17</\
+dc:date>\x0a       \
+ <dc:relation>ht\
+tp://www.freecad\
+web.org/wiki/ind\
+ex.php?title=Art\
+work</dc:relatio\
+n>\x0a        <dc:p\
+ublisher>\x0a      \
+    <cc:Agent>\x0a \
+           <dc:t\
+itle>FreeCAD</dc\
+:title>\x0a        \
+  </cc:Agent>\x0a  \
+      </dc:publi\
+sher>\x0a        <d\
+c:rights>\x0a      \
+    <cc:Agent>\x0a \
+           <dc:t\
+itle>FreeCAD LGP\
+L2+</dc:title>\x0a \
+         </cc:Ag\
+ent>\x0a        </d\
+c:rights>\x0a      \
+  <dc:title>XRay\
+_ObjectAdd</dc:t\
+itle>\x0a        <c\
+c:license\x0a      \
+     rdf:resourc\
+e=\x22https://wiki.\
+freecadweb.org/L\
+icence\x22 />\x0a     \
+ </cc:Work>\x0a    \
+</rdf:RDF>\x0a  </m\
+etadata>\x0a  <g\x0a  \
+   id=\x22layer1\x22\x0a \
+    inkscape:lab\
+el=\x22Layer 1\x22\x0a   \
+  inkscape:group\
+mode=\x22layer\x22>\x0a  \
+  <g\x0a       id=\x22\
+g3977\x22\x0a       tr\
+ansform=\x22matrix(\
+1.6428611,0,0,1.\
+6428611,-22.2210\
+39,-15.973411)\x22>\
+\x0a      <rect\x0a   \
+      style=\x22fil\
+l:#252525;stroke\
+-width:1.82608;s\
+top-color:#00000\
+0;fill-opacity:1\
+;stroke:url(#lin\
+earGradient6445)\
+;stroke-opacity:\
+1\x22\x0a         id=\x22\
+rect1004\x22\x0a      \
+   width=\x2236.521\
+652\x22\x0a         he\
+ight=\x2236.521652\x22\
+\x0a         x=\x2214.\
+743205\x22\x0a        \
+ y=\x2210.94031\x22\x0a  \
+       rx=\x223.652\
+1664\x22\x0a         r\
+y=\x223.6521664\x22 />\
+\x0a      <g\x0a      \
+   id=\x22g6167\x22\x0a  \
+       style=\x22fi\
+ll:#e6e6e6;fill-\
+opacity:1\x22>\x0a    \
+    <path\x0a      \
+     style=\x22fill\
+:#e6e6e6;fill-op\
+acity:1;stroke:n\
+one;stroke-width\
+:0.25;stroke-lin\
+ecap:round;strok\
+e-miterlimit:4;s\
+troke-dasharray:\
+none;stroke-opac\
+ity:1;stop-color\
+:#000000\x22\x0a      \
+     d=\x22m 32.254\
+883,42.173584 c \
+-2.14678,-0.0263\
+ -4.449078,0.122\
+217 -6.2146,1.49\
+2188 -1.436839,1\
+.074885 -2.38226\
+4,3.041793 -1.91\
+9678,4.825927 0.\
+557324,1.858248 \
+2.668718,2.34879\
+8 4.258545,2.964\
+356 1.259436,0.3\
+89012 2.474266,0\
+.917342 3.497559\
+,1.762207 1.4316\
+36,1.052333 3.33\
+1466,0.565739 4.\
+962647,0.447998 \
+2.458258,-0.3543\
+92 5.262789,-0.7\
+94304 6.87036,-2\
+.905029 0.484593\
+,-0.894787 0.154\
+035,-1.986416 0,\
+-2.946534 -0.614\
+636,-2.663824 -3\
+.120527,-4.36542\
+ -5.627916,-5.03\
+5476 -1.881734,-\
+0.596394 -3.8734\
+42,-0.594329 -5.\
+826917,-0.605637\
+ z\x22\x0a           i\
+d=\x22path4858\x22\x0a   \
+        transfor\
+m=\x22matrix(0.6086\
+9419,0,0,0.60869\
+419,13.525817,9.\
+7229224)\x22 />\x0a   \
+     <path\x0a     \
+      style=\x22fil\
+l:#e6e6e6;fill-o\
+pacity:1;stroke:\
+none;stroke-widt\
+h:0.176777;strok\
+e-linecap:round;\
+stroke-miterlimi\
+t:4;stroke-dasha\
+rray:none;stroke\
+-opacity:1;stop-\
+color:#000000\x22\x0a \
+          d=\x22m 1\
+9.908612,36.7433\
+12 c -1.106806,0\
+.135558 -1.84297\
+,1.122231 -2.485\
+749,1.942645 -0.\
+590936,0.721498 \
+-0.682656,1.9924\
+5 0.224768,2.502\
+495 0.837714,0.4\
+34918 1.837867,0\
+.584636 2.479248\
+,1.340569 0.6740\
+91,0.542083 1.29\
+7708,1.157898 1.\
+632537,1.970714 \
+0.328967,0.77925\
+2 1.140921,1.572\
+847 2.048124,1.2\
+36746 1.069554,-\
+0.477185 1.89331\
+1,-1.445323 2.39\
+1664,-2.488684 C\
+ 26.607783,42.37\
+0986 26.020266,4\
+1.33699 25.11558\
+6,41.098061 24.3\
+82358,40.87366 2\
+3.66702,40.58126\
+4 23.144303,39.9\
+94037 22.47346,3\
+9.439192 21.8037\
+36,38.797739 21.\
+478368,37.944324\
+ 21.161506,37.34\
+9258 20.65789,36\
+.701948 19.90861\
+2,36.743312 Z\x22\x0a \
+          id=\x22pa\
+th5410\x22\x0a        \
+   transform=\x22ma\
+trix(0.60869419,\
+0,0,0.60869419,1\
+3.525817,9.72292\
+24)\x22 />\x0a        \
+<path\x0a          \
+ style=\x22fill:#e6\
+e6e6;fill-opacit\
+y:1;stroke:none;\
+stroke-width:0.1\
+76777;stroke-lin\
+ecap:round;strok\
+e-miterlimit:4;s\
+troke-dasharray:\
+none;stroke-opac\
+ity:1;stop-color\
+:#000000\x22\x0a      \
+     d=\x22m 13.877\
+834,29.250846 c \
+-1.153096,0.2064\
+89 -2.133237,1.0\
+19886 -2.86071,1\
+.903802 -0.59611\
+,0.756235 -0.298\
+188,1.902638 0.5\
+28949,2.354031 0\
+.698296,0.398267\
+ 1.391688,0.8244\
+72 1.831408,1.52\
+2275 0.65131,0.7\
+15473 1.100953,1\
+.577507 1.315873\
+,2.519593 0.2234\
+08,0.887813 1.20\
+0392,1.530987 2.\
+086967,1.151465 \
+1.02479,-0.46999\
+3 2.094681,-1.16\
+1384 2.56378,-2.\
+229044 0.358998,\
+-0.918433 -0.378\
+425,-1.761689 -1\
+.149222,-2.15567\
+4 -1.000691,-0.5\
+09864 -1.598383,\
+-1.497685 -2.208\
+154,-2.335386 -0\
+.539246,-0.87118\
+4 -0.464665,-2.2\
+60614 -1.585466,\
+-2.66736 -0.1682\
+8,-0.05499 -0.34\
+6897,-0.07619 -0\
+.523425,-0.0637 \
+z\x22\x0a           id\
+=\x22path5449\x22\x0a    \
+       transform\
+=\x22matrix(0.60869\
+419,0,0,0.608694\
+19,13.525817,9.7\
+229224)\x22 />\x0a    \
+    <path\x0a      \
+     style=\x22fill\
+:#e6e6e6;fill-op\
+acity:1;stroke:n\
+one;stroke-width\
+:0.176777;stroke\
+-linecap:round;s\
+troke-miterlimit\
+:4;stroke-dashar\
+ray:none;stroke-\
+opacity:1;stop-c\
+olor:#000000\x22\x0a  \
+         d=\x22m 10\
+.725546,23.66787\
+9 c -1.1144176,-\
+0.0061 -2.118123\
+1,1.067218 -1.82\
+73253,2.192273 0\
+.1875314,0.94469\
+7 0.7152324,1.81\
+0116 0.652382,2.\
+802187 0.00297,0\
+.807929 0.274962\
+5,1.826629 1.199\
+6303,1.9915 1.09\
+3831,0.149692 2.\
+171577,-0.385292\
+ 3.066316,-0.965\
+194 0.753754,-0.\
+463809 1.099716,\
+-1.58059 0.43728\
+1,-2.26875 -0.61\
+2434,-0.699611 -\
+1.257393,-1.3876\
+11 -1.592723,-2.\
+273905 -0.3632,-\
+0.797909 -0.9520\
+39,-1.556618 -1.\
+935561,-1.478111\
+ z\x22\x0a           i\
+d=\x22path5488\x22\x0a   \
+        transfor\
+m=\x22matrix(0.6086\
+9419,0,0,0.60869\
+419,13.525817,9.\
+7229224)\x22 />\x0a   \
+     <path\x0a     \
+      style=\x22fil\
+l:#e6e6e6;fill-o\
+pacity:1;stroke:\
+none;stroke-widt\
+h:0.176777;strok\
+e-linecap:round;\
+stroke-miterlimi\
+t:4;stroke-dasha\
+rray:none;stroke\
+-opacity:1;stop-\
+color:#000000\x22\x0a \
+          d=\x22m 2\
+6.589701,29.5933\
+51 c -1.161385,0\
+.04674 -2.672905\
+,0.349174 -3.086\
+342,1.603938 -0.\
+317113,1.354112 \
+0.917672,2.38103\
+3 1.199113,3.624\
+785 0.400781,1.4\
+82016 0.811555,2\
+.989479 0.644539\
+,4.550401 -0.068\
+82,0.945073 0.10\
+1717,2.189173 1.\
+156718,2.514279 \
+1.114947,0.25233\
+6 2.37835,-0.010\
+12 3.301271,-0.6\
+84837 0.846381,-\
+0.679423 0.63538\
+,-1.911436 0.105\
+133,-2.717251 -0\
+.864176,-1.40831\
+ -1.164675,-3.06\
+4557 -1.431994,-\
+4.670081 -0.1540\
+45,-1.226367 0.3\
+51143,-2.67837 -\
+0.515484,-3.7235\
+32 -0.347782,-0.\
+375901 -0.874691\
+,-0.513863 -1.37\
+2954,-0.497702 z\
+\x22\x0a           id=\
+\x22path5527\x22\x0a     \
+      transform=\
+\x22matrix(0.608694\
+19,0,0,0.6086941\
+9,13.525817,9.72\
+29224)\x22 />\x0a     \
+   <path\x0a       \
+    style=\x22fill:\
+#e6e6e6;fill-opa\
+city:1;stroke:no\
+ne;stroke-width:\
+0.176777;stroke-\
+linecap:round;st\
+roke-miterlimit:\
+4;stroke-dasharr\
+ay:none;stroke-o\
+pacity:1;stop-co\
+lor:#000000\x22\x0a   \
+        d=\x22m 23.\
+742284,17.405254\
+ c -1.134867,0.0\
+6472 -2.604512,0\
+.385792 -2.98828\
+6,1.616713 -0.25\
+2138,1.365061 0.\
+911503,2.433445 \
+1.21938,3.690005\
+ 0.408688,1.4650\
+74 0.785306,2.97\
+546 0.648108,4.4\
+82073 -0.02245,0\
+.782125 -0.17562\
+5,1.760453 0.635\
+525,2.21735 0.79\
+6644,0.669011 1.\
+930173,0.358574 \
+2.839476,0.12705\
+8 1.008105,-0.25\
+3019 1.889085,-1\
+.342902 1.432685\
+,-2.390455 -0.46\
+4079,-1.175551 -\
+1.218892,-2.2385\
+52 -1.399194,-3.\
+517926 -0.325985\
+,-1.190259 -0.49\
+5655,-2.401985 -\
+0.410086,-3.6151\
+16 0.04022,-0.88\
+2209 -0.01315,-2\
+.039884 -0.97667\
+9,-2.42274 -0.31\
+0308,-0.150105 -\
+0.659629,-0.1934\
+11 -1.000929,-0.\
+186962 z\x22\x0a      \
+     id=\x22path556\
+6\x22\x0a           tr\
+ansform=\x22matrix(\
+0.60869419,0,0,0\
+.60869419,13.525\
+817,9.7229224)\x22 \
+/>\x0a        <path\
+\x0a           styl\
+e=\x22fill:#e6e6e6;\
+fill-opacity:1;s\
+troke:none;strok\
+e-width:0.176777\
+;stroke-linecap:\
+round;stroke-mit\
+erlimit:4;stroke\
+-dasharray:none;\
+stroke-opacity:1\
+;stop-color:#000\
+000\x22\x0a           \
+d=\x22m 21.331975,9\
+.4742987 c -1.21\
+6813,-0.016117 -\
+2.03264,1.310519\
+3 -1.730478,2.42\
+56733 0.199595,1\
+.176234 0.499286\
+,2.352012 0.3395\
+74,3.55482 -0.08\
+243,0.929757 0.0\
+589,2.130317 1.0\
+70669,2.500127 1\
+.106584,0.345323\
+ 2.385648,0.0428\
+1 3.321469,-0.61\
+1123 0.787338,-0\
+.577986 0.794478\
+,-1.706961 0.304\
+654,-2.480278 -0\
+.643397,-1.06642\
+3 -1.051757,-2.2\
+75393 -1.34667,-\
+3.497156 -0.1944\
+67,-0.964506 -0.\
+878065,-1.926358\
+5 -1.959218,-1.8\
+920633 z\x22\x0a      \
+     id=\x22path560\
+5\x22\x0a           tr\
+ansform=\x22matrix(\
+0.60869419,0,0,0\
+.60869419,13.525\
+817,9.7229224)\x22 \
+/>\x0a        <path\
+\x0a           styl\
+e=\x22fill:#e6e6e6;\
+fill-opacity:1;s\
+troke:none;strok\
+e-width:0.176777\
+;stroke-linecap:\
+round;stroke-mit\
+erlimit:4;stroke\
+-dasharray:none;\
+stroke-opacity:1\
+;stop-color:#000\
+000\x22\x0a           \
+d=\x22m 31.851742,7\
+.037059 c -1.091\
+306,0.00378 -1.7\
+62258,1.1165513 \
+-1.732476,2.1175\
+616 -0.066,1.284\
+9014 -0.07868,2.\
+5884324 -0.52453\
+4,3.8136074 -0.2\
+95854,0.936066 -\
+0.269106,2.22777\
+5 0.763558,2.689\
+112 0.92606,0.37\
+6204 1.999123,0.\
+332276 2.959801,\
+0.117908 0.94444\
+4,-0.278786 1.51\
+4076,-1.323776 1\
+.226389,-2.26702\
+3 C 34.27233,12.\
+433296 33.899849\
+,11.37063 33.937\
+708,10.243965 33\
+.847718,9.206716\
+1 33.994445,7.80\
+86422 32.91292,7\
+.2310991 32.5855\
+54,7.0746177 32.\
+21096,7.0289957 \
+31.851742,7.0370\
+59 Z\x22\x0a          \
+ id=\x22path5644\x22\x0a \
+          transf\
+orm=\x22matrix(0.60\
+869419,0,0,0.608\
+69419,13.525817,\
+9.7229224)\x22 />\x0a \
+       <path\x0a   \
+        style=\x22f\
+ill:#e6e6e6;fill\
+-opacity:1;strok\
+e:none;stroke-wi\
+dth:0.176777;str\
+oke-linecap:roun\
+d;stroke-miterli\
+mit:4;stroke-das\
+harray:none;stro\
+ke-opacity:1;sto\
+p-color:#000000\x22\
+\x0a           d=\x22m\
+ 31.974485,15.53\
+0109 c -1.033587\
+,-0.02558 -2.346\
+613,0.417388 -2.\
+495935,1.59686 -\
+0.179016,1.27058\
+2 0.734765,2.397\
+21 0.542317,3.66\
+5871 -0.03373,1.\
+160715 0.0721,2.\
+342228 -0.04851,\
+3.489995 -0.3077\
+03,1.092673 -0.9\
+21875,2.457797 -\
+0.09572,3.47197 \
+0.89195,0.891459\
+ 2.317654,0.7671\
+38 3.450943,0.51\
+3584 0.939826,-0\
+.20996 1.491708,\
+-1.220178 1.2474\
+5,-2.135649 -0.1\
+7282,-1.09303 -0\
+.723029,-2.11714\
+1 -0.570891,-3.2\
+47753 0.02461,-1\
+.414062 -0.14933\
+8,-2.838104 0.39\
+0489,-4.189988 0\
+.323618,-0.89742\
+2 0.38992,-2.124\
+085 -0.522044,-2\
+.706203 -0.55577\
+,-0.364802 -1.24\
+6327,-0.458742 -\
+1.898105,-0.4586\
+87 z\x22\x0a          \
+ id=\x22path5683\x22\x0a \
+          transf\
+orm=\x22matrix(0.60\
+869419,0,0,0.608\
+69419,13.525817,\
+9.7229224)\x22 />\x0a \
+       <path\x0a   \
+        style=\x22f\
+ill:#e6e6e6;fill\
+-opacity:1;strok\
+e:none;stroke-wi\
+dth:0.176777;str\
+oke-linecap:roun\
+d;stroke-miterli\
+mit:4;stroke-das\
+harray:none;stro\
+ke-opacity:1;sto\
+p-color:#000000\x22\
+\x0a           d=\x22m\
+ 32.020751,28.54\
+1495 c -1.033817\
+,-0.01234 -2.380\
+724,0.363232 -2.\
+539439,1.559053 \
+-0.191016,1.3039\
+02 0.734386,2.46\
+7776 0.542932,3.\
+768935 -0.04856,\
+1.160086 0.0993,\
+2.349544 -0.0775\
+7,3.490443 -0.31\
+1686,1.08165 -0.\
+894487,2.441633 \
+-0.03689,3.42473\
+6 0.91736,0.8816\
+65 2.344064,0.72\
+946 3.484089,0.4\
+70081 0.9547,-0.\
+260007 1.436736,\
+-1.331133 1.1587\
+16,-2.249932 -0.\
+194939,-1.046101\
+ -0.693956,-2.03\
+7401 -0.547248,-\
+3.124839 0.06039\
+,-1.298005 -0.19\
+2328,-2.639262 0\
+.299367,-3.87757\
+2 0.286207,-0.95\
+0652 0.636373,-2\
+.252996 -0.32906\
+,-2.945766 -0.55\
+6327,-0.418972 -\
+1.276053,-0.5212\
+48 -1.954901,-0.\
+515139 z\x22\x0a      \
+     id=\x22path572\
+2\x22\x0a           tr\
+ansform=\x22matrix(\
+0.60869419,0,0,0\
+.60869419,13.525\
+817,9.7229224)\x22 \
+/>\x0a        <path\
+\x0a           styl\
+e=\x22fill:#e6e6e6;\
+fill-opacity:1;s\
+troke:none;strok\
+e-width:0.176777\
+;stroke-linecap:\
+round;stroke-mit\
+erlimit:4;stroke\
+-dasharray:none;\
+stroke-opacity:1\
+;stop-color:#000\
+000\x22\x0a           \
+d=\x22m 36.925959,2\
+9.672417 c -1.12\
+477,-0.06748 -2.\
+153584,1.07045 -\
+1.872729,2.18916\
+5 0.146631,1.127\
+64 0.37173,2.260\
+432 0.159274,3.3\
+96585 -0.09304,1\
+.241636 -0.26867\
+5,2.491679 -0.83\
+6091,3.616586 -0\
+.418453,0.883226\
+ -0.527904,2.161\
+103 0.427707,2.7\
+39586 0.923805,0\
+.540605 2.086033\
+,0.571774 3.1124\
+1,0.373061 0.975\
+179,-0.29294 1.3\
+4504,-1.411221 1\
+.141138,-2.33253\
+6 -0.163288,-0.9\
+98499 -0.35261,-\
+2.005844 -0.1460\
+79,-3.01565 0.11\
+0524,-1.358496 0\
+.328102,-2.71929\
+6 0.934465,-3.95\
+3652 0.397473,-0\
+.808065 0.337478\
+,-1.908095 -0.46\
+8872,-2.442764 -\
+0.697726,-0.5145\
+9 -1.614235,-0.5\
+7937 -2.451223,-\
+0.570381 z\x22\x0a    \
+       id=\x22path5\
+761\x22\x0a           \
+transform=\x22matri\
+x(0.60869419,0,0\
+,0.60869419,13.5\
+25817,9.7229224)\
+\x22 />\x0a        <pa\
+th\x0a           st\
+yle=\x22fill:#e6e6e\
+6;fill-opacity:1\
+;stroke:none;str\
+oke-width:0.1767\
+77;stroke-lineca\
+p:round;stroke-m\
+iterlimit:4;stro\
+ke-dasharray:non\
+e;stroke-opacity\
+:1;stop-color:#0\
+00000\x22\x0a         \
+  d=\x22m 38.467748\
+,17.257134 c -0.\
+975965,-0.0521 -\
+2.026668,0.63278\
+2 -2.021883,1.68\
+404 -0.01618,1.2\
+12024 0.434882,2\
+.40113 0.215274,\
+3.620988 -0.1413\
+2,1.365439 -0.27\
+4289,2.760148 -0\
+.90788,4.003198 \
+-0.42104,0.89366\
+7 -0.416407,2.17\
+7097 0.567274,2.\
+696362 1.038891,\
+0.496511 2.37893\
+4,0.678287 3.426\
+084,0.109105 1.0\
+19734,-0.624968 \
+0.774285,-1.9583\
+97 0.596207,-2.9\
+44062 -0.310587,\
+-1.203355 0.0529\
+9,-2.420274 0.15\
+4035,-3.626539 0\
+.06072,-1.138041\
+ 0.699125,-2.109\
+506 0.957794,-3.\
+192687 0.262192,\
+-1.002797 -0.506\
+936,-1.998922 -1\
+.49656,-2.16396 \
+-0.486108,-0.122\
+12 -0.988389,-0.\
+195338 -1.490345\
+,-0.186445 z\x22\x0a  \
+         id=\x22pat\
+h5800\x22\x0a         \
+  transform=\x22mat\
+rix(0.60869419,0\
+,0,0.60869419,13\
+.525817,9.722922\
+4)\x22 />\x0a        <\
+path\x0a           \
+style=\x22fill:#e6e\
+6e6;fill-opacity\
+:1;stroke:none;s\
+troke-width:0.17\
+6777;stroke-line\
+cap:round;stroke\
+-miterlimit:4;st\
+roke-dasharray:n\
+one;stroke-opaci\
+ty:1;stop-color:\
+#000000\x22\x0a       \
+    d=\x22m 39.7970\
+26,9.1210905 c -\
+1.183569,0.01558\
+8 -1.806548,1.24\
+75025 -1.877242,\
+2.2884935 -0.120\
+033,1.116177 -0.\
+348793,2.219688 \
+-0.84489,3.23468\
+9 -0.409648,0.85\
+1408 -0.438091,2\
+.083349 0.487392\
+,2.611826 1.0737\
+57,0.59853 2.528\
+793,0.767178 3.6\
+17017,0.119289 0\
+.980319,-0.6851 \
+0.610311,-2.0027\
+25 0.470406,-2.9\
+87405 C 41.28741\
+,12.907476 42.13\
+7516,11.292796 4\
+1.355561,9.89517\
+91 41.025962,9.3\
+762158 40.398788\
+,9.1071838 39.79\
+7026,9.1210905 Z\
+\x22\x0a           id=\
+\x22path5839\x22\x0a     \
+      transform=\
+\x22matrix(0.608694\
+19,0,0,0.6086941\
+9,13.525817,9.72\
+29224)\x22 />\x0a     \
+   <path\x0a       \
+    style=\x22fill:\
+#e6e6e6;fill-opa\
+city:1;stroke:no\
+ne;stroke-width:\
+0.176777;stroke-\
+linecap:round;st\
+roke-miterlimit:\
+4;stroke-dasharr\
+ay:none;stroke-o\
+pacity:1;stop-co\
+lor:#000000\x22\x0a   \
+        d=\x22m 47.\
+915116,13.788064\
+ c -1.185119,0.0\
+3109 -1.696211,1\
+.296212 -1.93971\
+,2.272375 -0.219\
+838,1.172943 -0.\
+949149,2.13835 -\
+1.388491,3.22272\
+2 -0.370204,0.91\
+9416 0.272935,1.\
+911929 1.164931,\
+2.207637 0.89459\
+9,0.370596 2.055\
+303,0.592774 2.9\
+02314,0.0059 0.9\
+79021,-0.883007 \
+0.477584,-2.2956\
+9 0.632702,-3.43\
+6097 0.161048,-1\
+.076506 0.696496\
+,-2.238846 0.235\
+645,-3.304033 -0\
+.302899,-0.58513\
+6 -0.943567,-0.9\
+88075 -1.607391,\
+-0.968474 z\x22\x0a   \
+        id=\x22path\
+5954\x22\x0a          \
+ transform=\x22matr\
+ix(0.60869419,0,\
+0,0.60869419,13.\
+525817,9.7229224\
+)\x22 />\x0a        <p\
+ath\x0a           s\
+tyle=\x22fill:#e6e6\
+e6;fill-opacity:\
+1;stroke:none;st\
+roke-width:0.176\
+777;stroke-linec\
+ap:round;stroke-\
+miterlimit:4;str\
+oke-dasharray:no\
+ne;stroke-opacit\
+y:1;stop-color:#\
+000000\x22\x0a        \
+   d=\x22m 45.42971\
+2,21.018991 c -0\
+.969273,-0.02884\
+ -1.715074,0.899\
+099 -1.629038,1.\
+835801 -0.01758,\
+1.324305 -0.1051\
+34,2.653087 -0.5\
+17823,3.921433 -\
+0.180002,1.27471\
+5 -1.124903,2.23\
+8722 -1.450994,3\
+.456388 -0.22229\
+5,1.09887 0.8076\
+02,1.9496 1.7884\
+83,2.147906 0.95\
+042,0.315783 2.3\
+30191,0.260019 2\
+.767315,-0.81293\
+2 0.334323,-1.35\
+0827 0.03649,-2.\
+796006 0.496259,\
+-4.133379 0.2339\
+2,-1.084576 0.59\
+6985,-2.137142 1\
+.201764,-3.07355\
+1 0.486374,-0.76\
+7309 0.686184,-1\
+.939315 -0.13569\
+,-2.562571 -0.71\
+0163,-0.540277 -\
+1.639474,-0.7677\
+85 -2.520276,-0.\
+779095 z\x22\x0a      \
+     id=\x22path599\
+3\x22\x0a           tr\
+ansform=\x22matrix(\
+0.60869419,0,0,0\
+.60869419,13.525\
+817,9.7229224)\x22 \
+/>\x0a        <path\
+\x0a           styl\
+e=\x22fill:#e6e6e6;\
+fill-opacity:1;s\
+troke:none;strok\
+e-width:0.176777\
+;stroke-linecap:\
+round;stroke-mit\
+erlimit:4;stroke\
+-dasharray:none;\
+stroke-opacity:1\
+;stop-color:#000\
+000\x22\x0a           \
+d=\x22m 42.725408,3\
+2.146255 c -1.01\
+5646,-0.03514 -1\
+.898732,0.892785\
+ -1.779476,1.913\
+087 0.03731,1.16\
+7006 -0.03251,2.\
+336205 -0.391863\
+,3.455007 -0.207\
+452,1.130422 -0.\
+727305,2.150682 \
+-1.298767,3.1335\
+88 -0.52108,0.87\
+7778 -0.233747,2\
+.135248 0.742324\
+,2.551178 1.0246\
+29,0.491129 2.50\
+7862,0.845496 3.\
+35565,-0.148983 \
+0.655718,-0.8051\
+33 0.316219,-1.9\
+32733 0.43262,-2\
+.881599 0.09728,\
+-1.275292 0.4798\
+94,-2.526468 0.9\
+62604,-3.706268 \
+0.35637,-0.89872\
+4 1.272064,-1.79\
+3599 0.886128,-2\
+.828254 -0.43912\
+5,-1.109752 -1.8\
+35988,-1.449962 \
+-2.90922,-1.4877\
+56 z\x22\x0a          \
+ id=\x22path6032\x22\x0a \
+          transf\
+orm=\x22matrix(0.60\
+869419,0,0,0.608\
+69419,13.525817,\
+9.7229224)\x22 />\x0a \
+     </g>\x0a      \
+<g\x0a         id=\x22\
+g4190\x22\x0a         \
+style=\x22fill:#fff\
+fff;fill-opacity\
+:1\x22>\x0a        <pa\
+th\x0a           id\
+=\x22path2104\x22\x0a    \
+       style=\x22fi\
+ll:#ffffff;fill-\
+opacity:1;stroke\
+:none;stroke-wid\
+th:0.608694px;st\
+roke-linecap:but\
+t;stroke-linejoi\
+n:miter;stroke-o\
+pacity:1\x22\x0a      \
+     d=\x22m 33.019\
+491,19.766376 c \
+-1.826082,0 -0.6\
+08695,1.217389 -\
+0.608695,2.43477\
+7 0,0.35488 3.77\
+e-4,0.658406 0.0\
+1546,0.913041 -0\
+.01508,0.254635 \
+-0.01546,0.55816\
+ -0.01546,0.9130\
+41 0,1.217389 -1\
+.217389,2.434777\
+ 0.608695,2.4347\
+77 1.826082,0 0.\
+608694,-1.217389\
+ 0.608694,-2.434\
+777 0,-0.354881 \
+-3.77e-4,-0.6584\
+06 -0.01546,-0.9\
+13041 0.01508,-0\
+.254635 0.01546,\
+-0.558161 0.0154\
+6,-0.913041 0,-1\
+.217389 1.217389\
+,-2.434777 -0.60\
+8694,-2.434777 z\
+\x22 />\x0a        <pa\
+th\x0a           st\
+yle=\x22fill:#fffff\
+f;fill-opacity:1\
+;stroke:none;str\
+oke-width:0.6086\
+94px;stroke-line\
+cap:butt;stroke-\
+linejoin:miter;s\
+troke-opacity:1\x22\
+\x0a           d=\x22m\
+ 33.004031,18.85\
+3335 c 1.826082,\
+0 0.608694,-1.21\
+7388 0.608694,-2\
+.434776 0,-1.217\
+389 0,-1.852703 \
+-0.608694,-1.852\
+703 -0.608695,0 \
+-0.608695,0.6353\
+15 -0.608695,1.8\
+52703 0,1.217389\
+ -1.217388,2.434\
+776 0.608695,2.4\
+34776 z\x22\x0a       \
+    id=\x22path3277\
+\x22\x0a           sod\
+ipodi:nodetypes=\
+\x22sssss\x22 />\x0a     \
+   <path\x0a       \
+    id=\x22path3280\
+\x22\x0a           sty\
+le=\x22fill:#ffffff\
+;fill-opacity:1;\
+stroke:none;stro\
+ke-width:0.60869\
+4px;stroke-linec\
+ap:butt;stroke-l\
+inejoin:miter;st\
+roke-opacity:1\x22\x0a\
+           d=\x22m \
+33.019491,27.679\
+401 c -1.826082,\
+0 -0.608695,1.21\
+7389 -0.608695,2\
+.434777 0,0.3548\
+8 3.77e-4,0.6584\
+06 0.01546,0.913\
+041 -0.01508,0.2\
+54635 -0.01546,0\
+.55816 -0.01546,\
+0.913041 0,1.217\
+389 -1.217389,2.\
+434777 0.608695,\
+2.434777 1.82608\
+2,0 0.608694,-1.\
+217389 0.608694,\
+-2.434777 0,-0.3\
+54881 -3.77e-4,-\
+0.658406 -0.0154\
+6,-0.913041 0.01\
+508,-0.254635 0.\
+01546,-0.558161 \
+0.01546,-0.91304\
+1 0,-1.217389 1.\
+217389,-2.434777\
+ -0.608694,-2.43\
+4777 z\x22 />\x0a     \
+   <path\x0a       \
+    id=\x22path3282\
+\x22\x0a           sty\
+le=\x22fill:#ffffff\
+;fill-opacity:1;\
+stroke:none;stro\
+ke-width:0.58482\
+4px;stroke-linec\
+ap:butt;stroke-l\
+inejoin:miter;st\
+roke-opacity:1\x22\x0a\
+           d=\x22m \
+27.52835,20.9562\
+29 c -1.711512,0\
+.38587 -0.313258\
+,1.269632 -0.056\
+01,2.41064 0.074\
+99,0.332614 0.13\
+9481,0.617018 0.\
+207421,0.85249 0\
+.03967,0.241846 \
+0.103459,0.52640\
+7 0.178449,0.859\
+022 0.257247,1.1\
+41009 -0.626515,\
+2.539264 1.08499\
+9,2.153393 1.711\
+511,-0.38587 0.3\
+13256,-1.269631 \
+0.05601,-2.41064\
+ -0.07499,-0.332\
+615 -0.139481,-0\
+.617017 -0.20742\
+1,-0.852489 -0.0\
+3967,-0.241846 -\
+0.103459,-0.5264\
+09 -0.178449,-0.\
+859023 -0.257247\
+,-1.141008 0.626\
+516,-2.539263 -1\
+.084997,-2.15339\
+3 z\x22 />\x0a        \
+<path\x0a          \
+ style=\x22fill:#ff\
+ffff;fill-opacit\
+y:1;stroke:none;\
+stroke-width:0.5\
+84824px;stroke-l\
+inecap:butt;stro\
+ke-linejoin:mite\
+r;stroke-opacity\
+:1\x22\x0a           d\
+=\x22m 27.320925,20\
+.10374 c 1.71151\
+2,-0.38587 0.313\
+257,-1.269631 0.\
+05601,-2.410639 \
+-0.257247,-1.141\
+008 -0.391496,-1\
+.736462 -0.962,-\
+1.607839 -0.5705\
+04,0.128624 -0.4\
+36256,0.724079 -\
+0.179009,1.86508\
+6 0.257247,1.141\
+009 -0.626515,2.\
+539262 1.084998,\
+2.153392 z\x22\x0a    \
+       id=\x22path3\
+284\x22\x0a           \
+sodipodi:nodetyp\
+es=\x22sssss\x22 />\x0a  \
+      <path\x0a    \
+       id=\x22path3\
+286\x22\x0a           \
+style=\x22fill:#fff\
+fff;fill-opacity\
+:1;stroke:none;s\
+troke-width:0.58\
+4824px;stroke-li\
+necap:butt;strok\
+e-linejoin:miter\
+;stroke-opacity:\
+1\x22\x0a           d=\
+\x22m 29.200455,28.\
+372783 c -1.7115\
+12,0.38587 -0.31\
+3259,1.269632 -0\
+.05601,2.410641 \
+0.07499,0.332614\
+ 0.139481,0.6170\
+17 0.207421,0.85\
+2489 0.03967,0.2\
+41845 0.103459,0\
+.526406 0.178449\
+,0.859021 0.2572\
+47,1.14101 -0.62\
+6515,2.539264 1.\
+084999,2.153394 \
+1.711512,-0.3858\
+7 0.313256,-1.26\
+9632 0.05601,-2.\
+41064 -0.07499,-\
+0.332616 -0.1394\
+82,-0.617018 -0.\
+207422,-0.85249 \
+-0.03967,-0.2418\
+45 -0.103459,-0.\
+526407 -0.178448\
+,-0.859021 -0.25\
+7247,-1.14101 0.\
+626515,-2.539265\
+ -1.084997,-2.15\
+3394 z\x22 />\x0a     \
+   <path\x0a       \
+    id=\x22path3288\
+\x22\x0a           sty\
+le=\x22fill:#ffffff\
+;fill-opacity:1;\
+stroke:none;stro\
+ke-width:0.58482\
+4px;stroke-linec\
+ap:butt;stroke-l\
+inejoin:miter;st\
+roke-opacity:1\x22\x0a\
+           d=\x22m \
+37.309425,20.821\
+38 c -1.743289,-\
+0.197768 -0.7129\
+43,1.09627 -0.84\
+4788,2.258462 -0\
+.03843,0.33879 -\
+0.07095,0.628597\
+ -0.08413,0.8733\
+19 -0.04198,0.24\
+1457 -0.0752,0.5\
+3118 -0.113639,0\
+.86997 -0.131846\
+,1.162195 -1.425\
+884,2.192542 0.3\
+17407,2.39031 1.\
+743289,0.197768 \
+0.712941,-1.0962\
+71 0.844786,-2.2\
+58464 0.03843,-0\
+.338791 0.07095,\
+-0.628595 0.0841\
+3,-0.873318 0.04\
+198,-0.241456 0.\
+07521,-0.531181 \
+0.11364,-0.86997\
+1 0.131845,-1.16\
+2193 1.425885,-2\
+.19254 -0.317406\
+,-2.390308 z\x22 />\
+\x0a        <path\x0a \
+          style=\
+\x22fill:#ffffff;fi\
+ll-opacity:1;str\
+oke:none;stroke-\
+width:0.584824px\
+;stroke-linecap:\
+butt;stroke-line\
+join:miter;strok\
+e-opacity:1\x22\x0a   \
+        d=\x22m 37.\
+39355,19.94806 c\
+ 1.743288,0.1977\
+68 0.712941,-1.0\
+96269 0.844787,-\
+2.258462 0.13184\
+5,-1.162193 0.20\
+0651,-1.768702 -\
+0.380446,-1.8346\
+25 -0.581097,-0.\
+06592 -0.649902,\
+0.540588 -0.7817\
+48,1.70278 -0.13\
+1845,1.162193 -1\
+.425883,2.192539\
+ 0.317407,2.3903\
+07 z\x22\x0a          \
+ id=\x22path3290\x22\x0a \
+          sodipo\
+di:nodetypes=\x22ss\
+sss\x22 />\x0a        \
+<path\x0a          \
+ id=\x22path3292\x22\x0a \
+          style=\
+\x22fill:#ffffff;fi\
+ll-opacity:1;str\
+oke:none;stroke-\
+width:0.584824px\
+;stroke-linecap:\
+butt;stroke-line\
+join:miter;strok\
+e-opacity:1\x22\x0a   \
+        d=\x22m 36.\
+45243,28.375634 \
+c -1.743289,-0.1\
+97768 -0.712943,\
+1.096271 -0.8447\
+88,2.258464 -0.0\
+3843,0.33879 -0.\
+07095,0.628595 -\
+0.08413,0.873318\
+ -0.04198,0.2414\
+56 -0.07521,0.53\
+1179 -0.113639,0\
+.86997 -0.131845\
+,1.162194 -1.425\
+884,2.192541 0.3\
+17407,2.390309 1\
+.743289,0.197768\
+ 0.712941,-1.096\
+271 0.844786,-2.\
+258464 0.03843,-\
+0.338791 0.07095\
+,-0.628595 0.084\
+13,-0.873318 0.0\
+4198,-0.241456 0\
+.0752,-0.53118 0\
+.113639,-0.86997\
+ 0.131846,-1.162\
+194 1.425885,-2.\
+192541 -0.317405\
+,-2.390309 z\x22 />\
+\x0a        <path\x0a \
+          id=\x22pa\
+th3294\x22\x0a        \
+   style=\x22fill:#\
+ffffff;fill-opac\
+ity:1;stroke:non\
+e;stroke-width:0\
+.537083px;stroke\
+-linecap:butt;st\
+roke-linejoin:mi\
+ter;stroke-opaci\
+ty:1\x22\x0a          \
+ d=\x22m 41.743175,\
+23.165582 c -1.5\
+6198,-0.395401 -\
+0.784261,0.90952\
+1 -1.047862,1.95\
+0841 -0.07684,0.\
+303554 -0.142242\
+,0.563263 -0.184\
+477,0.784336 -0.\
+06804,0.214542 -\
+0.134081,0.47408\
+8 -0.210923,0.77\
+7644 -0.263601,1\
+.04132 -1.568522\
+,1.819039 -0.006\
+5,2.21444 1.5619\
+79,0.395401 0.78\
+426,-0.909521 1.\
+04786,-1.95084 0\
+.07684,-0.303556\
+ 0.142242,-0.563\
+264 0.184477,-0.\
+784338 0.06804,-\
+0.214541 0.13408\
+1,-0.474088 0.21\
+0923,-0.777642 0\
+.263601,-1.04132\
+1 1.568522,-1.81\
+904 0.0065,-2.21\
+4441 z\x22 />\x0a     \
+   <path\x0a       \
+    style=\x22fill:\
+#ffffff;fill-opa\
+city:1;stroke:no\
+ne;stroke-width:\
+0.537083px;strok\
+e-linecap:butt;s\
+troke-linejoin:m\
+iter;stroke-opac\
+ity:1\x22\x0a         \
+  d=\x22m 41.927651\
+,22.381245 c 1.5\
+6198,0.3954 0.78\
+426,-0.90952 1.0\
+47861,-1.95084 0\
+.2636,-1.041321 \
+0.401165,-1.5847\
+51 -0.119495,-1.\
+716551 -0.52066,\
+-0.1318 -0.65822\
+5,0.41163 -0.921\
+825,1.45295 -0.2\
+63601,1.041321 -\
+1.568521,1.81904\
+ -0.0065,2.21444\
+1 z\x22\x0a           \
+id=\x22path3296\x22\x0a  \
+         sodipod\
+i:nodetypes=\x22sss\
+ss\x22 />\x0a        <\
+path\x0a           \
+id=\x22path3298\x22\x0a  \
+         style=\x22\
+fill:#ffffff;fil\
+l-opacity:1;stro\
+ke:none;stroke-w\
+idth:0.537083px;\
+stroke-linecap:b\
+utt;stroke-linej\
+oin:miter;stroke\
+-opacity:1\x22\x0a    \
+       d=\x22m 40.0\
+29772,29.934164 \
+c -1.56198,-0.39\
+5401 -0.784262,0\
+.909521 -1.04786\
+2,1.950841 -0.07\
+684,0.303554 -0.\
+142242,0.563263 \
+-0.184477,0.7843\
+36 -0.06804,0.21\
+4542 -0.134081,0\
+.474088 -0.21092\
+3,0.777643 -0.26\
+3601,1.041321 -1\
+.568523,1.81904 \
+-0.0065,2.214441\
+ 1.56198,0.39540\
+1 0.78426,-0.909\
+521 1.047861,-1.\
+950841 0.07684,-\
+0.303555 0.14224\
+2,-0.563263 0.18\
+4477,-0.784337 0\
+.06804,-0.214541\
+ 0.134081,-0.474\
+088 0.210923,-0.\
+777642 0.263601,\
+-1.041321 1.5685\
+22,-1.81904 0.00\
+65,-2.214441 z\x22 \
+/>\x0a        <path\
+\x0a           id=\x22\
+path3820\x22\x0a      \
+     style=\x22fill\
+:#ffffff;fill-op\
+acity:1;stroke:n\
+one;stroke-width\
+:0.518459px;stro\
+ke-linecap:butt;\
+stroke-linejoin:\
+miter;stroke-opa\
+city:1\x22\x0a        \
+   d=\x22m 21.21042\
+6,28.52358 c -1.\
+443182,1.11884 0\
+.06008,1.070957 \
+0.601213,1.76896\
+7 0.157748,0.203\
+476 0.292966,0.3\
+77277 0.418073,0\
+.514035 0.10127,\
+0.155234 0.23588\
+7,0.329502 0.393\
+636,0.532979 0.5\
+41138,0.698011 0\
+.120153,2.141914\
+ 1.563336,1.0230\
+74 1.443183,-1.1\
+1884 -0.06008,-1\
+.070957 -0.60121\
+5,-1.768967 -0.1\
+57747,-0.203477 \
+-0.292964,-0.377\
+277 -0.418071,-0\
+.514035 -0.10126\
+9,-0.155237 -0.2\
+35889,-0.329503 \
+-0.393636,-0.532\
+98 -0.541138,-0.\
+698009 -0.120154\
+,-2.141912 -1.56\
+3336,-1.023073 z\
+\x22 />\x0a        <pa\
+th\x0a           st\
+yle=\x22fill:#fffff\
+f;fill-opacity:1\
+;stroke:none;str\
+oke-width:0.5184\
+59px;stroke-line\
+cap:butt;stroke-\
+linejoin:miter;s\
+troke-opacity:1\x22\
+\x0a           d=\x22m\
+ 21.050207,27.62\
+333 c 1.684293,-\
+0.705504 0.22020\
+8,-1.049793 -0.1\
+21016,-1.864418 \
+-0.341226,-0.814\
+626 -0.519299,-1\
+.239751 -1.08072\
+9,-1.004583 -0.5\
+61432,0.235169 -\
+0.383357,0.66029\
+6 -0.04213,1.474\
+92 0.341225,0.81\
+4626 -0.440413,2\
+.099585 1.243879\
+,1.394081 z\x22\x0a   \
+        id=\x22path\
+3822\x22\x0a          \
+ sodipodi:nodety\
+pes=\x22sssss\x22 />\x0a \
+       <path\x0a   \
+        id=\x22path\
+3824\x22\x0a          \
+ style=\x22fill:#ff\
+ffff;fill-opacit\
+y:1;stroke:none;\
+stroke-width:0.5\
+18459px;stroke-l\
+inecap:butt;stro\
+ke-linejoin:mite\
+r;stroke-opacity\
+:1\x22\x0a           d\
+=\x22m 24.887011,33\
+.231209 c -1.213\
+055,1.364945 0.2\
+55818,1.04169 0.\
+915987,1.628396 \
+0.192446,0.17103\
+ 0.357293,0.3170\
+29 0.505397,0.42\
+8473 0.128066,0.\
+13399 0.29241,0.\
+280555 0.484857,\
+0.451586 0.66017\
+,0.586706 0.5116\
+35,2.083376 1.72\
+4691,0.71843 1.2\
+13055,-1.364944 \
+-0.255818,-1.041\
+688 -0.915988,-1\
+.628394 -0.19244\
+6,-0.171031 -0.3\
+57293,-0.31703 -\
+0.505396,-0.4284\
+74 -0.128067,-0.\
+13399 -0.292412,\
+-0.280555 -0.484\
+857,-0.451585 -0\
+.66017,-0.586707\
+ -0.511636,-2.08\
+3377 -1.724691,-\
+0.718432 z\x22 />\x0a \
+       <path\x0a   \
+        style=\x22f\
+ill:#ffffff;fill\
+-opacity:1;strok\
+e:none;stroke-wi\
+dth:0.608694px;s\
+troke-linecap:bu\
+tt;stroke-linejo\
+in:miter;stroke-\
+opacity:1\x22\x0a     \
+      d=\x22m 33.04\
+7671,35.90565 c \
+-3.163559,0 -4.2\
+91991,1.312377 -\
+4.35503,2.846501\
+ -0.06304,1.5341\
+23 3.047021,1.67\
+524 4.071028,2.5\
+30807 1.024008,0\
+.855566 1.217577\
+,0.696549 1.7594\
+93,0.667435 0.54\
+1916,-0.02911 5.\
+227021,-0.276659\
+ 5.191836,-2.086\
+614 -0.03518,-1.\
+809954 -1.171945\
+,-3.958129 -6.66\
+7327,-3.958129 z\
+\x22\x0a           id=\
+\x22path3892\x22\x0a     \
+      sodipodi:n\
+odetypes=\x22ssssss\
+\x22 />\x0a      </g>\x0a\
+      <path\x0a    \
+     id=\x22rect811\
+6\x22\x0a         styl\
+e=\x22fill:#ff0003;\
+fill-opacity:1;s\
+troke:#ffb800;st\
+roke-width:0.782\
+607;stroke-linec\
+ap:butt;stroke-m\
+iterlimit:4;stro\
+ke-dasharray:non\
+e;stroke-opacity\
+:1;stop-color:#0\
+00000\x22\x0a         \
+d=\x22m 39.351842,2\
+6.157665 c -0.86\
+7132,0 -1.565214\
+,0.698086 -1.565\
+214,1.565214 v 6\
+.260855 h -6.260\
+854 c -0.867128,\
+0 -1.565214,0.69\
+8082 -1.565214,1\
+.565213 v 3.1304\
+28 c 0,0.867131 \
+0.698086,1.56521\
+3 1.565214,1.565\
+213 h 6.260854 v\
+ 6.260855 c 0,0.\
+867127 0.698082,\
+1.565213 1.56521\
+4,1.565213 h 3.1\
+30427 c 0.867132\
+,0 1.565214,-0.6\
+98086 1.565214,-\
+1.565213 v -6.26\
+0855 h 6.260854 \
+c 0.867128,0 1.5\
+65214,-0.698082 \
+1.565214,-1.5652\
+13 v -3.130428 c\
+ 0,-0.867131 -0.\
+698086,-1.565213\
+ -1.565214,-1.56\
+5213 h -6.260854\
+ v -6.260855 c 0\
+,-0.867128 -0.69\
+8082,-1.565214 -\
+1.565214,-1.5652\
+14 z\x22 />\x0a    </g\
+>\x0a  </g>\x0a</svg>\x0a\
+\
 \x00\x00-Z\
 <\
 ?xml version=\x221.\
@@ -4633,2254 +5131,1781 @@ di:nodetypes=\x22ss\
 ssss\x22 />\x0a      <\
 /g>\x0a    </g>\x0a  <\
 /g>\x0a</svg>\x0a\
-\x00\x00\x8a\xb1\
+\x00\x00\x15\xc0\
 <\
 ?xml version=\x221.\
 0\x22 encoding=\x22UTF\
--8\x22 standalone=\x22\
-no\x22?>\x0a<!-- Creat\
-ed with Inkscape\
- (http://www.ink\
-scape.org/) -->\x0a\
-\x0a<svg\x0a   width=\x22\
-64px\x22\x0a   height=\
-\x2264px\x22\x0a   id=\x22sv\
-g2985\x22\x0a   versio\
-n=\x221.1\x22\x0a   inksc\
-ape:version=\x221.1\
-.1 (3bf5ae0d25, \
-2021-09-20)\x22\x0a   \
-sodipodi:docname\
-=\x22XRay_ObjectAdd\
-.svg\x22\x0a   xmlns:i\
-nkscape=\x22http://\
-www.inkscape.org\
-/namespaces/inks\
-cape\x22\x0a   xmlns:s\
-odipodi=\x22http://\
-sodipodi.sourcef\
-orge.net/DTD/sod\
-ipodi-0.dtd\x22\x0a   \
-xmlns:xlink=\x22htt\
-p://www.w3.org/1\
-999/xlink\x22\x0a   xm\
-lns=\x22http://www.\
-w3.org/2000/svg\x22\
-\x0a   xmlns:svg=\x22h\
-ttp://www.w3.org\
-/2000/svg\x22\x0a   xm\
-lns:rdf=\x22http://\
-www.w3.org/1999/\
-02/22-rdf-syntax\
--ns#\x22\x0a   xmlns:c\
-c=\x22http://creati\
-vecommons.org/ns\
-#\x22\x0a   xmlns:dc=\x22\
-http://purl.org/\
-dc/elements/1.1/\
-\x22>\x0a  <title\x0a    \
- id=\x22title2079\x22>\
-XRay_ObjectAdd</\
-title>\x0a  <defs\x0a \
-    id=\x22defs2987\
-\x22>\x0a    <linearGr\
-adient\x0a       in\
-kscape:collect=\x22\
-always\x22\x0a       i\
-d=\x22linearGradien\
-t6443\x22>\x0a      <s\
-top\x0a         sty\
-le=\x22stop-color:#\
-454545;stop-opac\
-ity:1\x22\x0a         \
-offset=\x220\x22\x0a     \
-    id=\x22stop6439\
-\x22 />\x0a      <stop\
-\x0a         style=\
-\x22stop-color:#d9d\
-9d9;stop-opacity\
-:1\x22\x0a         off\
-set=\x221\x22\x0a        \
- id=\x22stop6441\x22 /\
->\x0a    </linearGr\
-adient>\x0a    <mar\
-ker\x0a       style\
-=\x22overflow:visib\
-le\x22\x0a       id=\x22D\
-otS\x22\x0a       refX\
-=\x220.0\x22\x0a       re\
-fY=\x220.0\x22\x0a       \
-orient=\x22auto\x22\x0a  \
-     inkscape:st\
-ockid=\x22DotS\x22\x0a   \
-    inkscape:iss\
-tock=\x22true\x22>\x0a   \
-   <path\x0a       \
-  transform=\x22sca\
-le(0.2) translat\
-e(7.4, 1)\x22\x0a     \
-    style=\x22fill-\
-rule:evenodd;fil\
-l:context-stroke\
-;stroke:context-\
-stroke;stroke-wi\
-dth:1.0pt\x22\x0a     \
-    d=\x22M -2.5,-1\
-.0 C -2.5,1.7600\
-000 -4.7400000,4\
-.0 -7.5,4.0 C -1\
-0.260000,4.0 -12\
-.5,1.7600000 -12\
-.5,-1.0 C -12.5,\
--3.7600000 -10.2\
-60000,-6.0 -7.5,\
--6.0 C -4.740000\
-0,-6.0 -2.5,-3.7\
-600000 -2.5,-1.0\
- z \x22\x0a         id\
-=\x22path1782\x22 />\x0a \
-   </marker>\x0a   \
- <marker\x0a       \
-style=\x22overflow:\
-visible\x22\x0a       \
-id=\x22DotL\x22\x0a      \
- refX=\x220.0\x22\x0a    \
-   refY=\x220.0\x22\x0a  \
-     orient=\x22aut\
-o\x22\x0a       inksca\
-pe:stockid=\x22DotL\
-\x22\x0a       inkscap\
-e:isstock=\x22true\x22\
->\x0a      <path\x0a  \
-       transform\
-=\x22scale(0.8) tra\
-nslate(7.4, 1)\x22\x0a\
-         style=\x22\
-fill-rule:evenod\
-d;fill:context-s\
-troke;stroke:con\
-text-stroke;stro\
-ke-width:1.0pt\x22\x0a\
-         d=\x22M -2\
-.5,-1.0 C -2.5,1\
-.7600000 -4.7400\
-000,4.0 -7.5,4.0\
- C -10.260000,4.\
-0 -12.5,1.760000\
-0 -12.5,-1.0 C -\
-12.5,-3.7600000 \
--10.260000,-6.0 \
--7.5,-6.0 C -4.7\
-400000,-6.0 -2.5\
-,-3.7600000 -2.5\
-,-1.0 z \x22\x0a      \
-   id=\x22path1776\x22\
- />\x0a    </marker\
->\x0a    <linearGra\
-dient\x0a       id=\
-\x22linearGradient3\
-981\x22>\x0a      <sto\
-p\x0a         id=\x22s\
-top3983\x22\x0a       \
-  offset=\x220\x22\x0a   \
-      style=\x22sto\
-p-color:#d3d7cf;\
-stop-opacity:1\x22 \
-/>\x0a      <stop\x0a \
-        id=\x22stop\
-3985\x22\x0a         o\
-ffset=\x221\x22\x0a      \
-   style=\x22stop-c\
-olor:#888a85;sto\
-p-opacity:1\x22 />\x0a\
-    </linearGrad\
-ient>\x0a    <linea\
-rGradient\x0a      \
- id=\x22linearGradi\
-ent3975\x22>\x0a      \
-<stop\x0a         i\
-d=\x22stop3977\x22\x0a   \
-      offset=\x220\x22\
-\x0a         style=\
-\x22stop-color:#d3d\
-7cf;stop-opacity\
-:1\x22 />\x0a      <st\
-op\x0a         id=\x22\
-stop3979\x22\x0a      \
-   offset=\x221\x22\x0a  \
-       style=\x22st\
-op-color:#888a85\
-;stop-opacity:1\x22\
- />\x0a    </linear\
-Gradient>\x0a    <l\
-inearGradient\x0a  \
-     id=\x22linearG\
-radient3932\x22>\x0a  \
-    <stop\x0a      \
-   id=\x22stop3934\x22\
-\x0a         offset\
-=\x220\x22\x0a         st\
-yle=\x22stop-color:\
-#d3d7cf;stop-opa\
-city:1\x22 />\x0a     \
- <stop\x0a         \
-id=\x22stop3936\x22\x0a  \
-       offset=\x221\
-\x22\x0a         style\
-=\x22stop-color:#88\
-8a85;stop-opacit\
-y:1\x22 />\x0a    </li\
-nearGradient>\x0a  \
-  <linearGradien\
-t\x0a       id=\x22lin\
-earGradient3924\x22\
->\x0a      <stop\x0a  \
-       id=\x22stop3\
-926\x22\x0a         of\
-fset=\x220\x22\x0a       \
-  style=\x22stop-co\
-lor:#d3d7cf;stop\
--opacity:1\x22 />\x0a \
-     <stop\x0a     \
-    id=\x22stop3928\
-\x22\x0a         offse\
-t=\x221\x22\x0a         s\
-tyle=\x22stop-color\
-:#555753;stop-op\
-acity:1\x22 />\x0a    \
-</linearGradient\
->\x0a    <linearGra\
-dient\x0a       id=\
-\x22linearGradient3\
-859\x22>\x0a      <sto\
-p\x0a         id=\x22s\
-top3861\x22\x0a       \
-  offset=\x220\x22\x0a   \
-      style=\x22sto\
-p-color:#a40000;\
-stop-opacity:1\x22 \
-/>\x0a      <stop\x0a \
-        id=\x22stop\
-3863\x22\x0a         o\
-ffset=\x221\x22\x0a      \
-   style=\x22stop-c\
-olor:#960000;sto\
-p-opacity:1;\x22 />\
-\x0a    </linearGra\
-dient>\x0a    <line\
-arGradient\x0a     \
-  id=\x22linearGrad\
-ient3851\x22>\x0a     \
- <stop\x0a         \
-id=\x22stop3853\x22\x0a  \
-       offset=\x220\
-\x22\x0a         style\
-=\x22stop-color:#ef\
-2929;stop-opacit\
-y:1\x22 />\x0a      <s\
-top\x0a         id=\
-\x22stop3855\x22\x0a     \
-    offset=\x221\x22\x0a \
-        style=\x22s\
-top-color:#a4000\
-0;stop-opacity:1\
-\x22 />\x0a    </linea\
-rGradient>\x0a    <\
-marker\x0a       in\
-kscape:stockid=\x22\
-Arrow1Send\x22\x0a    \
-   orient=\x22auto\x22\
-\x0a       refY=\x220.\
-0\x22\x0a       refX=\x22\
-0.0\x22\x0a       id=\x22\
-Arrow1Send\x22\x0a    \
-   style=\x22overfl\
-ow:visible;\x22>\x0a  \
-    <path\x0a      \
-   id=\x22path4031\x22\
-\x0a         d=\x22M 0\
-.0,0.0 L 5.0,-5.\
-0 L -12.5,0.0 L \
-5.0,5.0 L 0.0,0.\
-0 z \x22\x0a         s\
-tyle=\x22fill-rule:\
-evenodd;stroke:#\
-000000;stroke-wi\
-dth:1.0pt;\x22\x0a    \
-     transform=\x22\
-scale(0.2) rotat\
-e(180) translate\
-(6,0)\x22 />\x0a    </\
-marker>\x0a    <mar\
-ker\x0a       inksc\
-ape:stockid=\x22Arr\
-ow2Send\x22\x0a       \
-orient=\x22auto\x22\x0a  \
-     refY=\x220.0\x22\x0a\
-       refX=\x220.0\
-\x22\x0a       id=\x22Arr\
-ow2Send\x22\x0a       \
-style=\x22overflow:\
-visible;\x22>\x0a     \
- <path\x0a         \
-id=\x22path4049\x22\x0a  \
-       style=\x22fi\
-ll-rule:evenodd;\
-stroke-width:0.6\
-2500000;stroke-l\
-inejoin:round;\x22\x0a\
-         d=\x22M 8.\
-7185878,4.033735\
-2 L -2.2072895,0\
-.016013256 L 8.7\
-185884,-4.001707\
-8 C 6.9730900,-1\
-.6296469 6.98314\
-76,1.6157441 8.7\
-185878,4.0337352\
- z \x22\x0a         tr\
-ansform=\x22scale(0\
-.3) rotate(180) \
-translate(-2.3,0\
-)\x22 />\x0a    </mark\
-er>\x0a    <marker\x0a\
-       inkscape:\
-stockid=\x22Arrow2S\
-start\x22\x0a       or\
-ient=\x22auto\x22\x0a    \
-   refY=\x220.0\x22\x0a  \
-     refX=\x220.0\x22\x0a\
-       id=\x22Arrow\
-2Sstart\x22\x0a       \
-style=\x22overflow:\
-visible\x22>\x0a      \
-<path\x0a         i\
-d=\x22path4046\x22\x0a   \
-      style=\x22fil\
-l-rule:evenodd;s\
-troke-width:0.62\
-500000;stroke-li\
-nejoin:round\x22\x0a  \
-       d=\x22M 8.71\
-85878,4.0337352 \
-L -2.2072895,0.0\
-16013256 L 8.718\
-5884,-4.0017078 \
-C 6.9730900,-1.6\
-296469 6.9831476\
-,1.6157441 8.718\
-5878,4.0337352 z\
- \x22\x0a         tran\
-sform=\x22scale(0.3\
-) translate(-2.3\
-,0)\x22 />\x0a    </ma\
-rker>\x0a    <marke\
-r\x0a       inkscap\
-e:stockid=\x22Arrow\
-2Mstart\x22\x0a       \
-orient=\x22auto\x22\x0a  \
-     refY=\x220.0\x22\x0a\
-       refX=\x220.0\
-\x22\x0a       id=\x22Arr\
-ow2Mstart\x22\x0a     \
-  style=\x22overflo\
-w:visible\x22>\x0a    \
-  <path\x0a        \
- id=\x22path4040\x22\x0a \
-        style=\x22f\
-ill-rule:evenodd\
-;stroke-width:0.\
-62500000;stroke-\
-linejoin:round\x22\x0a\
-         d=\x22M 8.\
-7185878,4.033735\
-2 L -2.2072895,0\
-.016013256 L 8.7\
-185884,-4.001707\
-8 C 6.9730900,-1\
-.6296469 6.98314\
-76,1.6157441 8.7\
-185878,4.0337352\
- z \x22\x0a         tr\
-ansform=\x22scale(0\
-.6) translate(0,\
-0)\x22 />\x0a    </mar\
-ker>\x0a    <linear\
-Gradient\x0a       \
-id=\x22linearGradie\
-nt3900\x22>\x0a      <\
-stop\x0a         st\
-yle=\x22stop-color:\
-#ffffff;stop-opa\
-city:1;\x22\x0a       \
-  offset=\x220\x22\x0a   \
-      id=\x22stop39\
-02\x22 />\x0a      <st\
-op\x0a         styl\
-e=\x22stop-color:#a\
-0a0a0;stop-opaci\
-ty:1;\x22\x0a         \
-offset=\x221\x22\x0a     \
-    id=\x22stop3904\
-\x22 />\x0a    </linea\
-rGradient>\x0a    <\
-linearGradient\x0a \
-      id=\x22linear\
-Gradient3882\x22>\x0a \
-     <stop\x0a     \
-    style=\x22stop-\
-color:#ffffff;st\
-op-opacity:1;\x22\x0a \
-        offset=\x22\
-0\x22\x0a         id=\x22\
-stop3884\x22 />\x0a   \
-   <stop\x0a       \
-  style=\x22stop-co\
-lor:#960000;stop\
--opacity:1;\x22\x0a   \
-      offset=\x221\x22\
-\x0a         id=\x22st\
-op3886\x22 />\x0a    <\
-/linearGradient>\
-\x0a    <linearGrad\
-ient\x0a       id=\x22\
-linearGradient38\
-60\x22>\x0a      <stop\
-\x0a         style=\
-\x22stop-color:#1e7\
-6e3;stop-opacity\
-:1;\x22\x0a         of\
-fset=\x220\x22\x0a       \
-  id=\x22stop3862\x22 \
-/>\x0a      <stop\x0a \
-        style=\x22s\
-top-color:#fffff\
-f;stop-opacity:1\
-;\x22\x0a         offs\
-et=\x221\x22\x0a         \
-id=\x22stop3864\x22 />\
-\x0a    </linearGra\
-dient>\x0a    <line\
-arGradient\x0a     \
-  inkscape:colle\
-ct=\x22always\x22\x0a    \
-   xlink:href=\x22#\
-linearGradient38\
-60-6\x22\x0a       id=\
-\x22linearGradient3\
-866-5\x22\x0a       x1\
-=\x2231.125395\x22\x0a   \
-    y1=\x2261.41076\
-3\x22\x0a       x2=\x2230\
-.113636\x22\x0a       \
-y2=\x2212.160761\x22\x0a \
-      gradientUn\
-its=\x22userSpaceOn\
-Use\x22 />\x0a    <lin\
-earGradient\x0a    \
-   id=\x22linearGra\
-dient3860-6\x22>\x0a  \
-    <stop\x0a      \
-   style=\x22stop-c\
-olor:#5a9ff5;sto\
-p-opacity:1;\x22\x0a  \
-       offset=\x220\
-\x22\x0a         id=\x22s\
-top3862-4\x22 />\x0a  \
-    <stop\x0a      \
-   style=\x22stop-c\
-olor:#ffffff;sto\
-p-opacity:1;\x22\x0a  \
-       offset=\x221\
-\x22\x0a         id=\x22s\
-top3864-4\x22 />\x0a  \
-  </linearGradie\
-nt>\x0a    <radialG\
-radient\x0a       i\
-nkscape:collect=\
-\x22always\x22\x0a       \
-xlink:href=\x22#lin\
-earGradient3882-\
-7\x22\x0a       id=\x22ra\
-dialGradient3946\
--6\x22\x0a       cx=\x221\
-6.274988\x22\x0a      \
- cy=\x2223.718588\x22\x0a\
-       fx=\x2216.27\
-4988\x22\x0a       fy=\
-\x2223.718588\x22\x0a    \
-   r=\x223.6819806\x22\
-\x0a       gradient\
-Transform=\x22matri\
-x(1.1622967,-0.4\
-2417542,0.712411\
-25,1.9521011,-19\
-.727075,-16.4982\
-15)\x22\x0a       grad\
-ientUnits=\x22userS\
-paceOnUse\x22 />\x0a  \
-  <linearGradien\
-t\x0a       id=\x22lin\
-earGradient3882-\
-7\x22>\x0a      <stop\x0a\
-         style=\x22\
-stop-color:#ffff\
-ff;stop-opacity:\
-1;\x22\x0a         off\
-set=\x220\x22\x0a        \
- id=\x22stop3884-5\x22\
- />\x0a      <stop\x0a\
-         style=\x22\
-stop-color:#9600\
-00;stop-opacity:\
-1;\x22\x0a         off\
-set=\x221\x22\x0a        \
- id=\x22stop3886-3\x22\
- />\x0a    </linear\
-Gradient>\x0a    <r\
-adialGradient\x0a  \
-     inkscape:co\
-llect=\x22always\x22\x0a \
-      xlink:href\
-=\x22#linearGradien\
-t3900\x22\x0a       id\
-=\x22radialGradient\
-3911\x22\x0a       gra\
-dientUnits=\x22user\
-SpaceOnUse\x22\x0a    \
-   gradientTrans\
-form=\x22matrix(1.1\
-875159,0.3000256\
-1,-0.66139805,2.\
-6178455,13.65626\
-5,-48.87061)\x22\x0a  \
-     cx=\x2217.9150\
-45\x22\x0a       cy=\x222\
-4.185383\x22\x0a      \
- fx=\x2217.915045\x22\x0a\
-       fy=\x2224.18\
-5383\x22\x0a       r=\x22\
-2.4997866\x22 />\x0a  \
-  <radialGradien\
-t\x0a       inkscap\
-e:collect=\x22alway\
-s\x22\x0a       xlink:\
-href=\x22#linearGra\
-dient3900-2\x22\x0a   \
-    id=\x22radialGr\
-adient3911-6\x22\x0a  \
-     gradientUni\
-ts=\x22userSpaceOnU\
-se\x22\x0a       gradi\
-entTransform=\x22ma\
-trix(1.1875159,0\
-.30002561,-0.661\
-39805,2.6178455,\
-13.656265,-48.87\
-061)\x22\x0a       cx=\
-\x2217.915045\x22\x0a    \
-   cy=\x2224.185383\
-\x22\x0a       fx=\x2217.\
-915045\x22\x0a       f\
-y=\x2224.185383\x22\x0a  \
-     r=\x222.499786\
-6\x22 />\x0a    <linea\
-rGradient\x0a      \
- id=\x22linearGradi\
-ent3900-2\x22>\x0a    \
-  <stop\x0a        \
- style=\x22stop-col\
-or:#ffffff;stop-\
-opacity:1;\x22\x0a    \
-     offset=\x220\x22\x0a\
-         id=\x22sto\
-p3902-9\x22 />\x0a    \
-  <stop\x0a        \
- style=\x22stop-col\
-or:#a0a0a0;stop-\
-opacity:1;\x22\x0a    \
-     offset=\x221\x22\x0a\
-         id=\x22sto\
-p3904-1\x22 />\x0a    \
-</linearGradient\
->\x0a    <linearGra\
-dient\x0a       ink\
-scape:collect=\x22a\
-lways\x22\x0a       xl\
-ink:href=\x22#linea\
-rGradient6443\x22\x0a \
-      id=\x22linear\
-Gradient6445\x22\x0a  \
-     x1=\x2251.2648\
-58\x22\x0a       y1=\x224\
-7.461964\x22\x0a      \
- x2=\x2214.743206\x22\x0a\
-       y2=\x2210.94\
-031\x22\x0a       grad\
-ientUnits=\x22userS\
-paceOnUse\x22 />\x0a  \
-</defs>\x0a  <sodip\
-odi:namedview\x0a  \
-   id=\x22base\x22\x0a   \
-  pagecolor=\x22#ff\
-ffff\x22\x0a     borde\
-rcolor=\x22#666666\x22\
-\x0a     borderopac\
-ity=\x221.0\x22\x0a     i\
-nkscape:pageopac\
-ity=\x220.0\x22\x0a     i\
-nkscape:pageshad\
-ow=\x222\x22\x0a     inks\
-cape:zoom=\x228\x22\x0a  \
-   inkscape:cx=\x22\
-41.0625\x22\x0a     in\
-kscape:cy=\x2235.87\
-5\x22\x0a     inkscape\
-:current-layer=\x22\
-g3977\x22\x0a     show\
-grid=\x22true\x22\x0a    \
- inkscape:docume\
-nt-units=\x22px\x22\x0a  \
-   inkscape:grid\
--bbox=\x22true\x22\x0a   \
-  inkscape:windo\
-w-width=\x221920\x22\x0a \
-    inkscape:win\
-dow-height=\x221006\
-\x22\x0a     inkscape:\
-window-x=\x220\x22\x0a   \
-  inkscape:windo\
-w-y=\x220\x22\x0a     ink\
-scape:window-max\
-imized=\x221\x22\x0a     \
-inkscape:snap-gl\
-obal=\x22true\x22\x0a    \
- inkscape:pagech\
-eckerboard=\x220\x22>\x0a\
-    <inkscape:gr\
-id\x0a       type=\x22\
-xygrid\x22\x0a       i\
-d=\x22grid3025\x22\x0a   \
-    empspacing=\x22\
-2\x22\x0a       visibl\
-e=\x22true\x22\x0a       \
-enabled=\x22true\x22\x0a \
-      snapvisibl\
-egridlinesonly=\x22\
-true\x22 />\x0a  </sod\
-ipodi:namedview>\
-\x0a  <metadata\x0a   \
-  id=\x22metadata29\
-90\x22>\x0a    <rdf:RD\
-F>\x0a      <cc:Wor\
-k\x0a         rdf:a\
-bout=\x22\x22>\x0a       \
- <dc:format>imag\
-e/svg+xml</dc:fo\
-rmat>\x0a        <d\
-c:type\x0a         \
-  rdf:resource=\x22\
-http://purl.org/\
-dc/dcmitype/Stil\
-lImage\x22 />\x0a     \
-   <dc:creator>\x0a\
-          <cc:Ag\
-ent>\x0a           \
- <dc:title>[sang\
-uinarojoe] Cerco\
-s-Pita J.L.</dc:\
-title>\x0a         \
- </cc:Agent>\x0a   \
-     </dc:creato\
-r>\x0a        <dc:d\
-ate>2021-11-17</\
-dc:date>\x0a       \
- <dc:relation>ht\
-tp://www.freecad\
-web.org/wiki/ind\
-ex.php?title=Art\
-work</dc:relatio\
-n>\x0a        <dc:p\
-ublisher>\x0a      \
-    <cc:Agent>\x0a \
-           <dc:t\
-itle>FreeCAD</dc\
-:title>\x0a        \
-  </cc:Agent>\x0a  \
-      </dc:publi\
-sher>\x0a        <d\
-c:rights>\x0a      \
-    <cc:Agent>\x0a \
-           <dc:t\
-itle>FreeCAD LGP\
-L2+</dc:title>\x0a \
-         </cc:Ag\
-ent>\x0a        </d\
-c:rights>\x0a      \
-  <dc:title>XRay\
-_ObjectAdd</dc:t\
-itle>\x0a        <c\
-c:license\x0a      \
-     rdf:resourc\
-e=\x22https://wiki.\
-freecadweb.org/L\
-icence\x22 />\x0a     \
- </cc:Work>\x0a    \
-</rdf:RDF>\x0a  </m\
-etadata>\x0a  <g\x0a  \
-   id=\x22layer1\x22\x0a \
-    inkscape:lab\
-el=\x22Layer 1\x22\x0a   \
-  inkscape:group\
-mode=\x22layer\x22>\x0a  \
-  <g\x0a       id=\x22\
-g3977\x22\x0a       tr\
-ansform=\x22matrix(\
-1.6428611,0,0,1.\
-6428611,-22.2210\
-39,-15.973411)\x22>\
-\x0a      <rect\x0a   \
-      style=\x22fil\
-l:#252525;stroke\
--width:1.82608;s\
-top-color:#00000\
-0;fill-opacity:1\
-;stroke:url(#lin\
-earGradient6445)\
-;stroke-opacity:\
-1\x22\x0a         id=\x22\
-rect1004\x22\x0a      \
-   width=\x2236.521\
-652\x22\x0a         he\
-ight=\x2236.521652\x22\
-\x0a         x=\x2214.\
-743205\x22\x0a        \
- y=\x2210.94031\x22\x0a  \
-       rx=\x223.652\
-1664\x22\x0a         r\
-y=\x223.6521664\x22 />\
-\x0a      <g\x0a      \
-   id=\x22g6167\x22\x0a  \
-       style=\x22fi\
-ll:#e6e6e6;fill-\
-opacity:1\x22>\x0a    \
-    <path\x0a      \
-     style=\x22fill\
-:#e6e6e6;fill-op\
-acity:1;stroke:n\
-one;stroke-width\
-:0.25;stroke-lin\
-ecap:round;strok\
-e-miterlimit:4;s\
-troke-dasharray:\
-none;stroke-opac\
-ity:1;stop-color\
-:#000000\x22\x0a      \
-     d=\x22m 32.254\
-883,42.173584 c \
--2.14678,-0.0263\
- -4.449078,0.122\
-217 -6.2146,1.49\
-2188 -1.436839,1\
-.074885 -2.38226\
-4,3.041793 -1.91\
-9678,4.825927 0.\
-557324,1.858248 \
-2.668718,2.34879\
-8 4.258545,2.964\
-356 1.259436,0.3\
-89012 2.474266,0\
-.917342 3.497559\
-,1.762207 1.4316\
-36,1.052333 3.33\
-1466,0.565739 4.\
-962647,0.447998 \
-2.458258,-0.3543\
-92 5.262789,-0.7\
-94304 6.87036,-2\
-.905029 0.484593\
-,-0.894787 0.154\
-035,-1.986416 0,\
--2.946534 -0.614\
-636,-2.663824 -3\
-.120527,-4.36542\
- -5.627916,-5.03\
-5476 -1.881734,-\
-0.596394 -3.8734\
-42,-0.594329 -5.\
-826917,-0.605637\
- z\x22\x0a           i\
-d=\x22path4858\x22\x0a   \
-        transfor\
-m=\x22matrix(0.6086\
-9419,0,0,0.60869\
-419,13.525817,9.\
-7229224)\x22 />\x0a   \
-     <path\x0a     \
-      style=\x22fil\
-l:#e6e6e6;fill-o\
-pacity:1;stroke:\
-none;stroke-widt\
-h:0.176777;strok\
-e-linecap:round;\
-stroke-miterlimi\
-t:4;stroke-dasha\
-rray:none;stroke\
--opacity:1;stop-\
-color:#000000\x22\x0a \
-          d=\x22m 1\
-9.908612,36.7433\
-12 c -1.106806,0\
-.135558 -1.84297\
-,1.122231 -2.485\
-749,1.942645 -0.\
-590936,0.721498 \
--0.682656,1.9924\
-5 0.224768,2.502\
-495 0.837714,0.4\
-34918 1.837867,0\
-.584636 2.479248\
-,1.340569 0.6740\
-91,0.542083 1.29\
-7708,1.157898 1.\
-632537,1.970714 \
-0.328967,0.77925\
-2 1.140921,1.572\
-847 2.048124,1.2\
-36746 1.069554,-\
-0.477185 1.89331\
-1,-1.445323 2.39\
-1664,-2.488684 C\
- 26.607783,42.37\
-0986 26.020266,4\
-1.33699 25.11558\
-6,41.098061 24.3\
-82358,40.87366 2\
-3.66702,40.58126\
-4 23.144303,39.9\
-94037 22.47346,3\
-9.439192 21.8037\
-36,38.797739 21.\
-478368,37.944324\
- 21.161506,37.34\
-9258 20.65789,36\
-.701948 19.90861\
-2,36.743312 Z\x22\x0a \
-          id=\x22pa\
-th5410\x22\x0a        \
-   transform=\x22ma\
-trix(0.60869419,\
-0,0,0.60869419,1\
-3.525817,9.72292\
-24)\x22 />\x0a        \
-<path\x0a          \
- style=\x22fill:#e6\
-e6e6;fill-opacit\
-y:1;stroke:none;\
-stroke-width:0.1\
-76777;stroke-lin\
-ecap:round;strok\
-e-miterlimit:4;s\
-troke-dasharray:\
-none;stroke-opac\
-ity:1;stop-color\
-:#000000\x22\x0a      \
-     d=\x22m 13.877\
-834,29.250846 c \
--1.153096,0.2064\
-89 -2.133237,1.0\
-19886 -2.86071,1\
-.903802 -0.59611\
-,0.756235 -0.298\
-188,1.902638 0.5\
-28949,2.354031 0\
-.698296,0.398267\
- 1.391688,0.8244\
-72 1.831408,1.52\
-2275 0.65131,0.7\
-15473 1.100953,1\
-.577507 1.315873\
-,2.519593 0.2234\
-08,0.887813 1.20\
-0392,1.530987 2.\
-086967,1.151465 \
-1.02479,-0.46999\
-3 2.094681,-1.16\
-1384 2.56378,-2.\
-229044 0.358998,\
--0.918433 -0.378\
-425,-1.761689 -1\
-.149222,-2.15567\
-4 -1.000691,-0.5\
-09864 -1.598383,\
--1.497685 -2.208\
-154,-2.335386 -0\
-.539246,-0.87118\
-4 -0.464665,-2.2\
-60614 -1.585466,\
--2.66736 -0.1682\
-8,-0.05499 -0.34\
-6897,-0.07619 -0\
-.523425,-0.0637 \
-z\x22\x0a           id\
-=\x22path5449\x22\x0a    \
-       transform\
-=\x22matrix(0.60869\
-419,0,0,0.608694\
-19,13.525817,9.7\
-229224)\x22 />\x0a    \
-    <path\x0a      \
-     style=\x22fill\
-:#e6e6e6;fill-op\
-acity:1;stroke:n\
-one;stroke-width\
-:0.176777;stroke\
--linecap:round;s\
-troke-miterlimit\
-:4;stroke-dashar\
-ray:none;stroke-\
-opacity:1;stop-c\
-olor:#000000\x22\x0a  \
-         d=\x22m 10\
-.725546,23.66787\
-9 c -1.1144176,-\
-0.0061 -2.118123\
-1,1.067218 -1.82\
-73253,2.192273 0\
-.1875314,0.94469\
-7 0.7152324,1.81\
-0116 0.652382,2.\
-802187 0.00297,0\
-.807929 0.274962\
-5,1.826629 1.199\
-6303,1.9915 1.09\
-3831,0.149692 2.\
-171577,-0.385292\
- 3.066316,-0.965\
-194 0.753754,-0.\
-463809 1.099716,\
--1.58059 0.43728\
-1,-2.26875 -0.61\
-2434,-0.699611 -\
-1.257393,-1.3876\
-11 -1.592723,-2.\
-273905 -0.3632,-\
-0.797909 -0.9520\
-39,-1.556618 -1.\
-935561,-1.478111\
- z\x22\x0a           i\
-d=\x22path5488\x22\x0a   \
-        transfor\
-m=\x22matrix(0.6086\
-9419,0,0,0.60869\
-419,13.525817,9.\
-7229224)\x22 />\x0a   \
-     <path\x0a     \
-      style=\x22fil\
-l:#e6e6e6;fill-o\
-pacity:1;stroke:\
-none;stroke-widt\
-h:0.176777;strok\
-e-linecap:round;\
-stroke-miterlimi\
-t:4;stroke-dasha\
-rray:none;stroke\
--opacity:1;stop-\
-color:#000000\x22\x0a \
-          d=\x22m 2\
-6.589701,29.5933\
-51 c -1.161385,0\
-.04674 -2.672905\
-,0.349174 -3.086\
-342,1.603938 -0.\
-317113,1.354112 \
-0.917672,2.38103\
-3 1.199113,3.624\
-785 0.400781,1.4\
-82016 0.811555,2\
-.989479 0.644539\
-,4.550401 -0.068\
-82,0.945073 0.10\
-1717,2.189173 1.\
-156718,2.514279 \
-1.114947,0.25233\
-6 2.37835,-0.010\
-12 3.301271,-0.6\
-84837 0.846381,-\
-0.679423 0.63538\
-,-1.911436 0.105\
-133,-2.717251 -0\
-.864176,-1.40831\
- -1.164675,-3.06\
-4557 -1.431994,-\
-4.670081 -0.1540\
-45,-1.226367 0.3\
-51143,-2.67837 -\
-0.515484,-3.7235\
-32 -0.347782,-0.\
-375901 -0.874691\
-,-0.513863 -1.37\
-2954,-0.497702 z\
-\x22\x0a           id=\
-\x22path5527\x22\x0a     \
-      transform=\
-\x22matrix(0.608694\
-19,0,0,0.6086941\
-9,13.525817,9.72\
-29224)\x22 />\x0a     \
-   <path\x0a       \
-    style=\x22fill:\
-#e6e6e6;fill-opa\
-city:1;stroke:no\
-ne;stroke-width:\
-0.176777;stroke-\
-linecap:round;st\
-roke-miterlimit:\
-4;stroke-dasharr\
-ay:none;stroke-o\
-pacity:1;stop-co\
-lor:#000000\x22\x0a   \
-        d=\x22m 23.\
-742284,17.405254\
- c -1.134867,0.0\
-6472 -2.604512,0\
-.385792 -2.98828\
-6,1.616713 -0.25\
-2138,1.365061 0.\
-911503,2.433445 \
-1.21938,3.690005\
- 0.408688,1.4650\
-74 0.785306,2.97\
-546 0.648108,4.4\
-82073 -0.02245,0\
-.782125 -0.17562\
-5,1.760453 0.635\
-525,2.21735 0.79\
-6644,0.669011 1.\
-930173,0.358574 \
-2.839476,0.12705\
-8 1.008105,-0.25\
-3019 1.889085,-1\
-.342902 1.432685\
-,-2.390455 -0.46\
-4079,-1.175551 -\
-1.218892,-2.2385\
-52 -1.399194,-3.\
-517926 -0.325985\
-,-1.190259 -0.49\
-5655,-2.401985 -\
-0.410086,-3.6151\
-16 0.04022,-0.88\
-2209 -0.01315,-2\
-.039884 -0.97667\
-9,-2.42274 -0.31\
-0308,-0.150105 -\
-0.659629,-0.1934\
-11 -1.000929,-0.\
-186962 z\x22\x0a      \
-     id=\x22path556\
-6\x22\x0a           tr\
-ansform=\x22matrix(\
-0.60869419,0,0,0\
-.60869419,13.525\
-817,9.7229224)\x22 \
-/>\x0a        <path\
-\x0a           styl\
-e=\x22fill:#e6e6e6;\
-fill-opacity:1;s\
-troke:none;strok\
-e-width:0.176777\
-;stroke-linecap:\
-round;stroke-mit\
-erlimit:4;stroke\
--dasharray:none;\
-stroke-opacity:1\
-;stop-color:#000\
-000\x22\x0a           \
-d=\x22m 21.331975,9\
-.4742987 c -1.21\
-6813,-0.016117 -\
-2.03264,1.310519\
-3 -1.730478,2.42\
-56733 0.199595,1\
-.176234 0.499286\
-,2.352012 0.3395\
-74,3.55482 -0.08\
-243,0.929757 0.0\
-589,2.130317 1.0\
-70669,2.500127 1\
-.106584,0.345323\
- 2.385648,0.0428\
-1 3.321469,-0.61\
-1123 0.787338,-0\
-.577986 0.794478\
-,-1.706961 0.304\
-654,-2.480278 -0\
-.643397,-1.06642\
-3 -1.051757,-2.2\
-75393 -1.34667,-\
-3.497156 -0.1944\
-67,-0.964506 -0.\
-878065,-1.926358\
-5 -1.959218,-1.8\
-920633 z\x22\x0a      \
-     id=\x22path560\
-5\x22\x0a           tr\
-ansform=\x22matrix(\
-0.60869419,0,0,0\
-.60869419,13.525\
-817,9.7229224)\x22 \
-/>\x0a        <path\
-\x0a           styl\
-e=\x22fill:#e6e6e6;\
-fill-opacity:1;s\
-troke:none;strok\
-e-width:0.176777\
-;stroke-linecap:\
-round;stroke-mit\
-erlimit:4;stroke\
--dasharray:none;\
-stroke-opacity:1\
-;stop-color:#000\
-000\x22\x0a           \
-d=\x22m 31.851742,7\
-.037059 c -1.091\
-306,0.00378 -1.7\
-62258,1.1165513 \
--1.732476,2.1175\
-616 -0.066,1.284\
-9014 -0.07868,2.\
-5884324 -0.52453\
-4,3.8136074 -0.2\
-95854,0.936066 -\
-0.269106,2.22777\
-5 0.763558,2.689\
-112 0.92606,0.37\
-6204 1.999123,0.\
-332276 2.959801,\
-0.117908 0.94444\
-4,-0.278786 1.51\
-4076,-1.323776 1\
-.226389,-2.26702\
-3 C 34.27233,12.\
-433296 33.899849\
-,11.37063 33.937\
-708,10.243965 33\
-.847718,9.206716\
-1 33.994445,7.80\
-86422 32.91292,7\
-.2310991 32.5855\
-54,7.0746177 32.\
-21096,7.0289957 \
-31.851742,7.0370\
-59 Z\x22\x0a          \
- id=\x22path5644\x22\x0a \
-          transf\
-orm=\x22matrix(0.60\
-869419,0,0,0.608\
-69419,13.525817,\
-9.7229224)\x22 />\x0a \
-       <path\x0a   \
-        style=\x22f\
-ill:#e6e6e6;fill\
--opacity:1;strok\
-e:none;stroke-wi\
-dth:0.176777;str\
-oke-linecap:roun\
-d;stroke-miterli\
-mit:4;stroke-das\
-harray:none;stro\
-ke-opacity:1;sto\
-p-color:#000000\x22\
-\x0a           d=\x22m\
- 31.974485,15.53\
-0109 c -1.033587\
-,-0.02558 -2.346\
-613,0.417388 -2.\
-495935,1.59686 -\
-0.179016,1.27058\
-2 0.734765,2.397\
-21 0.542317,3.66\
-5871 -0.03373,1.\
-160715 0.0721,2.\
-342228 -0.04851,\
-3.489995 -0.3077\
-03,1.092673 -0.9\
-21875,2.457797 -\
-0.09572,3.47197 \
-0.89195,0.891459\
- 2.317654,0.7671\
-38 3.450943,0.51\
-3584 0.939826,-0\
-.20996 1.491708,\
--1.220178 1.2474\
-5,-2.135649 -0.1\
-7282,-1.09303 -0\
-.723029,-2.11714\
-1 -0.570891,-3.2\
-47753 0.02461,-1\
-.414062 -0.14933\
-8,-2.838104 0.39\
-0489,-4.189988 0\
-.323618,-0.89742\
-2 0.38992,-2.124\
-085 -0.522044,-2\
-.706203 -0.55577\
-,-0.364802 -1.24\
-6327,-0.458742 -\
-1.898105,-0.4586\
-87 z\x22\x0a          \
- id=\x22path5683\x22\x0a \
-          transf\
-orm=\x22matrix(0.60\
-869419,0,0,0.608\
-69419,13.525817,\
-9.7229224)\x22 />\x0a \
-       <path\x0a   \
-        style=\x22f\
-ill:#e6e6e6;fill\
--opacity:1;strok\
-e:none;stroke-wi\
-dth:0.176777;str\
-oke-linecap:roun\
-d;stroke-miterli\
-mit:4;stroke-das\
-harray:none;stro\
-ke-opacity:1;sto\
-p-color:#000000\x22\
-\x0a           d=\x22m\
- 32.020751,28.54\
-1495 c -1.033817\
-,-0.01234 -2.380\
-724,0.363232 -2.\
-539439,1.559053 \
--0.191016,1.3039\
-02 0.734386,2.46\
-7776 0.542932,3.\
-768935 -0.04856,\
-1.160086 0.0993,\
-2.349544 -0.0775\
-7,3.490443 -0.31\
-1686,1.08165 -0.\
-894487,2.441633 \
--0.03689,3.42473\
-6 0.91736,0.8816\
-65 2.344064,0.72\
-946 3.484089,0.4\
-70081 0.9547,-0.\
-260007 1.436736,\
--1.331133 1.1587\
-16,-2.249932 -0.\
-194939,-1.046101\
- -0.693956,-2.03\
-7401 -0.547248,-\
-3.124839 0.06039\
-,-1.298005 -0.19\
-2328,-2.639262 0\
-.299367,-3.87757\
-2 0.286207,-0.95\
-0652 0.636373,-2\
-.252996 -0.32906\
-,-2.945766 -0.55\
-6327,-0.418972 -\
-1.276053,-0.5212\
-48 -1.954901,-0.\
-515139 z\x22\x0a      \
-     id=\x22path572\
-2\x22\x0a           tr\
-ansform=\x22matrix(\
-0.60869419,0,0,0\
-.60869419,13.525\
-817,9.7229224)\x22 \
-/>\x0a        <path\
-\x0a           styl\
-e=\x22fill:#e6e6e6;\
-fill-opacity:1;s\
-troke:none;strok\
-e-width:0.176777\
-;stroke-linecap:\
-round;stroke-mit\
-erlimit:4;stroke\
--dasharray:none;\
-stroke-opacity:1\
-;stop-color:#000\
-000\x22\x0a           \
-d=\x22m 36.925959,2\
-9.672417 c -1.12\
-477,-0.06748 -2.\
-153584,1.07045 -\
-1.872729,2.18916\
-5 0.146631,1.127\
-64 0.37173,2.260\
-432 0.159274,3.3\
-96585 -0.09304,1\
-.241636 -0.26867\
-5,2.491679 -0.83\
-6091,3.616586 -0\
-.418453,0.883226\
- -0.527904,2.161\
-103 0.427707,2.7\
-39586 0.923805,0\
-.540605 2.086033\
-,0.571774 3.1124\
-1,0.373061 0.975\
-179,-0.29294 1.3\
-4504,-1.411221 1\
-.141138,-2.33253\
-6 -0.163288,-0.9\
-98499 -0.35261,-\
-2.005844 -0.1460\
-79,-3.01565 0.11\
-0524,-1.358496 0\
-.328102,-2.71929\
-6 0.934465,-3.95\
-3652 0.397473,-0\
-.808065 0.337478\
-,-1.908095 -0.46\
-8872,-2.442764 -\
-0.697726,-0.5145\
-9 -1.614235,-0.5\
-7937 -2.451223,-\
-0.570381 z\x22\x0a    \
-       id=\x22path5\
-761\x22\x0a           \
-transform=\x22matri\
-x(0.60869419,0,0\
-,0.60869419,13.5\
-25817,9.7229224)\
-\x22 />\x0a        <pa\
-th\x0a           st\
-yle=\x22fill:#e6e6e\
-6;fill-opacity:1\
-;stroke:none;str\
-oke-width:0.1767\
-77;stroke-lineca\
-p:round;stroke-m\
-iterlimit:4;stro\
-ke-dasharray:non\
-e;stroke-opacity\
-:1;stop-color:#0\
-00000\x22\x0a         \
-  d=\x22m 38.467748\
-,17.257134 c -0.\
-975965,-0.0521 -\
-2.026668,0.63278\
-2 -2.021883,1.68\
-404 -0.01618,1.2\
-12024 0.434882,2\
-.40113 0.215274,\
-3.620988 -0.1413\
-2,1.365439 -0.27\
-4289,2.760148 -0\
-.90788,4.003198 \
--0.42104,0.89366\
-7 -0.416407,2.17\
-7097 0.567274,2.\
-696362 1.038891,\
-0.496511 2.37893\
-4,0.678287 3.426\
-084,0.109105 1.0\
-19734,-0.624968 \
-0.774285,-1.9583\
-97 0.596207,-2.9\
-44062 -0.310587,\
--1.203355 0.0529\
-9,-2.420274 0.15\
-4035,-3.626539 0\
-.06072,-1.138041\
- 0.699125,-2.109\
-506 0.957794,-3.\
-192687 0.262192,\
--1.002797 -0.506\
-936,-1.998922 -1\
-.49656,-2.16396 \
--0.486108,-0.122\
-12 -0.988389,-0.\
-195338 -1.490345\
-,-0.186445 z\x22\x0a  \
-         id=\x22pat\
-h5800\x22\x0a         \
-  transform=\x22mat\
-rix(0.60869419,0\
-,0,0.60869419,13\
-.525817,9.722922\
-4)\x22 />\x0a        <\
-path\x0a           \
-style=\x22fill:#e6e\
-6e6;fill-opacity\
-:1;stroke:none;s\
-troke-width:0.17\
-6777;stroke-line\
-cap:round;stroke\
--miterlimit:4;st\
-roke-dasharray:n\
-one;stroke-opaci\
-ty:1;stop-color:\
-#000000\x22\x0a       \
-    d=\x22m 39.7970\
-26,9.1210905 c -\
-1.183569,0.01558\
-8 -1.806548,1.24\
-75025 -1.877242,\
-2.2884935 -0.120\
-033,1.116177 -0.\
-348793,2.219688 \
--0.84489,3.23468\
-9 -0.409648,0.85\
-1408 -0.438091,2\
-.083349 0.487392\
-,2.611826 1.0737\
-57,0.59853 2.528\
-793,0.767178 3.6\
-17017,0.119289 0\
-.980319,-0.6851 \
-0.610311,-2.0027\
-25 0.470406,-2.9\
-87405 C 41.28741\
-,12.907476 42.13\
-7516,11.292796 4\
-1.355561,9.89517\
-91 41.025962,9.3\
-762158 40.398788\
-,9.1071838 39.79\
-7026,9.1210905 Z\
-\x22\x0a           id=\
-\x22path5839\x22\x0a     \
-      transform=\
-\x22matrix(0.608694\
-19,0,0,0.6086941\
-9,13.525817,9.72\
-29224)\x22 />\x0a     \
-   <path\x0a       \
-    style=\x22fill:\
-#e6e6e6;fill-opa\
-city:1;stroke:no\
-ne;stroke-width:\
-0.176777;stroke-\
-linecap:round;st\
-roke-miterlimit:\
-4;stroke-dasharr\
-ay:none;stroke-o\
-pacity:1;stop-co\
-lor:#000000\x22\x0a   \
-        d=\x22m 47.\
-915116,13.788064\
- c -1.185119,0.0\
-3109 -1.696211,1\
-.296212 -1.93971\
-,2.272375 -0.219\
-838,1.172943 -0.\
-949149,2.13835 -\
-1.388491,3.22272\
-2 -0.370204,0.91\
-9416 0.272935,1.\
-911929 1.164931,\
-2.207637 0.89459\
-9,0.370596 2.055\
-303,0.592774 2.9\
-02314,0.0059 0.9\
-79021,-0.883007 \
-0.477584,-2.2956\
-9 0.632702,-3.43\
-6097 0.161048,-1\
-.076506 0.696496\
-,-2.238846 0.235\
-645,-3.304033 -0\
-.302899,-0.58513\
-6 -0.943567,-0.9\
-88075 -1.607391,\
--0.968474 z\x22\x0a   \
-        id=\x22path\
-5954\x22\x0a          \
- transform=\x22matr\
-ix(0.60869419,0,\
-0,0.60869419,13.\
-525817,9.7229224\
-)\x22 />\x0a        <p\
-ath\x0a           s\
-tyle=\x22fill:#e6e6\
-e6;fill-opacity:\
-1;stroke:none;st\
-roke-width:0.176\
-777;stroke-linec\
-ap:round;stroke-\
-miterlimit:4;str\
-oke-dasharray:no\
-ne;stroke-opacit\
-y:1;stop-color:#\
-000000\x22\x0a        \
-   d=\x22m 45.42971\
-2,21.018991 c -0\
-.969273,-0.02884\
- -1.715074,0.899\
-099 -1.629038,1.\
-835801 -0.01758,\
-1.324305 -0.1051\
-34,2.653087 -0.5\
-17823,3.921433 -\
-0.180002,1.27471\
-5 -1.124903,2.23\
-8722 -1.450994,3\
-.456388 -0.22229\
-5,1.09887 0.8076\
-02,1.9496 1.7884\
-83,2.147906 0.95\
-042,0.315783 2.3\
-30191,0.260019 2\
-.767315,-0.81293\
-2 0.334323,-1.35\
-0827 0.03649,-2.\
-796006 0.496259,\
--4.133379 0.2339\
-2,-1.084576 0.59\
-6985,-2.137142 1\
-.201764,-3.07355\
-1 0.486374,-0.76\
-7309 0.686184,-1\
-.939315 -0.13569\
-,-2.562571 -0.71\
-0163,-0.540277 -\
-1.639474,-0.7677\
-85 -2.520276,-0.\
-779095 z\x22\x0a      \
-     id=\x22path599\
-3\x22\x0a           tr\
-ansform=\x22matrix(\
-0.60869419,0,0,0\
-.60869419,13.525\
-817,9.7229224)\x22 \
-/>\x0a        <path\
-\x0a           styl\
-e=\x22fill:#e6e6e6;\
-fill-opacity:1;s\
-troke:none;strok\
-e-width:0.176777\
-;stroke-linecap:\
-round;stroke-mit\
-erlimit:4;stroke\
--dasharray:none;\
-stroke-opacity:1\
-;stop-color:#000\
-000\x22\x0a           \
-d=\x22m 42.725408,3\
-2.146255 c -1.01\
-5646,-0.03514 -1\
-.898732,0.892785\
- -1.779476,1.913\
-087 0.03731,1.16\
-7006 -0.03251,2.\
-336205 -0.391863\
-,3.455007 -0.207\
-452,1.130422 -0.\
-727305,2.150682 \
--1.298767,3.1335\
-88 -0.52108,0.87\
-7778 -0.233747,2\
-.135248 0.742324\
-,2.551178 1.0246\
-29,0.491129 2.50\
-7862,0.845496 3.\
-35565,-0.148983 \
-0.655718,-0.8051\
-33 0.316219,-1.9\
-32733 0.43262,-2\
-.881599 0.09728,\
--1.275292 0.4798\
-94,-2.526468 0.9\
-62604,-3.706268 \
-0.35637,-0.89872\
-4 1.272064,-1.79\
-3599 0.886128,-2\
-.828254 -0.43912\
-5,-1.109752 -1.8\
-35988,-1.449962 \
--2.90922,-1.4877\
-56 z\x22\x0a          \
- id=\x22path6032\x22\x0a \
-          transf\
-orm=\x22matrix(0.60\
-869419,0,0,0.608\
-69419,13.525817,\
-9.7229224)\x22 />\x0a \
-     </g>\x0a      \
-<g\x0a         id=\x22\
-g4190\x22\x0a         \
-style=\x22fill:#fff\
-fff;fill-opacity\
-:1\x22>\x0a        <pa\
-th\x0a           id\
-=\x22path2104\x22\x0a    \
-       style=\x22fi\
-ll:#ffffff;fill-\
-opacity:1;stroke\
-:none;stroke-wid\
-th:0.608694px;st\
-roke-linecap:but\
-t;stroke-linejoi\
-n:miter;stroke-o\
-pacity:1\x22\x0a      \
-     d=\x22m 33.019\
-491,19.766376 c \
--1.826082,0 -0.6\
-08695,1.217389 -\
-0.608695,2.43477\
-7 0,0.35488 3.77\
-e-4,0.658406 0.0\
-1546,0.913041 -0\
-.01508,0.254635 \
--0.01546,0.55816\
- -0.01546,0.9130\
-41 0,1.217389 -1\
-.217389,2.434777\
- 0.608695,2.4347\
-77 1.826082,0 0.\
-608694,-1.217389\
- 0.608694,-2.434\
-777 0,-0.354881 \
--3.77e-4,-0.6584\
-06 -0.01546,-0.9\
-13041 0.01508,-0\
-.254635 0.01546,\
--0.558161 0.0154\
-6,-0.913041 0,-1\
-.217389 1.217389\
-,-2.434777 -0.60\
-8694,-2.434777 z\
-\x22 />\x0a        <pa\
-th\x0a           st\
-yle=\x22fill:#fffff\
-f;fill-opacity:1\
-;stroke:none;str\
-oke-width:0.6086\
-94px;stroke-line\
-cap:butt;stroke-\
-linejoin:miter;s\
-troke-opacity:1\x22\
-\x0a           d=\x22m\
- 33.004031,18.85\
-3335 c 1.826082,\
-0 0.608694,-1.21\
-7388 0.608694,-2\
-.434776 0,-1.217\
-389 0,-1.852703 \
--0.608694,-1.852\
-703 -0.608695,0 \
--0.608695,0.6353\
-15 -0.608695,1.8\
-52703 0,1.217389\
- -1.217388,2.434\
-776 0.608695,2.4\
-34776 z\x22\x0a       \
-    id=\x22path3277\
-\x22\x0a           sod\
-ipodi:nodetypes=\
-\x22sssss\x22 />\x0a     \
-   <path\x0a       \
-    id=\x22path3280\
-\x22\x0a           sty\
-le=\x22fill:#ffffff\
-;fill-opacity:1;\
-stroke:none;stro\
-ke-width:0.60869\
-4px;stroke-linec\
-ap:butt;stroke-l\
-inejoin:miter;st\
-roke-opacity:1\x22\x0a\
-           d=\x22m \
-33.019491,27.679\
-401 c -1.826082,\
-0 -0.608695,1.21\
-7389 -0.608695,2\
-.434777 0,0.3548\
-8 3.77e-4,0.6584\
-06 0.01546,0.913\
-041 -0.01508,0.2\
-54635 -0.01546,0\
-.55816 -0.01546,\
-0.913041 0,1.217\
-389 -1.217389,2.\
-434777 0.608695,\
-2.434777 1.82608\
-2,0 0.608694,-1.\
-217389 0.608694,\
--2.434777 0,-0.3\
-54881 -3.77e-4,-\
-0.658406 -0.0154\
-6,-0.913041 0.01\
-508,-0.254635 0.\
-01546,-0.558161 \
-0.01546,-0.91304\
-1 0,-1.217389 1.\
-217389,-2.434777\
- -0.608694,-2.43\
-4777 z\x22 />\x0a     \
-   <path\x0a       \
-    id=\x22path3282\
-\x22\x0a           sty\
-le=\x22fill:#ffffff\
-;fill-opacity:1;\
-stroke:none;stro\
-ke-width:0.58482\
-4px;stroke-linec\
-ap:butt;stroke-l\
-inejoin:miter;st\
-roke-opacity:1\x22\x0a\
-           d=\x22m \
-27.52835,20.9562\
-29 c -1.711512,0\
-.38587 -0.313258\
-,1.269632 -0.056\
-01,2.41064 0.074\
-99,0.332614 0.13\
-9481,0.617018 0.\
-207421,0.85249 0\
-.03967,0.241846 \
-0.103459,0.52640\
-7 0.178449,0.859\
-022 0.257247,1.1\
-41009 -0.626515,\
-2.539264 1.08499\
-9,2.153393 1.711\
-511,-0.38587 0.3\
-13256,-1.269631 \
-0.05601,-2.41064\
- -0.07499,-0.332\
-615 -0.139481,-0\
-.617017 -0.20742\
-1,-0.852489 -0.0\
-3967,-0.241846 -\
-0.103459,-0.5264\
-09 -0.178449,-0.\
-859023 -0.257247\
-,-1.141008 0.626\
-516,-2.539263 -1\
-.084997,-2.15339\
-3 z\x22 />\x0a        \
-<path\x0a          \
- style=\x22fill:#ff\
-ffff;fill-opacit\
-y:1;stroke:none;\
-stroke-width:0.5\
-84824px;stroke-l\
-inecap:butt;stro\
-ke-linejoin:mite\
-r;stroke-opacity\
-:1\x22\x0a           d\
-=\x22m 27.320925,20\
-.10374 c 1.71151\
-2,-0.38587 0.313\
-257,-1.269631 0.\
-05601,-2.410639 \
--0.257247,-1.141\
-008 -0.391496,-1\
-.736462 -0.962,-\
-1.607839 -0.5705\
-04,0.128624 -0.4\
-36256,0.724079 -\
-0.179009,1.86508\
-6 0.257247,1.141\
-009 -0.626515,2.\
-539262 1.084998,\
-2.153392 z\x22\x0a    \
-       id=\x22path3\
-284\x22\x0a           \
-sodipodi:nodetyp\
-es=\x22sssss\x22 />\x0a  \
-      <path\x0a    \
-       id=\x22path3\
-286\x22\x0a           \
-style=\x22fill:#fff\
-fff;fill-opacity\
-:1;stroke:none;s\
-troke-width:0.58\
-4824px;stroke-li\
-necap:butt;strok\
-e-linejoin:miter\
-;stroke-opacity:\
-1\x22\x0a           d=\
-\x22m 29.200455,28.\
-372783 c -1.7115\
-12,0.38587 -0.31\
-3259,1.269632 -0\
-.05601,2.410641 \
-0.07499,0.332614\
- 0.139481,0.6170\
-17 0.207421,0.85\
-2489 0.03967,0.2\
-41845 0.103459,0\
-.526406 0.178449\
-,0.859021 0.2572\
-47,1.14101 -0.62\
-6515,2.539264 1.\
-084999,2.153394 \
-1.711512,-0.3858\
-7 0.313256,-1.26\
-9632 0.05601,-2.\
-41064 -0.07499,-\
-0.332616 -0.1394\
-82,-0.617018 -0.\
-207422,-0.85249 \
--0.03967,-0.2418\
-45 -0.103459,-0.\
-526407 -0.178448\
-,-0.859021 -0.25\
-7247,-1.14101 0.\
-626515,-2.539265\
- -1.084997,-2.15\
-3394 z\x22 />\x0a     \
-   <path\x0a       \
-    id=\x22path3288\
-\x22\x0a           sty\
-le=\x22fill:#ffffff\
-;fill-opacity:1;\
-stroke:none;stro\
-ke-width:0.58482\
-4px;stroke-linec\
-ap:butt;stroke-l\
-inejoin:miter;st\
-roke-opacity:1\x22\x0a\
-           d=\x22m \
-37.309425,20.821\
-38 c -1.743289,-\
-0.197768 -0.7129\
-43,1.09627 -0.84\
-4788,2.258462 -0\
-.03843,0.33879 -\
-0.07095,0.628597\
- -0.08413,0.8733\
-19 -0.04198,0.24\
-1457 -0.0752,0.5\
-3118 -0.113639,0\
-.86997 -0.131846\
-,1.162195 -1.425\
-884,2.192542 0.3\
-17407,2.39031 1.\
-743289,0.197768 \
-0.712941,-1.0962\
-71 0.844786,-2.2\
-58464 0.03843,-0\
-.338791 0.07095,\
--0.628595 0.0841\
-3,-0.873318 0.04\
-198,-0.241456 0.\
-07521,-0.531181 \
-0.11364,-0.86997\
-1 0.131845,-1.16\
-2193 1.425885,-2\
-.19254 -0.317406\
-,-2.390308 z\x22 />\
-\x0a        <path\x0a \
-          style=\
-\x22fill:#ffffff;fi\
-ll-opacity:1;str\
-oke:none;stroke-\
-width:0.584824px\
-;stroke-linecap:\
-butt;stroke-line\
-join:miter;strok\
-e-opacity:1\x22\x0a   \
-        d=\x22m 37.\
-39355,19.94806 c\
- 1.743288,0.1977\
-68 0.712941,-1.0\
-96269 0.844787,-\
-2.258462 0.13184\
-5,-1.162193 0.20\
-0651,-1.768702 -\
-0.380446,-1.8346\
-25 -0.581097,-0.\
-06592 -0.649902,\
-0.540588 -0.7817\
-48,1.70278 -0.13\
-1845,1.162193 -1\
-.425883,2.192539\
- 0.317407,2.3903\
-07 z\x22\x0a          \
- id=\x22path3290\x22\x0a \
-          sodipo\
-di:nodetypes=\x22ss\
-sss\x22 />\x0a        \
-<path\x0a          \
- id=\x22path3292\x22\x0a \
-          style=\
-\x22fill:#ffffff;fi\
-ll-opacity:1;str\
-oke:none;stroke-\
-width:0.584824px\
-;stroke-linecap:\
-butt;stroke-line\
-join:miter;strok\
-e-opacity:1\x22\x0a   \
-        d=\x22m 36.\
-45243,28.375634 \
-c -1.743289,-0.1\
-97768 -0.712943,\
-1.096271 -0.8447\
-88,2.258464 -0.0\
-3843,0.33879 -0.\
-07095,0.628595 -\
-0.08413,0.873318\
- -0.04198,0.2414\
-56 -0.07521,0.53\
-1179 -0.113639,0\
-.86997 -0.131845\
-,1.162194 -1.425\
-884,2.192541 0.3\
-17407,2.390309 1\
-.743289,0.197768\
- 0.712941,-1.096\
-271 0.844786,-2.\
-258464 0.03843,-\
-0.338791 0.07095\
-,-0.628595 0.084\
-13,-0.873318 0.0\
-4198,-0.241456 0\
-.0752,-0.53118 0\
-.113639,-0.86997\
- 0.131846,-1.162\
-194 1.425885,-2.\
-192541 -0.317405\
-,-2.390309 z\x22 />\
-\x0a        <path\x0a \
-          id=\x22pa\
-th3294\x22\x0a        \
-   style=\x22fill:#\
-ffffff;fill-opac\
-ity:1;stroke:non\
-e;stroke-width:0\
-.537083px;stroke\
--linecap:butt;st\
-roke-linejoin:mi\
-ter;stroke-opaci\
-ty:1\x22\x0a          \
- d=\x22m 41.743175,\
-23.165582 c -1.5\
-6198,-0.395401 -\
-0.784261,0.90952\
-1 -1.047862,1.95\
-0841 -0.07684,0.\
-303554 -0.142242\
-,0.563263 -0.184\
-477,0.784336 -0.\
-06804,0.214542 -\
-0.134081,0.47408\
-8 -0.210923,0.77\
-7644 -0.263601,1\
-.04132 -1.568522\
-,1.819039 -0.006\
-5,2.21444 1.5619\
-79,0.395401 0.78\
-426,-0.909521 1.\
-04786,-1.95084 0\
-.07684,-0.303556\
- 0.142242,-0.563\
-264 0.184477,-0.\
-784338 0.06804,-\
-0.214541 0.13408\
-1,-0.474088 0.21\
-0923,-0.777642 0\
-.263601,-1.04132\
-1 1.568522,-1.81\
-904 0.0065,-2.21\
-4441 z\x22 />\x0a     \
-   <path\x0a       \
-    style=\x22fill:\
-#ffffff;fill-opa\
-city:1;stroke:no\
-ne;stroke-width:\
-0.537083px;strok\
-e-linecap:butt;s\
-troke-linejoin:m\
-iter;stroke-opac\
-ity:1\x22\x0a         \
-  d=\x22m 41.927651\
-,22.381245 c 1.5\
-6198,0.3954 0.78\
-426,-0.90952 1.0\
-47861,-1.95084 0\
-.2636,-1.041321 \
-0.401165,-1.5847\
-51 -0.119495,-1.\
-716551 -0.52066,\
--0.1318 -0.65822\
-5,0.41163 -0.921\
-825,1.45295 -0.2\
-63601,1.041321 -\
-1.568521,1.81904\
- -0.0065,2.21444\
-1 z\x22\x0a           \
-id=\x22path3296\x22\x0a  \
-         sodipod\
-i:nodetypes=\x22sss\
-ss\x22 />\x0a        <\
-path\x0a           \
-id=\x22path3298\x22\x0a  \
-         style=\x22\
-fill:#ffffff;fil\
-l-opacity:1;stro\
-ke:none;stroke-w\
-idth:0.537083px;\
-stroke-linecap:b\
-utt;stroke-linej\
-oin:miter;stroke\
--opacity:1\x22\x0a    \
-       d=\x22m 40.0\
-29772,29.934164 \
-c -1.56198,-0.39\
-5401 -0.784262,0\
-.909521 -1.04786\
-2,1.950841 -0.07\
-684,0.303554 -0.\
-142242,0.563263 \
--0.184477,0.7843\
-36 -0.06804,0.21\
-4542 -0.134081,0\
-.474088 -0.21092\
-3,0.777643 -0.26\
-3601,1.041321 -1\
-.568523,1.81904 \
--0.0065,2.214441\
- 1.56198,0.39540\
-1 0.78426,-0.909\
-521 1.047861,-1.\
-950841 0.07684,-\
-0.303555 0.14224\
-2,-0.563263 0.18\
-4477,-0.784337 0\
-.06804,-0.214541\
- 0.134081,-0.474\
-088 0.210923,-0.\
-777642 0.263601,\
--1.041321 1.5685\
-22,-1.81904 0.00\
-65,-2.214441 z\x22 \
-/>\x0a        <path\
-\x0a           id=\x22\
-path3820\x22\x0a      \
-     style=\x22fill\
-:#ffffff;fill-op\
-acity:1;stroke:n\
-one;stroke-width\
-:0.518459px;stro\
-ke-linecap:butt;\
-stroke-linejoin:\
-miter;stroke-opa\
-city:1\x22\x0a        \
-   d=\x22m 21.21042\
-6,28.52358 c -1.\
-443182,1.11884 0\
-.06008,1.070957 \
-0.601213,1.76896\
-7 0.157748,0.203\
-476 0.292966,0.3\
-77277 0.418073,0\
-.514035 0.10127,\
-0.155234 0.23588\
-7,0.329502 0.393\
-636,0.532979 0.5\
-41138,0.698011 0\
-.120153,2.141914\
- 1.563336,1.0230\
-74 1.443183,-1.1\
-1884 -0.06008,-1\
-.070957 -0.60121\
-5,-1.768967 -0.1\
-57747,-0.203477 \
--0.292964,-0.377\
-277 -0.418071,-0\
-.514035 -0.10126\
-9,-0.155237 -0.2\
-35889,-0.329503 \
--0.393636,-0.532\
-98 -0.541138,-0.\
-698009 -0.120154\
-,-2.141912 -1.56\
-3336,-1.023073 z\
-\x22 />\x0a        <pa\
-th\x0a           st\
-yle=\x22fill:#fffff\
-f;fill-opacity:1\
-;stroke:none;str\
-oke-width:0.5184\
-59px;stroke-line\
-cap:butt;stroke-\
-linejoin:miter;s\
-troke-opacity:1\x22\
-\x0a           d=\x22m\
- 21.050207,27.62\
-333 c 1.684293,-\
-0.705504 0.22020\
-8,-1.049793 -0.1\
-21016,-1.864418 \
--0.341226,-0.814\
-626 -0.519299,-1\
-.239751 -1.08072\
-9,-1.004583 -0.5\
-61432,0.235169 -\
-0.383357,0.66029\
-6 -0.04213,1.474\
-92 0.341225,0.81\
-4626 -0.440413,2\
-.099585 1.243879\
-,1.394081 z\x22\x0a   \
-        id=\x22path\
-3822\x22\x0a          \
- sodipodi:nodety\
-pes=\x22sssss\x22 />\x0a \
-       <path\x0a   \
-        id=\x22path\
-3824\x22\x0a          \
- style=\x22fill:#ff\
-ffff;fill-opacit\
-y:1;stroke:none;\
-stroke-width:0.5\
-18459px;stroke-l\
-inecap:butt;stro\
-ke-linejoin:mite\
-r;stroke-opacity\
-:1\x22\x0a           d\
-=\x22m 24.887011,33\
-.231209 c -1.213\
-055,1.364945 0.2\
-55818,1.04169 0.\
-915987,1.628396 \
-0.192446,0.17103\
- 0.357293,0.3170\
-29 0.505397,0.42\
-8473 0.128066,0.\
-13399 0.29241,0.\
-280555 0.484857,\
-0.451586 0.66017\
-,0.586706 0.5116\
-35,2.083376 1.72\
-4691,0.71843 1.2\
-13055,-1.364944 \
--0.255818,-1.041\
-688 -0.915988,-1\
-.628394 -0.19244\
-6,-0.171031 -0.3\
-57293,-0.31703 -\
-0.505396,-0.4284\
-74 -0.128067,-0.\
-13399 -0.292412,\
--0.280555 -0.484\
-857,-0.451585 -0\
-.66017,-0.586707\
- -0.511636,-2.08\
-3377 -1.724691,-\
-0.718432 z\x22 />\x0a \
-       <path\x0a   \
-        style=\x22f\
-ill:#ffffff;fill\
--opacity:1;strok\
-e:none;stroke-wi\
-dth:0.608694px;s\
-troke-linecap:bu\
-tt;stroke-linejo\
-in:miter;stroke-\
-opacity:1\x22\x0a     \
-      d=\x22m 33.04\
-7671,35.90565 c \
--3.163559,0 -4.2\
-91991,1.312377 -\
-4.35503,2.846501\
- -0.06304,1.5341\
-23 3.047021,1.67\
-524 4.071028,2.5\
-30807 1.024008,0\
-.855566 1.217577\
-,0.696549 1.7594\
-93,0.667435 0.54\
-1916,-0.02911 5.\
-227021,-0.276659\
- 5.191836,-2.086\
-614 -0.03518,-1.\
-809954 -1.171945\
-,-3.958129 -6.66\
-7327,-3.958129 z\
-\x22\x0a           id=\
-\x22path3892\x22\x0a     \
-      sodipodi:n\
-odetypes=\x22ssssss\
-\x22 />\x0a      </g>\x0a\
-      <path\x0a    \
-     id=\x22rect811\
-6\x22\x0a         styl\
-e=\x22fill:#ff0003;\
-fill-opacity:1;s\
-troke:#ffb800;st\
-roke-width:0.782\
-607;stroke-linec\
-ap:butt;stroke-m\
-iterlimit:4;stro\
-ke-dasharray:non\
-e;stroke-opacity\
-:1;stop-color:#0\
-00000\x22\x0a         \
-d=\x22m 39.351842,2\
-6.157665 c -0.86\
-7132,0 -1.565214\
-,0.698086 -1.565\
-214,1.565214 v 6\
-.260855 h -6.260\
-854 c -0.867128,\
-0 -1.565214,0.69\
-8082 -1.565214,1\
-.565213 v 3.1304\
-28 c 0,0.867131 \
-0.698086,1.56521\
-3 1.565214,1.565\
-213 h 6.260854 v\
- 6.260855 c 0,0.\
-867127 0.698082,\
-1.565213 1.56521\
-4,1.565213 h 3.1\
-30427 c 0.867132\
-,0 1.565214,-0.6\
-98086 1.565214,-\
-1.565213 v -6.26\
-0855 h 6.260854 \
-c 0.867128,0 1.5\
-65214,-0.698082 \
-1.565214,-1.5652\
-13 v -3.130428 c\
- 0,-0.867131 -0.\
-698086,-1.565213\
- -1.565214,-1.56\
-5213 h -6.260854\
- v -6.260855 c 0\
-,-0.867128 -0.69\
-8082,-1.565214 -\
-1.565214,-1.5652\
-14 z\x22 />\x0a    </g\
->\x0a  </g>\x0a</svg>\x0a\
-\
+-8\x22?>\x0a<ui versio\
+n=\x224.0\x22>\x0a <class\
+>TaskPanel</clas\
+s>\x0a <widget clas\
+s=\x22QWidget\x22 name\
+=\x22TaskPanel\x22>\x0a  \
+<property name=\x22\
+geometry\x22>\x0a   <r\
+ect>\x0a    <x>0</x\
+>\x0a    <y>0</y>\x0a \
+   <width>380</w\
+idth>\x0a    <heigh\
+t>500</height>\x0a \
+  </rect>\x0a  </pr\
+operty>\x0a  <prope\
+rty name=\x22sizePo\
+licy\x22>\x0a   <sizep\
+olicy hsizetype=\
+\x22Preferred\x22 vsiz\
+etype=\x22Expanding\
+\x22>\x0a    <horstret\
+ch>0</horstretch\
+>\x0a    <verstretc\
+h>0</verstretch>\
+\x0a   </sizepolicy\
+>\x0a  </property>\x0a\
+  <property name\
+=\x22minimumSize\x22>\x0a\
+   <size>\x0a    <w\
+idth>380</width>\
+\x0a    <height>500\
+</height>\x0a   </s\
+ize>\x0a  </propert\
+y>\x0a  <property n\
+ame=\x22windowTitle\
+\x22>\x0a   <string>Ad\
+d object</string\
+>\x0a  </property>\x0a\
+  <layout class=\
+\x22QGridLayout\x22 na\
+me=\x22gridLayout_3\
+\x22>\x0a   <item row=\
+\x221\x22 column=\x220\x22>\x0a\
+    <widget clas\
+s=\x22QGroupBox\x22 na\
+me=\x22props_group\x22\
+>\x0a     <property\
+ name=\x22toolTip\x22>\
+\x0a      <string>T\
+he object physic\
+al properties</s\
+tring>\x0a     </pr\
+operty>\x0a     <pr\
+operty name=\x22tit\
+le\x22>\x0a      <stri\
+ng>Physical prop\
+erties</string>\x0a\
+     </property>\
+\x0a     <layout cl\
+ass=\x22QGridLayout\
+\x22 name=\x22gridLayo\
+ut_2\x22>\x0a      <it\
+em row=\x220\x22 colum\
+n=\x220\x22>\x0a       <w\
+idget class=\x22QGr\
+oupBox\x22 name=\x22hu\
+_group\x22>\x0a       \
+ <property name=\
+\x22flat\x22>\x0a        \
+ <bool>true</boo\
+l>\x0a        </pro\
+perty>\x0a        <\
+layout class=\x22QH\
+BoxLayout\x22 name=\
+\x22horizontalLayou\
+t\x22>\x0a         <it\
+em>\x0a          <w\
+idget class=\x22QTa\
+bleWidget\x22 name=\
+\x22attenuations\x22>\x0a\
+           <prop\
+erty name=\x22rowCo\
+unt\x22>\x0a          \
+  <number>0</num\
+ber>\x0a           \
+</property>\x0a    \
+       <property\
+ name=\x22columnCou\
+nt\x22>\x0a           \
+ <number>2</numb\
+er>\x0a           <\
+/property>\x0a     \
+      <attribute\
+ name=\x22horizonta\
+lHeaderCascading\
+SectionResizes\x22>\
+\x0a            <bo\
+ol>false</bool>\x0a\
+           </att\
+ribute>\x0a        \
+   <attribute na\
+me=\x22horizontalHe\
+aderStretchLastS\
+ection\x22>\x0a       \
+     <bool>true<\
+/bool>\x0a         \
+  </attribute>\x0a \
+          <colum\
+n>\x0a            <\
+property name=\x22t\
+ext\x22>\x0a          \
+   <string>Energ\
+y</string>\x0a     \
+       </propert\
+y>\x0a           </\
+column>\x0a        \
+   <column>\x0a    \
+        <propert\
+y name=\x22text\x22>\x0a \
+            <str\
+ing>Mass attenut\
+ion</string>\x0a   \
+         </prope\
+rty>\x0a           \
+</column>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+        <item>\x0a \
+         <widget\
+ class=\x22QGroupBo\
+x\x22 name=\x22table_e\
+dit_group\x22>\x0a    \
+       <property\
+ name=\x22flat\x22>\x0a  \
+          <bool>\
+true</bool>\x0a    \
+       </propert\
+y>\x0a           <l\
+ayout class=\x22QVB\
+oxLayout\x22 name=\x22\
+verticalLayout\x22>\
+\x0a            <it\
+em>\x0a            \
+ <widget class=\x22\
+QPushButton\x22 nam\
+e=\x22add_row\x22>\x0a   \
+           <prop\
+erty name=\x22maxim\
+umSize\x22>\x0a       \
+        <size>\x0a \
+               <\
+width>32</width>\
+\x0a               \
+ <height>32</hei\
+ght>\x0a           \
+    </size>\x0a    \
+          </prop\
+erty>\x0a          \
+    <property na\
+me=\x22text\x22>\x0a     \
+          <strin\
+g notr=\x22true\x22>+<\
+/string>\x0a       \
+       </propert\
+y>\x0a             \
+</widget>\x0a      \
+      </item>\x0a  \
+          <item>\
+\x0a             <w\
+idget class=\x22QPu\
+shButton\x22 name=\x22\
+del_row\x22>\x0a      \
+        <propert\
+y name=\x22maximumS\
+ize\x22>\x0a          \
+     <size>\x0a    \
+            <wid\
+th>32</width>\x0a  \
+              <h\
+eight>32</height\
+>\x0a              \
+ </size>\x0a       \
+       </propert\
+y>\x0a             \
+ <property name=\
+\x22text\x22>\x0a        \
+       <string n\
+otr=\x22true\x22>-</st\
+ring>\x0a          \
+    </property>\x0a\
+             </w\
+idget>\x0a         \
+   </item>\x0a     \
+      </layout>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a        </l\
+ayout>\x0a       </\
+widget>\x0a      </\
+item>\x0a      <ite\
+m row=\x222\x22 column\
+=\x220\x22>\x0a       <wi\
+dget class=\x22QGro\
+upBox\x22 name=\x22pre\
+set_group\x22>\x0a    \
+    <property na\
+me=\x22flat\x22>\x0a     \
+    <bool>true</\
+bool>\x0a        </\
+property>\x0a      \
+  <layout class=\
+\x22QHBoxLayout\x22 na\
+me=\x22horizontalLa\
+yout_2\x22>\x0a       \
+  <item>\x0a       \
+   <widget class\
+=\x22QLabel\x22 name=\x22\
+preset_label\x22>\x0a \
+          <prope\
+rty name=\x22text\x22>\
+\x0a            <st\
+ring>Load preset\
+</string>\x0a      \
+     </property>\
+\x0a          </wid\
+get>\x0a         </\
+item>\x0a         <\
+item>\x0a          \
+<widget class=\x22Q\
+ComboBox\x22 name=\x22\
+preset\x22>\x0a       \
+    <property na\
+me=\x22currentIndex\
+\x22>\x0a            <\
+number>-1</numbe\
+r>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+       </layout>\
+\x0a       </widget\
+>\x0a      </item>\x0a\
+      <item row=\
+\x221\x22 column=\x220\x22>\x0a\
+       <widget c\
+lass=\x22QGroupBox\x22\
+ name=\x22dens_grou\
+p\x22>\x0a        <pro\
+perty name=\x22flat\
+\x22>\x0a         <boo\
+l>true</bool>\x0a  \
+      </property\
+>\x0a        <layou\
+t class=\x22QHBoxLa\
+yout\x22 name=\x22dens\
+_group_kk\x22>\x0a    \
+     <item>\x0a    \
+      <widget cl\
+ass=\x22QLabel\x22 nam\
+e=\x22dens_label\x22>\x0a\
+           <prop\
+erty name=\x22text\x22\
+>\x0a            <s\
+tring>Density</s\
+tring>\x0a         \
+  </property>\x0a  \
+        </widget\
+>\x0a         </ite\
+m>\x0a         <ite\
+m>\x0a          <wi\
+dget class=\x22Gui:\
+:InputField\x22 nam\
+e=\x22dens\x22>\x0a      \
+     <property n\
+ame=\x22text\x22>\x0a    \
+        <string \
+notr=\x22true\x22>968 \
+kg/m^3</string>\x0a\
+           </pro\
+perty>\x0a         \
+  <property name\
+=\x22unit\x22 stdset=\x22\
+0\x22>\x0a            \
+<string notr=\x22tr\
+ue\x22>kg/m^3</stri\
+ng>\x0a           <\
+/property>\x0a     \
+      <property \
+name=\x22quantity\x22 \
+stdset=\x220\x22>\x0a    \
+        <double>\
+968.000000000000\
+000</double>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+ </layout>\x0a     \
+  </widget>\x0a    \
+  </item>\x0a     <\
+/layout>\x0a    </w\
+idget>\x0a   </item\
+>\x0a   <item row=\x22\
+0\x22 column=\x220\x22>\x0a \
+   <widget class\
+=\x22QGroupBox\x22 nam\
+e=\x22xray_group\x22>\x0a\
+     <layout cla\
+ss=\x22QGridLayout\x22\
+ name=\x22xray_grou\
+p_kk\x22>\x0a      <it\
+em row=\x220\x22 colum\
+n=\x221\x22>\x0a       <w\
+idget class=\x22QCo\
+mboBox\x22 name=\x22xr\
+ay\x22/>\x0a      </it\
+em>\x0a      <item \
+row=\x220\x22 column=\x22\
+0\x22>\x0a       <widg\
+et class=\x22QLabel\
+\x22 name=\x22xray_lab\
+el\x22>\x0a        <pr\
+operty name=\x22tex\
+t\x22>\x0a         <st\
+ring>X-Ray machi\
+ne</string>\x0a    \
+    </property>\x0a\
+       </widget>\
+\x0a      </item>\x0a \
+    </layout>\x0a  \
+  </widget>\x0a   <\
+/item>\x0a  </layou\
+t>\x0a </widget>\x0a <\
+customwidgets>\x0a \
+ <customwidget>\x0a\
+   <class>Gui::I\
+nputField</class\
+>\x0a   <extends>QL\
+ineEdit</extends\
+>\x0a   <header>Gui\
+/InputField.h</h\
+eader>\x0a  </custo\
+mwidget>\x0a </cust\
+omwidgets>\x0a <res\
+ources/>\x0a <conne\
+ctions/>\x0a</ui>\x0a\
+\x00\x00@{\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<ui versio\
+n=\x224.0\x22>\x0a <class\
+>TaskPanel</clas\
+s>\x0a <widget clas\
+s=\x22QWidget\x22 name\
+=\x22TaskPanel\x22>\x0a  \
+<property name=\x22\
+geometry\x22>\x0a   <r\
+ect>\x0a    <x>0</x\
+>\x0a    <y>0</y>\x0a \
+   <width>558</w\
+idth>\x0a    <heigh\
+t>800</height>\x0a \
+  </rect>\x0a  </pr\
+operty>\x0a  <prope\
+rty name=\x22sizePo\
+licy\x22>\x0a   <sizep\
+olicy hsizetype=\
+\x22Preferred\x22 vsiz\
+etype=\x22Expanding\
+\x22>\x0a    <horstret\
+ch>0</horstretch\
+>\x0a    <verstretc\
+h>0</verstretch>\
+\x0a   </sizepolicy\
+>\x0a  </property>\x0a\
+  <property name\
+=\x22minimumSize\x22>\x0a\
+   <size>\x0a    <w\
+idth>250</width>\
+\x0a    <height>800\
+</height>\x0a   </s\
+ize>\x0a  </propert\
+y>\x0a  <property n\
+ame=\x22windowTitle\
+\x22>\x0a   <string>Cr\
+eate X-Ray machi\
+ne</string>\x0a  </\
+property>\x0a  <lay\
+out class=\x22QGrid\
+Layout\x22 name=\x22gr\
+idLayout_3\x22>\x0a   \
+<item row=\x220\x22 co\
+lumn=\x220\x22>\x0a    <w\
+idget class=\x22QGr\
+oupBox\x22 name=\x22em\
+itter_group\x22>\x0a  \
+   <property nam\
+e=\x22toolTip\x22>\x0a   \
+   <string>The X\
+-Ray emitter opt\
+ions, including \
+the power spectr\
+um (which is ren\
+ormalized, so do\
+ not worry about\
+ the units) and \
+the bulb size.</\
+string>\x0a     </p\
+roperty>\x0a     <p\
+roperty name=\x22ti\
+tle\x22>\x0a      <str\
+ing>XRay emitter\
+</string>\x0a     <\
+/property>\x0a     \
+<layout class=\x22Q\
+GridLayout\x22 name\
+=\x22gridLayout_2\x22>\
+\x0a      <item row\
+=\x222\x22 column=\x220\x22>\
+\x0a       <widget \
+class=\x22QGroupBox\
+\x22 name=\x22preset_g\
+roup\x22>\x0a        <\
+property name=\x22f\
+lat\x22>\x0a         <\
+bool>true</bool>\
+\x0a        </prope\
+rty>\x0a        <la\
+yout class=\x22QHBo\
+xLayout\x22 name=\x22h\
+orizontalLayout_\
+2\x22>\x0a         <it\
+em>\x0a          <w\
+idget class=\x22QLa\
+bel\x22 name=\x22prese\
+t_label\x22>\x0a      \
+     <property n\
+ame=\x22text\x22>\x0a    \
+        <string>\
+Load preset</str\
+ing>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QCombo\
+Box\x22 name=\x22prese\
+t\x22>\x0a           <\
+property name=\x22c\
+urrentIndex\x22>\x0a  \
+          <numbe\
+r>0</number>\x0a   \
+        </proper\
+ty>\x0a           <\
+item>\x0a          \
+  <property name\
+=\x22text\x22>\x0a       \
+      <string>Me\
+dical shoft X-Ra\
+ys</string>\x0a    \
+        </proper\
+ty>\x0a           <\
+/item>\x0a         \
+  <item>\x0a       \
+     <property n\
+ame=\x22text\x22>\x0a    \
+         <string\
+>Crystallography\
+</string>\x0a      \
+      </property\
+>\x0a           </i\
+tem>\x0a           \
+<item>\x0a         \
+   <property nam\
+e=\x22text\x22>\x0a      \
+       <string>M\
+edical hard X-Ra\
+ys</string>\x0a    \
+        </proper\
+ty>\x0a           <\
+/item>\x0a         \
+  <item>\x0a       \
+     <property n\
+ame=\x22text\x22>\x0a    \
+         <string\
+>Airport securit\
+y</string>\x0a     \
+       </propert\
+y>\x0a           </\
+item>\x0a          \
+ <item>\x0a        \
+    <property na\
+me=\x22text\x22>\x0a     \
+        <string>\
+Metallography</s\
+tring>\x0a         \
+   </property>\x0a \
+          </item\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a        <\
+/layout>\x0a       \
+</widget>\x0a      \
+</item>\x0a      <i\
+tem row=\x221\x22 colu\
+mn=\x220\x22>\x0a       <\
+widget class=\x22QG\
+roupBox\x22 name=\x22s\
+pectrum_group\x22>\x0a\
+        <propert\
+y name=\x22flat\x22>\x0a \
+        <bool>tr\
+ue</bool>\x0a      \
+  </property>\x0a  \
+      <layout cl\
+ass=\x22QHBoxLayout\
+\x22 name=\x22power_gr\
+oup\x22>\x0a         <\
+item>\x0a          \
+<widget class=\x22Q\
+Slider\x22 name=\x22sp\
+ectrum_01\x22>\x0a    \
+       <property\
+ name=\x22orientati\
+on\x22>\x0a           \
+ <enum>Qt::Verti\
+cal</enum>\x0a     \
+      </property\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a         \
+<item>\x0a         \
+ <widget class=\x22\
+QSlider\x22 name=\x22s\
+pectrum_02\x22>\x0a   \
+        <propert\
+y name=\x22orientat\
+ion\x22>\x0a          \
+  <enum>Qt::Vert\
+ical</enum>\x0a    \
+       </propert\
+y>\x0a          </w\
+idget>\x0a         \
+</item>\x0a        \
+ <item>\x0a        \
+  <widget class=\
+\x22QSlider\x22 name=\x22\
+spectrum_03\x22>\x0a  \
+         <proper\
+ty name=\x22orienta\
+tion\x22>\x0a         \
+   <enum>Qt::Ver\
+tical</enum>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+  <item>\x0a       \
+   <widget class\
+=\x22QSlider\x22 name=\
+\x22spectrum_04\x22>\x0a \
+          <prope\
+rty name=\x22orient\
+ation\x22>\x0a        \
+    <enum>Qt::Ve\
+rtical</enum>\x0a  \
+         </prope\
+rty>\x0a          <\
+/widget>\x0a       \
+  </item>\x0a      \
+   <item>\x0a      \
+    <widget clas\
+s=\x22QSlider\x22 name\
+=\x22spectrum_05\x22>\x0a\
+           <prop\
+erty name=\x22orien\
+tation\x22>\x0a       \
+     <enum>Qt::V\
+ertical</enum>\x0a \
+          </prop\
+erty>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+    <item>\x0a     \
+     <widget cla\
+ss=\x22QSlider\x22 nam\
+e=\x22spectrum_06\x22>\
+\x0a           <pro\
+perty name=\x22orie\
+ntation\x22>\x0a      \
+      <enum>Qt::\
+Vertical</enum>\x0a\
+           </pro\
+perty>\x0a         \
+ </widget>\x0a     \
+    </item>\x0a    \
+     <item>\x0a    \
+      <widget cl\
+ass=\x22QSlider\x22 na\
+me=\x22spectrum_07\x22\
+>\x0a           <pr\
+operty name=\x22ori\
+entation\x22>\x0a     \
+       <enum>Qt:\
+:Vertical</enum>\
+\x0a           </pr\
+operty>\x0a        \
+  </widget>\x0a    \
+     </item>\x0a   \
+      <item>\x0a   \
+       <widget c\
+lass=\x22QSlider\x22 n\
+ame=\x22spectrum_08\
+\x22>\x0a           <p\
+roperty name=\x22or\
+ientation\x22>\x0a    \
+        <enum>Qt\
+::Vertical</enum\
+>\x0a           </p\
+roperty>\x0a       \
+   </widget>\x0a   \
+      </item>\x0a  \
+       <item>\x0a  \
+        <widget \
+class=\x22QSlider\x22 \
+name=\x22spectrum_0\
+9\x22>\x0a           <\
+property name=\x22o\
+rientation\x22>\x0a   \
+         <enum>Q\
+t::Vertical</enu\
+m>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+        <item>\x0a \
+         <widget\
+ class=\x22QSlider\x22\
+ name=\x22spectrum_\
+10\x22>\x0a           \
+<property name=\x22\
+orientation\x22>\x0a  \
+          <enum>\
+Qt::Vertical</en\
+um>\x0a           <\
+/property>\x0a     \
+     </widget>\x0a \
+        </item>\x0a\
+         <item>\x0a\
+          <widge\
+t class=\x22QSlider\
+\x22 name=\x22spectrum\
+_11\x22>\x0a          \
+ <property name=\
+\x22orientation\x22>\x0a \
+           <enum\
+>Qt::Vertical</e\
+num>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QSlide\
+r\x22 name=\x22spectru\
+m_12\x22>\x0a         \
+  <property name\
+=\x22orientation\x22>\x0a\
+            <enu\
+m>Qt::Vertical</\
+enum>\x0a          \
+ </property>\x0a   \
+       </widget>\
+\x0a         </item\
+>\x0a         <item\
+>\x0a          <wid\
+get class=\x22QSlid\
+er\x22 name=\x22spectr\
+um_13\x22>\x0a        \
+   <property nam\
+e=\x22orientation\x22>\
+\x0a            <en\
+um>Qt::Vertical<\
+/enum>\x0a         \
+  </property>\x0a  \
+        </widget\
+>\x0a         </ite\
+m>\x0a         <ite\
+m>\x0a          <wi\
+dget class=\x22QSli\
+der\x22 name=\x22spect\
+rum_14\x22>\x0a       \
+    <property na\
+me=\x22orientation\x22\
+>\x0a            <e\
+num>Qt::Vertical\
+</enum>\x0a        \
+   </property>\x0a \
+         </widge\
+t>\x0a         </it\
+em>\x0a         <it\
+em>\x0a          <w\
+idget class=\x22QSl\
+ider\x22 name=\x22spec\
+trum_15\x22>\x0a      \
+     <property n\
+ame=\x22orientation\
+\x22>\x0a            <\
+enum>Qt::Vertica\
+l</enum>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QS\
+lider\x22 name=\x22spe\
+ctrum_16\x22>\x0a     \
+      <property \
+name=\x22orientatio\
+n\x22>\x0a            \
+<enum>Qt::Vertic\
+al</enum>\x0a      \
+     </property>\
+\x0a          </wid\
+get>\x0a         </\
+item>\x0a         <\
+item>\x0a          \
+<widget class=\x22Q\
+Slider\x22 name=\x22sp\
+ectrum_17\x22>\x0a    \
+       <property\
+ name=\x22orientati\
+on\x22>\x0a           \
+ <enum>Qt::Verti\
+cal</enum>\x0a     \
+      </property\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a         \
+<item>\x0a         \
+ <widget class=\x22\
+QSlider\x22 name=\x22s\
+pectrum_18\x22>\x0a   \
+        <propert\
+y name=\x22orientat\
+ion\x22>\x0a          \
+  <enum>Qt::Vert\
+ical</enum>\x0a    \
+       </propert\
+y>\x0a          </w\
+idget>\x0a         \
+</item>\x0a        \
+ <item>\x0a        \
+  <widget class=\
+\x22QSlider\x22 name=\x22\
+spectrum_19\x22>\x0a  \
+         <proper\
+ty name=\x22orienta\
+tion\x22>\x0a         \
+   <enum>Qt::Ver\
+tical</enum>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+  <item>\x0a       \
+   <widget class\
+=\x22QSlider\x22 name=\
+\x22spectrum_20\x22>\x0a \
+          <prope\
+rty name=\x22orient\
+ation\x22>\x0a        \
+    <enum>Qt::Ve\
+rtical</enum>\x0a  \
+         </prope\
+rty>\x0a          <\
+/widget>\x0a       \
+  </item>\x0a      \
+  </layout>\x0a    \
+   </widget>\x0a   \
+   </item>\x0a     \
+ <item row=\x220\x22 c\
+olumn=\x220\x22>\x0a     \
+  <widget class=\
+\x22QGroupBox\x22 name\
+=\x22freqs_group\x22>\x0a\
+        <propert\
+y name=\x22flat\x22>\x0a \
+        <bool>tr\
+ue</bool>\x0a      \
+  </property>\x0a  \
+      <layout cl\
+ass=\x22QHBoxLayout\
+\x22 name=\x22horizont\
+alLayout\x22>\x0a     \
+    <item>\x0a     \
+     <widget cla\
+ss=\x22Gui::InputFi\
+eld\x22 name=\x22min_f\
+req\x22>\x0a          \
+ <property name=\
+\x22text\x22>\x0a        \
+    <string notr\
+=\x22true\x22>1 keV</s\
+tring>\x0a         \
+  </property>\x0a  \
+         <proper\
+ty name=\x22unit\x22 s\
+tdset=\x220\x22>\x0a     \
+       <string n\
+otr=\x22true\x22>eV</s\
+tring>\x0a         \
+  </property>\x0a  \
+         <proper\
+ty name=\x22quantit\
+y\x22 stdset=\x220\x22>\x0a \
+           <doub\
+le>1.00000000000\
+0000</double>\x0a  \
+         </prope\
+rty>\x0a          <\
+/widget>\x0a       \
+  </item>\x0a      \
+   <item>\x0a      \
+    <widget clas\
+s=\x22QLabel\x22 name=\
+\x22sep_freq\x22>\x0a    \
+       <property\
+ name=\x22text\x22>\x0a  \
+          <strin\
+g notr=\x22true\x22>-<\
+/string>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22Gu\
+i::InputField\x22 n\
+ame=\x22max_freq\x22>\x0a\
+           <prop\
+erty name=\x22text\x22\
+>\x0a            <s\
+tring notr=\x22true\
+\x22>10 keV</string\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22unit\x22 stdset\
+=\x220\x22>\x0a          \
+  <string notr=\x22\
+true\x22>eV</string\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22quantity\x22 st\
+dset=\x220\x22>\x0a      \
+      <double>1.\
+000000000000000<\
+/double>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a        </l\
+ayout>\x0a       </\
+widget>\x0a      </\
+item>\x0a      <ite\
+m row=\x224\x22 column\
+=\x220\x22>\x0a       <wi\
+dget class=\x22QGro\
+upBox\x22 name=\x22pro\
+jection_type_gro\
+up\x22>\x0a        <pr\
+operty name=\x22fla\
+t\x22>\x0a         <bo\
+ol>true</bool>\x0a \
+       </propert\
+y>\x0a        <layo\
+ut class=\x22QHBoxL\
+ayout\x22 name=\x22hor\
+izontalLayout_4\x22\
+>\x0a         <item\
+>\x0a          <wid\
+get class=\x22QLabe\
+l\x22 name=\x22project\
+ion_label\x22>\x0a    \
+       <property\
+ name=\x22text\x22>\x0a  \
+          <strin\
+g>Emitter type</\
+string>\x0a        \
+   </property>\x0a \
+         </widge\
+t>\x0a         </it\
+em>\x0a         <it\
+em>\x0a          <w\
+idget class=\x22QCo\
+mboBox\x22 name=\x22pr\
+ojection\x22>\x0a     \
+      <property \
+name=\x22toolTip\x22>\x0a\
+            <str\
+ing>For the time\
+ being just Para\
+llel beams (radi\
+ographies and ol\
+d-school CTs) is\
+ implemented</st\
+ring>\x0a          \
+ </property>\x0a   \
+        <item>\x0a \
+           <prop\
+erty name=\x22text\x22\
+>\x0a             <\
+string>Parallel \
+beams</string>\x0a \
+           </pro\
+perty>\x0a         \
+  </item>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+       </layout>\
+\x0a       </widget\
+>\x0a      </item>\x0a\
+      <item row=\
+\x223\x22 column=\x220\x22>\x0a\
+       <widget c\
+lass=\x22QGroupBox\x22\
+ name=\x22freq_n_gr\
+oup\x22>\x0a        <p\
+roperty name=\x22to\
+olTip\x22>\x0a        \
+ <string>The num\
+ber of samples t\
+o take fro the s\
+pectrum. The num\
+ber of images pe\
+r projection to \
+be rendered is e\
+qual to the numb\
+er of samples di\
+vided by 3. Thus\
+ the larger the \
+number of sample\
+s, the longer wo\
+uld it take to c\
+ompute. Increasi\
+ng the number of\
+ samples would b\
+e very beneficia\
+l in the presenc\
+e of metals.</st\
+ring>\x0a        </\
+property>\x0a      \
+  <property name\
+=\x22flat\x22>\x0a       \
+  <bool>true</bo\
+ol>\x0a        </pr\
+operty>\x0a        \
+<layout class=\x22Q\
+HBoxLayout\x22 name\
+=\x22horizontalLayo\
+ut_3\x22>\x0a         \
+<item>\x0a         \
+ <widget class=\x22\
+QLabel\x22 name=\x22fr\
+eqs_n_label\x22>\x0a  \
+         <proper\
+ty name=\x22text\x22>\x0a\
+            <str\
+ing>Number of fr\
+eq. samples</str\
+ing>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QSpinB\
+ox\x22 name=\x22freqs_\
+n\x22>\x0a           <\
+property name=\x22m\
+inimum\x22>\x0a       \
+     <number>3</\
+number>\x0a        \
+   </property>\x0a \
+          <prope\
+rty name=\x22maximu\
+m\x22>\x0a            \
+<number>21</numb\
+er>\x0a           <\
+/property>\x0a     \
+      <property \
+name=\x22singleStep\
+\x22>\x0a            <\
+number>3</number\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22value\x22>\x0a    \
+        <number>\
+3</number>\x0a     \
+      </property\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a        <\
+/layout>\x0a       \
+</widget>\x0a      \
+</item>\x0a      <i\
+tem row=\x225\x22 colu\
+mn=\x220\x22>\x0a       <\
+widget class=\x22QG\
+roupBox\x22 name=\x22c\
+ollimation_group\
+\x22>\x0a        <prop\
+erty name=\x22toolT\
+ip\x22>\x0a         <s\
+tring>How effici\
+ent is the colli\
+mator. The worst\
+ is the collimat\
+or the more blur\
+ry images are pr\
+oduced</string>\x0a\
+        </proper\
+ty>\x0a        <pro\
+perty name=\x22flat\
+\x22>\x0a         <boo\
+l>true</bool>\x0a  \
+      </property\
+>\x0a        <layou\
+t class=\x22QHBoxLa\
+yout\x22 name=\x22coll\
+imation_group_kk\
+\x22>\x0a         <pro\
+perty name=\x22left\
+Margin\x22>\x0a       \
+   <number>6</nu\
+mber>\x0a         <\
+/property>\x0a     \
+    <property na\
+me=\x22topMargin\x22>\x0a\
+          <numbe\
+r>6</number>\x0a   \
+      </property\
+>\x0a         <prop\
+erty name=\x22right\
+Margin\x22>\x0a       \
+   <number>6</nu\
+mber>\x0a         <\
+/property>\x0a     \
+    <property na\
+me=\x22bottomMargin\
+\x22>\x0a          <nu\
+mber>6</number>\x0a\
+         </prope\
+rty>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QL\
+abel\x22 name=\x22coll\
+imation_label\x22>\x0a\
+           <prop\
+erty name=\x22text\x22\
+>\x0a            <s\
+tring>Collimatio\
+n</string>\x0a     \
+      </property\
+>\x0a          </wi\
+dget>\x0a         <\
+/item>\x0a         \
+<item>\x0a         \
+ <widget class=\x22\
+Gui::InputField\x22\
+ name=\x22collimati\
+on\x22>\x0a           \
+<property name=\x22\
+sizePolicy\x22>\x0a   \
+         <sizepo\
+licy hsizetype=\x22\
+Minimum\x22 vsizety\
+pe=\x22Fixed\x22>\x0a    \
+         <horstr\
+etch>0</horstret\
+ch>\x0a            \
+ <verstretch>0</\
+verstretch>\x0a    \
+        </sizepo\
+licy>\x0a          \
+ </property>\x0a   \
+        <propert\
+y name=\x22text\x22>\x0a \
+           <stri\
+ng notr=\x22true\x22>0\
+.5 deg</string>\x0a\
+           </pro\
+perty>\x0a         \
+  <property name\
+=\x22unit\x22 stdset=\x22\
+0\x22>\x0a            \
+<string notr=\x22tr\
+ue\x22>deg</string>\
+\x0a           </pr\
+operty>\x0a        \
+   <property nam\
+e=\x22quantity\x22 std\
+set=\x220\x22>\x0a       \
+     <double>0.5\
+00000000000000</\
+double>\x0a        \
+   </property>\x0a \
+         </widge\
+t>\x0a         </it\
+em>\x0a        </la\
+yout>\x0a       </w\
+idget>\x0a      </i\
+tem>\x0a     </layo\
+ut>\x0a    </widget\
+>\x0a   </item>\x0a   \
+<item row=\x221\x22 co\
+lumn=\x220\x22>\x0a    <w\
+idget class=\x22QGr\
+oupBox\x22 name=\x22ch\
+amber_group\x22>\x0a  \
+   <property nam\
+e=\x22toolTip\x22>\x0a   \
+   <string>The s\
+canning chamber \
+dimensions. At f\
+irst glance just\
+ the objects fit\
+ting inside will\
+ be correctly sc\
+anned. However, \
+in some cases it\
+ should be accep\
+ted that the sca\
+nning body is la\
+rger than the ar\
+ea covered by th\
+e X-Rays, that w\
+ould be the case\
+ in synchrotron-\
+based radiation.\
+</string>\x0a     <\
+/property>\x0a     \
+<layout class=\x22Q\
+GridLayout\x22 name\
+=\x22gridLayout\x22>\x0a \
+     <item row=\x22\
+0\x22 column=\x220\x22>\x0a \
+      <widget cl\
+ass=\x22QLabel\x22 nam\
+e=\x22radius_label\x22\
+>\x0a        <prope\
+rty name=\x22text\x22>\
+\x0a         <strin\
+g>radius</string\
+>\x0a        </prop\
+erty>\x0a       </w\
+idget>\x0a      </i\
+tem>\x0a      <item\
+ row=\x221\x22 column=\
+\x220\x22>\x0a       <wid\
+get class=\x22QLabe\
+l\x22 name=\x22height_\
+label\x22>\x0a        \
+<property name=\x22\
+text\x22>\x0a         \
+<string>height</\
+string>\x0a        \
+</property>\x0a    \
+   </widget>\x0a   \
+   </item>\x0a     \
+ <item row=\x220\x22 c\
+olumn=\x222\x22>\x0a     \
+  <widget class=\
+\x22Gui::InputField\
+\x22 name=\x22radius\x22>\
+\x0a        <proper\
+ty name=\x22text\x22>\x0a\
+         <string\
+ notr=\x22true\x22>50 \
+mm</string>\x0a    \
+    </property>\x0a\
+        <propert\
+y name=\x22unit\x22 st\
+dset=\x220\x22>\x0a      \
+   <string notr=\
+\x22true\x22>m</string\
+>\x0a        </prop\
+erty>\x0a        <p\
+roperty name=\x22qu\
+antity\x22 stdset=\x22\
+0\x22>\x0a         <do\
+uble>1.000000000\
+000000</double>\x0a\
+        </proper\
+ty>\x0a       </wid\
+get>\x0a      </ite\
+m>\x0a      <item r\
+ow=\x221\x22 column=\x222\
+\x22>\x0a       <widge\
+t class=\x22Gui::In\
+putField\x22 name=\x22\
+height\x22>\x0a       \
+ <property name=\
+\x22text\x22>\x0a        \
+ <string notr=\x22t\
+rue\x22>50 mm</stri\
+ng>\x0a        </pr\
+operty>\x0a        \
+<property name=\x22\
+unit\x22 stdset=\x220\x22\
+>\x0a         <stri\
+ng notr=\x22true\x22>m\
+</string>\x0a      \
+  </property>\x0a  \
+      <property \
+name=\x22quantity\x22 \
+stdset=\x220\x22>\x0a    \
+     <double>1.0\
+00000000000000</\
+double>\x0a        \
+</property>\x0a    \
+   </widget>\x0a   \
+   </item>\x0a     \
+ <item row=\x222\x22 c\
+olumn=\x220\x22>\x0a     \
+  <widget class=\
+\x22QLabel\x22 name=\x22d\
+istance_label\x22>\x0a\
+        <propert\
+y name=\x22text\x22>\x0a \
+        <string>\
+distance</string\
+>\x0a        </prop\
+erty>\x0a       </w\
+idget>\x0a      </i\
+tem>\x0a      <item\
+ row=\x222\x22 column=\
+\x222\x22>\x0a       <wid\
+get class=\x22Gui::\
+InputField\x22 name\
+=\x22distance\x22>\x0a   \
+     <property n\
+ame=\x22text\x22>\x0a    \
+     <string not\
+r=\x22true\x22>50 cm</\
+string>\x0a        \
+</property>\x0a    \
+    <property na\
+me=\x22unit\x22 stdset\
+=\x220\x22>\x0a         <\
+string notr=\x22tru\
+e\x22>m</string>\x0a  \
+      </property\
+>\x0a        <prope\
+rty name=\x22quanti\
+ty\x22 stdset=\x220\x22>\x0a\
+         <double\
+>10.000000000000\
+000</double>\x0a   \
+     </property>\
+\x0a       </widget\
+>\x0a      </item>\x0a\
+     </layout>\x0a \
+   </widget>\x0a   \
+</item>\x0a   <item\
+ row=\x222\x22 column=\
+\x220\x22>\x0a    <widget\
+ class=\x22QGroupBo\
+x\x22 name=\x22sensor_\
+group\x22>\x0a     <pr\
+operty name=\x22tit\
+le\x22>\x0a      <stri\
+ng>Sensor</strin\
+g>\x0a     </proper\
+ty>\x0a     <layout\
+ class=\x22QGridLay\
+out\x22 name=\x22gridL\
+ayout_4\x22>\x0a      \
+<item row=\x220\x22 co\
+lumn=\x220\x22>\x0a      \
+ <widget class=\x22\
+QGroupBox\x22 name=\
+\x22resolution_grou\
+p\x22>\x0a        <pro\
+perty name=\x22flat\
+\x22>\x0a         <boo\
+l>true</bool>\x0a  \
+      </property\
+>\x0a        <layou\
+t class=\x22QHBoxLa\
+yout\x22 name=\x22hori\
+zontalLayout_5\x22>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QLabel\
+\x22 name=\x22resoluti\
+on_label\x22>\x0a     \
+      <property \
+name=\x22text\x22>\x0a   \
+         <string\
+>Resolution</str\
+ing>\x0a           \
+</property>\x0a    \
+      </widget>\x0a\
+         </item>\
+\x0a         <item>\
+\x0a          <widg\
+et class=\x22QSpinB\
+ox\x22 name=\x22resolu\
+tion_x\x22>\x0a       \
+    <property na\
+me=\x22minimum\x22>\x0a  \
+          <numbe\
+r>16</number>\x0a  \
+         </prope\
+rty>\x0a           \
+<property name=\x22\
+maximum\x22>\x0a      \
+      <number>32\
+768</number>\x0a   \
+        </proper\
+ty>\x0a           <\
+property name=\x22v\
+alue\x22>\x0a         \
+   <number>1024<\
+/number>\x0a       \
+    </property>\x0a\
+          </widg\
+et>\x0a         </i\
+tem>\x0a         <i\
+tem>\x0a          <\
+widget class=\x22QS\
+pinBox\x22 name=\x22re\
+solution_y\x22>\x0a   \
+        <propert\
+y name=\x22minimum\x22\
+>\x0a            <n\
+umber>16</number\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22maximum\x22>\x0a  \
+          <numbe\
+r>32768</number>\
+\x0a           </pr\
+operty>\x0a        \
+   <property nam\
+e=\x22value\x22>\x0a     \
+       <number>1\
+024</number>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+ </layout>\x0a     \
+  </widget>\x0a    \
+  </item>\x0a     <\
+/layout>\x0a    </w\
+idget>\x0a   </item\
+>\x0a  </layout>\x0a <\
+/widget>\x0a <custo\
+mwidgets>\x0a  <cus\
+tomwidget>\x0a   <c\
+lass>Gui::InputF\
+ield</class>\x0a   \
+<extends>QLineEd\
+it</extends>\x0a   \
+<header>Gui/Inpu\
+tField.h</header\
+>\x0a  </customwidg\
+et>\x0a </customwid\
+gets>\x0a <resource\
+s/>\x0a <connection\
+s/>\x0a</ui>\x0a\
+\x00\x00\x17M\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22?>\x0a<ui versio\
+n=\x224.0\x22>\x0a <class\
+>TaskPanel</clas\
+s>\x0a <widget clas\
+s=\x22QWidget\x22 name\
+=\x22TaskPanel\x22>\x0a  \
+<property name=\x22\
+geometry\x22>\x0a   <r\
+ect>\x0a    <x>0</x\
+>\x0a    <y>0</y>\x0a \
+   <width>380</w\
+idth>\x0a    <heigh\
+t>382</height>\x0a \
+  </rect>\x0a  </pr\
+operty>\x0a  <prope\
+rty name=\x22sizePo\
+licy\x22>\x0a   <sizep\
+olicy hsizetype=\
+\x22Preferred\x22 vsiz\
+etype=\x22Expanding\
+\x22>\x0a    <horstret\
+ch>0</horstretch\
+>\x0a    <verstretc\
+h>0</verstretch>\
+\x0a   </sizepolicy\
+>\x0a  </property>\x0a\
+  <property name\
+=\x22minimumSize\x22>\x0a\
+   <size>\x0a    <w\
+idth>250</width>\
+\x0a    <height>250\
+</height>\x0a   </s\
+ize>\x0a  </propert\
+y>\x0a  <property n\
+ame=\x22windowTitle\
+\x22>\x0a   <string>Ad\
+d object</string\
+>\x0a  </property>\x0a\
+  <layout class=\
+\x22QGridLayout\x22 na\
+me=\x22gridLayout_3\
+\x22>\x0a   <item row=\
+\x220\x22 column=\x220\x22>\x0a\
+    <widget clas\
+s=\x22QGroupBox\x22 na\
+me=\x22props_group\x22\
+>\x0a     <property\
+ name=\x22toolTip\x22>\
+\x0a      <string>T\
+he radiography p\
+roperties</strin\
+g>\x0a     </proper\
+ty>\x0a     <proper\
+ty name=\x22title\x22>\
+\x0a      <string>R\
+adiography param\
+eters</string>\x0a \
+    </property>\x0a\
+     <layout cla\
+ss=\x22QGridLayout\x22\
+ name=\x22gridLayou\
+t_2\x22>\x0a      <ite\
+m row=\x220\x22 column\
+=\x220\x22>\x0a       <wi\
+dget class=\x22QGro\
+upBox\x22 name=\x22ang\
+le_group\x22>\x0a     \
+   <property nam\
+e=\x22toolTip\x22>\x0a   \
+      <string>Th\
+e machine rotati\
+on around (0, 0,\
+ 1) axis</string\
+>\x0a        </prop\
+erty>\x0a        <p\
+roperty name=\x22fl\
+at\x22>\x0a         <b\
+ool>true</bool>\x0a\
+        </proper\
+ty>\x0a        <lay\
+out class=\x22QHBox\
+Layout\x22 name=\x22de\
+ns_group_kk\x22>\x0a  \
+       <item>\x0a  \
+        <widget \
+class=\x22QLabel\x22 n\
+ame=\x22angle_label\
+\x22>\x0a           <p\
+roperty name=\x22te\
+xt\x22>\x0a           \
+ <string>Project\
+ion angle</strin\
+g>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+        <item>\x0a \
+         <widget\
+ class=\x22Gui::Inp\
+utField\x22 name=\x22a\
+ngle\x22>\x0a         \
+  <property name\
+=\x22toolTip\x22>\x0a    \
+        <string/\
+>\x0a           </p\
+roperty>\x0a       \
+    <property na\
+me=\x22text\x22>\x0a     \
+       <string n\
+otr=\x22true\x22>0.0 d\
+eg</string>\x0a    \
+       </propert\
+y>\x0a           <p\
+roperty name=\x22un\
+it\x22 stdset=\x220\x22>\x0a\
+            <str\
+ing notr=\x22true\x22>\
+deg</string>\x0a   \
+        </proper\
+ty>\x0a           <\
+property name=\x22q\
+uantity\x22 stdset=\
+\x220\x22>\x0a           \
+ <double>0.00000\
+0000000000</doub\
+le>\x0a           <\
+/property>\x0a     \
+     </widget>\x0a \
+        </item>\x0a\
+        </layout\
+>\x0a       </widge\
+t>\x0a      </item>\
+\x0a      <item row\
+=\x221\x22 column=\x220\x22>\
+\x0a       <widget \
+class=\x22QGroupBox\
+\x22 name=\x22halt_gro\
+up\x22>\x0a        <pr\
+operty name=\x22too\
+lTip\x22>\x0a         \
+<string>The maxi\
+mum admisible er\
+ror. The smaller\
+ this value the \
+longer will it t\
+ake to finish</s\
+tring>\x0a        <\
+/property>\x0a     \
+   <property nam\
+e=\x22flat\x22>\x0a      \
+   <bool>true</b\
+ool>\x0a        </p\
+roperty>\x0a       \
+ <layout class=\x22\
+QHBoxLayout\x22 nam\
+e=\x22horizontalLay\
+out_2\x22>\x0a        \
+ <item>\x0a        \
+  <widget class=\
+\x22QLabel\x22 name=\x22m\
+ax_error_label\x22>\
+\x0a           <pro\
+perty name=\x22text\
+\x22>\x0a            <\
+string>Maximum e\
+rror</string>\x0a  \
+         </prope\
+rty>\x0a          <\
+/widget>\x0a       \
+  </item>\x0a      \
+   <item>\x0a      \
+    <widget clas\
+s=\x22QLineEdit\x22 na\
+me=\x22max_error\x22>\x0a\
+           <prop\
+erty name=\x22text\x22\
+>\x0a            <s\
+tring notr=\x22true\
+\x22>0.05</string>\x0a\
+           </pro\
+perty>\x0a         \
+  <property name\
+=\x22unit\x22 stdset=\x22\
+0\x22>\x0a            \
+<string notr=\x22tr\
+ue\x22/>\x0a          \
+ </property>\x0a   \
+        <propert\
+y name=\x22quantity\
+\x22 stdset=\x220\x22>\x0a  \
+          <doubl\
+e>0.050000000000\
+000</double>\x0a   \
+        </proper\
+ty>\x0a          </\
+widget>\x0a        \
+ </item>\x0a       \
+ </layout>\x0a     \
+  </widget>\x0a    \
+  </item>\x0a     <\
+/layout>\x0a    </w\
+idget>\x0a   </item\
+>\x0a   <item row=\x22\
+1\x22 column=\x220\x22>\x0a \
+   <widget class\
+=\x22QGroupBox\x22 nam\
+e=\x22results_group\
+\x22>\x0a     <propert\
+y name=\x22title\x22>\x0a\
+      <string>Re\
+sults</string>\x0a \
+    </property>\x0a\
+     <layout cla\
+ss=\x22QGridLayout\x22\
+ name=\x22gridLayou\
+t\x22>\x0a      <item \
+row=\x220\x22 column=\x22\
+0\x22>\x0a       <widg\
+et class=\x22QPushB\
+utton\x22 name=\x22run\
+\x22>\x0a        <prop\
+erty name=\x22text\x22\
+>\x0a         <stri\
+ng>Start</string\
+>\x0a        </prop\
+erty>\x0a       </w\
+idget>\x0a      </i\
+tem>\x0a      <item\
+ row=\x222\x22 column=\
+\x220\x22>\x0a       <wid\
+get class=\x22QGrou\
+pBox\x22 name=\x22imag\
+e_group\x22>\x0a      \
+  <property name\
+=\x22flat\x22>\x0a       \
+  <bool>true</bo\
+ol>\x0a        </pr\
+operty>\x0a        \
+<layout class=\x22Q\
+GridLayout\x22 name\
+=\x22gridLayout_4\x22>\
+\x0a         <item \
+row=\x223\x22 column=\x22\
+1\x22>\x0a          <w\
+idget class=\x22QCo\
+mboBox\x22 name=\x22cm\
+ap\x22>\x0a           \
+<item>\x0a         \
+   <property nam\
+e=\x22text\x22>\x0a      \
+       <string>R\
+adiography</stri\
+ng>\x0a            \
+</property>\x0a    \
+       </item>\x0a \
+          <item>\
+\x0a            <pr\
+operty name=\x22tex\
+t\x22>\x0a            \
+ <string>Radiogr\
+aphy negative</s\
+tring>\x0a         \
+   </property>\x0a \
+          </item\
+>\x0a           <it\
+em>\x0a            \
+<property name=\x22\
+text\x22>\x0a         \
+    <string>Airp\
+ort</string>\x0a   \
+         </prope\
+rty>\x0a           \
+</item>\x0a        \
+  </widget>\x0a    \
+     </item>\x0a   \
+      <item row=\
+\x222\x22 column=\x220\x22>\x0a\
+          <widge\
+t class=\x22QLabel\x22\
+ name=\x22image_lab\
+el\x22>\x0a           \
+<property name=\x22\
+text\x22>\x0a         \
+   <string>Show \
+Image</string>\x0a \
+          </prop\
+erty>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+    <item row=\x222\
+\x22 column=\x221\x22>\x0a  \
+        <widget \
+class=\x22QComboBox\
+\x22 name=\x22image\x22>\x0a\
+           <prop\
+erty name=\x22sizeP\
+olicy\x22>\x0a        \
+    <sizepolicy \
+hsizetype=\x22Expan\
+ding\x22 vsizetype=\
+\x22Fixed\x22>\x0a       \
+      <horstretc\
+h>0</horstretch>\
+\x0a             <v\
+erstretch>0</ver\
+stretch>\x0a       \
+     </sizepolic\
+y>\x0a           </\
+property>\x0a      \
+    </widget>\x0a  \
+       </item>\x0a \
+        <item ro\
+w=\x223\x22 column=\x220\x22\
+>\x0a          <wid\
+get class=\x22QLabe\
+l\x22 name=\x22cmap_la\
+bel\x22>\x0a          \
+ <property name=\
+\x22text\x22>\x0a        \
+    <string>Colo\
+r map</string>\x0a \
+          </prop\
+erty>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+    <item row=\x224\
+\x22 column=\x220\x22>\x0a  \
+        <widget \
+class=\x22QLabel\x22 n\
+ame=\x22crange_labe\
+l\x22>\x0a           <\
+property name=\x22t\
+ext\x22>\x0a          \
+  <string>Color \
+range</string>\x0a \
+          </prop\
+erty>\x0a          \
+</widget>\x0a      \
+   </item>\x0a     \
+   </layout>\x0a   \
+    </widget>\x0a  \
+    </item>\x0a    \
+  <item row=\x221\x22 \
+column=\x220\x22>\x0a    \
+   <widget class\
+=\x22QProgressBar\x22 \
+name=\x22pbar\x22>\x0a   \
+     <property n\
+ame=\x22value\x22>\x0a   \
+      <number>0<\
+/number>\x0a       \
+ </property>\x0a   \
+    </widget>\x0a  \
+    </item>\x0a    \
+ </layout>\x0a    <\
+/widget>\x0a   </it\
+em>\x0a  </layout>\x0a\
+ </widget>\x0a <cus\
+tomwidgets>\x0a  <c\
+ustomwidget>\x0a   \
+<class>Gui::Inpu\
+tField</class>\x0a \
+  <extends>QLine\
+Edit</extends>\x0a \
+  <header>Gui/In\
+putField.h</head\
+er>\x0a  </customwi\
+dget>\x0a </customw\
+idgets>\x0a <resour\
+ces/>\x0a <connecti\
+ons/>\x0a</ui>\x0a\
 "
 
 qt_resource_name = b"\
-\x00\x05\
-\x00o\xa6S\
-\x00i\
-\x00c\x00o\x00n\x00s\
 \x00\x02\
 \x00\x00\x07\xb9\
 \x00u\
 \x00i\
-\x00\x17\
-\x0f\x5c\xa99\
-\x00T\
-\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00C\x00r\x00e\
-\x00a\x00t\x00e\x00.\x00u\x00i\
-\x00\x1a\
-\x0f\xd7\xc4Y\
-\x00T\
-\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00A\x00d\x00d\
-\x00O\x00b\x00j\x00e\x00c\x00t\x00.\x00u\x00i\
-\x00\x1c\
-\x0f\xa5\xe9\x99\
-\x00T\
-\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00R\x00a\x00d\
-\x00i\x00o\x00g\x00r\x00a\x00p\x00h\x00y\x00.\x00u\x00i\
+\x00\x05\
+\x00o\xa6S\
+\x00i\
+\x00c\x00o\x00n\x00s\
+\x00\x12\
+\x0b\xe4\x12\xe7\
+\x00X\
+\x00R\x00a\x00y\x00_\x00O\x00b\x00j\x00e\x00c\x00t\x00A\x00d\x00d\x00.\x00s\x00v\
+\x00g\
 \x00\x12\
 \x07+Vg\
 \x00X\
@@ -6890,23 +6915,33 @@ qt_resource_name = b"\
 \x0aN\x9e\xe7\
 \x00X\
 \x00R\x00a\x00y\x00_\x00O\x00b\x00j\x00e\x00c\x00t\x00.\x00s\x00v\x00g\
-\x00\x12\
-\x0b\xe4\x12\xe7\
-\x00X\
-\x00R\x00a\x00y\x00_\x00O\x00b\x00j\x00e\x00c\x00t\x00A\x00d\x00d\x00.\x00s\x00v\
-\x00g\
+\x00\x1a\
+\x0f\xd7\xc4Y\
+\x00T\
+\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00A\x00d\x00d\
+\x00O\x00b\x00j\x00e\x00c\x00t\x00.\x00u\x00i\
+\x00\x17\
+\x0f\x5c\xa99\
+\x00T\
+\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00C\x00r\x00e\
+\x00a\x00t\x00e\x00.\x00u\x00i\
+\x00\x1c\
+\x0f\xa5\xe9\x99\
+\x00T\
+\x00a\x00s\x00k\x00P\x00a\x00n\x00e\x00l\x00_\x00x\x00r\x00a\x00y\x00R\x00a\x00d\
+\x00i\x00o\x00g\x00r\x00a\x00p\x00h\x00y\x00.\x00u\x00i\
 "
 
 qt_resource_struct = b"\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x01\
-\x00\x00\x00\x10\x00\x02\x00\x00\x00\x03\x00\x00\x00\x06\
-\x00\x00\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x03\
-\x00\x00\x00\xc6\x00\x00\x00\x00\x00\x01\x00\x00k]\
-\x00\x00\x00\xf0\x00\x00\x00\x00\x00\x01\x00\x00\x98\xbb\
-\x00\x00\x01\x14\x00\x00\x00\x00\x00\x01\x00\x01 K\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x06\
+\x00\x00\x00\x0a\x00\x02\x00\x00\x00\x03\x00\x00\x00\x03\
+\x00\x00\x00D\x00\x00\x00\x00\x00\x01\x00\x00\x8a\xb5\
+\x00\x00\x00n\x00\x00\x00\x00\x00\x01\x00\x00\xb8\x13\
 \x00\x00\x00\x1a\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
-\x00\x00\x00\x88\x00\x00\x00\x00\x00\x01\x00\x00T\xbf\
-\x00\x00\x00N\x00\x00\x00\x00\x00\x01\x00\x00?\xae\
+\x00\x00\x00\xcc\x00\x00\x00\x00\x00\x01\x00\x01Ug\
+\x00\x00\x01\x00\x00\x00\x00\x00\x00\x01\x00\x01\x95\xe6\
+\x00\x00\x00\x92\x00\x00\x00\x00\x00\x01\x00\x01?\xa3\
 "
 
 def qInitResources():

@@ -142,7 +142,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="dens">
+          <widget class="Gui::InputField" name="dens">
            <property name="text">
             <string notr="true">968 kg/m^3</string>
            </property>
@@ -178,6 +178,13 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Gui::InputField</class>
+   <extends>QLineEdit</extends>
+   <header>Gui/InputField.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
