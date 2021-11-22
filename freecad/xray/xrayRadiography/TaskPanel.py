@@ -190,6 +190,7 @@ class TaskPanel:
             self.luxcore = session
             App.Console.PrintMessage("\t{} / {}\n".format(i + 1, n))
             last_conv = -1
+            last_step = 0
             while not session.HasDone() and self.luxcore:
                 session.UpdateStats()
                 stats = session.GetStats()
@@ -202,7 +203,7 @@ class TaskPanel:
                 self.loop.exec_()
                 if(not self.luxcore):
                     break
-                if last_conv != conv:
+                if last_conv != conv or (step - last_step >= 32):
                     imgs = Tools.get_imgs(self.tmp_folder, session)
                     if i == 0:
                         # For the background image we just need one channels
@@ -218,6 +219,7 @@ class TaskPanel:
                     if self.form.image.currentIndex() == current_image:
                         self.update_plot()
                     last_conv = conv
+                    last_step = step
                 else:
                     time.sleep(1.0)
             if(not self.luxcore):
