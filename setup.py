@@ -20,5 +20,6 @@ setup(name='freecad.xray',
       maintainer_email="jlcercos@gmail.com",
       url="https://gitlab.com/sanguinariojoe/freecad.xray",
       description="X-Ray simulator. Created by Jose Luis Cercos Pita",
-      install_requires=["numpy", "openexr", "qtrangeslider", "qtrangeslider[pyside2]"],
+      install_requires=["numpy", "openexr",
+                        "qtrangeslider", "qtrangeslider[pyside2]"],
       include_package_data=True)
