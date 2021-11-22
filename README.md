@@ -7,6 +7,8 @@
 X-Rays is a module for [FreeCAD](https://www.freecadweb.org) to simulate X-Rays.
 To this end the module uses the Open Source Physically Based Renderer, [LuxCoreRender](https://luxcorerender.org)
 
+![Header snapshot](https://gitlab.com/sanguinariojoe/freecad.xray/-/raw/main/freecad/xray/resources/snapshots/radio_compilation.png)
+
 For the time being the following tools are provided:
 
 ### X-Ray machine definition
@@ -30,6 +32,8 @@ are provided from the [National Institute of Standards and Technology](https://w
 Launch your simulation and let [FreeCAD](https://www.freecadweb.org) and
 [National Institute of Standards and Technology](https://www.nist.gov/pml/x-ray-mass-attenuation-coefficients)
 do the job for you to get a X-Ray projection.
+
+![Radiography snapshot](https://gitlab.com/sanguinariojoe/freecad.xray/-/raw/main/freecad/xray/resources/snapshots/radio_airport.png)
 
 ## Install
 
