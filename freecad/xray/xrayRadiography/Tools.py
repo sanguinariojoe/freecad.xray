@@ -25,7 +25,6 @@ import os
 import sys
 import tempfile
 import numpy as np
-from PIL import Image
 import FreeCAD as App
 from FreeCAD import Units, Vector, Mesh
 import Part
@@ -250,4 +249,4 @@ def assemble_radiography(xray, images):
     res = res / W
 
     res[res < MIN_INTENSITY_RATIO] = MIN_INTENSITY_RATIO
-    return -np.log(res)
+    return -np.log(res) 

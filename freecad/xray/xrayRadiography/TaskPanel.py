@@ -23,7 +23,7 @@
 import time
 import FreeCAD as App
 import FreeCADGui as Gui
-from FreeCAD import Units
+from FreeCAD import Units, ImageGui
 import Part
 from PySide import QtGui, QtCore
 from qtrangeslider import QRangeSlider
@@ -38,12 +38,31 @@ class TaskPanel:
         self.ui = ":/ui/TaskPanel_xrayRadiography.ui"
         self.form = Gui.PySideUic.loadUi(self.ui)
         self.luxcore = None
+        self.tmp_folder = None
+        self.images = None
         self.plot = None
 
     def accept(self):
         if self.luxcore:
             self.onStop()
+        if self.tmp_folder is None or not self.images:
             return False
+        img = self.images[self.form.image.currentIndex()]
+        cmap = self.form.cmap.currentIndex()
+        vmin, vmax = self.form.crange.value()
+        img_file = PlotAux.save_image(
+            self.tmp_folder, img, cmap_index=cmap, vmin=vmin/1000,
+            vmax=vmax/1000)
+        if img_file is None:
+            return False
+
+        # Load the image
+        ImageGui.open(img_file,"utf-8")
+
+        # Add the representation
+        PlotAux.load_radiography(img_file, self.xray,
+                                 Units.parseQuantity(self.form.angle.text()))
+
         return True
 
     def reject(self):
@@ -167,7 +186,7 @@ class TaskPanel:
         self.plot = PlotAux.Plot(self.xray)
         current_image = -1
         for i, radiography in enumerate(Tools.radiography(self.xray, a, e)):
-            tmp_folder, session = radiography
+            self.tmp_folder, session = radiography
             self.luxcore = session
             App.Console.PrintMessage("\t{} / {}\n".format(i + 1, n))
             last_conv = -1
@@ -184,7 +203,7 @@ class TaskPanel:
                 if(not self.luxcore):
                     break
                 if last_conv != conv:
-                    imgs = Tools.get_imgs(tmp_folder, session)
+                    imgs = Tools.get_imgs(self.tmp_folder, session)
                     if i == 0:
                         # For the background image we just need one channels
                         imgs = [imgs[0]]
@@ -203,7 +222,7 @@ class TaskPanel:
                     time.sleep(1.0)
             if(not self.luxcore):
                 break
-            imgs = Tools.get_imgs(tmp_folder, session)
+            imgs = Tools.get_imgs(self.tmp_folder, session)
             session.Stop()
             if i == 0:
                 # For the background image we just need one channels

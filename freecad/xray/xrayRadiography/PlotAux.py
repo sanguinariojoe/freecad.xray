@@ -20,8 +20,11 @@
 #*                                                                         *
 #***************************************************************************
 
-import FreeCAD
+
+import os
 import numpy as np
+import FreeCAD
+from FreeCAD import Units
 
 
 AIRPORT_COLORS = {'red':   ((0.0,  1.0, 1.0),
@@ -81,3 +84,45 @@ class Plot(object):
             aspect=self.aspect)
         self.cbar = self.plt.fig.colorbar(plt_img)
         self.plt.update()
+
+
+
+def save_image(folder, img,
+               name="radiography.png", cmap_index=0, vmin=0.0, vmax=1.0):
+    try:
+        import matplotlib.pyplot as plt
+    except ImportError:
+        return None
+    # Renormalize the image
+    cmin, cmax = np.min(img), np.max(img)
+    vmin = cmin + vmin * (cmax - cmin)
+    vmax = cmin + vmax * (cmax - cmin)
+    normalize = plt.Normalize(vmin=vmin, vmax=vmax)
+    # Get the cmap
+    cmap=CMAPS[cmap_index]
+    if isinstance(cmap, str):
+        cmap = plt.cm.get_cmap(cmap)
+    # Save the image
+    fname = os.path.join(folder, name)
+    plt.imsave(fname, cmap(normalize(img)))
+    return fname
+
+
+def load_radiography(fpath, xray, angle, doc=None):
+    doc = doc or xray.Document
+    doc.addObject('Image::ImagePlane', 'Radiography')
+    obj = doc.Objects[-1]
+    obj.ImageFile = fpath
+    obj.XSize = 0.5 * xray.ChamberRadius
+    obj.YSize = 0.5 * xray.ChamberHeight
+    p = FreeCAD.Placement(FreeCAD.Vector(0, 0, 0),
+                          FreeCAD.Rotation(0.5, 0.5, 0.5, 0.5))
+    p.rotate(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(0, 1, 0),
+             Units.parseQuantity("180 deg") + angle)
+    a = angle.getValueAs('rad').Value
+    p.translate(FreeCAD.Vector(0.5 * xray.ChamberDistance * np.cos(a),
+                               0.5 * xray.ChamberDistance * np.sin(a),
+                               0))
+    obj.Placement = p
+    doc.recompute()
+    return obj
