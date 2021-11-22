@@ -1,6 +1,6 @@
 ## FreeCAD X-Rays Workbench
 
-![X-Ray Workbench Logo](freecad/ship/resources/icons/XRay_Workbench.svg)
+![X-Ray Workbench Logo](https://gitlab.com/sanguinariojoe/freecad.xray/-/raw/main/freecad/xray/resources/icons/XRay_Workbench.svg)
 
 **Welcome to FreeCAD X-Rays!**
 
@@ -11,21 +11,21 @@ For the time being the following tools are provided:
 
 ### X-Ray machine definition
 
-![X-Ray Workbench Logo](freecad/ship/resources/icons/XRay_Workbench.svg)
+![X-Ray Workbench Logo](https://gitlab.com/sanguinariojoe/freecad.xray/-/raw/main/freecad/xray/resources/icons/XRay_Workbench.svg)
 
 Define your X-Rays scanner, providing the radiation spectrum, the rays
 collimation angle and the scanning chamber dimensions.
 
 ### Objects materials
 
-![XRay_ObjectAdd Icon](freecad/ship/resources/icons/XRay_ObjectAdd.svg)
+![XRay_ObjectAdd Icon](https://gitlab.com/sanguinariojoe/freecad.xray/-/raw/main/freecad/xray/resources/icons/XRay_ObjectAdd.svg)
 
 Add objects with their custom non-linear attenuation factors. A bunch of presets
 are provided from the [National Institute of Standards and Technology](https://www.nist.gov/pml/x-ray-mass-attenuation-coefficients).
 
 ### Radiographies
 
-![XRay_Object Icon](freecad/ship/resources/icons/XRay_Object.svg)
+![XRay_Object Icon](https://gitlab.com/sanguinariojoe/freecad.xray/-/raw/main/freecad/xray/resources/icons/XRay_Object.svg)
 
 Launch your simulation and let [FreeCAD](https://www.freecadweb.org) and
 [National Institute of Standards and Technology](https://www.nist.gov/pml/x-ray-mass-attenuation-coefficients)
