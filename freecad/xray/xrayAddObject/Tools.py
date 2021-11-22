@@ -29,6 +29,7 @@ from FreeCAD import Units
 from .. import ObjectInstance
 
 
+__COMPOUNDS = []
 __ELEMENTS = []
 
 
@@ -37,38 +38,57 @@ def phys_properties_folder():
     return os.path.join(_dir, "..", "resources", "phys_properties")
 
 
-def init_presets(combo_box):
-    global __ELEMENTS
-    combo_box.clear()
-    with open(os.path.join(phys_properties_folder(), "elements.csv"), 'r') as f:
+def parse_presets_file(fname):
+    presets = []
+    with open(os.path.join(phys_properties_folder(), fname), 'r') as f:
         lines = f.readlines()
         for line in lines[1:]:
             if line.strip() == "":
                 continue
             fields = line.strip().split(',')
-            while len(fields) > 3:
+            while len(fields) > 2:
                 fields = [fields[0] + ',' + fields[1]] + fields[2:]
-            name, z, dens = fields[0][1:-1], int(fields[1]), float(fields[2])
-            __ELEMENTS.append([name, z, dens])
-            combo_box.addItem(name)
+            presets.append([fields[0][1:-1], float(fields[1])])
+    return presets
+
+
+def init_presets(combo_box):
+    combo_box.clear()
+    global __COMPOUNDS, __ELEMENTS
+    __COMPOUNDS = parse_presets_file("compounds.csv")
+    for name, dens in __COMPOUNDS:
+        combo_box.addItem(name)
+    __ELEMENTS = parse_presets_file("elements.csv")
+    for name, dens in __ELEMENTS:
+        combo_box.addItem(name)
 
 
 def get_preset(i):
-    return __ELEMENTS[i][:]
+    if i >= len(__COMPOUNDS):
+        return __ELEMENTS[i - len(__COMPOUNDS)][:]
+    return __COMPOUNDS[i][:]
 
 
 def get_preset_index(name):
-    for i, elem in enumerate(__ELEMENTS):
+    for i, elem in enumerate(__COMPOUNDS):
         if elem[0] == name:
             return i
+    for i, elem in enumerate(__ELEMENTS):
+        if elem[0] == name:
+            return i + len(__COMPOUNDS)
     return None
 
 
 def load_preset(i):
-    dens = Units.parseQuantity('{} g/cm^3'.format(__ELEMENTS[i][2]))
-    z = __ELEMENTS[i][1]
+    _, dens = get_preset(i)
+    dens = Units.parseQuantity('{} g/cm^3'.format(dens))
+    z = i + 1
+    fformat = "c{:02d}.csv"
+    if i >= len(__COMPOUNDS):
+        z -= len(__COMPOUNDS)
+        fformat = "z{:02d}.csv"
     data = []
-    fname = os.path.join(phys_properties_folder(), "z{:02d}.csv".format(z))
+    fname = os.path.join(phys_properties_folder(), fformat.format(z))
     with open(fname, 'r') as f:
         lines = f.readlines()
         for line in lines[1:]:

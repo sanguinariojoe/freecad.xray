@@ -1,0 +1,49 @@
+"Name", "dens [g/cm3]"
+"A-150 Tissue-Equivalent Plastic",1.127
+"Adipose Tissue (ICRU-44)",0.95
+"Air, Dry (near sea level)",0.001205
+"Alanine",1.424
+"B-100 Bone-Equivalent Plastic",1.45
+"Bakelite",1.25
+"Blood, Whole (ICRU-44)",1.06
+"Bone, Cortical (ICRU-44)",1.92
+"Brain, Grey/White Matter (ICRU-44)",1.04
+"Breast Tissue (ICRU-44)",1.02
+"C-552 Air-equivalent Plastic",1.76
+"Cadmium Telluride",6.2
+"Calcium Fluoride",3.18
+"Calcium Sulfate",2.96
+"15 mmol L-1 Ceric Ammonium Sulfate Solution",1.03
+"Cesium Iodide",4.51
+"Concrete, Ordinary",2.3
+"Concrete, Barite (TYPE BA)",3.35
+"Eye Lens (ICRU-44)",1.07
+"Ferrous Sulfate Standard Fricke",1.024
+"Gadolinium Oxysulfide",7.44
+"Gafchromic Sensor",1.3
+"Gallium Arsenide",5.31
+"Glass, Borosilicate (Pyrex)",2.23
+"Glass, Lead",6.22
+"Lithium Fluride",2.635
+"Lithium Tetraborate",2.44
+"Lung Tissue (ICRU-44)",1.05
+"Magnesium Tetroborate",2.53
+"Mercuric Iodide",6.36
+"Muscle, Skeletal (ICRU-44)",1.05
+"Ovary (ICRU-44)",1.05
+"Photographic Emulsion (Kodak Type AA)",2.2
+"Photographic Emulsion  (Standard Nuclear)",3.815
+"Plastic Scintillator, Vinyltoluene",1.032
+"Polyethylene",0.93
+"Polyethylene Terephthalate, (Mylar)",1.38
+"Polymethyl Methacrylate",1.19
+"Polystyrene",1.06
+"Polytetrafluoroethylene, (Teflon)",2.25
+"Polyvinyl Chloride",1.406
+"Radiochromic Dye Film, Nylon Base",1.08
+"Testis (ICRU-44)",1.04
+"Tissue, Soft (ICRU-44)",1.06
+"Tissue, Soft (ICRU Four-Component)",1.0
+"Tissue-Equivalent Gas, Methane Based",0.001064
+"Tissue-Equivalent Gas, Propane Based",0.001826
+"Water, Liquid",1.0

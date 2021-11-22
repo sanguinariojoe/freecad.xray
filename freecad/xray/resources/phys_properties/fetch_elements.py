@@ -6,26 +6,19 @@ except ImportError:
     from bs4 import BeautifulSoup as bs
 
 
-DENSITIES_URL = "https://periodictableguide.com/density-of-elements-chart/"
+DENSITIES_URL = "https://physics.nist.gov/PhysRefData/XrayMassCoef/tab1.html"
 MASS_ATTENUATION_COEFFS_URL = "https://physics.nist.gov/PhysRefData/XrayMassCoef/ElemTab/z{:02d}.html"
 ZMAX = 92
 
 
 def densities_table(html):
-    tab = html.body.find('table').find('tbody')
+    tab = html.body.find('table')
     data = []
-    for tr in tab.find_all('tr'):
-        td = tr.find_all('td')[-1]
-        if td.find('div'):
-            td.find('div').clear()
-        field, units = td.text.strip().split(" ")
-        try:
-            dens = float(field)
-            if units.lower() == 'g/L':
-                dens /= 1000
-        except ValueError:
-            dens = None
-        data.append(dens)
+    for tr in tab.find_all('tr')[3:]:
+        tds = tr.find_all('td')
+        if not tds:
+            continue
+        data.append(float(tds[-1].text))
     return data
 
 
@@ -57,14 +50,15 @@ if __name__ == "__main__":
 
     elements = []
     for z in range(1, ZMAX + 1):
-        if densities[z] is None:
+        if densities[z - 1] is None:
             continue
         resp = requests.get(MASS_ATTENUATION_COEFFS_URL.format(z))
         if not resp.ok:
             print("Cannot fetch {}".format(MASS_ATTENUATION_COEFFS_URL.format(z)))
             break
         name, data = mass_coeff_table(bs(resp.text))
-        elements.append([name, z, densities[z]])
+        print(name)
+        elements.append([name, densities[z - 1]])
 
         # Save the attenutions table
         with open('z{:02d}.csv'.format(z), 'w') as f:
@@ -75,6 +69,6 @@ if __name__ == "__main__":
 
     # Save the elements table
     with open('elements.csv', 'w') as f:
-        f.write('"Name", "Z", "dens [g/cm3]"\n')
+        f.write('"Name", "dens [g/cm3]"\n')
         for elem in elements:
-            f.write('"{}",{},{}\n'.format(elem[0], elem[1], elem[2]))
+            f.write('"{}",{}\n'.format(elem[0], elem[1]))

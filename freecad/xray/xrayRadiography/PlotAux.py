@@ -72,6 +72,6 @@ class Plot(object):
         vmax = cmin + vmax * (cmax - cmin)
         plt_img = self.plt.axes.imshow(
             img, cmap=CMAPS[cmap_index], vmin=vmin, vmax=vmax,
-            aspect=self.aspect, origin='lower')
+            aspect=self.aspect)
         self.cbar = self.plt.fig.colorbar(plt_img)
         self.plt.update()
