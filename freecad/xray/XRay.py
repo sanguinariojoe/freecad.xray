@@ -21,18 +21,12 @@
 #***************************************************************************
 
 
-__title__="FreeCAD Ship module"
+__title__="FreeCAD X-Ray module"
 __author__ = "Jose Luis Cercos-Pita"
-__url__ = "https://www.freecadweb.org"
+__url__ = "https://gitlab.com/sanguinariojoe/freecad.xray"
+__doc__="The X-Rays module provides tools to perform X-Rays simulations"
 
-__doc__="The Ships module provide a set of tools to make some specific Naval" \
-        " Architecture computations"
-
-from .shipCreateShip.Tools import createShip
-from .shipHydrostatics.Tools import areas, displacement, wettedArea, moment
-from .shipHydrostatics.Tools import floatingArea, BMT, mainFrameCoeff
-from .shipCreateWeight.Tools import createWeight
-from .shipCreateTank.Tools import createTank
-from .shipCapacityCurve.Tools import tankCapacityCurve
-from .shipCreateLoadCondition.Tools import createLoadCondition
-from .shipGZ.Tools import gz
+from .xrayCreate.Tools import createSimulator
+from .xrayCreate.Tools import createXRayObject
+from .xrayRadiography.Tools import radiography, assemble_radiography
+from .xrayRadiography.PlotAux import save_image
