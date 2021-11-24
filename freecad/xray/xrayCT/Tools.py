@@ -87,7 +87,7 @@ def sinogram(xray, n, e):
 
         # Assemble the final radiography
         img = Radiography.assemble_radiography(xray, samples)
-        sino[i, :, :] = img[:, :]
+        sino[i, :, :] = np.transpose(img[:, :])
         yield sino
 
 

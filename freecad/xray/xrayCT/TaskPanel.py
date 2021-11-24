@@ -234,7 +234,9 @@ class TaskPanel:
             return
         self.form.image_group.show()
 
-        aspect = (self.xray.ChamberHeight / self.xray.ChamberRadius).Value
+        aspect_real = (self.xray.ChamberHeight / self.xray.ChamberRadius).Value
+        aspect_num = self.xray.SensorResolutionY / self.xray.SensorResolutionX
+        aspect = aspect_real / aspect_num
         if self.form.image.currentIndex() < 3:
             i = self.form.image.currentIndex()
             img = self.sino
