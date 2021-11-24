@@ -95,6 +95,27 @@ class Radiography:
                 'ToolTip': ToolTip}
 
 
+class CT:
+    def IsActive(self):
+        return len(Selection.get_xrays()) == 1
+
+    def Activated(self):
+        from . import xrayCT
+        xrayCT.load()
+
+    def GetResources(self):
+        MenuText = QtCore.QT_TRANSLATE_NOOP(
+            'XRay',
+            'Tomography')
+        ToolTip = QtCore.QT_TRANSLATE_NOOP(
+            'XRay',
+            'Performs a tomography')
+        return {'Pixmap': 'XRay_CT',
+                'MenuText': MenuText,
+                'ToolTip': ToolTip}
+
+
 FreeCADGui.addCommand('XRay_Create', Create())
 FreeCADGui.addCommand('XRay_AddObject', AddObject())
 FreeCADGui.addCommand('XRay_Radiography', Radiography())
+FreeCADGui.addCommand('XRay_CT', CT())

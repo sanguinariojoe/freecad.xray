@@ -3,8 +3,10 @@
         <file>icons/XRay_Workbench.svg</file>
         <file>icons/XRay_Object.svg</file>
         <file>icons/XRay_ObjectAdd.svg</file>
+        <file>icons/XRay_CT.svg</file>
         <file>ui/TaskPanel_xrayCreate.ui</file>
         <file>ui/TaskPanel_xrayAddObject.ui</file>
         <file>ui/TaskPanel_xrayRadiography.ui</file>
+        <file>ui/TaskPanel_xrayCT.ui</file>
     </qresource>
 </RCC>
