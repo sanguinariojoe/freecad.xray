@@ -105,6 +105,7 @@ class TaskPanel:
         self.form.crange.setValue((0, 1000))
         self.form.image_group.layout().addWidget(
             self.form.crange, 4, 1)
+        self.form.image_group.hide()
 
         if self.initValues():
             return True
@@ -264,7 +265,9 @@ class TaskPanel:
 
     def update_plot(self):
         if not self.plot or not self.images:
+            self.form.image_group.hide()
             return
+        self.form.image_group.show()
         img = self.images[self.form.image.currentIndex()]
         cmap = self.form.cmap.currentIndex()
         vmin, vmax = self.form.crange.value()
