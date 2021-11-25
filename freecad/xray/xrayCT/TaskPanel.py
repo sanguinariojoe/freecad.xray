@@ -254,7 +254,7 @@ class TaskPanel:
         slicer = [np.s_[:], np.s_[:], np.s_[:]]
         slicer[i] = self.form.slice.value()
         slicer = tuple(slicer)
-        img = img[slicer]
+        img = np.transpose(img[slicer])
         self.plot.update(
             img, cmap_index=cmap, vmin=vmin, vmax=vmax, aspect=aspect)
 

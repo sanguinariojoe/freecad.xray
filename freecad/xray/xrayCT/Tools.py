@@ -59,11 +59,16 @@ def sinogram(xray, n, e):
     sino = np.zeros((n, xray.SensorResolutionX, xray.SensorResolutionY),
                     dtype=np.float)
 
+    folder = None
+    bkg = None
     for i, angle in enumerate(angles):
         a = angle * Units.Degree
         samples = []
-        bkg = True
-        for folder, session in Radiography.radiography(xray, a, e):
+        if bkg is not None:
+            samples.append(bkg)
+        sessions = Radiography.radiography(
+            xray, a, e, tmppath=folder, background=bkg is None)
+        for folder, session in sessions:
             while not session.HasDone():
                 if not RUNNING:
                     session.Stop()
@@ -79,10 +84,10 @@ def sinogram(xray, n, e):
                 time.sleep(1.0)
             session.Stop()
             imgs = Radiography.get_imgs(folder, session)
-            if bkg:
+            if bkg is None:
                 # Keep just one background image channel
-                bkg =False
-                imgs = [imgs[0]]
+                bkg = imgs[0]
+                imgs = [bkg]
             samples = samples + imgs
 
         # Assemble the final radiography

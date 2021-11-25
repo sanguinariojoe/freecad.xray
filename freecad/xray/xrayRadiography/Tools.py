@@ -25,6 +25,7 @@ import os
 import sys
 import tempfile
 import numpy as np
+import trimesh
 import FreeCAD as App
 from FreeCAD import Units, Vector, Mesh
 import Part
@@ -56,27 +57,33 @@ def __freecad2meters(value):
     return App.Units.Quantity(value, App.Units.Length).getValueAs(SCALE).Value
 
 
+def __make_ply(obj, fname):
+    Mesh.export([obj], fname)
+    # FreeCAD exported the object in its native length units, so we must scale
+    # it to meters
+    factor = __freecad2meters(1.0)
+    mesh = trimesh.load(fname, force='mesh')
+    mesh.apply_transform(trimesh.transformations.scale_matrix(factor))
+    # The exported ply objects might have duplicated vertices and faces
+    mesh.process()
+    mesh.process()
+    # trimesh is printing the file to the stdout!?!?!
+    stdout = sys.stdout
+    sys.stdout = open(os.path.join(os.path.dirname(fname), 'trimesh.log'), 'w')
+    mesh.export(fname, file_type='ply')
+    sys.stdout.close()
+    sys.stdout = stdout
+    return mesh.area
+
+
 def __shape2ply(shape, fname):
     # FreeCAD will export the object in its native length units, so we must
     # scale it to meters
-    factor = __freecad2meters(1.0)
-    shape = shape.scale(factor)
-    area = shape.Area
     Part.show(shape)
     App.ActiveDocument.recompute()
     obj = App.ActiveDocument.Objects[-1]
-    Mesh.export([obj], fname)
+    area = __make_ply(obj, fname)
     App.ActiveDocument.removeObject(obj.Name)
-    # Apparently luxcore does not likes the vertex_index keyword
-    with open(fname, 'rb') as f:
-        ply = f.read()
-    header_orig = ply.decode('utf8', errors='ignore')
-    header_orig = header_orig[:header_orig.find("end_header")]
-    header_dst = header_orig.replace("vertex_index", "vertex_indices")
-    l = len(header_orig.encode('utf8'))
-    ply = header_dst.encode('utf8') + ply[l:]
-    with open(fname, 'wb') as f:
-        f.write(ply)
     return area
 
 
@@ -102,9 +109,9 @@ def __average_mu(obj, min_e, max_e, num=25):
     return np.trapz(y, x=x) / (max_x - min_x)
 
 
-def radiography(xray, angle, max_error):
+def radiography(xray, angle, max_error, tmppath=None, background=True):
     # Create a temporal folder
-    tmppath = tempfile.mkdtemp()
+    tmppath = tmppath or tempfile.mkdtemp()
     print(tmppath)
 
     # Setup the light and the screen meshes
@@ -161,15 +168,18 @@ def radiography(xray, angle, max_error):
     with open(os.path.join(tmppath, "scene.scn"), 'w') as f:
         f.write(scn)
 
-    # We are ready for the background simulation!
-    yield tmppath, LuxCore.run_sim(tmppath, scn="scene.scn")
+    if background:
+        # We are ready for the background simulation!
+        yield tmppath, LuxCore.run_sim(tmppath, scn="scene.scn")
 
     # Now we should add a scene per tuple of sampled frequencies (in groups of
     # 3). We can start exporting the objects
     objs = xray.ScanObjects
     for i, obj in enumerate(objs):
-        # BUG: We should check if it is a mesh
-        __shape2ply(obj.Source.Shape.copy(), "mesh.{:05d}.ply".format(i))
+        fname = os.path.join(tmppath, "mesh.{:05d}.ply".format(i))
+        if os.path.isfile(fname):
+            continue
+        __make_ply(obj.Source, fname)
 
     # And now we can traverse the groups of samples
     n_samples = xray.EmitterSamples
