@@ -109,7 +109,8 @@ def __average_mu(obj, min_e, max_e, num=25):
     return np.trapz(y, x=x) / (max_x - min_x)
 
 
-def radiography(xray, angle, max_error, tmppath=None, background=True):
+def radiography(xray, angle, max_error,
+                tmppath=None, background=True, use_gpu=False):
     # Create a temporal folder
     tmppath = tmppath or tempfile.mkdtemp()
     print(tmppath)
@@ -143,8 +144,9 @@ def radiography(xray, angle, max_error, tmppath=None, background=True):
         "@HEIGHT_OUTPUT@": "{}".format(xray.SensorResolutionY),
         "@MAX_ERROR@": "{}".format(max_error),
     }
+    template_file = "render_gpu.cfg" if use_gpu else "render.cfg"
     with open(os.path.join(tmppath, "render.cfg"), 'w') as f:
-        f.write(__make_template("render.cfg", replaces))
+        f.write(__make_template(template_file, replaces))
 
     replaces = {
         "@CAM_NEAR@": "{}".format(cam_near.getValueAs(SCALE).Value),

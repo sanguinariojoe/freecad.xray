@@ -94,6 +94,7 @@ class TaskPanel:
     def setupUi(self):
         self.form.angle = self.widget(QtGui.QLineEdit, "angle")
         self.form.max_error = self.widget(QtGui.QLineEdit, "max_error")
+        self.form.use_gpu = self.widget(QtGui.QCheckBox, "use_gpu")
         self.form.run = self.widget(QtGui.QPushButton, "run")
         self.form.pbar = self.widget(QtGui.QProgressBar, "pbar")
         self.form.image = self.widget(QtGui.QComboBox, "image")
@@ -186,7 +187,9 @@ class TaskPanel:
         self.form.image.clear()
         self.plot = PlotAux.Plot(self.xray)
         current_image = -1
-        for i, radiography in enumerate(Tools.radiography(self.xray, a, e)):
+        sessions = Tools.radiography(
+            self.xray, a, e, use_gpu=self.form.use_gpu.isChecked())
+        for i, radiography in enumerate(sessions):
             self.tmp_folder, session = radiography
             self.luxcore = session
             App.Console.PrintMessage("\t{} / {}\n".format(i + 1, n))

@@ -255,7 +255,7 @@ class XRay:
         screen = self.screen(fp)
         return Part.makeCompound([light, screen])
 
-    def __min_dims(self, fp, grow_factor=1.05):
+    def __min_dims(self, fp, grow_factor=1.25):
         l = fp.ChamberRadius
         h = fp.ChamberHeight
         spread = math.tan(fp.EmitterCollimation.getValueAs('rad').Value)

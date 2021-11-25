@@ -29,6 +29,7 @@ from importlib import reload
 import OpenEXR, Imath
 import numpy as np
 import FreeCAD as App
+import logging
 
 
 LUXCORE_LATEST = "https://github.com/LuxCoreRender/LuxCore/releases/download/latest/"
@@ -38,6 +39,16 @@ URIS = {
     "windows" : LUXCORE_LATEST + "luxcorerender-latest-win64.zip",
 }
 CURRENT_SESSION = None
+
+
+loggerName = "pyluxcore.tools"
+logger = logging.getLogger(loggerName)
+logging.basicConfig(level=logging.WARNING,
+                    format="[%(threadName)s][%(asctime)s] %(message)s")
+
+
+def LuxCoreLogHandler(msg):
+    logger.info(msg)
 
 
 def get(folder=None):
@@ -107,6 +118,7 @@ def download(folder=None):
 def run_sim(folder, cfg="render.cfg", scn="scene.scn", pyluxcore=None,
             refresh_interval=2500):
     pyluxcore = pyluxcore or download()
+    pyluxcore.Init(LuxCoreLogHandler)
     cmd_props = pyluxcore.Properties()
     cmd_props.Set(pyluxcore.Property("scene.file", scn))
     cmd_props.Set(pyluxcore.Property("screen.tool.type", "IMAGE_VIEW"))

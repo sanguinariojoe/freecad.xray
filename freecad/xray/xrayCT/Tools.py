@@ -41,7 +41,7 @@ def __angles(n):
     return angles
 
 
-def sinogram(xray, n, e):
+def sinogram(xray, n, e, use_gpu=False):
     global RUNNING
     RUNNING = True
 
@@ -67,7 +67,7 @@ def sinogram(xray, n, e):
         if bkg is not None:
             samples.append(bkg)
         sessions = Radiography.radiography(
-            xray, a, e, tmppath=folder, background=bkg is None)
+            xray, a, e, tmppath=folder, background=bkg is None, use_gpu=use_gpu)
         for folder, session in sessions:
             while not session.HasDone():
                 if not RUNNING:

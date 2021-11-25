@@ -77,6 +77,7 @@ class TaskPanel:
     def setupUi(self):
         self.form.angles = self.widget(QtGui.QSpinBox, "angles")
         self.form.max_error = self.widget(QtGui.QLineEdit, "max_error")
+        self.form.use_gpu = self.widget(QtGui.QCheckBox, "use_gpu")
         self.form.run = self.widget(QtGui.QPushButton, "run")
         self.form.pbar = self.widget(QtGui.QProgressBar, "pbar")
         self.form.image_group = self.widget(QtGui.QGroupBox, "image_group")
@@ -167,7 +168,9 @@ class TaskPanel:
         self.form.image.show()
 
         self.running = True
-        for i, self.sino in enumerate(Tools.sinogram(self.xray, n_angles, e)):
+        sinograms = Tools.sinogram(
+            self.xray, n_angles, e, use_gpu=self.form.use_gpu.isChecked())
+        for i, self.sino in enumerate(sinograms):
             self.update_plot()
             App.Console.PrintMessage("\t{} / {}\n".format(i + 1, n_angles))
             self.form.pbar.setValue(100 * (i + 1) / n_angles)
