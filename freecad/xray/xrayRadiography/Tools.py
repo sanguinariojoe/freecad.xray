@@ -36,6 +36,7 @@ LIGHT_PLY = "light.ply"
 SCREEN_PLY = "screen.ply"
 SPECIFIC_POWER = 100000
 SCALE = 'm'
+CAM_TYPE = "orthographic"  # "perspective"
 MIN_INTENSITY_RATIO = 1E-6
 
 
@@ -133,8 +134,15 @@ def radiography(xray, angle, max_error,
     cam_near = 0.001 * Units.parseQuantity('1 {}'.format(SCALE))
     if cam_near > 0.5 * cam_dist:
         cam_near = 0.5 * cam_dist
-    cam_w = 0.5 * xray.ChamberRadius.getValueAs(SCALE).Value
-    cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
+    if CAM_TYPE == "perspective":
+        cam_w = 2
+        cam_h = 2
+        ratio = cam_dist / (0.5 * xray.ChamberRadius.getValueAs(SCALE))
+        field_of_view = np.degrees(np.arctan(ratio.Value))
+    else:
+        cam_w = 0.5 * xray.ChamberRadius.getValueAs(SCALE).Value
+        cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
+        field_of_view = 45.0
 
     # Setup the templates for the background/empty image
     power = SPECIFIC_POWER * light_area
@@ -160,6 +168,8 @@ def radiography(xray, angle, max_error,
                                                 0.5 * cam_w,
                                                 -0.5 * cam_h,
                                                 0.5 * cam_h),
+        "@CAM_TYPE@": "{}".format(CAM_TYPE),
+        "@FIELD_OF_VIEW@": "{}".format(field_of_view),
         "@POWER@" : "{}".format(power),
         "@COLLIMATION@" : "{}".format(
             xray.EmitterCollimation.getValueAs('deg').Value),
