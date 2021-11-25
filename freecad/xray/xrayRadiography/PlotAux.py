@@ -65,7 +65,9 @@ class Plot(object):
                 return
 
         self.xray = xray
-        self.aspect = (xray.ChamberHeight / xray.ChamberRadius).Value
+        aspect_real = (xray.ChamberHeight / xray.ChamberRadius).Value
+        aspect_num = xray.SensorResolutionY / xray.SensorResolutionX
+        self.aspect = aspect_real / aspect_num
         self.plt = Plot.figure("Radiography")
         self.plt.update()
         self.cbar = None

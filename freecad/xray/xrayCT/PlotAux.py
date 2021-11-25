@@ -64,7 +64,7 @@ class Plot(object):
                     'Plot module is disabled, so I cannot perform the plot\n')
                 return
 
-        self.plt = Plot.figure("Radiography")
+        self.plt = Plot.figure("Tomography")
         self.plt.update()
         self.cbar = None
 
