@@ -32,6 +32,10 @@ from .. import XRay_rc
 from ..xrayUtils import Selection, LightUnits
 
 
+# The suggested power, as a function of the light area
+SPECIFIC_POWER = Units.parseQuantity('1000 W/m^2')
+
+
 class TaskPanel:
     def __init__(self):
         self.name = "XRay radiography"
@@ -94,6 +98,7 @@ class TaskPanel:
     def setupUi(self):
         self.form.angle = self.widget(QtGui.QLineEdit, "angle")
         self.form.max_error = self.widget(QtGui.QLineEdit, "max_error")
+        self.form.power = self.widget(QtGui.QLineEdit, "power")
         self.form.use_gpu = self.widget(QtGui.QCheckBox, "use_gpu")
         self.form.run = self.widget(QtGui.QPushButton, "run")
         self.form.pbar = self.widget(QtGui.QProgressBar, "pbar")
@@ -148,8 +153,11 @@ class TaskPanel:
             # This situation isalready covered in ../XRayGui.py
             return True
         self.xray = xrays[0]
-        return False
 
+        area = self.xray.ChamberRadius * self.xray.ChamberHeight
+        power = SPECIFIC_POWER * area
+        self.form.power.setText(power.UserString)
+        return False
 
     def onStart(self):
         if self.luxcore:
@@ -183,12 +191,13 @@ class TaskPanel:
                                QtCore.SLOT("quit()"))
         a = Units.parseQuantity(self.form.angle.text())
         e = Units.parseQuantity(self.form.max_error.text())
+        p = Units.parseQuantity(self.form.power.text())
         self.images = []
         self.form.image.clear()
         self.plot = PlotAux.Plot(self.xray)
         current_image = -1
         sessions = Tools.radiography(
-            self.xray, a, e, use_gpu=self.form.use_gpu.isChecked())
+            self.xray, a, e, p, use_gpu=self.form.use_gpu.isChecked())
         for i, radiography in enumerate(sessions):
             self.tmp_folder, session = radiography
             self.luxcore = session

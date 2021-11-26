@@ -34,7 +34,6 @@ from ..xrayUtils import LuxCore, LightUnits
 
 LIGHT_PLY = "light.ply"
 SCREEN_PLY = "screen.ply"
-SPECIFIC_POWER = 100000
 SCALE = 'm'
 CAM_TYPE = "orthographic"  # "perspective"
 MIN_INTENSITY_RATIO = 1E-6
@@ -55,7 +54,7 @@ def __make_template(fname, replaces):
 
 
 def __freecad2meters(value):
-    return App.Units.Quantity(value, App.Units.Length).getValueAs(SCALE).Value
+    return Units.Quantity(value, Units.Length).getValueAs(SCALE).Value
 
 
 def __make_ply(obj, fname):
@@ -74,7 +73,7 @@ def __make_ply(obj, fname):
     mesh.export(fname, file_type='ply')
     sys.stdout.close()
     sys.stdout = stdout
-    return mesh.area
+    return Units.parseQuantity('{} m^2'.format(mesh.area))
 
 
 def __shape2ply(shape, fname):
@@ -110,7 +109,7 @@ def __average_mu(obj, min_e, max_e, num=25):
     return np.trapz(y, x=x) / (max_x - min_x)
 
 
-def radiography(xray, angle, max_error,
+def radiography(xray, angle, max_error, power,
                 tmppath=None, background=True, use_gpu=False):
     # Create a temporal folder
     tmppath = tmppath or tempfile.mkdtemp()
@@ -120,15 +119,17 @@ def radiography(xray, angle, max_error,
     light = xray.Proxy.light(xray)
     light = light.rotate((0, 0, 0), (0, 0, 1), angle)
     light_area = __shape2ply(light, os.path.join(tmppath, LIGHT_PLY))
-    cam_dist = 0.1 * xray.ChamberDistance
+    cam_dist = 0.5 * xray.ChamberDistance
     screen = xray.Proxy.screen(xray)
-    screen = screen.translate((cam_dist, 0, 0))
+    # screen = screen.translate((cam_dist, 0, 0))
     screen = screen.rotate((0, 0, 0), (0, 0, 1), angle)
     __shape2ply(screen, os.path.join(tmppath, SCREEN_PLY))
 
     # Get the camera position and target
-    cam_pos = Vector(0.5 * xray.ChamberDistance, 0, 0)
-    cam_target = cam_pos + Vector(cam_dist, 0, 0)
+    # cam_pos = Vector(0.5 * xray.ChamberDistance, 0, 0)
+    # cam_target = cam_pos + Vector(cam_dist, 0, 0)
+    cam_target = Vector(0.5 * xray.ChamberDistance, 0, 0)
+    cam_pos = cam_target + Vector(cam_dist, 0, 0)
     cam_pos = Part.Vertex(cam_pos).rotate((0, 0, 0), (0, 0, 1), angle)
     cam_target = Part.Vertex(cam_target).rotate((0, 0, 0), (0, 0, 1), angle)
     cam_near = 0.001 * Units.parseQuantity('1 {}'.format(SCALE))
@@ -144,8 +145,15 @@ def radiography(xray, angle, max_error,
         cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
         field_of_view = 45.0
 
+    # Since the light is actually bigger than intended, we need to scale the
+    # power.
+    power *= light_area / (xray.ChamberRadius * xray.ChamberHeight)
+    # We have also to consider the exporting scale
+    l_factor = (Units.parseQuantity('1 {}'.format(SCALE)) / Units.Metre).Value
+    power *= l_factor * l_factor
+    power = power.getValueAs('W').Value
+
     # Setup the templates for the background/empty image
-    power = SPECIFIC_POWER * light_area
     max_error = max(max_error.Value, 0) * power
     replaces = {
         "@WIDTH_OUTPUT@": "{}".format(xray.SensorResolutionX),
