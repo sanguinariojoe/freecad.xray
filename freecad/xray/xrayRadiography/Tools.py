@@ -145,6 +145,15 @@ def radiography(xray, angle, max_error, power,
         cam_h = 0.5 * xray.ChamberHeight.getValueAs(SCALE).Value
         field_of_view = 45.0
 
+    # Laser mode
+    collimation = xray.EmitterCollimation.getValueAs('deg').Value
+    min_collimation = 1.0 if use_gpu else 0.1
+    is_laser = collimation < min_collimation
+    light_radius = Units.Quantity(light.BoundBox.DiagonalLength,
+                                  Units.Length)
+    if is_laser:
+        light_area = np.pi * light_radius * light_radius
+
     # Since the light is actually bigger than intended, we need to scale the
     # power.
     power *= light_area / (xray.ChamberRadius * xray.ChamberHeight)
@@ -178,12 +187,20 @@ def radiography(xray, angle, max_error, power,
                                                 0.5 * cam_h),
         "@CAM_TYPE@": "{}".format(CAM_TYPE),
         "@FIELD_OF_VIEW@": "{}".format(field_of_view),
+        "@LIGHT_POS@": "{} {} {}".format(-__freecad2meters(cam_pos.X),
+                                         -__freecad2meters(cam_pos.Y),
+                                         -__freecad2meters(cam_pos.Z)),
+        "@LIGHT_TARGET@": "{} {} {}".format(-__freecad2meters(cam_target.X),
+                                            -__freecad2meters(cam_target.Y),
+                                            -__freecad2meters(cam_target.Z)),
+        "@LIGHT_RADIUS@": "{}".format(light_radius.getValueAs(SCALE).Value),
         "@POWER@" : "{}".format(power),
         "@COLLIMATION@" : "{}".format(
             xray.EmitterCollimation.getValueAs('deg').Value),
         "@AREA_LIGHT_PLY@" : LIGHT_PLY,
         "@SCREEN_PLY@" : SCREEN_PLY,
     }
+    template_file = "scene_laser.scn" if is_laser else "scene.scn"
     scn = __make_template("scene.scn", replaces)
     with open(os.path.join(tmppath, "scene.scn"), 'w') as f:
         f.write(scn)

@@ -253,7 +253,11 @@ class XRay:
     def regen_geom(self, fp):
         light = self.light(fp)
         screen = self.screen(fp)
-        return Part.makeCompound([light, screen])
+        # Create the chamber indicator
+        cyl = Part.makeCylinder(0.5 * fp.ChamberRadius, fp.ChamberHeight)
+        cyl = cyl.translate((0, 0, -0.5 * fp.ChamberHeight))
+        edges = [cyl.Edges[0], cyl.Edges[2]]
+        return Part.makeCompound([light, screen] + edges)
 
     def __min_dims(self, fp, grow_factor=1.25):
         l = fp.ChamberRadius

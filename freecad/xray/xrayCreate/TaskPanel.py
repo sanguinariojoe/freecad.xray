@@ -119,6 +119,10 @@ class TaskPanel:
         App.ActiveDocument.removeObject(App.ActiveDocument.Objects[-1].Name)
         App.ActiveDocument.recompute()
 
+        # Change the object representation
+        Gui.ActiveDocument.getObject(xray.Name).DisplayMode = u"Flat Lines"
+        Gui.ActiveDocument.getObject(xray.Name).DrawStyle = u"Dashed"
+
         return True
 
     def reject(self):
