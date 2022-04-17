@@ -38,7 +38,7 @@
       <item row="0" column="0">
        <widget class="QGroupBox" name="angle_group">
         <property name="toolTip">
-         <string>The number of angluar projections. More projections result in better quality images. However, each angular projection requires a full radiography, increasing the required time to compute the full tomography</string>
+         <string>The number of angular projections. More projections result in better quality images. However, each angular projection requires a full radiography, increasing the required time to compute the full tomography</string>
         </property>
         <property name="flat">
          <bool>true</bool>
@@ -79,7 +79,7 @@
       <item row="1" column="0">
        <widget class="QGroupBox" name="halt_group">
         <property name="toolTip">
-         <string>The maximum admisible error. The smaller this value the longer will it take to finish</string>
+         <string>The maximum admissible error. The smaller this value the longer will it take to finish</string>
         </property>
         <property name="flat">
          <bool>true</bool>

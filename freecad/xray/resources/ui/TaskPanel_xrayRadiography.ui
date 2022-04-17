@@ -73,7 +73,7 @@
       <item row="1" column="0">
        <widget class="QGroupBox" name="halt_group">
         <property name="toolTip">
-         <string>The maximum admisible error. The smaller this value the longer will it take to finish</string>
+         <string>The maximum admissible error. The smaller this value the longer will it take to finish</string>
         </property>
         <property name="flat">
          <bool>true</bool>

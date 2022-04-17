@@ -83,7 +83,7 @@ def get_xrays(objs=None):
     objs -- List of objects to filter. None for Gui.Selection.getSelection()
 
     Returns:
-    The list of X-Ray machiness
+    The list of X-Ray machines
     """
     if objs is None:
         objs = Gui.Selection.getSelection()

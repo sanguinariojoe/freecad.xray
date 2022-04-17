@@ -305,7 +305,7 @@
       <item row="3" column="0">
        <widget class="QGroupBox" name="freq_n_group">
         <property name="toolTip">
-         <string>The number of samples to take fro the spectrum. The number of images per projection to be rendered is equal to the number of samples divided by 3. Thus the larger the number of samples, the longer would it take to compute. Increasing the number of samples would be very beneficial in the presence of metals.</string>
+         <string>The number of samples to take from the spectrum. The number of images per projection to be rendered is equal to the number of samples divided by 3. Thus the larger the number of samples, the longer would it take to compute. Increasing the number of samples would be very beneficial in the presence of metals.</string>
         </property>
         <property name="flat">
          <bool>true</bool>

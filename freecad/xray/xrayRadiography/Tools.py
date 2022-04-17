@@ -266,7 +266,7 @@ def __discretize_spectrum(xray):
     if n % 3:
         n = 3 * (n // 3 + 1)
 
-    # 25 points per spectrum chunck
+    # 25 points per spectrum chunk
     n_per_sample = 25
     x = np.linspace(0.0, 1.0, num = n * n_per_sample)
     xp = np.linspace(0.0, 1.0, num=len(xray.EmitterSpectrum))
