@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>X-Rays Workbench</name>
+  <description>An X-Ray machine simulator</description>
+  <version>2022.4.17</version>
+  <date>2022-04-17</date>
+  <maintainer email="jlcercos@gmail.com">Jose Luis Cercós Pita</maintainer>
+  <license file="LICENSE">LGPLv2.1</license>
+  <url type="repository" branch="master">https://gitlab.com/sanguinariojoe/freecad.xray</url>
+  <url type="bugtracker">https://gitlab.com/sanguinariojoe/freecad.xray/-/issues</url>
+  <url type="documentation">https://gitlab.com/sanguinariojoe/freecad.xray</url>
+
+  <icon>freecad/xray/resources/icons/XRay_Workbench.svg</icon>
+
+  <content>
+    <workbench>
+      <name>X-Rays Workbench</name>
+      <classname>XRayWorkbench</classname>
+      <subdirectory>./</subdirectory>
+      <icon>freecad/xray/resources/icons/XRay_Workbench.svg</icon>
+      <depend>numpy</depend>
+      <depend>openexr</depend>
+      <depend>scikit-image</depend>
+      <depend>beautifulsoup4</depend>
+      <depend>matplotlib</depend>
+      <depend>trimesh</depend>
+      <depend>qtrangeslider</depend>
+      <tag>x-rays</tag>
+      <tag>radiography</tag>
+      <tag>tomography</tag>
+    </workbench>
+  </content>
+
+</package>
