@@ -25,6 +25,7 @@
       <depend>matplotlib</depend>
       <depend>trimesh</depend>
       <depend>qtrangeslider</depend>
+      <depend>requests</depend>
       <tag>x-rays</tag>
       <tag>radiography</tag>
       <tag>tomography</tag>
